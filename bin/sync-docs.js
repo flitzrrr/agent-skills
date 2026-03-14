@@ -91,6 +91,27 @@ if (fs.existsSync(cursorPath)) {
   console.log("Updated .cursorrules");
 }
 
+// --- Update .lovable ---
+const lovablePath = path.join(ROOT, ".lovable");
+if (fs.existsSync(lovablePath)) {
+  let lovable = fs.readFileSync(lovablePath, "utf8");
+  lovable = lovable.replace(/\d+ curated AI agent skills/, `${skillCount} curated AI agent skills`);
+  lovable = lovable.replace(/\d+ skills/g, `${skillCount} skills`);
+  lovable = lovable.replace(/\d+ sources/g, `${sourceCount} sources`);
+  fs.writeFileSync(lovablePath, lovable, "utf8");
+  console.log("Updated .lovable");
+}
+
+// --- Update CHEATSHEET.md ---
+const cheatsheetPath = path.join(ROOT, "CHEATSHEET.md");
+if (fs.existsSync(cheatsheetPath)) {
+  let cheatsheet = fs.readFileSync(cheatsheetPath, "utf8");
+  cheatsheet = cheatsheet.replace(/\d+ skills/g, `${skillCount} skills`);
+  cheatsheet = cheatsheet.replace(/\d+ sources/g, `${sourceCount} sources`);
+  fs.writeFileSync(cheatsheetPath, cheatsheet, "utf8");
+  console.log("Updated CHEATSHEET.md");
+}
+
 // --- Generate skills list for AGENTS.md / CLAUDE.md ---
 const skillList = skills.sort().map((s) => `- ${s}`).join("\n");
 const marker = "<!-- SKILL_LIST -->";
@@ -114,3 +135,4 @@ for (const filePath of [agentsPath, claudePath]) {
 }
 
 console.log("Done.");
+
