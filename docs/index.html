@@ -3,599 +3,724 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agent Skills Hub — Curated Skills for AI Coding Assistants</title>
-  <meta name="description" content="A curated, security-scanned collection of AI agent skills from industry-leading sources. Compatible with Claude Code, Codex, Cursor, Antigravity, OpenCode, and more.">
+  <title>Agent Skills Hub</title>
+  <meta name="description" content="A curated, security-scanned collection of AI agent skills. Updated weekly. Open source.">
   <meta property="og:title" content="Agent Skills Hub">
   <meta property="og:description" content="Curated skills for AI coding assistants.">
   <meta property="og:image" content="https://raw.githubusercontent.com/flitzrrr/agent-skills/main/.github/social-preview.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-primary: #0a0e14;
-      --bg-secondary: #0f1419;
-      --bg-card: #141a22;
-      --bg-card-hover: #1a2230;
-      --border: rgba(255,255,255,0.06);
-      --border-hover: rgba(88,166,255,0.3);
-      --text-primary: #e6edf3;
-      --text-secondary: #8b949e;
-      --text-muted: #484f58;
-      --accent: #58a6ff;
-      --accent-dim: rgba(88,166,255,0.1);
-      --green: #3fb950;
-      --green-dim: rgba(63,185,80,0.1);
-      --purple: #bc8cff;
-      --purple-dim: rgba(188,140,255,0.1);
-      --orange: #f0883e;
-      --orange-dim: rgba(240,136,62,0.1);
+      --bg: #08090c;
+      --bg-elevated: #0e1015;
+      --bg-card: #12151c;
+      --surface: #1a1e28;
+      --border: rgba(255,255,255,0.04);
+      --border-accent: rgba(186,146,255,0.15);
+      --text: #e8e4df;
+      --text-dim: #7a7672;
+      --text-muted: #454240;
+      --accent: #ba92ff;
+      --accent-glow: rgba(186,146,255,0.12);
+      --warm: #f5c97a;
+      --warm-dim: rgba(245,201,122,0.08);
+      --mint: #7ae8c4;
+      --mint-dim: rgba(122,232,196,0.08);
+      --rose: #ff7eb3;
+      --rose-dim: rgba(255,126,179,0.08);
+      --serif: 'Instrument Serif', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+      --mono: 'JetBrains Mono', monospace;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-secondary);
-      line-height: 1.6;
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text-dim);
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
-    .container { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+    ::selection { background: var(--accent); color: var(--bg); }
+
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 2rem; }
+
+    /* ─── Grain Overlay ─── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ─── Animations ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes glow {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.7; }
+    }
+    .reveal {
+      opacity: 0;
+      animation: fadeUp 0.8s cubic-bezier(0.16,1,0.3,1) forwards;
+    }
+    .d1 { animation-delay: 0.1s; }
+    .d2 { animation-delay: 0.2s; }
+    .d3 { animation-delay: 0.35s; }
+    .d4 { animation-delay: 0.5s; }
+    .d5 { animation-delay: 0.65s; }
+    .d6 { animation-delay: 0.8s; }
 
     /* ─── Hero ─── */
     .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 6rem 0 4rem;
       position: relative;
+      padding: 4rem 2rem;
     }
-    .hero::before {
-      content: '';
+    .hero-glow {
       position: absolute;
-      top: 0; left: 50%;
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
+      top: 15%;
+      left: 50%;
       transform: translateX(-50%);
-      width: 600px; height: 400px;
-      background: radial-gradient(ellipse, rgba(88,166,255,0.08) 0%, transparent 70%);
       pointer-events: none;
+      animation: glow 6s ease-in-out infinite;
+    }
+    .hero-label {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      position: relative;
     }
     .hero h1 {
-      font-size: 3.2rem;
-      font-weight: 700;
-      color: var(--text-primary);
+      font-family: var(--serif);
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.05;
       letter-spacing: -0.03em;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       position: relative;
     }
-    .hero .subtitle {
-      font-size: 1.15rem;
-      color: var(--text-secondary);
-      max-width: 560px;
-      margin: 0 auto 2rem;
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
     }
-    .hero-badges {
-      display: flex;
-      gap: 0.5rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 2.5rem;
+    .hero .lead {
+      font-size: 1.1rem;
+      max-width: 480px;
+      margin: 0 auto 3rem;
+      color: var(--text-dim);
+      position: relative;
     }
-    .hero-badges img { height: 22px; }
 
-    .install-block {
+    .cta-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+    }
+    .cta-primary {
       display: inline-flex;
       align-items: center;
-      gap: 0.75rem;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem 1.5rem;
-      cursor: pointer;
-      transition: border-color 0.2s, background 0.2s;
-    }
-    .install-block:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
-    .install-block code {
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.95rem;
-      color: var(--accent);
-    }
-    .install-block .copy-hint {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      border-left: 1px solid var(--border);
-      padding-left: 0.75rem;
-    }
-
-    /* ─── Stats ─── */
-    .stats-row {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      margin: 3rem 0;
-    }
-    @media (max-width: 640px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
-    .stat-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.25rem;
-      text-align: center;
-    }
-    .stat-value {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 0.25rem;
-    }
-    .stat-label {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-muted);
-    }
-
-    /* ─── Section ─── */
-    .section {
-      padding: 3rem 0;
-      border-top: 1px solid var(--border);
-    }
-    .section-header {
-      margin-bottom: 2rem;
-    }
-    .section-header h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 0.5rem;
-    }
-    .section-header p {
-      color: var(--text-secondary);
-      font-size: 0.95rem;
-      max-width: 640px;
-    }
-
-    /* ─── Sources Grid ─── */
-    .sources-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1rem;
-    }
-    .source-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.25rem;
-      transition: border-color 0.2s, transform 0.15s;
-    }
-    .source-card:hover {
-      border-color: var(--border-hover);
-      transform: translateY(-1px);
-    }
-    .source-card a { text-decoration: none; color: inherit; display: block; }
-    .source-name {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 0.25rem;
-    }
-    .source-meta {
-      display: flex;
-      gap: 0.75rem;
-      margin-bottom: 0.5rem;
-    }
-    .source-tag {
-      font-size: 0.72rem;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-weight: 500;
-    }
-    .tag-skills { background: var(--accent-dim); color: var(--accent); }
-    .tag-focus { background: var(--green-dim); color: var(--green); }
-    .source-desc {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    /* ─── Search & Catalog ─── */
-    .search-bar {
-      position: relative;
-      margin-bottom: 1.5rem;
-    }
-    .search-bar input {
-      width: 100%;
-      padding: 0.85rem 1rem 0.85rem 2.5rem;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      color: var(--text-primary);
-      font-family: 'Inter', sans-serif;
-      font-size: 0.95rem;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .search-bar input:focus { border-color: var(--accent); }
-    .search-bar input::placeholder { color: var(--text-muted); }
-    .search-bar svg {
-      position: absolute;
-      left: 0.85rem;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      color: var(--text-muted);
-    }
-    .search-count {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-    }
-
-    .skill-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 0.6rem;
+      padding: 0.85rem 1.6rem;
+      background: var(--accent);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-weight: 500;
+      font-size: 0.9rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      text-decoration: none;
     }
-    .skill-card {
-      background: var(--bg-card);
+    .cta-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 32px var(--accent-glow);
+    }
+    .cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.6rem;
+      background: transparent;
+      color: var(--text-dim);
+      font-family: var(--sans);
+      font-weight: 500;
+      font-size: 0.9rem;
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 0.7rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      transition: border-color 0.2s;
-      cursor: default;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+      text-decoration: none;
     }
-    .skill-card:hover { border-color: var(--border-hover); }
-    .skill-name {
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.82rem;
-      color: var(--accent);
-    }
-    .skill-prefix {
-      font-size: 0.68rem;
-      color: var(--text-muted);
-      padding: 0.15rem 0.4rem;
-      background: var(--bg-primary);
-      border-radius: 3px;
+    .cta-secondary:hover {
+      border-color: var(--accent);
+      color: var(--text);
     }
 
-    .source-group h3 {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-secondary);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin: 1.5rem 0 0.75rem;
-      padding-bottom: 0.5rem;
+    .install-cmd {
+      margin-top: 2rem;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      position: relative;
+      cursor: pointer;
+      padding: 0.75rem 1.25rem;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: border-color 0.2s;
+    }
+    .install-cmd:hover { border-color: var(--border-accent); }
+    .install-cmd span { color: var(--accent); }
+    .install-cmd .hint {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      margin-left: 1rem;
+      opacity: 0.5;
+    }
+
+    /* ─── Stats Ticker ─── */
+    .stats-strip {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-val {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      color: var(--text);
+      line-height: 1;
+    }
+    .stat-lbl {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+    }
+
+    /* ─── Sections ─── */
+    .section {
+      padding: 5rem 0;
+    }
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--text);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+    .section-desc {
+      font-size: 0.95rem;
+      max-width: 540px;
+      margin-bottom: 2.5rem;
     }
 
     /* ─── How It Works ─── */
-    .steps {
+    .steps-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
+      gap: 1px;
+      background: var(--border);
+      border-radius: 12px;
+      overflow: hidden;
     }
-    @media (max-width: 768px) { .steps { grid-template-columns: 1fr; } }
-    .step {
+    @media (max-width: 768px) { .steps-grid { grid-template-columns: 1fr; } }
+    .step-cell {
+      background: var(--bg-card);
+      padding: 2rem;
+    }
+    .step-num {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      color: var(--accent);
+      opacity: 0.3;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .step-cell h3 {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .step-cell p { font-size: 0.85rem; }
+    .step-cell code {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--warm);
+      background: var(--warm-dim);
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+    }
+
+    /* ─── Sources ─── */
+    .sources-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1rem;
+    }
+    .source-item {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 1.5rem;
-      position: relative;
+      transition: border-color 0.25s, transform 0.2s;
+      text-decoration: none;
+      display: block;
+      color: inherit;
     }
-    .step-number {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: var(--accent);
-      background: var(--accent-dim);
-      width: 24px; height: 24px;
-      border-radius: 50%;
+    .source-item:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-2px);
+    }
+    .source-top {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0.75rem;
-    }
-    .step h3 {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--text-primary);
+      justify-content: space-between;
+      align-items: flex-start;
       margin-bottom: 0.5rem;
     }
-    .step p { font-size: 0.85rem; }
-    .step code {
-      font-family: 'SF Mono', monospace;
-      font-size: 0.8rem;
+    .source-name {
+      font-weight: 500;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+    .source-count {
+      font-family: var(--mono);
+      font-size: 0.7rem;
       color: var(--accent);
-      background: var(--accent-dim);
-      padding: 0.15rem 0.35rem;
-      border-radius: 3px;
+      background: var(--accent-glow);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .source-focus {
+      font-size: 0.75rem;
+      color: var(--warm);
+      margin-bottom: 0.5rem;
+    }
+    .source-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
     }
 
     /* ─── Platforms ─── */
-    .platforms-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 0.75rem;
+    .platform-strip {
+      display: flex;
+      gap: 1px;
+      background: var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      flex-wrap: wrap;
     }
-    .platform-card {
+    .platform-cell {
+      flex: 1;
+      min-width: 150px;
       background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem;
+      padding: 1.25rem;
       text-align: center;
     }
-    .platform-name {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--text-primary);
+    .platform-cell strong {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text);
+      font-weight: 500;
       margin-bottom: 0.25rem;
     }
-    .platform-method {
-      font-size: 0.75rem;
+    .platform-cell span {
+      font-family: var(--mono);
+      font-size: 0.65rem;
       color: var(--text-muted);
     }
 
+    /* ─── Catalog ─── */
+    .search-wrap {
+      position: relative;
+      margin-bottom: 1.25rem;
+    }
+    .search-wrap input {
+      width: 100%;
+      padding: 1rem 1rem 1rem 2.75rem;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-wrap input:focus { border-color: var(--accent); }
+    .search-wrap input::placeholder { color: var(--text-muted); }
+    .search-wrap .icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      width: 16px;
+    }
+    .result-count {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .cat-group h3 {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0.5rem;
+    }
+    .skill-pill {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--mint);
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.55rem 0.85rem;
+      transition: border-color 0.2s, background 0.2s;
+      cursor: default;
+    }
+    .skill-pill:hover {
+      border-color: var(--border-accent);
+      background: var(--surface);
+    }
+
+    /* ─── Gates ─── */
+    .gates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .gate {
+      background: var(--bg-card);
+      padding: 1.5rem;
+    }
+    .gate-name {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+    .gate-threshold {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--warm);
+      margin-bottom: 0.35rem;
+    }
+    .gate p { font-size: 0.8rem; }
+
     /* ─── Footer ─── */
     footer {
-      text-align: center;
-      padding: 3rem 0 2rem;
-      color: var(--text-muted);
-      font-size: 0.82rem;
+      padding: 4rem 0 3rem;
       border-top: 1px solid var(--border);
-      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
+    footer .brand {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    footer nav { display: flex; gap: 1.5rem; }
     footer a {
-      color: var(--text-secondary);
+      font-size: 0.8rem;
+      color: var(--text-muted);
       text-decoration: none;
       transition: color 0.2s;
     }
     footer a:hover { color: var(--accent); }
-    footer .links { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 0.75rem; }
+    footer .copy {
+      width: 100%;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
 
-<div class="container">
-
-  <!-- Hero -->
-  <section class="hero">
-    <h1>Agent Skills Hub</h1>
-    <p class="subtitle">
-      A curated, security-scanned collection of skills for AI coding assistants.
-      Updated weekly. Open source.
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <p class="hero-label reveal d1">Open Source / MIT Licensed</p>
+    <h1 class="reveal d2">Agent Skills<br><em>Hub</em></h1>
+    <p class="lead reveal d3">
+      Curated, security-scanned skills for AI coding assistants.
+      Updated every Monday. Compatible with everything.
     </p>
-    <div class="hero-badges">
-      <img src="https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837" alt="npm">
-      <img src="https://img.shields.io/npm/dm/@flitzrrr/agent-skills?style=flat-square" alt="downloads">
-      <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT">
-      <img src="https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square" alt="weekly">
+    <div class="cta-row reveal d4">
+      <a href="https://github.com/flitzrrr/agent-skills" class="cta-primary">View on GitHub</a>
+      <a href="#catalog" class="cta-secondary">Browse Skills</a>
     </div>
-    <div class="install-block" onclick="navigator.clipboard.writeText('npx @flitzrrr/agent-skills install')">
-      <code>npx @flitzrrr/agent-skills install</code>
-      <span class="copy-hint">click to copy</span>
+    <div class="install-cmd reveal d5" onclick="navigator.clipboard.writeText('npx @flitzrrr/agent-skills install'); this.querySelector('.hint').textContent = 'copied'">
+      $ <span>npx @flitzrrr/agent-skills install</span>
+      <span class="hint">click to copy</span>
     </div>
-  </section>
-
-  <!-- Stats (populated dynamically) -->
-  <div class="stats-row" id="stats">
-    <div class="stat-card"><div class="stat-value" id="stat-skills">--</div><div class="stat-label">Skills</div></div>
-    <div class="stat-card"><div class="stat-value" id="stat-sources">--</div><div class="stat-label">Sources</div></div>
-    <div class="stat-card"><div class="stat-value">6</div><div class="stat-label">Platforms</div></div>
-    <div class="stat-card"><div class="stat-value">Weekly</div><div class="stat-label">Auto-Discovery</div></div>
   </div>
+</div>
 
-  <!-- How It Works -->
+<div class="container">
+  <div class="stats-strip reveal d6">
+    <div class="stat"><div class="stat-val" id="s-skills">--</div><div class="stat-lbl">Skills</div></div>
+    <div class="stat"><div class="stat-val" id="s-sources">--</div><div class="stat-lbl">Sources</div></div>
+    <div class="stat"><div class="stat-val">6</div><div class="stat-lbl">Platforms</div></div>
+    <div class="stat"><div class="stat-val">Weekly</div><div class="stat-lbl">Discovery</div></div>
+  </div>
+</div>
+
+<!-- How It Works -->
+<div class="container">
   <section class="section">
-    <div class="section-header">
-      <h2>How It Works</h2>
-      <p>Skills are markdown files (SKILL.md) that teach AI assistants specialized capabilities. Drop them into your project and the assistant picks them up automatically.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-number">1</div>
+    <p class="section-label">Getting Started</p>
+    <h2 class="section-title">Three steps, zero config</h2>
+    <p class="section-desc">Skills are markdown files that teach AI assistants specialized capabilities. Drop them in, reference by name.</p>
+    <div class="steps-grid">
+      <div class="step-cell">
+        <div class="step-num">01</div>
         <h3>Install</h3>
-        <p>Run <code>npx @flitzrrr/agent-skills install</code> or clone the repo. Skills are symlinked to each platform's config directory.</p>
+        <p>Run <code>npx @flitzrrr/agent-skills install</code> or clone the repo. Skills are symlinked to each platform's config directory automatically.</p>
       </div>
-      <div class="step">
-        <div class="step-number">2</div>
-        <h3>Use</h3>
-        <p>Ask your AI assistant to use a skill by name. For example: "Use the <code>security-review</code> skill to audit this PR."</p>
+      <div class="step-cell">
+        <div class="step-num">02</div>
+        <h3>Reference</h3>
+        <p>Tell your AI assistant to use a skill by name. Example: "Use the <code>security-review</code> skill to audit this change."</p>
       </div>
-      <div class="step">
-        <div class="step-number">3</div>
-        <h3>Stay Updated</h3>
-        <p>Run <code>npx @flitzrrr/agent-skills update</code> to pull the latest skills. New sources are discovered and added automatically every Monday.</p>
+      <div class="step-cell">
+        <div class="step-num">03</div>
+        <h3>Stay Current</h3>
+        <p>Run <code>npx @flitzrrr/agent-skills update</code> to pull latest. New sources are discovered, scanned, and integrated every Monday.</p>
       </div>
     </div>
   </section>
+</div>
 
-  <!-- Sources -->
+<!-- Sources -->
+<div class="container">
   <section class="section">
-    <div class="section-header">
-      <h2>Sources</h2>
-      <p>All skills come from established, open-source repositories. Each source is security-scanned before integration.</p>
-    </div>
-    <div class="sources-grid" id="sources"></div>
+    <p class="section-label">Provenance</p>
+    <h2 class="section-title">Industry-leading sources</h2>
+    <p class="section-desc">Every source is security-scanned and vetted before integration. Each submodule retains its original license.</p>
+    <div class="sources-list" id="sources"></div>
   </section>
+</div>
 
-  <!-- Platforms -->
+<!-- Platforms -->
+<div class="container">
   <section class="section">
-    <div class="section-header">
-      <h2>Platform Support</h2>
-      <p>Works out of the box with all major AI coding assistants. The CLI auto-detects installed platforms and sets up skills accordingly.</p>
-    </div>
-    <div class="platforms-grid">
-      <div class="platform-card"><div class="platform-name">Claude Code</div><div class="platform-method">CLAUDE.md</div></div>
-      <div class="platform-card"><div class="platform-name">Antigravity</div><div class="platform-method">~/.gemini/antigravity/skills</div></div>
-      <div class="platform-card"><div class="platform-name">Codex</div><div class="platform-method">~/.codex/skills</div></div>
-      <div class="platform-card"><div class="platform-name">OpenCode</div><div class="platform-method">~/.config/opencode/skills</div></div>
-      <div class="platform-card"><div class="platform-name">Cursor</div><div class="platform-method">.cursorrules</div></div>
-      <div class="platform-card"><div class="platform-name">Lovable</div><div class="platform-method">.lovable</div></div>
+    <p class="section-label">Compatibility</p>
+    <h2 class="section-title">Works everywhere</h2>
+    <p class="section-desc">The CLI detects installed platforms and configures skills automatically. Manual setup takes under a minute.</p>
+    <div class="platform-strip">
+      <div class="platform-cell"><strong>Claude Code</strong><span>CLAUDE.md</span></div>
+      <div class="platform-cell"><strong>Antigravity</strong><span>~/.gemini/.../skills</span></div>
+      <div class="platform-cell"><strong>Codex</strong><span>~/.codex/skills</span></div>
+      <div class="platform-cell"><strong>OpenCode</strong><span>~/.config/.../skills</span></div>
+      <div class="platform-cell"><strong>Cursor</strong><span>.cursorrules</span></div>
+      <div class="platform-cell"><strong>Lovable</strong><span>.lovable</span></div>
     </div>
   </section>
+</div>
 
-  <!-- Skill Catalog -->
-  <section class="section">
-    <div class="section-header">
-      <h2>Skill Catalog</h2>
-      <p>Browse all available skills. Each skill is a self-contained set of instructions that an AI assistant can follow to perform a specialized task.</p>
-    </div>
-    <div class="search-bar">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+<!-- Catalog -->
+<div class="container">
+  <section class="section" id="catalog">
+    <p class="section-label">Catalog</p>
+    <h2 class="section-title">Browse all skills</h2>
+    <p class="section-desc">Each skill is a self-contained SKILL.md that an AI assistant follows to perform a specialized task.</p>
+    <div class="search-wrap">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
         <path d="M11.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.82 4.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.04Z"/>
       </svg>
-      <input type="text" id="search" placeholder="Search skills by name, source, or category..." autocomplete="off">
+      <input type="text" id="search" placeholder="Filter by name or source..." autocomplete="off">
     </div>
-    <div class="search-count" id="search-count"></div>
-    <div id="catalog"></div>
+    <div class="result-count" id="rcount"></div>
+    <div id="skill-list"></div>
   </section>
+</div>
 
-  <!-- Quality Gates -->
+<!-- Quality Gates -->
+<div class="container">
   <section class="section">
-    <div class="section-header">
-      <h2>Quality Gates</h2>
-      <p>Every source is automatically scanned before integration. Sources that fail any gate are rejected.</p>
-    </div>
-    <div class="sources-grid">
-      <div class="source-card">
-        <div class="source-name">Star Threshold</div>
-        <div class="source-desc">Minimum 50 GitHub stars. Ensures the source has community validation and active usage.</div>
+    <p class="section-label">Trust</p>
+    <h2 class="section-title">Quality gates</h2>
+    <p class="section-desc">Every candidate passes six automated checks before integration. Sources that fail any gate are rejected.</p>
+    <div class="gates-grid">
+      <div class="gate">
+        <div class="gate-name">Star Threshold</div>
+        <div class="gate-threshold">min 50</div>
+        <p>Community validation. Ensures the source has real-world adoption.</p>
       </div>
-      <div class="source-card">
-        <div class="source-name">Skill Count</div>
-        <div class="source-desc">Minimum 3 SKILL.md files. Prevents single-purpose or placeholder repositories from being added.</div>
+      <div class="gate">
+        <div class="gate-name">Skill Count</div>
+        <div class="gate-threshold">min 3 SKILL.md</div>
+        <p>No placeholder repos. Must provide meaningful skill coverage.</p>
       </div>
-      <div class="source-card">
-        <div class="source-name">Content Ratio</div>
-        <div class="source-desc">Minimum 30% markdown files. Skills should be documentation-heavy, not code-heavy.</div>
+      <div class="gate">
+        <div class="gate-name">Content Ratio</div>
+        <div class="gate-threshold">min 30% markdown</div>
+        <p>Skills should be documentation, not code. High markdown ratio required.</p>
       </div>
-      <div class="source-card">
-        <div class="source-name">Security Scan</div>
-        <div class="source-desc">No obfuscated code (eval/exec), no hardcoded credentials, no excessive executables.</div>
+      <div class="gate">
+        <div class="gate-name">Code Scan</div>
+        <div class="gate-threshold">no eval/exec/subprocess</div>
+        <p>Detects obfuscated or potentially malicious code patterns.</p>
       </div>
-      <div class="source-card">
-        <div class="source-name">License Check</div>
-        <div class="source-desc">Must have a recognized open-source license. Each submodule retains its original license.</div>
+      <div class="gate">
+        <div class="gate-name">Credential Scan</div>
+        <div class="gate-threshold">no passwords or API keys</div>
+        <p>Ensures no hardcoded secrets in JSON or env files.</p>
       </div>
-      <div class="source-card">
-        <div class="source-name">Weekly Refresh</div>
-        <div class="source-desc">Discovery runs every Monday. New candidates must pass all gates before automatic integration.</div>
+      <div class="gate">
+        <div class="gate-name">License</div>
+        <div class="gate-threshold">OSS required</div>
+        <p>Must have a recognized open-source license for redistribution.</p>
       </div>
     </div>
   </section>
+</div>
 
+<div class="container">
   <footer>
-    <div class="links">
+    <div class="brand">Agent Skills Hub</div>
+    <nav>
       <a href="https://github.com/flitzrrr/agent-skills">GitHub</a>
       <a href="https://www.npmjs.com/package/@flitzrrr/agent-skills">npm</a>
       <a href="https://github.com/flitzrrr/agent-skills/discussions">Discussions</a>
-      <a href="https://github.com/flitzrrr/agent-skills/blob/main/CONTRIBUTING.md">Contributing</a>
+      <a href="https://github.com/flitzrrr/agent-skills/blob/main/CONTRIBUTING.md">Contribute</a>
       <a href="https://github.com/flitzrrr/agent-skills/blob/main/CHEATSHEET.md">Cheatsheet</a>
-    </div>
-    <p>MIT License. Each vendored source retains its own license.</p>
+    </nav>
+    <div class="copy">MIT License. Each vendored source retains its own license.</div>
   </footer>
-
 </div>
 
 <script>
-  const SOURCES = [
-    { name: "getsentry/skills", skills: 24, focus: "Security, code review, Git workflows", desc: "Battle-tested security auditing, code review, and CI automation. Used at scale by Sentry." },
-    { name: "anthropics/skills", skills: 17, focus: "Documents, design, developer tools", desc: "PDF/Word/Excel creation, frontend design, MCP server building, and Playwright testing." },
-    { name: "Bhanunamikaze/Agentic-SEO", skills: 16, focus: "Technical SEO auditing", desc: "Comprehensive SEO toolkit: audits, schema validation, Core Web Vitals, accessibility, and reports." },
-    { name: "DasDigitaleMomentum/opencode-processing-skills", skills: 9, focus: "Multi-session planning", desc: "Project planning framework with session handover, documentation generation, and work packets." },
-    { name: "anthropics/financial-services-plugins", skills: 7, focus: "Investment banking, equity research", desc: "Specialized finance skills for IB, private equity, wealth management, and equity research." },
-    { name: "vercel-labs/agent-skills", skills: 5, focus: "React/Next.js, deployment", desc: "React performance optimization (62 rules), web design guidelines (100+ rules), and Vercel deployment." },
-    { name: "callstackincubator/agent-skills", skills: 5, focus: "React Native, GitHub workflows", desc: "React Native best practices and GitHub workflow automation from the Callstack team." },
-    { name: "K-Dense-AI/claude-scientific-skills", skills: 100, focus: "Science, bioinformatics, ML", desc: "100+ scientific computing skills spanning bioinformatics, machine learning, chemistry, and data analysis." },
-    { name: "nicekurt/CursorCustomRules", skills: 17, focus: "Cursor rules collection", desc: "Curated collection of Cursor custom rules for various development workflows." },
-    { name: "trailofbits/skills", skills: 4, focus: "Security analysis, fuzzing", desc: "Advanced security analysis skills from Trail of Bits." },
-    { name: "cloudflare/agents-skills", skills: 3, focus: "Cloudflare Workers, Wrangler", desc: "Cloudflare Workers deployment and Wrangler CLI skills." },
-    { name: "supabase/agent-skills", skills: 1, focus: "Postgres best practices", desc: "PostgreSQL optimization and Supabase integration patterns." },
-    { name: "Shopify/agent-skills", skills: 3, focus: "Shopify development", desc: "Shopify app development and theme customization skills." },
-    { name: "stripe-agent-toolkit/agent-skills", skills: 3, focus: "Payment integration", desc: "Stripe payment integration and checkout flow skills." },
-    { name: "github/agent-skills", skills: 4, focus: "GitHub API, Actions", desc: "GitHub API usage, Actions workflow creation, and repository management." },
-  ];
+const SOURCES = [
+  { name: "getsentry/skills", n: 24, focus: "Security, code review, Git", desc: "Battle-tested security auditing, code review, and CI automation at scale." },
+  { name: "anthropics/skills", n: 17, focus: "Docs, design, dev tools", desc: "PDF/Word/Excel creation, frontend design, MCP servers, Playwright testing." },
+  { name: "K-Dense-AI/claude-scientific-skills", n: 100, focus: "Science, ML, bioinformatics", desc: "100+ scientific computing skills: bioinformatics, chemistry, data analysis." },
+  { name: "Bhanunamikaze/Agentic-SEO", n: 16, focus: "Technical SEO", desc: "Full audit toolkit: schema, Core Web Vitals, accessibility, reports." },
+  { name: "DasDigitaleMomentum/opencode-processing-skills", n: 9, focus: "Planning, handover", desc: "Multi-session project planning with work packets and documentation." },
+  { name: "anthropics/financial-services-plugins", n: 7, focus: "Finance, IB, equity", desc: "Investment banking, private equity, wealth management, equity research." },
+  { name: "vercel-labs/agent-skills", n: 5, focus: "React, Next.js, deploy", desc: "62 React perf rules, 100+ design guidelines, Vercel deployment." },
+  { name: "callstackincubator/agent-skills", n: 5, focus: "React Native, workflows", desc: "React Native best practices from the Callstack team." },
+  { name: "nicekurt/CursorCustomRules", n: 17, focus: "Cursor rules", desc: "Curated Cursor custom rules for development workflows." },
+  { name: "trailofbits/skills", n: 4, focus: "Security, fuzzing", desc: "Advanced security analysis from Trail of Bits." },
+  { name: "cloudflare/agents-skills", n: 3, focus: "Workers, Wrangler", desc: "Cloudflare Workers deployment and Wrangler CLI." },
+  { name: "Shopify/agent-skills", n: 3, focus: "Shopify dev", desc: "Shopify app development and theme customization." },
+  { name: "stripe-agent-toolkit/agent-skills", n: 3, focus: "Payments", desc: "Stripe integration and checkout flow skills." },
+  { name: "github/agent-skills", n: 4, focus: "GitHub API, Actions", desc: "GitHub API usage and Actions workflow creation." },
+  { name: "supabase/agent-skills", n: 1, focus: "Postgres", desc: "PostgreSQL optimization and Supabase integration." },
+];
 
-  const SKILLS_API = "https://api.github.com/repos/flitzrrr/agent-skills/contents/skills";
+const API = "https://api.github.com/repos/flitzrrr/agent-skills/contents/skills";
 
-  // Render sources
-  function renderSources() {
-    const grid = document.getElementById("sources");
-    grid.innerHTML = SOURCES.sort((a, b) => b.skills - a.skills).map(s => `
-      <div class="source-card">
-        <a href="https://github.com/${s.name}" target="_blank" rel="noopener">
-          <div class="source-name">${s.name.split('/')[1]}</div>
-          <div class="source-meta">
-            <span class="source-tag tag-skills">${s.skills} skills</span>
-            <span class="source-tag tag-focus">${s.focus}</span>
-          </div>
-          <div class="source-desc">${s.desc}</div>
-        </a>
-      </div>
-    `).join("");
-  }
+// Sources
+document.getElementById("sources").innerHTML = SOURCES
+  .sort((a, b) => b.n - a.n)
+  .map(s => `<a class="source-item" href="https://github.com/${s.name}" target="_blank" rel="noopener">
+    <div class="source-top">
+      <div class="source-name">${s.name.split('/').pop()}</div>
+      <div class="source-count">${s.n} skills</div>
+    </div>
+    <div class="source-focus">${s.focus}</div>
+    <div class="source-desc">${s.desc}</div>
+  </a>`).join("");
 
-  // Load and render skills
-  async function loadSkills() {
-    try {
-      const res = await fetch(SKILLS_API);
-      const data = await res.json();
-      const skills = data
-        .filter(f => f.type === "dir" || f.type === "symlink")
-        .map(f => f.name)
-        .sort();
+// Skills
+async function init() {
+  try {
+    const r = await fetch(API);
+    const d = await r.json();
+    const skills = d.filter(f => f.type === "dir" || f.type === "symlink").map(f => f.name).sort();
 
-      document.getElementById("stat-skills").textContent = skills.length;
+    document.getElementById("s-skills").textContent = skills.length;
+    const prefixes = new Set(skills.map(s => s.split("-")[0]));
+    document.getElementById("s-sources").textContent = prefixes.size;
 
-      const prefixes = new Set(skills.map(s => s.split("-")[0]));
-      document.getElementById("stat-sources").textContent = prefixes.size;
-
-      renderSkills(skills);
-
-      const input = document.getElementById("search");
-      input.addEventListener("input", () => {
-        const q = input.value.toLowerCase();
-        renderSkills(skills.filter(s => s.toLowerCase().includes(q)));
-      });
-    } catch {
-      document.getElementById("catalog").innerHTML =
-        '<p style="color:var(--text-muted)">Could not load skills. Visit the <a href="https://github.com/flitzrrr/agent-skills" style="color:var(--accent)">GitHub repo</a> directly.</p>';
-    }
-  }
-
-  function renderSkills(skills) {
-    document.getElementById("search-count").textContent = `${skills.length} skills`;
-
-    const groups = {};
-    skills.forEach(s => {
-      const prefix = s.split("-")[0];
-      if (!groups[prefix]) groups[prefix] = [];
-      groups[prefix].push(s);
+    render(skills);
+    document.getElementById("search").addEventListener("input", e => {
+      render(skills.filter(s => s.includes(e.target.value.toLowerCase())));
     });
-
-    const sorted = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
-
-    let html = "";
-    for (const [source, items] of sorted) {
-      html += `<div class="source-group"><h3>${source} (${items.length})</h3><div class="skill-grid">`;
-      items.forEach(s => {
-        html += `<div class="skill-card">
-          <span class="skill-name">${s}</span>
-          <span class="skill-prefix">${source}</span>
-        </div>`;
-      });
-      html += "</div></div>";
-    }
-    document.getElementById("catalog").innerHTML = html;
+  } catch {
+    document.getElementById("skill-list").innerHTML = '<p style="color:var(--text-muted)">Could not load from GitHub API.</p>';
   }
+}
 
-  renderSources();
-  loadSkills();
+function render(skills) {
+  document.getElementById("rcount").textContent = `${skills.length} skills`;
+  const g = {};
+  skills.forEach(s => { const p = s.split("-")[0]; (g[p] = g[p] || []).push(s); });
+  document.getElementById("skill-list").innerHTML = Object.entries(g)
+    .sort((a, b) => b[1].length - a[1].length)
+    .map(([k, v]) => `<div class="cat-group"><h3>${k} (${v.length})</h3><div class="cat-grid">${v.map(s => `<div class="skill-pill">${s}</div>`).join("")}</div></div>`)
+    .join("");
+}
+
+init();
 </script>
-
 </body>
 </html>
