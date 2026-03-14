@@ -13,3 +13,33 @@
 [submodule "vendor/vercel-agent-skills"]
 	path = vendor/vercel-agent-skills
 	url = git@github.com:vercel-labs/agent-skills.git
+[submodule "vendor/trailofbits-skills"]
+	path = vendor/trailofbits-skills
+	url = https://github.com/trailofbits/skills.git
+[submodule "vendor/cloudflare-skills"]
+	path = vendor/cloudflare-skills
+	url = https://github.com/cloudflare/skills.git
+[submodule "vendor/stripe-skills"]
+	path = vendor/stripe-skills
+	url = https://github.com/stripe/ai.git
+[submodule "vendor/expo-skills"]
+	path = vendor/expo-skills
+	url = https://github.com/expo/skills.git
+[submodule "vendor/google-stitch-skills"]
+	path = vendor/google-stitch-skills
+	url = https://github.com/google-labs-code/stitch-skills.git
+[submodule "vendor/hashicorp-skills"]
+	path = vendor/hashicorp-skills
+	url = https://github.com/hashicorp/agent-skills.git
+[submodule "vendor/supabase-skills"]
+	path = vendor/supabase-skills
+	url = https://github.com/supabase/agent-skills.git
+[submodule "vendor/callstack-skills"]
+	path = vendor/callstack-skills
+	url = https://github.com/callstackincubator/agent-skills.git
+[submodule "vendor/scientific-skills"]
+	path = vendor/scientific-skills
+	url = https://github.com/K-Dense-AI/claude-scientific-skills.git
+[submodule "vendor/composio-skills"]
+	path = vendor/composio-skills
+	url = https://github.com/ComposioHQ/skills.git
