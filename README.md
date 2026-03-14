@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
 [![Skills](https://img.shields.io/badge/skills-127-blue?style=flat-square)](skills/)
 [![Sources](https://img.shields.io/badge/sources-15-green?style=flat-square)](vendor/)
-[![License](https://img.shields.io/badge/license-mixed-lightgrey?style=flat-square)](#license)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Weekly Discovery](https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square)](.github/workflows/skill-discovery.yml)
 
 A curated collection of **127 agent skills** from **15 industry-leading sources**, organized for flat access and compatible with all major AI coding assistants.
@@ -141,4 +141,5 @@ Skills are namespaced by source to avoid collisions:
 
 ## License
 
-Each vendored repository retains its original license. See individual repos for details.
+MIT — applies to the CLI, workflows, and documentation in this repository.
+Each vendored submodule in `vendor/` retains its own original license.
