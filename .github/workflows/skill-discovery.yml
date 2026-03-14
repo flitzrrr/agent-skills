@@ -182,6 +182,56 @@ jobs:
           git diff --cached --quiet || git commit -m "docs: update skill catalog [$(date +%Y-%m-%d)]"
           git push origin main || true
 
+      - name: Update Wiki
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          WIKI_DIR=$(mktemp -d)
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/flitzrrr/agent-skills.wiki.git" "$WIKI_DIR"
+
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          const catalog = JSON.parse(fs.readFileSync('docs/catalog.json', 'utf8'));
+          const grouped = {};
+          catalog.skills.forEach(s => (grouped[s.source] = grouped[s.source] || []).push(s));
+          const sources = Object.entries(grouped).sort((a, b) => b[1].length - a[1].length);
+
+          let md = '# Skills Catalog\n\n';
+          md += '> Last updated: ' + catalog.generated.split('T')[0] + ' | **' + catalog.total + ' skills** across **' + sources.length + ' sources**\n\n';
+          md += 'The full searchable catalog with copy-to-clipboard is on the [GitHub Pages site](https://flitzrrr.github.io/agent-skills/#catalog).\n\n';
+          md += '## Skills by Source\n\n';
+
+          for (const [source, skills] of sources) {
+            md += '### ' + source + ' (' + skills.length + ' skills)\n\n';
+            md += '| Skill | Description |\n|-------|-------------|\n';
+            skills.forEach(s => { md += '| \`' + s.name + '\` | ' + (s.description || '--') + ' |\n'; });
+            md += '\n';
+          }
+
+          fs.writeFileSync(path.join('$WIKI_DIR', 'Skills-Catalog.md'), md);
+
+          const homePath = path.join('$WIKI_DIR', 'Home.md');
+          if (fs.existsSync(homePath)) {
+            let home = fs.readFileSync(homePath, 'utf8');
+            home = home.replace(/\b\d{2,4}\+?\s+skills\b/gi, catalog.total + '+ skills');
+            fs.writeFileSync(homePath, home);
+          }
+          "
+
+          cd "$WIKI_DIR"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Wiki is already up to date."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "docs: update skill catalog [$(date +%Y-%m-%d)]"
+            git push origin master
+            echo "Wiki updated."
+          fi
+          rm -rf "$WIKI_DIR"
+
       - name: Bump npm version
         if: steps.evaluate.outputs.accepted != '0'
         run: |
