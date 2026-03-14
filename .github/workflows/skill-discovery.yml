@@ -1,4 +1,4 @@
-name: "🔄 Weekly Skill Auto-Discovery"
+name: "Weekly Skill Auto-Discovery"
 
 on:
   schedule:
@@ -35,7 +35,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "🔍 Searching for trending agent skill repos..."
+          echo "Searching for trending agent skill repos..."
           EXISTING=$(git submodule status | awk '{print $2}' | xargs -I{} basename {} | sort)
           echo "existing=$EXISTING" >> $GITHUB_OUTPUT
 
@@ -65,19 +65,19 @@ jobs:
           while IFS= read -r repo_name; do
             [ -z "$repo_name" ] && continue
 
-            echo "📋 Evaluating: $repo_name"
+            echo "Evaluating: $repo_name"
 
             # Skip if already a submodule
             BASENAME=$(echo "$repo_name" | tr '/' '-')
             if git submodule status | grep -q "$BASENAME"; then
-              echo "  ⏭ Already exists, skipping"
+              echo "  Already exists, skipping"
               continue
             fi
 
             # Check for SKILL.md files
             SKILL_COUNT=$(gh api "search/code?q=filename:SKILL.md+repo:$repo_name" --jq '.total_count' 2>/dev/null || echo "0")
             if [ "$SKILL_COUNT" -eq 0 ]; then
-              echo "  ❌ No SKILL.md found, skipping"
+              echo "  No SKILL.md found, skipping"
               continue
             fi
 
@@ -88,7 +88,7 @@ jobs:
 
             # Security scan: check for suspicious patterns
             SCANNED=$((SCANNED + 1))
-            echo "  🔒 Security scanning..."
+            echo "  Security scanning..."
 
             # Clone to temp for scanning
             TMPDIR=$(mktemp -d)
@@ -100,21 +100,21 @@ jobs:
             # Check for executable files (suspicious in a skills repo)
             EXEC_COUNT=$(find "$TMPDIR/$BASENAME" -type f -executable ! -name "*.sh" ! -path "*/.git/*" | wc -l)
             if [ "$EXEC_COUNT" -gt 5 ]; then
-              SCAN_NOTES="⚠️ $EXEC_COUNT executable files found. "
+              SCAN_NOTES="��$EXEC_COUNT executable files found. "
             fi
 
             # Check for obfuscated code
             OBFUSCATED=$(grep -rl "eval\|exec\|__import__\|subprocess\.call\|os\.system" "$TMPDIR/$BASENAME" --include="*.py" --include="*.js" 2>/dev/null | wc -l)
             if [ "$OBFUSCATED" -gt 3 ]; then
               SCAN_PASS=false
-              SCAN_NOTES="${SCAN_NOTES}🚫 $OBFUSCATED files with suspicious code patterns. "
+              SCAN_NOTES="${SCAN_NOTES}$OBFUSCATED files with suspicious code patterns. "
             fi
 
             # Check for credential patterns
             CREDS=$(grep -rl "password\|api_key\|secret_key\|private_key" "$TMPDIR/$BASENAME" --include="*.json" --include="*.env" 2>/dev/null | wc -l)
             if [ "$CREDS" -gt 0 ]; then
               SCAN_PASS=false
-              SCAN_NOTES="${SCAN_NOTES}🚫 $CREDS files with credential patterns. "
+              SCAN_NOTES="${SCAN_NOTES}$CREDS files with credential patterns. "
             fi
 
             # Quality check: skills should be mostly markdown
@@ -128,20 +128,20 @@ jobs:
             rm -rf "$TMPDIR"
 
             if [ "$SCAN_PASS" = false ]; then
-              echo "  🚫 FAILED security scan: $SCAN_NOTES"
-              REPORT="${REPORT}\n| ❌ | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Scan failed: $SCAN_NOTES |"
+              echo "  FAILED security scan: $SCAN_NOTES"
+              REPORT="${REPORT}\n| | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Scan failed: $SCAN_NOTES |"
               continue
             fi
 
             # Quality gate: minimum stars, has skills, has license
             if [ "$STARS" -lt 10 ]; then
-              echo "  ⏭ Too few stars ($STARS), skipping"
-              REPORT="${REPORT}\n| ⏭ | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Below star threshold |"
+              echo "  Too few stars ($STARS), skipping"
+              REPORT="${REPORT}\n| | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Below star threshold |"
               continue
             fi
 
-            # All checks passed — add as submodule
-            echo "  ✅ PASSED all checks (⭐$STARS, 📄$SKILL_COUNT skills, 🔒$LICENSE, $MD_RATIO% markdown)"
+            # All checks passed �add as submodule
+            echo "  PASSED all checks ($STARS, $SKILL_COUNT skills, $LICENSE, $MD_RATIO% markdown)"
             ACCEPTED=$((ACCEPTED + 1))
 
             git submodule add "https://github.com/$repo_name.git" "vendor/$BASENAME" 2>/dev/null || true
@@ -155,7 +155,7 @@ jobs:
             done
 
             ADDED="${ADDED}${repo_name} "
-            REPORT="${REPORT}\n| ✅ | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Scan passed ($SCAN_NOTES${MD_RATIO}% markdown) |"
+            REPORT="${REPORT}\n| | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Scan passed ($SCAN_NOTES${MD_RATIO}% markdown) |"
 
           done < <(jq -r '.[].name' /tmp/candidates.json 2>/dev/null)
 
@@ -192,7 +192,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TITLE="🔄 Weekly Skill Discovery Report — $(date +%Y-%m-%d)"
+          TITLE="Weekly Skill Discovery Report �$(date +%Y-%m-%d)"
           BODY="## Skill Discovery Report
 
           **Scanned:** ${{ steps.evaluate.outputs.scanned }} candidates
@@ -201,17 +201,17 @@ jobs:
 
           ### Scan Results
 
-          | Status | Repository | ⭐ | Skills | License | Notes |
+          | Status | Repository | | Skills | License | Notes |
           |--------|-----------|-----|--------|---------|-------|
           ${{ steps.evaluate.outputs.report }}
 
           ### Security Checks Performed
-          - ✅ No obfuscated code (eval/exec/subprocess patterns)
-          - ✅ No hardcoded credentials (passwords, API keys)
-          - ✅ Executable file count within threshold
-          - ✅ Minimum star count (10+)
-          - ✅ SKILL.md files present
-          - ✅ Valid license
+          - No obfuscated code (eval/exec/subprocess patterns)
+          - No hardcoded credentials (passwords, API keys)
+          - Executable file count within threshold
+          - Minimum star count (10+)
+          - SKILL.md files present
+          - Valid license
 
           ---
           *Auto-generated by [skill-discovery.yml](https://github.com/${{ github.repository }}/blob/main/.github/workflows/skill-discovery.yml)*"

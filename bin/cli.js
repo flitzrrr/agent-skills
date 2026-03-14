@@ -38,7 +38,7 @@ function log(msg) {
 }
 
 function header(msg) {
-  console.log(`\n🧠 ${msg}\n`);
+  console.log(`\n> ${msg}\n`);
 }
 
 function cloneRepo() {
@@ -128,7 +128,7 @@ switch (command) {
       }
     }
 
-    log("\n✅ Done! See CHEATSHEET.md for which skill to use when.");
+    log("\nDone. See CHEATSHEET.md for which skill to use when.");
     log(`   ${SKILL_DIR}/CHEATSHEET.md`);
     break;
   }
@@ -136,7 +136,7 @@ switch (command) {
   case "update": {
     header("Updating Agent Skills...");
     cloneRepo();
-    log("\n✅ All skills updated to latest versions.");
+    log("\nAll skills updated to latest versions.");
     break;
   }
 

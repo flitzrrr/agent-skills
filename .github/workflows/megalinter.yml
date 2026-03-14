@@ -1,4 +1,4 @@
-name: "🔍 MegaLinter"
+name: "MegaLinter"
 
 on:
   push:
