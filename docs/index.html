@@ -3,211 +3,599 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agent Skills Hub</title>
-  <meta name="description" content="127 curated AI agent skills from 15 sources. Compatible with Claude Code, Codex, Cursor, Antigravity, and more.">
+  <title>Agent Skills Hub — Curated Skills for AI Coding Assistants</title>
+  <meta name="description" content="A curated, security-scanned collection of AI agent skills from industry-leading sources. Compatible with Claude Code, Codex, Cursor, Antigravity, OpenCode, and more.">
   <meta property="og:title" content="Agent Skills Hub">
-  <meta property="og:description" content="127 curated AI agent skills from 15 sources.">
+  <meta property="og:description" content="Curated skills for AI coding assistants.">
   <meta property="og:image" content="https://raw.githubusercontent.com/flitzrrr/agent-skills/main/.github/social-preview.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-primary: #0a0e14;
+      --bg-secondary: #0f1419;
+      --bg-card: #141a22;
+      --bg-card-hover: #1a2230;
+      --border: rgba(255,255,255,0.06);
+      --border-hover: rgba(88,166,255,0.3);
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --text-muted: #484f58;
+      --accent: #58a6ff;
+      --accent-dim: rgba(88,166,255,0.1);
+      --green: #3fb950;
+      --green-dim: rgba(63,185,80,0.1);
+      --purple: #bc8cff;
+      --purple-dim: rgba(188,140,255,0.1);
+      --orange: #f0883e;
+      --orange-dim: rgba(240,136,62,0.1);
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0d1117;
-      color: #c9d1d9;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-secondary);
       line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
-    .container { max-width: 960px; margin: 0 auto; padding: 2rem; }
 
-    header {
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ─── Hero ─── */
+    .hero {
       text-align: center;
-      padding: 4rem 0 2rem;
-      border-bottom: 1px solid #21262d;
+      padding: 6rem 0 4rem;
+      position: relative;
     }
-    header h1 { color: #f0f6fc; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-    header p { color: #8b949e; font-size: 1.1rem; }
-    .badges { margin-top: 1rem; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
-    .badges img { height: 20px; }
-
-    .install {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      text-align: center;
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 400px;
+      background: radial-gradient(ellipse, rgba(88,166,255,0.08) 0%, transparent 70%);
+      pointer-events: none;
     }
-    .install code {
-      background: #0d1117;
-      color: #79c0ff;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      font-size: 1rem;
-      display: inline-block;
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+      position: relative;
     }
-    .install p { margin-bottom: 0.75rem; color: #8b949e; }
-
-    .search-box {
-      margin: 2rem 0 1rem;
+    .hero .subtitle {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin: 0 auto 2rem;
+    }
+    .hero-badges {
       display: flex;
+      gap: 0.5rem;
       justify-content: center;
-    }
-    .search-box input {
-      width: 100%;
-      max-width: 500px;
-      padding: 0.75rem 1rem;
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      color: #c9d1d9;
-      font-size: 1rem;
-      outline: none;
-    }
-    .search-box input:focus { border-color: #58a6ff; }
-    .search-box input::placeholder { color: #484f58; }
-
-    .stats {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      margin: 2rem 0;
       flex-wrap: wrap;
+      margin-bottom: 2.5rem;
     }
-    .stat {
-      text-align: center;
-      padding: 1rem 2rem;
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      min-width: 140px;
-    }
-    .stat-value { font-size: 2rem; font-weight: 700; color: #f0f6fc; }
-    .stat-label { color: #8b949e; font-size: 0.85rem; }
+    .hero-badges img { height: 22px; }
 
-    h2 {
-      color: #f0f6fc;
-      font-size: 1.3rem;
-      margin: 2rem 0 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid #21262d;
+    .install-block {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .install-block:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
+    .install-block code {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.95rem;
+      color: var(--accent);
+    }
+    .install-block .copy-hint {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border-left: 1px solid var(--border);
+      padding-left: 0.75rem;
+    }
+
+    /* ─── Stats ─── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 3rem 0;
+    }
+    @media (max-width: 640px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    /* ─── Section ─── */
+    .section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .section-header {
+      margin-bottom: 2rem;
+    }
+    .section-header h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .section-header p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      max-width: 640px;
+    }
+
+    /* ─── Sources Grid ─── */
+    .sources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+    .source-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .source-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+    .source-card a { text-decoration: none; color: inherit; display: block; }
+    .source-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+    .source-meta {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .source-tag {
+      font-size: 0.72rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .tag-skills { background: var(--accent-dim); color: var(--accent); }
+    .tag-focus { background: var(--green-dim); color: var(--green); }
+    .source-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ─── Search & Catalog ─── */
+    .search-bar {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 0.85rem 1rem 0.85rem 2.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-bar input:focus { border-color: var(--accent); }
+    .search-bar input::placeholder { color: var(--text-muted); }
+    .search-bar svg {
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      color: var(--text-muted);
+    }
+    .search-count {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
     }
 
     .skill-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.6rem;
     }
     .skill-card {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      padding: 0.75rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       transition: border-color 0.2s;
+      cursor: default;
     }
-    .skill-card:hover { border-color: #58a6ff; }
+    .skill-card:hover { border-color: var(--border-hover); }
     .skill-name {
-      color: #58a6ff;
-      font-family: monospace;
-      font-size: 0.9rem;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.82rem;
+      color: var(--accent);
     }
-    .skill-source { color: #484f58; font-size: 0.75rem; }
+    .skill-prefix {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      padding: 0.15rem 0.4rem;
+      background: var(--bg-primary);
+      border-radius: 3px;
+    }
 
+    .source-group h3 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin: 1.5rem 0 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ─── How It Works ─── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 768px) { .steps { grid-template-columns: 1fr; } }
+    .step {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      position: relative;
+    }
+    .step-number {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-dim);
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.75rem;
+    }
+    .step h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .step p { font-size: 0.85rem; }
+    .step code {
+      font-family: 'SF Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--accent);
+      background: var(--accent-dim);
+      padding: 0.15rem 0.35rem;
+      border-radius: 3px;
+    }
+
+    /* ─── Platforms ─── */
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+    .platform-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .platform-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+    .platform-method {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ─── Footer ─── */
     footer {
       text-align: center;
       padding: 3rem 0 2rem;
-      color: #484f58;
-      font-size: 0.85rem;
-      border-top: 1px solid #21262d;
-      margin-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
     }
-    footer a { color: #58a6ff; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--accent); }
+    footer .links { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 0.75rem; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Agent Skills Hub</h1>
-      <p>Curated AI agent skills. Compatible with all major coding assistants.</p>
-      <div class="badges">
-        <img src="https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837" alt="npm version">
-        <img src="https://img.shields.io/npm/dm/@flitzrrr/agent-skills?style=flat-square" alt="npm downloads">
-        <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license">
-      </div>
-    </header>
 
-    <div class="install">
-      <p>Quick install</p>
+<div class="container">
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Agent Skills Hub</h1>
+    <p class="subtitle">
+      A curated, security-scanned collection of skills for AI coding assistants.
+      Updated weekly. Open source.
+    </p>
+    <div class="hero-badges">
+      <img src="https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837" alt="npm">
+      <img src="https://img.shields.io/npm/dm/@flitzrrr/agent-skills?style=flat-square" alt="downloads">
+      <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT">
+      <img src="https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square" alt="weekly">
+    </div>
+    <div class="install-block" onclick="navigator.clipboard.writeText('npx @flitzrrr/agent-skills install')">
       <code>npx @flitzrrr/agent-skills install</code>
+      <span class="copy-hint">click to copy</span>
     </div>
+  </section>
 
-    <div class="stats" id="stats"></div>
-
-    <div class="search-box">
-      <input type="text" id="search" placeholder="Search skills..." autocomplete="off">
-    </div>
-
-    <div id="catalog"></div>
-
-    <footer>
-      <a href="https://github.com/flitzrrr/agent-skills">GitHub</a> &middot;
-      <a href="https://www.npmjs.com/package/@flitzrrr/agent-skills">npm</a> &middot;
-      <a href="https://github.com/flitzrrr/agent-skills/discussions">Discussions</a>
-    </footer>
+  <!-- Stats (populated dynamically) -->
+  <div class="stats-row" id="stats">
+    <div class="stat-card"><div class="stat-value" id="stat-skills">--</div><div class="stat-label">Skills</div></div>
+    <div class="stat-card"><div class="stat-value" id="stat-sources">--</div><div class="stat-label">Sources</div></div>
+    <div class="stat-card"><div class="stat-value">6</div><div class="stat-label">Platforms</div></div>
+    <div class="stat-card"><div class="stat-value">Weekly</div><div class="stat-label">Auto-Discovery</div></div>
   </div>
 
-  <script>
-    const SKILLS_API = "https://api.github.com/repos/flitzrrr/agent-skills/contents/skills";
+  <!-- How It Works -->
+  <section class="section">
+    <div class="section-header">
+      <h2>How It Works</h2>
+      <p>Skills are markdown files (SKILL.md) that teach AI assistants specialized capabilities. Drop them into your project and the assistant picks them up automatically.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Install</h3>
+        <p>Run <code>npx @flitzrrr/agent-skills install</code> or clone the repo. Skills are symlinked to each platform's config directory.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Use</h3>
+        <p>Ask your AI assistant to use a skill by name. For example: "Use the <code>security-review</code> skill to audit this PR."</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Stay Updated</h3>
+        <p>Run <code>npx @flitzrrr/agent-skills update</code> to pull the latest skills. New sources are discovered and added automatically every Monday.</p>
+      </div>
+    </div>
+  </section>
 
-    async function loadSkills() {
-      try {
-        const res = await fetch(SKILLS_API);
-        const data = await res.json();
-        const skills = data
-          .filter(f => f.type === "dir" || f.type === "symlink")
-          .map(f => f.name)
-          .sort();
+  <!-- Sources -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Sources</h2>
+      <p>All skills come from established, open-source repositories. Each source is security-scanned before integration.</p>
+    </div>
+    <div class="sources-grid" id="sources"></div>
+  </section>
 
-        // Stats
-        const sources = new Set(skills.map(s => s.split("-")[0]));
-        document.getElementById("stats").innerHTML = `
-          <div class="stat"><div class="stat-value">${skills.length}</div><div class="stat-label">Skills</div></div>
-          <div class="stat"><div class="stat-value">${sources.size}</div><div class="stat-label">Sources</div></div>
-          <div class="stat"><div class="stat-value">6</div><div class="stat-label">Platforms</div></div>
-        `;
+  <!-- Platforms -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Platform Support</h2>
+      <p>Works out of the box with all major AI coding assistants. The CLI auto-detects installed platforms and sets up skills accordingly.</p>
+    </div>
+    <div class="platforms-grid">
+      <div class="platform-card"><div class="platform-name">Claude Code</div><div class="platform-method">CLAUDE.md</div></div>
+      <div class="platform-card"><div class="platform-name">Antigravity</div><div class="platform-method">~/.gemini/antigravity/skills</div></div>
+      <div class="platform-card"><div class="platform-name">Codex</div><div class="platform-method">~/.codex/skills</div></div>
+      <div class="platform-card"><div class="platform-name">OpenCode</div><div class="platform-method">~/.config/opencode/skills</div></div>
+      <div class="platform-card"><div class="platform-name">Cursor</div><div class="platform-method">.cursorrules</div></div>
+      <div class="platform-card"><div class="platform-name">Lovable</div><div class="platform-method">.lovable</div></div>
+    </div>
+  </section>
 
-        // Render
-        renderSkills(skills);
+  <!-- Skill Catalog -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Skill Catalog</h2>
+      <p>Browse all available skills. Each skill is a self-contained set of instructions that an AI assistant can follow to perform a specialized task.</p>
+    </div>
+    <div class="search-bar">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M11.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.82 4.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.04Z"/>
+      </svg>
+      <input type="text" id="search" placeholder="Search skills by name, source, or category..." autocomplete="off">
+    </div>
+    <div class="search-count" id="search-count"></div>
+    <div id="catalog"></div>
+  </section>
 
-        // Search
-        document.getElementById("search").addEventListener("input", (e) => {
-          const q = e.target.value.toLowerCase();
-          renderSkills(skills.filter(s => s.includes(q)));
-        });
-      } catch {
-        document.getElementById("catalog").innerHTML = "<p>Failed to load skills. Check the <a href='https://github.com/flitzrrr/agent-skills'>GitHub repo</a> directly.</p>";
-      }
-    }
+  <!-- Quality Gates -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Quality Gates</h2>
+      <p>Every source is automatically scanned before integration. Sources that fail any gate are rejected.</p>
+    </div>
+    <div class="sources-grid">
+      <div class="source-card">
+        <div class="source-name">Star Threshold</div>
+        <div class="source-desc">Minimum 50 GitHub stars. Ensures the source has community validation and active usage.</div>
+      </div>
+      <div class="source-card">
+        <div class="source-name">Skill Count</div>
+        <div class="source-desc">Minimum 3 SKILL.md files. Prevents single-purpose or placeholder repositories from being added.</div>
+      </div>
+      <div class="source-card">
+        <div class="source-name">Content Ratio</div>
+        <div class="source-desc">Minimum 30% markdown files. Skills should be documentation-heavy, not code-heavy.</div>
+      </div>
+      <div class="source-card">
+        <div class="source-name">Security Scan</div>
+        <div class="source-desc">No obfuscated code (eval/exec), no hardcoded credentials, no excessive executables.</div>
+      </div>
+      <div class="source-card">
+        <div class="source-name">License Check</div>
+        <div class="source-desc">Must have a recognized open-source license. Each submodule retains its original license.</div>
+      </div>
+      <div class="source-card">
+        <div class="source-name">Weekly Refresh</div>
+        <div class="source-desc">Discovery runs every Monday. New candidates must pass all gates before automatic integration.</div>
+      </div>
+    </div>
+  </section>
 
-    function renderSkills(skills) {
-      const groups = {};
-      skills.forEach(s => {
-        const prefix = s.split("-")[0];
-        if (!groups[prefix]) groups[prefix] = [];
-        groups[prefix].push(s);
+  <footer>
+    <div class="links">
+      <a href="https://github.com/flitzrrr/agent-skills">GitHub</a>
+      <a href="https://www.npmjs.com/package/@flitzrrr/agent-skills">npm</a>
+      <a href="https://github.com/flitzrrr/agent-skills/discussions">Discussions</a>
+      <a href="https://github.com/flitzrrr/agent-skills/blob/main/CONTRIBUTING.md">Contributing</a>
+      <a href="https://github.com/flitzrrr/agent-skills/blob/main/CHEATSHEET.md">Cheatsheet</a>
+    </div>
+    <p>MIT License. Each vendored source retains its own license.</p>
+  </footer>
+
+</div>
+
+<script>
+  const SOURCES = [
+    { name: "getsentry/skills", skills: 24, focus: "Security, code review, Git workflows", desc: "Battle-tested security auditing, code review, and CI automation. Used at scale by Sentry." },
+    { name: "anthropics/skills", skills: 17, focus: "Documents, design, developer tools", desc: "PDF/Word/Excel creation, frontend design, MCP server building, and Playwright testing." },
+    { name: "Bhanunamikaze/Agentic-SEO", skills: 16, focus: "Technical SEO auditing", desc: "Comprehensive SEO toolkit: audits, schema validation, Core Web Vitals, accessibility, and reports." },
+    { name: "DasDigitaleMomentum/opencode-processing-skills", skills: 9, focus: "Multi-session planning", desc: "Project planning framework with session handover, documentation generation, and work packets." },
+    { name: "anthropics/financial-services-plugins", skills: 7, focus: "Investment banking, equity research", desc: "Specialized finance skills for IB, private equity, wealth management, and equity research." },
+    { name: "vercel-labs/agent-skills", skills: 5, focus: "React/Next.js, deployment", desc: "React performance optimization (62 rules), web design guidelines (100+ rules), and Vercel deployment." },
+    { name: "callstackincubator/agent-skills", skills: 5, focus: "React Native, GitHub workflows", desc: "React Native best practices and GitHub workflow automation from the Callstack team." },
+    { name: "K-Dense-AI/claude-scientific-skills", skills: 100, focus: "Science, bioinformatics, ML", desc: "100+ scientific computing skills spanning bioinformatics, machine learning, chemistry, and data analysis." },
+    { name: "nicekurt/CursorCustomRules", skills: 17, focus: "Cursor rules collection", desc: "Curated collection of Cursor custom rules for various development workflows." },
+    { name: "trailofbits/skills", skills: 4, focus: "Security analysis, fuzzing", desc: "Advanced security analysis skills from Trail of Bits." },
+    { name: "cloudflare/agents-skills", skills: 3, focus: "Cloudflare Workers, Wrangler", desc: "Cloudflare Workers deployment and Wrangler CLI skills." },
+    { name: "supabase/agent-skills", skills: 1, focus: "Postgres best practices", desc: "PostgreSQL optimization and Supabase integration patterns." },
+    { name: "Shopify/agent-skills", skills: 3, focus: "Shopify development", desc: "Shopify app development and theme customization skills." },
+    { name: "stripe-agent-toolkit/agent-skills", skills: 3, focus: "Payment integration", desc: "Stripe payment integration and checkout flow skills." },
+    { name: "github/agent-skills", skills: 4, focus: "GitHub API, Actions", desc: "GitHub API usage, Actions workflow creation, and repository management." },
+  ];
+
+  const SKILLS_API = "https://api.github.com/repos/flitzrrr/agent-skills/contents/skills";
+
+  // Render sources
+  function renderSources() {
+    const grid = document.getElementById("sources");
+    grid.innerHTML = SOURCES.sort((a, b) => b.skills - a.skills).map(s => `
+      <div class="source-card">
+        <a href="https://github.com/${s.name}" target="_blank" rel="noopener">
+          <div class="source-name">${s.name.split('/')[1]}</div>
+          <div class="source-meta">
+            <span class="source-tag tag-skills">${s.skills} skills</span>
+            <span class="source-tag tag-focus">${s.focus}</span>
+          </div>
+          <div class="source-desc">${s.desc}</div>
+        </a>
+      </div>
+    `).join("");
+  }
+
+  // Load and render skills
+  async function loadSkills() {
+    try {
+      const res = await fetch(SKILLS_API);
+      const data = await res.json();
+      const skills = data
+        .filter(f => f.type === "dir" || f.type === "symlink")
+        .map(f => f.name)
+        .sort();
+
+      document.getElementById("stat-skills").textContent = skills.length;
+
+      const prefixes = new Set(skills.map(s => s.split("-")[0]));
+      document.getElementById("stat-sources").textContent = prefixes.size;
+
+      renderSkills(skills);
+
+      const input = document.getElementById("search");
+      input.addEventListener("input", () => {
+        const q = input.value.toLowerCase();
+        renderSkills(skills.filter(s => s.toLowerCase().includes(q)));
       });
-
-      let html = "";
-      for (const [source, items] of Object.entries(groups).sort()) {
-        html += `<h2>${source} (${items.length})</h2><div class="skill-grid">`;
-        items.forEach(s => {
-          html += `<div class="skill-card"><span class="skill-name">${s}</span></div>`;
-        });
-        html += "</div>";
-      }
-      document.getElementById("catalog").innerHTML = html;
+    } catch {
+      document.getElementById("catalog").innerHTML =
+        '<p style="color:var(--text-muted)">Could not load skills. Visit the <a href="https://github.com/flitzrrr/agent-skills" style="color:var(--accent)">GitHub repo</a> directly.</p>';
     }
+  }
 
-    loadSkills();
-  </script>
+  function renderSkills(skills) {
+    document.getElementById("search-count").textContent = `${skills.length} skills`;
+
+    const groups = {};
+    skills.forEach(s => {
+      const prefix = s.split("-")[0];
+      if (!groups[prefix]) groups[prefix] = [];
+      groups[prefix].push(s);
+    });
+
+    const sorted = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
+
+    let html = "";
+    for (const [source, items] of sorted) {
+      html += `<div class="source-group"><h3>${source} (${items.length})</h3><div class="skill-grid">`;
+      items.forEach(s => {
+        html += `<div class="skill-card">
+          <span class="skill-name">${s}</span>
+          <span class="skill-prefix">${source}</span>
+        </div>`;
+      });
+      html += "</div></div>";
+    }
+    document.getElementById("catalog").innerHTML = html;
+  }
+
+  renderSources();
+  loadSkills();
+</script>
+
 </body>
 </html>
