@@ -1,0 +1,37 @@
+{
+  "name": "@flitzrrr/agent-skills",
+  "version": "1.0.0",
+  "description": "121 AI agent skills from 15 industry-leading sources — multiplatform-ready for Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and more.",
+  "bin": {
+    "agent-skills": "./bin/cli.js"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "skills",
+    "claude",
+    "codex",
+    "cursor",
+    "antigravity",
+    "opencode",
+    "lovable",
+    "SKILL.md",
+    "AGENTS.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flitzrrr/agent-skills.git"
+  },
+  "author": "flitzrrr",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "skills/",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "CHEATSHEET.md",
+    ".cursorrules",
+    ".lovable",
+    "README.md"
+  ]
+}
