@@ -158,7 +158,6 @@ jobs:
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Sync documentation
-        if: steps.evaluate.outputs.accepted != '0'
         run: node bin/sync-docs.js
 
       - name: Commit new sources
@@ -178,8 +177,8 @@ jobs:
           node bin/build-catalog.js
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/catalog.json
-          git diff --cached --quiet || git commit -m "docs: update skill catalog [$(date +%Y-%m-%d)]"
+          git add docs/catalog.json README.md AGENTS.md CLAUDE.md .cursorrules 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "docs: update skill catalog and docs [$(date +%Y-%m-%d)]"
           git push origin main || true
 
       - name: Update Wiki
