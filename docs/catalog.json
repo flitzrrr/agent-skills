@@ -1,0 +1,641 @@
+{
+  "generated": "2026-03-14T20:37:30.765Z",
+  "total": 127,
+  "skills": [
+    {
+      "name": "agents-md",
+      "source": "agents",
+      "description": "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep..."
+    },
+    {
+      "name": "anthropic-algorithmic-art",
+      "source": "anthropic",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration."
+    },
+    {
+      "name": "anthropic-brand-guidelines",
+      "source": "anthropic",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel."
+    },
+    {
+      "name": "anthropic-canvas-design",
+      "source": "anthropic",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy."
+    },
+    {
+      "name": "anthropic-claude-api",
+      "source": "anthropic",
+      "description": "\"Build apps with the Claude API or Anthropic SDK."
+    },
+    {
+      "name": "anthropic-doc-coauthoring",
+      "source": "anthropic",
+      "description": "Guide users through a structured workflow for co-authoring documentation."
+    },
+    {
+      "name": "anthropic-docx",
+      "source": "anthropic",
+      "description": "\"Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files)."
+    },
+    {
+      "name": "anthropic-frontend-design",
+      "source": "anthropic",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality."
+    },
+    {
+      "name": "anthropic-internal-comms",
+      "source": "anthropic",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use."
+    },
+    {
+      "name": "anthropic-mcp-builder",
+      "source": "anthropic",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools."
+    },
+    {
+      "name": "anthropic-pdf",
+      "source": "anthropic",
+      "description": "Use this skill whenever the user wants to do anything with PDF files."
+    },
+    {
+      "name": "anthropic-pptx",
+      "source": "anthropic",
+      "description": "\"Use this skill any time a .pptx file is involved in any way — as input, output, or both."
+    },
+    {
+      "name": "anthropic-skill-creator",
+      "source": "anthropic",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance."
+    },
+    {
+      "name": "anthropic-slack-gif-creator",
+      "source": "anthropic",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack."
+    },
+    {
+      "name": "anthropic-theme-factory",
+      "source": "anthropic",
+      "description": "Toolkit for styling artifacts with a theme."
+    },
+    {
+      "name": "anthropic-web-artifacts-builder",
+      "source": "anthropic",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn..."
+    },
+    {
+      "name": "anthropic-webapp-testing",
+      "source": "anthropic",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright."
+    },
+    {
+      "name": "anthropic-xlsx",
+      "source": "anthropic",
+      "description": "\"Use this skill any time a spreadsheet file is the primary input or output."
+    },
+    {
+      "name": "archive-legacy-docs",
+      "source": "archive",
+      "description": "Normalize legacy repositories by moving scattered documentation into docs-legacy/ (git-aware) and generating a docs-legacy/summary.md before genera..."
+    },
+    {
+      "name": "author-and-verify-implementation-plan",
+      "source": "author",
+      "description": "Author and verify per-phase implementation plans by cross-checking the gated phase intent against the current source code and existing docs invento..."
+    },
+    {
+      "name": "blog-writing-guide",
+      "source": "blog",
+      "description": "Write, review, and improve blog posts for the Sentry engineering blog following Sentry's specific writing standards, voice, and quality bar."
+    },
+    {
+      "name": "brand-guidelines",
+      "source": "brand",
+      "description": "Write copy following Sentry brand guidelines."
+    },
+    {
+      "name": "callstack-github",
+      "source": "callstack",
+      "description": "GitHub patterns using gh CLI for pull requests, stacked PRs, code review, branching strategies, and repository automation."
+    },
+    {
+      "name": "callstack-github-actions",
+      "source": "callstack",
+      "description": "GitHub Actions workflow patterns for React Native iOS simulator and Android emulator cloud builds with downloadable artifacts."
+    },
+    {
+      "name": "callstack-react-native-best-practices",
+      "source": "callstack",
+      "description": "Provides React Native performance optimization guidelines for FPS, TTI, bundle size, memory leaks, re-renders, and animations."
+    },
+    {
+      "name": "callstack-react-native-brownfield-migration",
+      "source": "callstack",
+      "description": "Provides an incremental adoption strategy to migrate native iOS or Android apps to React Native or Expo using @callstack/react-native-brownfield fo..."
+    },
+    {
+      "name": "callstack-upgrading-react-native",
+      "source": "callstack",
+      "description": "Upgrades React Native apps to newer versions by applying rn-diff-purge template diffs, updating package.json dependencies, migrating native iOS and..."
+    },
+    {
+      "name": "claude-settings-audit",
+      "source": "claude",
+      "description": "Analyze a repository to generate recommended Claude Code settings.json permissions."
+    },
+    {
+      "name": "cloudflare-agents-sdk",
+      "source": "cloudflare",
+      "description": "Build AI agents on Cloudflare Workers using the Agents SDK."
+    },
+    {
+      "name": "cloudflare-building-ai-agent-on-cloudflare",
+      "source": "cloudflare",
+      "description": "|"
+    },
+    {
+      "name": "cloudflare-building-mcp-server-on-cloudflare",
+      "source": "cloudflare",
+      "description": "|"
+    },
+    {
+      "name": "cloudflare-cloudflare",
+      "source": "cloudflare",
+      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, ..."
+    },
+    {
+      "name": "cloudflare-durable-objects",
+      "source": "cloudflare",
+      "description": "Create and review Cloudflare Durable Objects."
+    },
+    {
+      "name": "cloudflare-sandbox-sdk",
+      "source": "cloudflare",
+      "description": "Build sandboxed applications for secure code execution."
+    },
+    {
+      "name": "cloudflare-web-perf",
+      "source": "cloudflare",
+      "description": "Analyzes web performance using Chrome DevTools MCP."
+    },
+    {
+      "name": "cloudflare-workers-best-practices",
+      "source": "cloudflare",
+      "description": "Reviews and authors Cloudflare Workers code against production best practices."
+    },
+    {
+      "name": "cloudflare-wrangler",
+      "source": "cloudflare",
+      "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflow..."
+    },
+    {
+      "name": "code-review",
+      "source": "code",
+      "description": "Perform code reviews following Sentry engineering practices."
+    },
+    {
+      "name": "code-simplifier",
+      "source": "code",
+      "description": "Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality."
+    },
+    {
+      "name": "commit",
+      "source": "commit",
+      "description": "ALWAYS use this skill when committing code changes — never commit directly without it."
+    },
+    {
+      "name": "create-branch",
+      "source": "create",
+      "description": "Create a git branch following Sentry naming conventions."
+    },
+    {
+      "name": "create-plan",
+      "source": "create",
+      "description": "Create a structured plan (plan.md, phases/, todo.md) for a feature or change."
+    },
+    {
+      "name": "create-pr",
+      "source": "create",
+      "description": "Alias for sentry-skills:pr-writer."
+    },
+    {
+      "name": "django-access-review",
+      "source": "django",
+      "description": "'Django access control and IDOR security review."
+    },
+    {
+      "name": "django-perf-review",
+      "source": "django",
+      "description": "Django performance code review."
+    },
+    {
+      "name": "doc-coauthoring",
+      "source": "doc",
+      "description": "Guide users through a structured workflow for co-authoring documentation."
+    },
+    {
+      "name": "execute-work-packet",
+      "source": "execute",
+      "description": "Execute a significant implementation unit (phase or major slice) using a gated, stateful subagent loop (steps -> gate -> execute -> digest) without..."
+    },
+    {
+      "name": "expo",
+      "source": "expo",
+      "description": null
+    },
+    {
+      "name": "finance-equity-research",
+      "source": "finance",
+      "description": null
+    },
+    {
+      "name": "finance-financial-analysis",
+      "source": "finance",
+      "description": null
+    },
+    {
+      "name": "finance-investment-banking",
+      "source": "finance",
+      "description": null
+    },
+    {
+      "name": "finance-lseg",
+      "source": "finance",
+      "description": null
+    },
+    {
+      "name": "finance-private-equity",
+      "source": "finance",
+      "description": null
+    },
+    {
+      "name": "finance-spglobal",
+      "source": "finance",
+      "description": null
+    },
+    {
+      "name": "finance-wealth-management",
+      "source": "finance",
+      "description": null
+    },
+    {
+      "name": "find-bugs",
+      "source": "find",
+      "description": "Find bugs, security vulnerabilities, and code quality issues in local branch changes."
+    },
+    {
+      "name": "generate-docs",
+      "source": "generate",
+      "description": "Generate project documentation from an existing codebase."
+    },
+    {
+      "name": "generate-handover",
+      "source": "generate",
+      "description": "Generate a session handover document that captures progress, decisions, and context for seamless session continuity."
+    },
+    {
+      "name": "gh-review-requests",
+      "source": "gh",
+      "description": "Fetch unread GitHub notifications for open PRs where review is requested from a specified team or opened by a team member."
+    },
+    {
+      "name": "gha-security-review",
+      "source": "gha",
+      "description": "'GitHub Actions security review for workflow exploitation vulnerabilities."
+    },
+    {
+      "name": "iterate-pr",
+      "source": "iterate",
+      "description": "Iterate on a PR until CI passes."
+    },
+    {
+      "name": "pr-writer",
+      "source": "pr",
+      "description": "ALWAYS use this skill when creating or updating pull requests — never create or edit a PR directly without it."
+    },
+    {
+      "name": "presentation-creator",
+      "source": "presentation",
+      "description": "Create data-driven presentation slides using React, Vite, and Recharts with Sentry branding."
+    },
+    {
+      "name": "resume-plan",
+      "source": "resume",
+      "description": "Bootstrap a new session to continue working on an existing plan."
+    },
+    {
+      "name": "scientific",
+      "source": "scientific",
+      "description": null
+    },
+    {
+      "name": "security-review",
+      "source": "security",
+      "description": "Security code review for vulnerabilities."
+    },
+    {
+      "name": "seo",
+      "source": "seo",
+      "description": ">"
+    },
+    {
+      "name": "skill-creator",
+      "source": "skill",
+      "description": "Alias for sentry-skills:skill-writer."
+    },
+    {
+      "name": "skill-scanner",
+      "source": "skill",
+      "description": "Scan agent skills for security issues."
+    },
+    {
+      "name": "skill-writer",
+      "source": "skill",
+      "description": "Create, synthesize, and iteratively improve agent skills following the Agent Skills specification."
+    },
+    {
+      "name": "sred-project-organizer",
+      "source": "sred",
+      "description": "Take a list of projects and their related documentation, and organize them into the SRED format for submission."
+    },
+    {
+      "name": "sred-work-summary",
+      "source": "sred",
+      "description": "Go back through the previous year of work and create a Notion doc that groups relevant links into projects that can then be documented as SRED proj..."
+    },
+    {
+      "name": "stitch-design-md",
+      "source": "stitch",
+      "description": "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files"
+    },
+    {
+      "name": "stitch-enhance-prompt",
+      "source": "stitch",
+      "description": "Transforms vague UI ideas into polished, Stitch-optimized prompts."
+    },
+    {
+      "name": "stitch-react-components",
+      "source": "stitch",
+      "description": "Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation."
+    },
+    {
+      "name": "stitch-remotion",
+      "source": "stitch",
+      "description": "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays"
+    },
+    {
+      "name": "stitch-shadcn-ui",
+      "source": "stitch",
+      "description": "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, an..."
+    },
+    {
+      "name": "stitch-stitch-design",
+      "source": "stitch",
+      "description": "Unified entry point for Stitch design work."
+    },
+    {
+      "name": "stitch-stitch-loop",
+      "source": "stitch",
+      "description": "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern"
+    },
+    {
+      "name": "stripe-stripe-best-practices",
+      "source": "stripe",
+      "description": "Guides Stripe integration decisions — API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properti..."
+    },
+    {
+      "name": "stripe-upgrade-stripe",
+      "source": "stripe",
+      "description": "Guide for upgrading Stripe API versions and SDKs"
+    },
+    {
+      "name": "supabase-postgres",
+      "source": "supabase",
+      "description": "Postgres performance optimization and best practices from Supabase."
+    },
+    {
+      "name": "terraform-code-generation",
+      "source": "terraform",
+      "description": null
+    },
+    {
+      "name": "terraform-module-generation",
+      "source": "terraform",
+      "description": null
+    },
+    {
+      "name": "terraform-provider-development",
+      "source": "terraform",
+      "description": null
+    },
+    {
+      "name": "tob-agentic-actions-auditor",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-ask-questions-if-underspecified",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-audit-context-building",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-building-secure-contracts",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-burpsuite-project-parser",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-claude-in-chrome-troubleshooting",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-constant-time-analysis",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-culture-index",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-debug-buttercup",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-devcontainer-setup",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-differential-review",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-dwarf-expert",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-entry-point-analyzer",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-firebase-apk-scanner",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-fp-check",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-gh-cli",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-git-cleanup",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-insecure-defaults",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-let-fate-decide",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-modern-python",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-property-based-testing",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-seatbelt-sandboxer",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-second-opinion",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-semgrep-rule-creator",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-semgrep-rule-variant-creator",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-sharp-edges",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-skill-improver",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-spec-to-code-compliance",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-static-analysis",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-supply-chain-risk-auditor",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-testing-handbook-skills",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-variant-analysis",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-workflow-skill-design",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-yara-authoring",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "tob-zeroize-audit",
+      "source": "tob",
+      "description": null
+    },
+    {
+      "name": "update-docs",
+      "source": "update",
+      "description": "Update existing project documentation after code changes."
+    },
+    {
+      "name": "update-plan",
+      "source": "update",
+      "description": "Update an existing plan's status, todo list, and phase progress."
+    },
+    {
+      "name": "vercel-composition-patterns",
+      "source": "vercel",
+      "description": "React composition patterns that scale."
+    },
+    {
+      "name": "vercel-deploy-to-vercel",
+      "source": "vercel",
+      "description": "Deploy applications and websites to Vercel."
+    },
+    {
+      "name": "vercel-react-best-practices",
+      "source": "vercel",
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering."
+    },
+    {
+      "name": "vercel-react-native-skills",
+      "source": "vercel",
+      "description": "React Native and Expo best practices for building performant mobile apps."
+    },
+    {
+      "name": "vercel-web-design-guidelines",
+      "source": "vercel",
+      "description": "Review UI code for Web Interface Guidelines compliance."
+    }
+  ]
+}

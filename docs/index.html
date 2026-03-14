@@ -442,6 +442,13 @@
       border-color: var(--border-accent);
       background: var(--surface);
     }
+    .skill-desc {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+      white-space: normal;
+    }
 
     /* ─── Gates ─── */
     .gates-grid {
@@ -659,24 +666,25 @@
 
 <script>
 const SOURCES = [
+  { name: "trailofbits/skills", n: 35, focus: "Security, fuzzing, analysis", desc: "Advanced security analysis, property-based testing, and fuzzing from Trail of Bits." },
   { name: "getsentry/skills", n: 24, focus: "Security, code review, Git", desc: "Battle-tested security auditing, code review, and CI automation at scale." },
   { name: "anthropics/skills", n: 17, focus: "Docs, design, dev tools", desc: "PDF/Word/Excel creation, frontend design, MCP servers, Playwright testing." },
-  { name: "K-Dense-AI/claude-scientific-skills", n: 100, focus: "Science, ML, bioinformatics", desc: "100+ scientific computing skills: bioinformatics, chemistry, data analysis." },
-  { name: "Bhanunamikaze/Agentic-SEO", n: 16, focus: "Technical SEO", desc: "Full audit toolkit: schema, Core Web Vitals, accessibility, reports." },
   { name: "DasDigitaleMomentum/opencode-processing-skills", n: 9, focus: "Planning, handover", desc: "Multi-session project planning with work packets and documentation." },
+  { name: "cloudflare/skills", n: 9, focus: "Workers, Wrangler", desc: "Cloudflare Workers deployment, Wrangler CLI, and edge computing." },
   { name: "anthropics/financial-services-plugins", n: 7, focus: "Finance, IB, equity", desc: "Investment banking, private equity, wealth management, equity research." },
+  { name: "google-labs-code/stitch-skills", n: 7, focus: "Google Cloud, AI", desc: "Google Cloud integrations and Stitch AI engineering skills." },
   { name: "vercel-labs/agent-skills", n: 5, focus: "React, Next.js, deploy", desc: "62 React perf rules, 100+ design guidelines, Vercel deployment." },
   { name: "callstackincubator/agent-skills", n: 5, focus: "React Native, workflows", desc: "React Native best practices from the Callstack team." },
-  { name: "nicekurt/CursorCustomRules", n: 17, focus: "Cursor rules", desc: "Curated Cursor custom rules for development workflows." },
-  { name: "trailofbits/skills", n: 4, focus: "Security, fuzzing", desc: "Advanced security analysis from Trail of Bits." },
-  { name: "cloudflare/agents-skills", n: 3, focus: "Workers, Wrangler", desc: "Cloudflare Workers deployment and Wrangler CLI." },
-  { name: "Shopify/agent-skills", n: 3, focus: "Shopify dev", desc: "Shopify app development and theme customization." },
-  { name: "stripe-agent-toolkit/agent-skills", n: 3, focus: "Payments", desc: "Stripe integration and checkout flow skills." },
-  { name: "github/agent-skills", n: 4, focus: "GitHub API, Actions", desc: "GitHub API usage and Actions workflow creation." },
+  { name: "hashicorp/agent-skills", n: 3, focus: "Terraform, Vault", desc: "HashiCorp infrastructure-as-code and secrets management skills." },
+  { name: "stripe/ai", n: 2, focus: "Payments, integration", desc: "Stripe payment integration and checkout flow skills." },
+  { name: "K-Dense-AI/claude-scientific-skills", n: 1, focus: "Science, ML, bioinformatics", desc: "Scientific computing skills: bioinformatics, chemistry, data analysis." },
+  { name: "Bhanunamikaze/Agentic-SEO-Skill", n: 1, focus: "Technical SEO", desc: "Full audit toolkit: schema, Core Web Vitals, accessibility, reports." },
+  { name: "expo/skills", n: 1, focus: "Expo, React Native", desc: "Expo SDK and React Native mobile development skills." },
   { name: "supabase/agent-skills", n: 1, focus: "Postgres", desc: "PostgreSQL optimization and Supabase integration." },
 ];
 
-const API = "https://api.github.com/repos/flitzrrr/agent-skills/contents/skills";
+const CATALOG_URL = "catalog.json";
+const API_FALLBACK = "https://api.github.com/repos/flitzrrr/agent-skills/contents/skills";
 
 // Sources
 document.getElementById("sources").innerHTML = SOURCES
@@ -690,33 +698,60 @@ document.getElementById("sources").innerHTML = SOURCES
     <div class="source-desc">${s.desc}</div>
   </a>`).join("");
 
-// Skills
+// Skills — try catalog.json first, fall back to GitHub API
+let catalogData = null;
+
 async function init() {
+  // Try loading the pre-built catalog with descriptions
   try {
-    const r = await fetch(API);
+    const cr = await fetch(CATALOG_URL);
+    if (cr.ok) {
+      catalogData = await cr.json();
+      const skills = catalogData.skills;
+
+      document.getElementById("s-skills").textContent = catalogData.total;
+      const prefixes = new Set(skills.map(s => s.source));
+      document.getElementById("s-sources").textContent = prefixes.size;
+
+      render(skills);
+      document.getElementById("search").addEventListener("input", e => {
+        const q = e.target.value.toLowerCase();
+        render(skills.filter(s => s.name.includes(q) || (s.description && s.description.toLowerCase().includes(q))));
+      });
+      return;
+    }
+  } catch {}
+
+  // Fallback: GitHub API (no descriptions)
+  try {
+    const r = await fetch(API_FALLBACK);
     const d = await r.json();
-    const skills = d.filter(f => f.type === "dir" || f.type === "symlink").map(f => f.name).sort();
+    const skills = d.filter(f => f.type === "dir" || f.type === "symlink")
+      .map(f => ({ name: f.name, source: f.name.split("-")[0], description: null }))
+      .sort((a, b) => a.name.localeCompare(b.name));
 
     document.getElementById("s-skills").textContent = skills.length;
-    const prefixes = new Set(skills.map(s => s.split("-")[0]));
+    const prefixes = new Set(skills.map(s => s.source));
     document.getElementById("s-sources").textContent = prefixes.size;
 
     render(skills);
     document.getElementById("search").addEventListener("input", e => {
-      render(skills.filter(s => s.includes(e.target.value.toLowerCase())));
+      render(skills.filter(s => s.name.includes(e.target.value.toLowerCase())));
     });
   } catch {
-    document.getElementById("skill-list").innerHTML = '<p style="color:var(--text-muted)">Could not load from GitHub API.</p>';
+    document.getElementById("skill-list").innerHTML = '<p style="color:var(--text-muted)">Could not load catalog.</p>';
   }
 }
 
 function render(skills) {
   document.getElementById("rcount").textContent = `${skills.length} skills`;
   const g = {};
-  skills.forEach(s => { const p = s.split("-")[0]; (g[p] = g[p] || []).push(s); });
+  skills.forEach(s => { (g[s.source] = g[s.source] || []).push(s); });
   document.getElementById("skill-list").innerHTML = Object.entries(g)
     .sort((a, b) => b[1].length - a[1].length)
-    .map(([k, v]) => `<div class="cat-group"><h3>${k} (${v.length})</h3><div class="cat-grid">${v.map(s => `<div class="skill-pill">${s}</div>`).join("")}</div></div>`)
+    .map(([k, v]) => `<div class="cat-group"><h3>${k} (${v.length})</h3><div class="cat-grid">
+      ${v.map(s => `<div class="skill-pill">${s.name}${s.description ? `<div class="skill-desc">${s.description}</div>` : ''}</div>`).join('')}
+    </div></div>`)
     .join("");
 }
 
