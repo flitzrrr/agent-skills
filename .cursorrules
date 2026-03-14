@@ -1,0 +1,53 @@
+# Agent Skills Hub — Cursor Rules
+# This file makes skills discoverable in Cursor IDE.
+# For detailed skill usage, see CHEATSHEET.md or individual SKILL.md files.
+
+## Available Skills (55 total from 5 sources)
+
+### Security & Code Quality
+- Use `skills/security-review/SKILL.md` for OWASP-based security audits
+- Use `skills/code-review/SKILL.md` for comprehensive code reviews
+- Use `skills/find-bugs/SKILL.md` for bug hunting in local changes
+- Use `skills/gha-security-review/SKILL.md` for GitHub Actions security
+- Use `skills/skill-scanner/SKILL.md` to scan skills for prompt injection
+
+### Git Workflow
+- Use `skills/commit/SKILL.md` for Conventional Commits formatting
+- Use `skills/create-branch/SKILL.md` for branch creation
+- Use `skills/pr-writer/SKILL.md` for PR descriptions
+- Use `skills/iterate-pr/SKILL.md` for CI fix loops
+
+### Django
+- Use `skills/django-access-review/SKILL.md` for access control / IDOR review
+- Use `skills/django-perf-review/SKILL.md` for N+1 and performance review
+
+### Project Planning (Multi-Session)
+- Use `skills/create-plan/SKILL.md` to start a structured project plan
+- Use `skills/resume-plan/SKILL.md` to continue a previous plan
+- Use `skills/update-plan/SKILL.md` to modify plans
+- Use `skills/execute-work-packet/SKILL.md` to execute plan items
+- Use `skills/generate-handover/SKILL.md` for session handoff
+
+### Document Generation
+- Use `skills/anthropic-pdf/SKILL.md` for PDF operations
+- Use `skills/anthropic-docx/SKILL.md` for Word documents
+- Use `skills/anthropic-pptx/SKILL.md` for presentations
+- Use `skills/anthropic-xlsx/SKILL.md` for spreadsheets
+
+### Frontend & React
+- Use `skills/vercel-react-best-practices/SKILL.md` for React/Next.js optimization (62 rules)
+- Use `skills/vercel-web-design-guidelines/SKILL.md` for UI/UX audit (100+ rules)
+- Use `skills/vercel-composition-patterns/SKILL.md` for React component architecture
+- Use `skills/vercel-react-native-skills/SKILL.md` for React Native/Expo
+- Use `skills/anthropic-frontend-design/SKILL.md` for bold UI design
+
+### Developer Tools
+- Use `skills/anthropic-mcp-builder/SKILL.md` to build MCP servers
+- Use `skills/anthropic-webapp-testing/SKILL.md` for Playwright testing
+- Use `skills/anthropic-claude-api/SKILL.md` for Claude API integration
+
+### SEO
+- Use `skills/seo/SKILL.md` for comprehensive SEO auditing (16 sub-skills)
+
+### Deployment
+- Use `skills/vercel-deploy-to-vercel/SKILL.md` for Vercel deployments

@@ -1,0 +1,30 @@
+# Agent Skills Hub — Lovable Project Instructions
+# This file makes skills available in Lovable AI.
+
+This repository contains 55 curated AI agent skills for code review, security auditing,
+document generation, frontend development, SEO, and project planning.
+
+## How to Use
+
+Each skill is a self-contained folder under `skills/` containing a `SKILL.md` file
+with detailed instructions. When a task matches a skill's domain, read and follow
+the corresponding `SKILL.md`.
+
+## Key Skills for Lovable Projects
+
+### Web Development
+- `skills/vercel-react-best-practices/SKILL.md` — React/Next.js performance (62 rules)
+- `skills/vercel-web-design-guidelines/SKILL.md` — UI/UX accessibility audit
+- `skills/anthropic-frontend-design/SKILL.md` — Premium, non-generic UI design
+- `skills/vercel-composition-patterns/SKILL.md` — React component architecture
+
+### Quality
+- `skills/code-review/SKILL.md` — Code review checklist
+- `skills/security-review/SKILL.md` — Security audit
+- `skills/seo/SKILL.md` — SEO optimization (16 sub-skills)
+
+### Documents
+- `skills/anthropic-pdf/SKILL.md` — PDF creation & editing
+- `skills/anthropic-docx/SKILL.md` — Word document generation
+
+See `CHEATSHEET.md` for the full decision guide.
