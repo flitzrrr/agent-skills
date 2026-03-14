@@ -17,24 +17,24 @@
 
 ## Sources (16)
 
-| # | Source | Skills | Focus |
-|---|--------|--------|-------|
-| 1 | [getsentry/skills](https://github.com/getsentry/skills) | 24 | Security, code review, Git workflow, Django |
-| 2 | [Bhanunamikaze/Agentic-SEO-Skill](https://github.com/Bhanunamikaze/Agentic-SEO-Skill) | 16 | Comprehensive SEO auditing |
-| 3 | [DasDigitaleMomentum/opencode-processing-skills](https://github.com/DasDigitaleMomentum/opencode-processing-skills) | 9 | Multi-session planning & docs |
-| 4 | [anthropics/skills](https://github.com/anthropics/skills) | 17 | Document gen, creative design, MCP, API |
-| 5 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 5 | React/Next.js, web design, deployment |
-| 6 | [trailofbits/skills](https://github.com/trailofbits/skills) | 30 | Advanced security auditing, static analysis, smart contracts |
-| 7 | [cloudflare/skills](https://github.com/cloudflare/skills) | 9 | Workers, Durable Objects, MCP, web perf |
-| 8 | [stripe/ai](https://github.com/stripe/ai) | 2 | Stripe best practices & SDK upgrades |
-| 9 | [expo/skills](https://github.com/expo/skills) | 3 | Expo app design, deployment, upgrades |
-| 10 | [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | 7 | Design-to-code, shadcn/ui, Remotion |
-| 11 | [hashicorp/agent-skills](https://github.com/hashicorp/agent-skills) | 3 | Terraform code/module/provider generation |
-| 12 | [supabase/agent-skills](https://github.com/supabase/agent-skills) | 1 | Postgres best practices |
-| 13 | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) | 5 | React Native, GitHub workflows |
-| 14 | [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) | 100+ | Science, bioinformatics, ML, chemistry |
-| 15 | [ComposioHQ/skills](https://github.com/ComposioHQ/skills) | 1 | Connect agents to 1000+ external apps |
-| 16 | [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | 7 | Finance: IB, equity research, PE, wealth mgmt |
+| # | Source | Skills | Focus | Added |
+|---|--------|--------|-------|-------|
+| 1 | [getsentry/skills](https://github.com/getsentry/skills) | 24 | Security, code review, Git workflow, Django | 2026-03-14 |
+| 2 | [Bhanunamikaze/Agentic-SEO-Skill](https://github.com/Bhanunamikaze/Agentic-SEO-Skill) | 16 | Comprehensive SEO auditing | 2026-03-14 |
+| 3 | [DasDigitaleMomentum/opencode-processing-skills](https://github.com/DasDigitaleMomentum/opencode-processing-skills) | 9 | Multi-session planning & docs | 2026-03-14 |
+| 4 | [anthropics/skills](https://github.com/anthropics/skills) | 17 | Document gen, creative design, MCP, API | 2026-03-14 |
+| 5 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 5 | React/Next.js, web design, deployment | 2026-03-14 |
+| 6 | [trailofbits/skills](https://github.com/trailofbits/skills) | 30 | Advanced security auditing, static analysis, smart contracts | 2026-03-14 |
+| 7 | [cloudflare/skills](https://github.com/cloudflare/skills) | 9 | Workers, Durable Objects, MCP, web perf | 2026-03-14 |
+| 8 | [stripe/ai](https://github.com/stripe/ai) | 2 | Stripe best practices & SDK upgrades | 2026-03-14 |
+| 9 | [expo/skills](https://github.com/expo/skills) | 3 | Expo app design, deployment, upgrades | 2026-03-14 |
+| 10 | [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | 7 | Design-to-code, shadcn/ui, Remotion | 2026-03-14 |
+| 11 | [hashicorp/agent-skills](https://github.com/hashicorp/agent-skills) | 3 | Terraform code/module/provider generation | 2026-03-14 |
+| 12 | [supabase/agent-skills](https://github.com/supabase/agent-skills) | 1 | Postgres best practices | 2026-03-14 |
+| 13 | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) | 5 | React Native, GitHub workflows | 2026-03-14 |
+| 14 | [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) | 100+ | Science, bioinformatics, ML, chemistry | 2026-03-14 |
+| 15 | [ComposioHQ/skills](https://github.com/ComposioHQ/skills) | 1 | Connect agents to 1000+ external apps | 2026-03-14 |
+| 16 | [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | 7 | Finance: IB, equity research, PE, wealth mgmt | 2026-03-14 |
 
 ## Repository Structure
 
