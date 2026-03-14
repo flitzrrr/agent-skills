@@ -437,17 +437,75 @@
       padding: 0.55rem 0.85rem;
       transition: border-color 0.2s, background 0.2s;
       cursor: default;
+      position: relative;
     }
     .skill-pill:hover {
       border-color: var(--border-accent);
       background: var(--surface);
     }
+    .skill-name-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 2px;
+      border-radius: 4px;
+      opacity: 0;
+      transform: scale(0.85);
+      transition: opacity 0.15s, transform 0.15s, color 0.15s, background 0.15s;
+      flex-shrink: 0;
+    }
+    .skill-pill:hover .copy-btn {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .copy-btn:hover {
+      color: var(--accent);
+      background: var(--accent-glow);
+    }
+    .copy-btn svg { width: 14px; height: 14px; }
+    .copy-btn.copied {
+      opacity: 1;
+      color: var(--mint);
+    }
     .skill-desc {
       font-family: var(--sans);
       font-size: 0.7rem;
       color: var(--text-muted);
-      margin-top: 0.2rem;
+      margin-top: 0.25rem;
       white-space: normal;
+      line-height: 1.4;
+    }
+    /* Toast */
+    .copy-toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--surface);
+      color: var(--mint);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-accent);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, transform 0.2s;
+      z-index: 1000;
+    }
+    .copy-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
     }
 
     /* ─── Gates ─── */
@@ -743,6 +801,29 @@ async function init() {
   }
 }
 
+const COPY_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"/><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"/></svg>';
+const CHECK_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>';
+
+// Toast element
+const toast = document.createElement('div');
+toast.className = 'copy-toast';
+toast.textContent = 'Copied to clipboard';
+document.body.appendChild(toast);
+let toastTimer;
+
+function copySkill(name, btn) {
+  navigator.clipboard.writeText(name);
+  btn.innerHTML = CHECK_SVG;
+  btn.classList.add('copied');
+  clearTimeout(toastTimer);
+  toast.classList.add('show');
+  toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+    btn.innerHTML = COPY_SVG;
+    btn.classList.remove('copied');
+  }, 1500);
+}
+
 function render(skills) {
   document.getElementById("rcount").textContent = `${skills.length} skills`;
   const g = {};
@@ -750,7 +831,13 @@ function render(skills) {
   document.getElementById("skill-list").innerHTML = Object.entries(g)
     .sort((a, b) => b[1].length - a[1].length)
     .map(([k, v]) => `<div class="cat-group"><h3>${k} (${v.length})</h3><div class="cat-grid">
-      ${v.map(s => `<div class="skill-pill">${s.name}${s.description ? `<div class="skill-desc">${s.description}</div>` : ''}</div>`).join('')}
+      ${v.map(s => `<div class="skill-pill">
+        <div class="skill-name-row">
+          <span>${s.name}</span>
+          <button class="copy-btn" onclick="copySkill('${s.name}', this)" title="Copy skill name">${COPY_SVG}</button>
+        </div>
+        ${s.description ? `<div class="skill-desc">${s.description}</div>` : ''}
+      </div>`).join('')}
     </div></div>`)
     .join("");
 }

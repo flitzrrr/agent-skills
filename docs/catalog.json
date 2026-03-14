@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-14T20:37:30.765Z",
+  "generated": "2026-03-14T20:54:47.588Z",
   "total": 127,
   "skills": [
     {
@@ -25,7 +25,7 @@
     {
       "name": "anthropic-claude-api",
       "source": "anthropic",
-      "description": "\"Build apps with the Claude API or Anthropic SDK."
+      "description": "Build apps with the Claude API or Anthropic SDK."
     },
     {
       "name": "anthropic-doc-coauthoring",
@@ -35,7 +35,7 @@
     {
       "name": "anthropic-docx",
       "source": "anthropic",
-      "description": "\"Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files)."
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files)."
     },
     {
       "name": "anthropic-frontend-design",
@@ -60,7 +60,7 @@
     {
       "name": "anthropic-pptx",
       "source": "anthropic",
-      "description": "\"Use this skill any time a .pptx file is involved in any way — as input, output, or both."
+      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both."
     },
     {
       "name": "anthropic-skill-creator",
@@ -90,7 +90,7 @@
     {
       "name": "anthropic-xlsx",
       "source": "anthropic",
-      "description": "\"Use this skill any time a spreadsheet file is the primary input or output."
+      "description": "Use this skill any time a spreadsheet file is the primary input or output."
     },
     {
       "name": "archive-legacy-docs",
@@ -240,42 +240,42 @@
     {
       "name": "expo",
       "source": "expo",
-      "description": null
+      "description": "Complete guide for building beautiful apps with Expo Router."
     },
     {
       "name": "finance-equity-research",
       "source": "finance",
-      "description": null
+      "description": "description: Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regula..."
     },
     {
       "name": "finance-financial-analysis",
       "source": "finance",
-      "description": null
+      "description": "Complete, populate and fill out 3-statement financial model templates (Income Statement, Balance Sheet, Cash Flow Statement) ."
     },
     {
       "name": "finance-investment-banking",
       "source": "finance",
-      "description": null
+      "description": "description: Build and organize a universe of potential acquirers for sell-side M&A processes."
     },
     {
       "name": "finance-lseg",
       "source": "finance",
-      "description": null
+      "description": "Analyze the bond futures basis by pricing futures, identifying the cheapest-to-deliver, and comparing with yield curves to assess delivery option v..."
     },
     {
       "name": "finance-private-equity",
       "source": "finance",
-      "description": null
+      "description": "description: Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time."
     },
     {
       "name": "finance-spglobal",
       "source": "finance",
-      "description": null
+      "description": "Generate a concise 4-5 page equity research earnings preview for a single company."
     },
     {
       "name": "finance-wealth-management",
       "source": "finance",
-      "description": null
+      "description": "description: Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary."
     },
     {
       "name": "find-bugs",
@@ -325,7 +325,7 @@
     {
       "name": "scientific",
       "source": "scientific",
-      "description": null
+      "description": "Cloud laboratory platform for automated protein testing and validation."
     },
     {
       "name": "security-review",
@@ -415,192 +415,192 @@
     {
       "name": "terraform-code-generation",
       "source": "terraform",
-      "description": null
+      "description": "Azure Verified Modules (AVM) requirements and best practices for developing certified Azure Terraform modules."
     },
     {
       "name": "terraform-module-generation",
       "source": "terraform",
-      "description": null
+      "description": "Transform monolithic Terraform configurations into reusable, maintainable modules following HashiCorp's module design principles and community best..."
     },
     {
       "name": "terraform-provider-development",
       "source": "terraform",
-      "description": null
+      "description": "Use this when scaffolding a new Terraform provider."
     },
     {
       "name": "tob-agentic-actions-auditor",
       "source": "tob",
-      "description": null
+      "description": "Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations including Claude Code Action, Gemini CLI, OpenAI Codex, and G..."
     },
     {
       "name": "tob-ask-questions-if-underspecified",
       "source": "tob",
-      "description": null
+      "description": "Clarify requirements before implementing."
     },
     {
       "name": "tob-audit-context-building",
       "source": "tob",
-      "description": null
+      "description": "Enables ultra-granular, line-by-line code analysis to build deep architectural context before vulnerability or bug finding."
     },
     {
       "name": "tob-building-secure-contracts",
       "source": "tob",
-      "description": null
+      "description": "Scans Algorand smart contracts for 11 common vulnerabilities including rekeying attacks, unchecked transaction fees, missing field validations, and..."
     },
     {
       "name": "tob-burpsuite-project-parser",
       "source": "tob",
-      "description": null
+      "description": "Searches and explores Burp Suite project files (.burp) from the command line."
     },
     {
       "name": "tob-claude-in-chrome-troubleshooting",
       "source": "tob",
-      "description": null
+      "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues."
     },
     {
       "name": "tob-constant-time-analysis",
       "source": "tob",
-      "description": null
+      "description": "Detects timing side-channel vulnerabilities in cryptographic code."
     },
     {
       "name": "tob-culture-index",
       "source": "tob",
-      "description": null
+      "description": "Interprets Culture Index (CI) surveys, behavioral profiles, and personality assessment data."
     },
     {
       "name": "tob-debug-buttercup",
       "source": "tob",
-      "description": null
+      "description": ">"
     },
     {
       "name": "tob-devcontainer-setup",
       "source": "tob",
-      "description": null
+      "description": "Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), and persistent volumes."
     },
     {
       "name": "tob-differential-review",
       "source": "tob",
-      "description": null
+      "description": ">"
     },
     {
       "name": "tob-dwarf-expert",
       "source": "tob",
-      "description": null
+      "description": "Provides expertise for analyzing DWARF debug files and understanding the DWARF debug format/standard (v3-v5)."
     },
     {
       "name": "tob-entry-point-analyzer",
       "source": "tob",
-      "description": null
+      "description": "Analyzes smart contract codebases to identify state-changing entry points for security auditing."
     },
     {
       "name": "tob-firebase-apk-scanner",
       "source": "tob",
-      "description": null
+      "description": "Scans Android APKs for Firebase security misconfigurations including open databases, storage buckets, authentication issues, and exposed cloud func..."
     },
     {
       "name": "tob-fp-check",
       "source": "tob",
-      "description": null
+      "description": "Systematically verifies suspected security bugs to eliminate false positives."
     },
     {
       "name": "tob-gh-cli",
       "source": "tob",
-      "description": null
+      "description": "Gh Cli."
     },
     {
       "name": "tob-git-cleanup",
       "source": "tob",
-      "description": null
+      "description": "Safely analyzes and cleans up local git branches and worktrees by categorizing them as merged, squash-merged, superseded, or active work."
     },
     {
       "name": "tob-insecure-defaults",
       "source": "tob",
-      "description": null
+      "description": "Detects fail-open insecure defaults (hardcoded secrets, weak auth, permissive security) that allow apps to run insecurely in production."
     },
     {
       "name": "tob-let-fate-decide",
       "source": "tob",
-      "description": null
+      "description": "Draws 4 Tarot cards using os.urandom() to inject entropy into planning when prompts are vague or underspecified."
     },
     {
       "name": "tob-modern-python",
       "source": "tob",
-      "description": null
+      "description": "Configures Python projects with modern tooling (uv, ruff, ty)."
     },
     {
       "name": "tob-property-based-testing",
       "source": "tob",
-      "description": null
+      "description": "Provides guidance for property-based testing across multiple languages and smart contracts."
     },
     {
       "name": "tob-seatbelt-sandboxer",
       "source": "tob",
-      "description": null
+      "description": "Generates minimal macOS Seatbelt sandbox configurations."
     },
     {
       "name": "tob-second-opinion",
       "source": "tob",
-      "description": null
+      "description": "Runs external LLM code reviews (OpenAI Codex or Google Gemini CLI) on uncommitted changes, branch diffs, or specific commits."
     },
     {
       "name": "tob-semgrep-rule-creator",
       "source": "tob",
-      "description": null
+      "description": "Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns."
     },
     {
       "name": "tob-semgrep-rule-variant-creator",
       "source": "tob",
-      "description": null
+      "description": "Creates language variants of existing Semgrep rules."
     },
     {
       "name": "tob-sharp-edges",
       "source": "tob",
-      "description": null
+      "description": "Identifies error-prone APIs, dangerous configurations, and footgun designs that enable security mistakes."
     },
     {
       "name": "tob-skill-improver",
       "source": "tob",
-      "description": null
+      "description": "Iteratively reviews and fixes Claude Code skill quality issues until they meet standards."
     },
     {
       "name": "tob-spec-to-code-compliance",
       "source": "tob",
-      "description": null
+      "description": "Verifies code implements exactly what documentation specifies for blockchain audits."
     },
     {
       "name": "tob-static-analysis",
       "source": "tob",
-      "description": null
+      "description": ">-"
     },
     {
       "name": "tob-supply-chain-risk-auditor",
       "source": "tob",
-      "description": null
+      "description": "Identifies dependencies at heightened risk of exploitation or takeover."
     },
     {
       "name": "tob-testing-handbook-skills",
       "source": "tob",
-      "description": null
+      "description": ">"
     },
     {
       "name": "tob-variant-analysis",
       "source": "tob",
-      "description": null
+      "description": "Find similar vulnerabilities and bugs across codebases using pattern-based analysis."
     },
     {
       "name": "tob-workflow-skill-design",
       "source": "tob",
-      "description": null
+      "description": ">-"
     },
     {
       "name": "tob-yara-authoring",
       "source": "tob",
-      "description": null
+      "description": ">"
     },
     {
       "name": "tob-zeroize-audit",
       "source": "tob",
-      "description": null
+      "description": "Detects missing zeroization of sensitive data in source code and identifies zeroization removed by compiler optimizations, with assembly-level anal..."
     },
     {
       "name": "update-docs",
