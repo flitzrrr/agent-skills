@@ -1,0 +1,108 @@
+name: "🔍 Weekly Skill Discovery"
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"  # Every Monday at 9:00 UTC
+  workflow_dispatch:       # Manual trigger
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  discover-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Search for trending agent skills
+        id: search
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "# 🔍 Weekly Agent Skills Report" > /tmp/report.md
+          echo "" >> /tmp/report.md
+          echo "**Generated:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> /tmp/report.md
+          echo "" >> /tmp/report.md
+
+          echo "## 🔥 Trending Repos with SKILL.md (past week)" >> /tmp/report.md
+          echo "" >> /tmp/report.md
+          echo "| Repository | Stars | Description |" >> /tmp/report.md
+          echo "|------------|-------|-------------|" >> /tmp/report.md
+
+          gh api search/repositories \
+            -X GET \
+            --paginate \
+            -f q="SKILL.md in:path pushed:>$(date -u -d '7 days ago' '+%Y-%m-%d') stars:>10" \
+            -f sort=stars \
+            -f order=desc \
+            -f per_page=20 \
+            --jq '.items[:20] | .[] | "| [\(.full_name)](\(.html_url)) | \(.stargazers_count) | \(.description // "No description") |"' \
+            >> /tmp/report.md 2>/dev/null || echo "| _No results_ | - | - |" >> /tmp/report.md
+
+          echo "" >> /tmp/report.md
+          echo "## ⭐ Top Starred Agent Skill Repos (all time)" >> /tmp/report.md
+          echo "" >> /tmp/report.md
+          echo "| Repository | Stars | Description |" >> /tmp/report.md
+          echo "|------------|-------|-------------|" >> /tmp/report.md
+
+          gh api search/repositories \
+            -X GET \
+            --paginate \
+            -f q="agent skills SKILL.md" \
+            -f sort=stars \
+            -f order=desc \
+            -f per_page=15 \
+            --jq '.items[:15] | .[] | "| [\(.full_name)](\(.html_url)) | \(.stargazers_count) | \(.description // "No description") |"' \
+            >> /tmp/report.md 2>/dev/null || echo "| _No results_ | - | - |" >> /tmp/report.md
+
+          echo "" >> /tmp/report.md
+          echo "## 🆕 New Agent Skill Repos (created in last 30 days)" >> /tmp/report.md
+          echo "" >> /tmp/report.md
+          echo "| Repository | Stars | Created | Description |" >> /tmp/report.md
+          echo "|------------|-------|---------|-------------|" >> /tmp/report.md
+
+          gh api search/repositories \
+            -X GET \
+            --paginate \
+            -f q="SKILL.md in:path created:>$(date -u -d '30 days ago' '+%Y-%m-%d') stars:>5" \
+            -f sort=stars \
+            -f order=desc \
+            -f per_page=15 \
+            --jq '.items[:15] | .[] | "| [\(.full_name)](\(.html_url)) | \(.stargazers_count) | \(.created_at[:10]) | \(.description // "No description") |"' \
+            >> /tmp/report.md 2>/dev/null || echo "| _No results_ | - | - | - |" >> /tmp/report.md
+
+          echo "" >> /tmp/report.md
+          echo "## 📦 Currently Vendored" >> /tmp/report.md
+          echo "" >> /tmp/report.md
+          echo "These repos are already included:" >> /tmp/report.md
+          echo "- getsentry/skills" >> /tmp/report.md
+          echo "- Bhanunamikaze/Agentic-SEO-Skill" >> /tmp/report.md
+          echo "- DasDigitaleMomentum/opencode-processing-skills" >> /tmp/report.md
+          echo "- anthropics/skills" >> /tmp/report.md
+          echo "- vercel-labs/agent-skills" >> /tmp/report.md
+          echo "" >> /tmp/report.md
+          echo "---" >> /tmp/report.md
+          echo "_Review this report and manually add promising repos via \`git submodule add\`._" >> /tmp/report.md
+
+      - name: Create or update issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="🔍 Weekly Skill Discovery Report — $(date -u '+%Y-%m-%d')"
+          BODY=$(cat /tmp/report.md)
+
+          gh issue create \
+            --title "$TITLE" \
+            --body "$BODY" \
+            --label "skill-discovery"
+
+      - name: Update submodules
+        run: |
+          git submodule update --remote --merge
+          if git diff --quiet; then
+            echo "No submodule updates"
+          else
+            echo "Submodules have updates available"
+          fi
