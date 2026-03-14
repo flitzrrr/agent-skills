@@ -1,6 +1,6 @@
 # 🧠 Agent Skills Hub
 
-> **121 AI agent skills** from **15 industry-leading sources** — organized, evaluated, and **multiplatform-ready** for all major AI coding IDEs.
+> **128 AI agent skills** from **16 industry-leading sources** — organized, evaluated, and **multiplatform-ready** for all major AI coding IDEs.
 
 ## ✅ Supported Platforms
 
@@ -15,7 +15,7 @@
 | **Windsurf** | `AGENTS.md` | Clone repo, reference skill paths |
 | **Generic Agent** | `SKILL.md` per skill | Read `skills/<name>/SKILL.md` |
 
-## Sources (15)
+## Sources (16)
 
 | # | Source | Skills | Focus |
 |---|--------|--------|-------|
@@ -34,13 +34,14 @@
 | 13 | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) | 5 | React Native, GitHub workflows |
 | 14 | [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) | 100+ | Science, bioinformatics, ML, chemistry |
 | 15 | [ComposioHQ/skills](https://github.com/ComposioHQ/skills) | 1 | Connect agents to 1000+ external apps |
+| 16 | [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | 7 | Finance: IB, equity research, PE, wealth mgmt |
 
 ## Repository Structure
 
 ```
 agent-skills/
-├── skills/               ← 121 symlinks (flat access to all skills)
-├── vendor/               ← 15 Git submodules (upstream sources)
+├── skills/               ← 128 symlinks (flat access to all skills)
+├── vendor/               ← 16 Git submodules (upstream sources)
 ├── AGENTS.md             ← Codex / OpenCode / Windsurf
 ├── CLAUDE.md             ← Claude Code
 ├── .cursorrules          ← Cursor IDE
@@ -120,6 +121,7 @@ git submodule add git@github.com:flitzrrr/agent-skills.git skills
 | CallStack | `callstack-` | `callstack-react-native-best-practices` |
 | Scientific | `scientific` | `scientific` (100+ sub-skills) |
 | Composio | `composio` | `composio` |
+| Finance | `finance-` | `finance-equity-research`, `finance-private-equity` |
 
 ## License
 
