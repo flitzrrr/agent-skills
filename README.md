@@ -50,57 +50,52 @@ agent-skills/
 └── README.md             ← This file
 ```
 
-## Quick Start
+## 🚀 Quick Install
+
+### Option 1: Ask Your AI Agent (Copy-Paste Prompt)
+
+Paste this into **any AI coding assistant** (Claude Code, Antigravity, Codex, Cursor, etc.):
+
+> Clone the agent-skills repository from https://github.com/flitzrrr/agent-skills with all submodules. Then symlink all skills from the `skills/` directory into my local agent skills directory. Preserve any existing skills I already have — do not overwrite them.
+
+### Option 2: npm CLI
+
+```bash
+npx @flitzrrr/agent-skills install              # Install for all platforms
+npx @flitzrrr/agent-skills install antigravity   # Antigravity only
+npx @flitzrrr/agent-skills install codex         # Codex only
+npx @flitzrrr/agent-skills install opencode      # OpenCode only
+npx @flitzrrr/agent-skills update                # Update all skills
+npx @flitzrrr/agent-skills list                  # List available skills
+```
+
+### Option 3: Manual Setup
 
 ```bash
 # Clone with all submodules
 git clone --recurse-submodules git@github.com:flitzrrr/agent-skills.git
+cd agent-skills
 
-# Update all upstream sources
+# Symlink skills into your platform (pick one or more):
+ln -sf $(pwd)/skills/* ~/.gemini/antigravity/skills/   # Antigravity
+ln -sf $(pwd)/skills/* ~/.codex/skills/                # Codex
+ln -sf $(pwd)/skills/* ~/.config/opencode/skills/      # OpenCode
+
+# Update all upstream sources later:
 git submodule update --remote --merge
 ```
 
-## Install via npm
+### Platform Auto-Discovery
 
-```bash
-npx @flitzrrr/agent-skills install
-```
+Some platforms don't need symlinks — just clone the repo:
 
-## Platform Setup
-
-### Claude Code
-```bash
-git clone --recurse-submodules git@github.com:flitzrrr/agent-skills.git
-# CLAUDE.md auto-discovered
-```
-
-### Antigravity (Gemini)
-```bash
-ln -sf /path/to/agent-skills/skills/* ~/.gemini/antigravity/skills/
-```
-
-### Codex (OpenAI)
-```bash
-git clone --recurse-submodules git@github.com:flitzrrr/agent-skills.git
-# AGENTS.md auto-discovered
-```
-
-### Cursor
-```bash
-git clone --recurse-submodules git@github.com:flitzrrr/agent-skills.git
-# .cursorrules auto-loaded
-```
-
-### OpenCode
-```bash
-# Skills are symlinked — see CHEATSHEET.md for usage
-ln -sf /path/to/agent-skills/skills/* ~/.opencode/skills/
-```
-
-### Lovable
-```bash
-git submodule add git@github.com:flitzrrr/agent-skills.git skills
-```
+| Platform | How It Works |
+|----------|-------------|
+| **Claude Code** | Clone into project → `CLAUDE.md` auto-discovered |
+| **Codex** | Clone into project → `AGENTS.md` auto-discovered |
+| **Cursor** | Clone into workspace → `.cursorrules` auto-loaded |
+| **Lovable** | `git submodule add` → `.lovable` auto-loaded |
+| **Windsurf** | Clone into project → `AGENTS.md` auto-discovered |
 
 ## Naming Convention
 
