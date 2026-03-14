@@ -1,59 +1,59 @@
-# 🗺️ Agent Skills Cheatsheet
+# Agent Skills Cheatsheet
 
 > Quick decision guide: **which skill, when, and why.**
 
 ---
 
-## ⚡ Quick Decision Matrix
+## Quick Decision Matrix
 
 | You want to... | Use this skill | Source | Rating |
 |---|---|---|---|
-| **Security audit** code changes | `security-review` | Sentry | ★★★★★ |
-| **Code review** a PR | `code-review` | Sentry | ★★★★★ |
-| **Find bugs** in local changes | `find-bugs` | Sentry | ★★★★★ |
-| **Audit GH Actions** for supply chain attacks | `gha-security-review` | Sentry | ★★★★★ |
-| **Review Django access control** / IDOR | `django-access-review` | Sentry | ★★★★☆ |
-| **Review Django performance** / N+1 queries | `django-perf-review` | Sentry | ★★★★☆ |
-| **Write a commit message** (Conventional Commits) | `commit` | Sentry | ★★★★★ |
-| **Create a branch** | `create-branch` | Sentry | ★★★★☆ |
-| **Write a PR description** | `pr-writer` | Sentry | ★★★★★ |
-| **Fix CI failures** iteratively | `iterate-pr` | Sentry | ★★★★★ |
-| **Simplify** complex code | `code-simplifier` | Sentry | ★★★★☆ |
-| **Scan skills** for prompt injection | `skill-scanner` | Sentry | ★★★★☆ |
-| **Create new skills** | `skill-writer` / `anthropic-skill-creator` | Sentry / Anthropic | ★★★★☆ |
-| **Run SEO audit** on a website | `seo` | Agentic SEO | ★★★★★ |
-| **Plan a multi-session** project | `create-plan` | OpenCode | ★★★★★ |
-| **Resume** a previous plan | `resume-plan` | OpenCode | ★★★★★ |
-| **Execute** a work packet from plan | `execute-work-packet` | OpenCode | ★★★★★ |
-| **Generate project docs** | `generate-docs` | OpenCode | ★★★★☆ |
-| **Update existing docs** | `update-docs` | OpenCode | ★★★★☆ |
-| **Create handover** summary for next session | `generate-handover` | OpenCode | ★★★★☆ |
-| **Create/edit PDFs** | `anthropic-pdf` | Anthropic | ★★★★★ |
-| **Create/edit Word docs** | `anthropic-docx` | Anthropic | ★★★★★ |
-| **Create presentations** | `anthropic-pptx` | Anthropic | ★★★★★ |
-| **Create/edit spreadsheets** | `anthropic-xlsx` | Anthropic | ★★★★★ |
-| **Build an MCP server** | `anthropic-mcp-builder` | Anthropic | ★★★★★ |
-| **Test web apps** with Playwright | `anthropic-webapp-testing` | Anthropic | ★★★★★ |
-| **Design stunning frontends** | `anthropic-frontend-design` | Anthropic | ★★★★★ |
-| **Build Claude API apps** | `anthropic-claude-api` | Anthropic | ★★★★★ |
-| **Create generative art** with p5.js | `anthropic-algorithmic-art` | Anthropic | ★★★★☆ |
-| **Design artistic visuals** (posters, canvases) | `anthropic-canvas-design` | Anthropic | ★★★★☆ |
-| **Apply professional themes** to artifacts | `anthropic-theme-factory` | Anthropic | ★★★★☆ |
-| **Write internal comms** (3P, newsletters) | `anthropic-internal-comms` | Anthropic | ★★★☆☆ |
-| **Create Slack GIFs** | `anthropic-slack-gif-creator` | Anthropic | ★★★☆☆ |
-| **Build complex React artifacts** | `anthropic-web-artifacts-builder` | Anthropic | ★★★★☆ |
-| **Coauthor documents** collaboratively | `anthropic-doc-coauthoring` | Anthropic | ★★★★☆ |
-| **Optimize React/Next.js** performance | `vercel-react-best-practices` | Vercel | ★★★★★ |
-| **Audit web UI** for accessibility & UX | `vercel-web-design-guidelines` | Vercel | ★★★★★ |
-| **Fix React component architecture** | `vercel-composition-patterns` | Vercel | ★★★★☆ |
-| **Build React Native** apps | `vercel-react-native-skills` | Vercel | ★★★★☆ |
-| **Deploy to Vercel** | `vercel-deploy-to-vercel` | Vercel | ★★★★☆ |
+| **Security audit** code changes | `security-review` | Sentry | 5/5 |
+| **Code review** a PR | `code-review` | Sentry | 5/5 |
+| **Find bugs** in local changes | `find-bugs` | Sentry | 5/5 |
+| **Audit GH Actions** for supply chain attacks | `gha-security-review` | Sentry | 5/5 |
+| **Review Django access control** / IDOR | `django-access-review` | Sentry | 4/5 |
+| **Review Django performance** / N+1 queries | `django-perf-review` | Sentry | 4/5 |
+| **Write a commit message** (Conventional Commits) | `commit` | Sentry | 5/5 |
+| **Create a branch** | `create-branch` | Sentry | 4/5 |
+| **Write a PR description** | `pr-writer` | Sentry | 5/5 |
+| **Fix CI failures** iteratively | `iterate-pr` | Sentry | 5/5 |
+| **Simplify** complex code | `code-simplifier` | Sentry | 4/5 |
+| **Scan skills** for prompt injection | `skill-scanner` | Sentry | 4/5 |
+| **Create new skills** | `skill-writer` / `anthropic-skill-creator` | Sentry / Anthropic | 4/5 |
+| **Run SEO audit** on a website | `seo` | Agentic SEO | 5/5 |
+| **Plan a multi-session** project | `create-plan` | OpenCode | 5/5 |
+| **Resume** a previous plan | `resume-plan` | OpenCode | 5/5 |
+| **Execute** a work packet from plan | `execute-work-packet` | OpenCode | 5/5 |
+| **Generate project docs** | `generate-docs` | OpenCode | 4/5 |
+| **Update existing docs** | `update-docs` | OpenCode | 4/5 |
+| **Create handover** summary for next session | `generate-handover` | OpenCode | 4/5 |
+| **Create/edit PDFs** | `anthropic-pdf` | Anthropic | 5/5 |
+| **Create/edit Word docs** | `anthropic-docx` | Anthropic | 5/5 |
+| **Create presentations** | `anthropic-pptx` | Anthropic | 5/5 |
+| **Create/edit spreadsheets** | `anthropic-xlsx` | Anthropic | 5/5 |
+| **Build an MCP server** | `anthropic-mcp-builder` | Anthropic | 5/5 |
+| **Test web apps** with Playwright | `anthropic-webapp-testing` | Anthropic | 5/5 |
+| **Design stunning frontends** | `anthropic-frontend-design` | Anthropic | 5/5 |
+| **Build Claude API apps** | `anthropic-claude-api` | Anthropic | 5/5 |
+| **Create generative art** with p5.js | `anthropic-algorithmic-art` | Anthropic | 4/5 |
+| **Design artistic visuals** (posters, canvases) | `anthropic-canvas-design` | Anthropic | 4/5 |
+| **Apply professional themes** to artifacts | `anthropic-theme-factory` | Anthropic | 4/5 |
+| **Write internal comms** (3P, newsletters) | `anthropic-internal-comms` | Anthropic | 3/5 |
+| **Create Slack GIFs** | `anthropic-slack-gif-creator` | Anthropic | 3/5 |
+| **Build complex React artifacts** | `anthropic-web-artifacts-builder` | Anthropic | 4/5 |
+| **Coauthor documents** collaboratively | `anthropic-doc-coauthoring` | Anthropic | 4/5 |
+| **Optimize React/Next.js** performance | `vercel-react-best-practices` | Vercel | 5/5 |
+| **Audit web UI** for accessibility & UX | `vercel-web-design-guidelines` | Vercel | 5/5 |
+| **Fix React component architecture** | `vercel-composition-patterns` | Vercel | 4/5 |
+| **Build React Native** apps | `vercel-react-native-skills` | Vercel | 4/5 |
+| **Deploy to Vercel** | `vercel-deploy-to-vercel` | Vercel | 4/5 |
 
 ---
 
-## 🏗️ Skills by Source
+## Skills by Source
 
-### 🔒 Sentry (getsentry/skills) — 127 skills
+### Sentry (getsentry/skills) — 24 skills
 
 Security, code quality, and Git workflow. Battle-tested at scale.
 
@@ -96,7 +96,7 @@ Security, code quality, and Git workflow. Battle-tested at scale.
 
 ---
 
-### 🔍 Agentic SEO (Bhanunamikaze) — 16 sub-skills
+### Agentic SEO (Bhanunamikaze) — 16 sub-skills
 
 Comprehensive SEO auditing toolkit with Playwright integration.
 
@@ -123,7 +123,7 @@ Comprehensive SEO auditing toolkit with Playwright integration.
 
 ---
 
-### 📋 OpenCode Processing (DasDigitaleMomentum) — 127 skills
+### OpenCode Processing (DasDigitaleMomentum) — 9 skills
 
 Multi-session project planning and documentation framework.
 
@@ -141,7 +141,7 @@ Multi-session project planning and documentation framework.
 
 ---
 
-### 🎨 Anthropic (anthropics/skills) — 127 skills
+### Anthropic (anthropics/skills) — 17 skills
 
 Document creation, creative design, developer tools, and enterprise workflows.
 
@@ -159,7 +159,7 @@ Document creation, creative design, developer tools, and enterprise workflows.
 | Skill | Purpose | Key Features |
 |-------|---------|-------------|
 | `anthropic-frontend-design` | Production-grade UI design | Bold aesthetics, anti-AI-slop philosophy |
-| `anthropic-canvas-design` | Artistic visual creation (posters, art) | Design philosophy → canvas execution pipeline |
+| `anthropic-canvas-design` | Artistic visual creation (posters, art) | Design philosophy to canvas execution pipeline |
 | `anthropic-algorithmic-art` | Generative art with p5.js | Seeded randomness, interactive parameter exploration |
 | `anthropic-theme-factory` | 10 professional themes for any artifact | Color palettes + font pairings, custom theme creation |
 | `anthropic-slack-gif-creator` | Animated GIFs optimized for Slack | PIL/Pillow, GIFBuilder, easing functions |
@@ -184,7 +184,7 @@ Document creation, creative design, developer tools, and enterprise workflows.
 
 ---
 
-### ⚛️ Vercel (vercel-labs/agent-skills) — 127 skills
+### Vercel (vercel-labs/agent-skills) — 5 skills
 
 React/Next.js performance, web design, and deployment.
 
@@ -198,34 +198,34 @@ React/Next.js performance, web design, and deployment.
 
 ---
 
-## 🎯 Scenario Guide
+## Scenario Guide
 
 ### "I'm starting a new feature"
 
-1. `create-plan` → Structure the work
-2. `create-branch` → Create feature branch
-3. `execute-work-packet` → Implement tasks from plan
-4. `commit` → Write proper commits
-5. `pr-writer` → Create PR description
-6. `iterate-pr` → Fix CI until green
+1. `create-plan` — Structure the work
+2. `create-branch` — Create feature branch
+3. `execute-work-packet` — Implement tasks from plan
+4. `commit` — Write proper commits
+5. `pr-writer` — Create PR description
+6. `iterate-pr` — Fix CI until green
 
 ### "I need to review code"
 
-1. `code-review` → General code review
-2. `security-review` → Security-focused review
-3. `find-bugs` → Bug hunting in diff
-4. `django-access-review` → Django IDOR check (if Django)
-5. `django-perf-review` → Django N+1 check (if Django)
-6. `gha-security-review` → GitHub Actions audit (if GHA changes)
+1. `code-review` — General code review
+2. `security-review` — Security-focused review
+3. `find-bugs` — Bug hunting in diff
+4. `django-access-review` — Django IDOR check (if Django)
+5. `django-perf-review` — Django N+1 check (if Django)
+6. `gha-security-review` — GitHub Actions audit (if GHA changes)
 
 ### "I'm building a web app"
 
-1. `vercel-react-best-practices` → Performance patterns
-2. `vercel-composition-patterns` → Component architecture
-3. `anthropic-frontend-design` → Stunning UI design
-4. `vercel-web-design-guidelines` → Accessibility audit
-5. `anthropic-webapp-testing` → Playwright testing
-6. `vercel-deploy-to-vercel` → Ship it
+1. `vercel-react-best-practices` — Performance patterns
+2. `vercel-composition-patterns` — Component architecture
+3. `anthropic-frontend-design` — Stunning UI design
+4. `vercel-web-design-guidelines` — Accessibility audit
+5. `anthropic-webapp-testing` — Playwright testing
+6. `vercel-deploy-to-vercel` — Ship it
 
 ### "I need to create documents"
 
@@ -238,34 +238,32 @@ React/Next.js performance, web design, and deployment.
 
 ### "I need SEO analysis"
 
-1. `seo` → Run `seo audit` for comprehensive analysis
+1. `seo` — Run `seo audit` for comprehensive analysis
 2. Focus sub-skills: `seo page`, `seo schema`, `seo performance`
 3. Generate: `seo report` for stakeholder deliverables
 
 ### "I'm building an MCP server"
 
-1. `anthropic-mcp-builder` → Full 4-phase development guide
-2. Research → Plan → Implement → Test → Evaluate
+1. `anthropic-mcp-builder` — Full 4-phase development guide
+2. Research, Plan, Implement, Test, Evaluate
 
 ### "I need to hand off work to next session"
 
-1. `generate-handover` → Session summary
-2. `update-docs` → Keep docs current
-3. `resume-plan` → Pick up where you left off next time
+1. `generate-handover` — Session summary
+2. `update-docs` — Keep docs current
+3. `resume-plan` — Pick up where you left off next time
 
 ---
 
-## 📊 Compatibility Matrix
+## Compatibility Matrix
 
 | Skill Category | Antigravity | Claude Code | Cursor | Generic Agent |
 |---------------|:-----------:|:-----------:|:------:|:-------------:|
-| Sentry (code/security) | ✅ | ✅ | ✅ | ✅ |
-| Agentic SEO | ✅ | ✅ | ⚠️ | ✅ |
-| OpenCode (planning) | ✅ | ✅ | ✅ | ✅ |
-| Anthropic (docs) | ⚠️ | ✅ | ⚠️ | ⚠️ |
-| Anthropic (creative) | ⚠️ | ✅ | ⚠️ | ⚠️ |
-| Anthropic (dev tools) | ✅ | ✅ | ⚠️ | ⚠️ |
-| Vercel (React) | ✅ | ✅ | ✅ | ✅ |
-| Vercel (deploy) | ⚠️ | ✅ | ⚠️ | ⚠️ |
-
-✅ = Full support · ⚠️ = Partial (may need adaptation)
+| Sentry (code/security) | Yes | Yes | Yes | Yes |
+| Agentic SEO | Yes | Yes | Partial | Yes |
+| OpenCode (planning) | Yes | Yes | Yes | Yes |
+| Anthropic (docs) | Partial | Yes | Partial | Partial |
+| Anthropic (creative) | Partial | Yes | Partial | Partial |
+| Anthropic (dev tools) | Yes | Yes | Partial | Partial |
+| Vercel (React) | Yes | Yes | Yes | Yes |
+| Vercel (deploy) | Partial | Yes | Partial | Partial |
