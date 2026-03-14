@@ -1,12 +1,12 @@
 # Agent Skills Hub
 
 [![npm version](https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
-[![Skills](https://img.shields.io/badge/skills-128-blue?style=flat-square)](skills/)
-[![Sources](https://img.shields.io/badge/sources-16-green?style=flat-square)](vendor/)
+[![Skills](https://img.shields.io/badge/skills-127-blue?style=flat-square)](skills/)
+[![Sources](https://img.shields.io/badge/sources-15-green?style=flat-square)](vendor/)
 [![License](https://img.shields.io/badge/license-mixed-lightgrey?style=flat-square)](#license)
 [![Weekly Discovery](https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square)](.github/workflows/skill-discovery.yml)
 
-A curated collection of **128 agent skills** from **16 industry-leading sources**, organized for flat access and compatible with all major AI coding assistants.
+A curated collection of **127 agent skills** from **15 industry-leading sources**, organized for flat access and compatible with all major AI coding assistants.
 
 ---
 
@@ -89,7 +89,6 @@ git submodule update --remote --merge
 | [supabase/agent-skills](https://github.com/supabase/agent-skills) | 1 | Postgres best practices | 2026-03-14 |
 | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) | 5 | React Native, GitHub workflows | 2026-03-14 |
 | [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) | 100+ | Science, bioinformatics, ML, chemistry | 2026-03-14 |
-| [ComposioHQ/skills](https://github.com/ComposioHQ/skills) | 1 | Connect to 1000+ external apps | 2026-03-14 |
 | [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | 7 | Finance: IB, equity research, PE, wealth mgmt | 2026-03-14 |
 
 New sources are discovered and added automatically every Monday via [GitHub Actions](.github/workflows/skill-discovery.yml). All candidates are security-scanned before integration.
@@ -100,8 +99,8 @@ New sources are discovered and added automatically every Monday via [GitHub Acti
 
 ```
 agent-skills/
-├── skills/          128 symlinks (flat access)
-├── vendor/          16 Git submodules (upstream sources)
+├── skills/          127 symlinks (flat access)
+├── vendor/          15 Git submodules (upstream sources)
 ├── bin/cli.js       npx installer
 ├── AGENTS.md        Codex / OpenCode / Windsurf
 ├── CLAUDE.md        Claude Code

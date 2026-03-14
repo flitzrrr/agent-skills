@@ -2,7 +2,7 @@ name: "Weekly Skill Auto-Discovery"
 
 on:
   schedule:
-    - cron: "0 9 * * 1" # Every Monday 9am UTC
+    - cron: "0 9 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ env:
 
 jobs:
   discover-and-add:
-    name: Discover & Add Skills
+    name: Discover and Add Skills
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -39,15 +39,12 @@ jobs:
           EXISTING=$(git submodule status | awk '{print $2}' | xargs -I{} basename {} | sort)
           echo "existing=$EXISTING" >> $GITHUB_OUTPUT
 
-          # Search for repos with SKILL.md pushed in the last week
           TRENDING=$(gh api "search/repositories?q=SKILL.md+in:path+pushed:>$(date -d '7 days ago' +%Y-%m-%d)&sort=stars&per_page=20" \
-            --jq '.items[] | select(.stargazers_count > 10) | {name: .full_name, stars: .stargazers_count, url: .html_url, desc: .description}' 2>/dev/null || echo "")
-
-          # Search for top starred agent-skills repos
-          TOP=$(gh api "search/repositories?q=agent+skills+in:name+topic:agent-skills&sort=stars&per_page=20" \
             --jq '.items[] | select(.stargazers_count > 50) | {name: .full_name, stars: .stargazers_count, url: .html_url, desc: .description}' 2>/dev/null || echo "")
 
-          # Combine and deduplicate
+          TOP=$(gh api "search/repositories?q=agent+skills+in:name+topic:agent-skills&sort=stars&per_page=20" \
+            --jq '.items[] | select(.stargazers_count > 100) | {name: .full_name, stars: .stargazers_count, url: .html_url, desc: .description}' 2>/dev/null || echo "")
+
           echo "$TRENDING" "$TOP" | jq -s 'unique_by(.name) | sort_by(-.stars) | .[0:10]' > /tmp/candidates.json
           cat /tmp/candidates.json
           echo "candidates_file=/tmp/candidates.json" >> $GITHUB_OUTPUT
@@ -67,57 +64,54 @@ jobs:
 
             echo "Evaluating: $repo_name"
 
-            # Skip if already a submodule
             BASENAME=$(echo "$repo_name" | tr '/' '-')
             if git submodule status | grep -q "$BASENAME"; then
               echo "  Already exists, skipping"
               continue
             fi
 
-            # Check for SKILL.md files
             SKILL_COUNT=$(gh api "search/code?q=filename:SKILL.md+repo:$repo_name" --jq '.total_count' 2>/dev/null || echo "0")
-            if [ "$SKILL_COUNT" -eq 0 ]; then
-              echo "  No SKILL.md found, skipping"
+            if [ "$SKILL_COUNT" -lt 3 ]; then
+              echo "  Only $SKILL_COUNT SKILL.md files (min 3), skipping"
+              REPORT="${REPORT}\n| SKIP | [$repo_name](https://github.com/$repo_name) | - | $SKILL_COUNT | - | Below skill count (min 3) |"
               continue
             fi
 
-            # Get repo metadata
             STARS=$(gh api "repos/$repo_name" --jq '.stargazers_count' 2>/dev/null || echo "0")
             LICENSE=$(gh api "repos/$repo_name" --jq '.license.spdx_id // "No license"' 2>/dev/null || echo "Unknown")
-            DESC=$(gh api "repos/$repo_name" --jq '.description // "No description"' 2>/dev/null || echo "")
 
-            # Security scan: check for suspicious patterns
+            if [ "$STARS" -lt 50 ]; then
+              echo "  Only $STARS stars (min 50), skipping"
+              REPORT="${REPORT}\n| SKIP | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Below star threshold (min 50) |"
+              continue
+            fi
+
             SCANNED=$((SCANNED + 1))
             echo "  Security scanning..."
 
-            # Clone to temp for scanning
             TMPDIR=$(mktemp -d)
             git clone --depth 1 "https://github.com/$repo_name.git" "$TMPDIR/$BASENAME" 2>/dev/null
 
             SCAN_PASS=true
             SCAN_NOTES=""
 
-            # Check for executable files (suspicious in a skills repo)
-            EXEC_COUNT=$(find "$TMPDIR/$BASENAME" -type f -executable ! -name "*.sh" ! -path "*/.git/*" | wc -l)
-            if [ "$EXEC_COUNT" -gt 5 ]; then
-              SCAN_NOTES=" ï¸$EXEC_COUNT executable files found. "
-            fi
-
-            # Check for obfuscated code
             OBFUSCATED=$(grep -rl "eval\|exec\|__import__\|subprocess\.call\|os\.system" "$TMPDIR/$BASENAME" --include="*.py" --include="*.js" 2>/dev/null | wc -l)
             if [ "$OBFUSCATED" -gt 3 ]; then
               SCAN_PASS=false
-              SCAN_NOTES="${SCAN_NOTES}$OBFUSCATED files with suspicious code patterns. "
+              SCAN_NOTES="${SCAN_NOTES}$OBFUSCATED files with suspicious code. "
             fi
 
-            # Check for credential patterns
             CREDS=$(grep -rl "password\|api_key\|secret_key\|private_key" "$TMPDIR/$BASENAME" --include="*.json" --include="*.env" 2>/dev/null | wc -l)
             if [ "$CREDS" -gt 0 ]; then
               SCAN_PASS=false
               SCAN_NOTES="${SCAN_NOTES}$CREDS files with credential patterns. "
             fi
 
-            # Quality check: skills should be mostly markdown
+            EXEC_COUNT=$(find "$TMPDIR/$BASENAME" -type f -executable ! -name "*.sh" ! -path "*/.git/*" | wc -l)
+            if [ "$EXEC_COUNT" -gt 5 ]; then
+              SCAN_NOTES="${SCAN_NOTES}$EXEC_COUNT executable files. "
+            fi
+
             TOTAL_FILES=$(find "$TMPDIR/$BASENAME" -type f ! -path "*/.git/*" | wc -l)
             MD_FILES=$(find "$TMPDIR/$BASENAME" -name "*.md" ! -path "*/.git/*" | wc -l)
             MD_RATIO=0
@@ -129,24 +123,21 @@ jobs:
 
             if [ "$SCAN_PASS" = false ]; then
               echo "  FAILED security scan: $SCAN_NOTES"
-              REPORT="${REPORT}\n| | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Scan failed: $SCAN_NOTES |"
+              REPORT="${REPORT}\n| FAIL | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Scan failed: $SCAN_NOTES |"
               continue
             fi
 
-            # Quality gate: minimum stars, has skills, has license
-            if [ "$STARS" -lt 10 ]; then
-              echo "  Too few stars ($STARS), skipping"
-              REPORT="${REPORT}\n| | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Below star threshold |"
+            if [ "$MD_RATIO" -lt 30 ]; then
+              echo "  Markdown ratio too low ($MD_RATIO%%, min 30%%), skipping"
+              REPORT="${REPORT}\n| SKIP | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Markdown ratio $MD_RATIO%% (min 30%%) |"
               continue
             fi
 
-            # All checks passed €add as submodule
-            echo "  PASSED all checks ($STARS, $SKILL_COUNT skills, $LICENSE, $MD_RATIO% markdown)"
+            echo "  PASSED ($STARS stars, $SKILL_COUNT skills, $LICENSE, $MD_RATIO%% markdown)"
             ACCEPTED=$((ACCEPTED + 1))
 
             git submodule add "https://github.com/$repo_name.git" "vendor/$BASENAME" 2>/dev/null || true
 
-            # Create symlinks
             SKILL_DIRS=$(find "vendor/$BASENAME" -name "SKILL.md" -maxdepth 3 -exec dirname {} \; 2>/dev/null)
             for skill_dir in $SKILL_DIRS; do
               skill_name=$(basename "$skill_dir")
@@ -155,7 +146,7 @@ jobs:
             done
 
             ADDED="${ADDED}${repo_name} "
-            REPORT="${REPORT}\n| | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Scan passed ($SCAN_NOTES${MD_RATIO}% markdown) |"
+            REPORT="${REPORT}\n| ADDED | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Passed (${MD_RATIO}%% markdown) |"
 
           done < <(jq -r '.[].name' /tmp/candidates.json 2>/dev/null)
 
@@ -192,28 +183,31 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TITLE="Weekly Skill Discovery Report €$(date +%Y-%m-%d)"
-          BODY="## Skill Discovery Report
+          TITLE="Weekly Skill Discovery Report - $(date +%Y-%m-%d)"
+          BODY=$(cat <<'ISSUE_BODY'
+          ## Skill Discovery Report
 
           **Scanned:** ${{ steps.evaluate.outputs.scanned }} candidates
           **Accepted:** ${{ steps.evaluate.outputs.accepted }} new sources
           **Added:** ${{ steps.evaluate.outputs.added || 'None' }}
 
-          ### Scan Results
+          ### Quality Gates
 
-          | Status | Repository | | Skills | License | Notes |
-          |--------|-----------|-----|--------|---------|-------|
+          | Gate | Threshold |
+          |------|-----------|
+          | Minimum stars | 50 |
+          | Minimum SKILL.md files | 3 |
+          | Minimum markdown ratio | 30% |
+          | No obfuscated code | eval/exec/subprocess |
+          | No hardcoded credentials | passwords, API keys |
+          | Executable file limit | max 5 |
+
+          ### Candidate Results
+
+          | Status | Repository | Stars | Skills | License | Notes |
+          |--------|-----------|-------|--------|---------|-------|
           ${{ steps.evaluate.outputs.report }}
-
-          ### Security Checks Performed
-          - No obfuscated code (eval/exec/subprocess patterns)
-          - No hardcoded credentials (passwords, API keys)
-          - Executable file count within threshold
-          - Minimum star count (10+)
-          - SKILL.md files present
-          - Valid license
-
-          ---
-          *Auto-generated by [skill-discovery.yml](https://github.com/${{ github.repository }}/blob/main/.github/workflows/skill-discovery.yml)*"
+          ISSUE_BODY
+          )
 
           gh issue create --title "$TITLE" --body "$BODY" --label "automation"

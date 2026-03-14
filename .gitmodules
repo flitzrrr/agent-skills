@@ -40,9 +40,6 @@
 [submodule "vendor/scientific-skills"]
 	path = vendor/scientific-skills
 	url = https://github.com/K-Dense-AI/claude-scientific-skills.git
-[submodule "vendor/composio-skills"]
-	path = vendor/composio-skills
-	url = https://github.com/ComposioHQ/skills.git
 [submodule "vendor/anthropic-finance"]
 	path = vendor/anthropic-finance
 	url = https://github.com/anthropics/financial-services-plugins.git
