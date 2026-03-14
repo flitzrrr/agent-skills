@@ -1,6 +1,6 @@
 # Agent Skills Hub
 
-This repository contains 55 curated AI agent skills from 5 sources.
+This repository contains 55 curated AI agent skills from 15 sources.
 Skills are located in the `skills/` directory — each contains a `SKILL.md` with instructions.
 
 ## Available Skill Categories

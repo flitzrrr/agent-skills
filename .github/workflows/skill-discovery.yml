@@ -157,6 +157,10 @@ jobs:
           echo -e "$REPORT" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
+      - name: Sync documentation
+        if: steps.evaluate.outputs.accepted != '0'
+        run: node bin/sync-docs.js
+
       - name: Commit and push
         if: steps.evaluate.outputs.accepted != '0'
         run: |
