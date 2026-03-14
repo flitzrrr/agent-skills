@@ -61,12 +61,12 @@ Paste this into **any AI coding assistant** (Claude Code, Antigravity, Codex, Cu
 ### Option 2: npm CLI
 
 ```bash
-npx @flitzrrr/agent-skills install              # Install for all platforms
-npx @flitzrrr/agent-skills install antigravity   # Antigravity only
-npx @flitzrrr/agent-skills install codex         # Codex only
-npx @flitzrrr/agent-skills install opencode      # OpenCode only
-npx @flitzrrr/agent-skills update                # Update all skills
-npx @flitzrrr/agent-skills list                  # List available skills
+npx @flitzrrr/agent-skills install                # Install for all platforms
+npx @flitzrrr/agent-skills install antigravity     # Antigravity only
+npx @flitzrrr/agent-skills install codex           # Codex only
+npx @flitzrrr/agent-skills install opencode        # OpenCode only
+npx @flitzrrr/agent-skills update                  # Update all skills
+npx @flitzrrr/agent-skills list                    # List available skills
 ```
 
 ### Option 3: Manual Setup
