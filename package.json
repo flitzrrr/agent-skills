@@ -1,6 +1,6 @@
 {
   "name": "@flitzrrr/agent-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "121 AI agent skills from 15 industry-leading sources — multiplatform-ready for Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and more.",
   "bin": {
     "agent-skills": "bin/cli.js"
