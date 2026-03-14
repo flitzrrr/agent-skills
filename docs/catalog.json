@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-14T20:54:47.588Z",
+  "generated": "2026-03-14T21:04:27.334Z",
   "total": 127,
   "skills": [
     {
@@ -150,12 +150,12 @@
     {
       "name": "cloudflare-building-ai-agent-on-cloudflare",
       "source": "cloudflare",
-      "description": "|"
+      "description": "Builds AI agents on Cloudflare using the Agents SDK with state management, real-time WebSockets, scheduled tasks, tool integration, and chat capabi..."
     },
     {
       "name": "cloudflare-building-mcp-server-on-cloudflare",
       "source": "cloudflare",
-      "description": "|"
+      "description": "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers with tools, OAuth authentication, and production deployment."
     },
     {
       "name": "cloudflare-cloudflare",
@@ -335,7 +335,7 @@
     {
       "name": "seo",
       "source": "seo",
-      "description": ">"
+      "description": "Deterministic LLM-first SEO audits for websites, blog posts, and GitHub repositories."
     },
     {
       "name": "skill-creator",
@@ -470,7 +470,7 @@
     {
       "name": "tob-debug-buttercup",
       "source": "tob",
-      "description": ">"
+      "description": "Debugs the Buttercup CRS (Cyber Reasoning System) running on Kubernetes."
     },
     {
       "name": "tob-devcontainer-setup",
@@ -480,7 +480,7 @@
     {
       "name": "tob-differential-review",
       "source": "tob",
-      "description": ">"
+      "description": "Performs security-focused differential review of code changes (PRs, commits, diffs)."
     },
     {
       "name": "tob-dwarf-expert",
@@ -505,7 +505,7 @@
     {
       "name": "tob-gh-cli",
       "source": "tob",
-      "description": "Gh Cli."
+      "description": "Automate GitHub workflows using the gh CLI for issues, PRs, and releases."
     },
     {
       "name": "tob-git-cleanup",
@@ -570,7 +570,7 @@
     {
       "name": "tob-static-analysis",
       "source": "tob",
-      "description": ">-"
+      "description": "Scans a codebase for security vulnerabilities using CodeQL's interprocedural data flow and taint tracking analysis."
     },
     {
       "name": "tob-supply-chain-risk-auditor",
@@ -580,7 +580,7 @@
     {
       "name": "tob-testing-handbook-skills",
       "source": "tob",
-      "description": ">"
+      "description": "AddressSanitizer detects memory errors during fuzzing."
     },
     {
       "name": "tob-variant-analysis",
@@ -590,12 +590,12 @@
     {
       "name": "tob-workflow-skill-design",
       "source": "tob",
-      "description": ">-"
+      "description": "Guides the design and structuring of workflow-based Claude Code skills with multi-step phases, decision trees, subagent delegation, and progressive..."
     },
     {
       "name": "tob-yara-authoring",
       "source": "tob",
-      "description": ">"
+      "description": "Guides authoring of high-quality YARA-X detection rules for malware identification."
     },
     {
       "name": "tob-zeroize-audit",

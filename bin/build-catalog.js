@@ -41,32 +41,60 @@ function extractDescription(skillMdPath) {
   const content = fs.readFileSync(skillMdPath, "utf8");
   const fmMatch = content.match(/^---\s*\n([\s\S]*?)\n---/);
   if (fmMatch) {
-    // Multi-line description in quotes
-    let descMatch = fmMatch[1].match(/description:\s*"([\s\S]*?)"/);
-    if (!descMatch) {
-      // Single-line description
-      descMatch = fmMatch[1].match(/description:\s*(.+?)(?:\n|$)/);
+    const fm = fmMatch[1];
+    let desc = null;
+
+    // 1. Quoted description: description: "..."
+    const quotedMatch = fm.match(/description:\s*"([\s\S]*?)"/);
+    if (quotedMatch) {
+      desc = quotedMatch[1];
     }
-    if (descMatch) {
-      let desc = descMatch[1].replace(/\s+/g, " ").trim();
+
+    // 2. YAML multi-line (>, >-, |, |-): collect indented lines
+    if (!desc) {
+      const multiMatch = fm.match(/description:\s*[>|]-?\s*\n([\s\S]*?)(?=\n\S|\n*$)/);
+      if (multiMatch) {
+        desc = multiMatch[1]
+          .split("\n")
+          .map((l) => l.replace(/^\s{2,}/, "").trim())
+          .filter(Boolean)
+          .join(" ");
+      }
+    }
+
+    // 3. Single-line description
+    if (!desc) {
+      const singleMatch = fm.match(/description:\s*(.+?)(?:\n|$)/);
+      if (singleMatch) {
+        desc = singleMatch[1];
+      }
+    }
+
+    if (desc) {
+      desc = desc.replace(/\s+/g, " ").trim();
       // First sentence
       const sentEnd = desc.match(/[.!?]\s/);
       if (sentEnd) desc = desc.substring(0, sentEnd.index + 1);
       if (desc.length > 150) desc = desc.substring(0, 147) + "...";
-      return desc;
+      // Reject garbage (too short, only symbols, YAML artifacts)
+      if (desc.length >= 10 && /[a-zA-Z]{3,}/.test(desc)) {
+        return desc;
+      }
     }
   }
-  // Fallback: first real paragraph
+  // Fallback: first real paragraph after frontmatter
   const noFm = content.replace(/^---[\s\S]*?---\s*/, "");
   const lines = noFm
     .split("\n")
-    .filter((l) => l.trim() && !l.startsWith("#") && !l.startsWith("```"));
+    .filter((l) => l.trim() && !l.startsWith("#") && !l.startsWith("```") && !l.startsWith("-"));
   if (lines.length > 0) {
     let desc = lines[0].trim();
     const sentEnd = desc.match(/[.!?]\s/);
     if (sentEnd) desc = desc.substring(0, sentEnd.index + 1);
     if (desc.length > 150) desc = desc.substring(0, 147) + "...";
-    return desc;
+    if (desc.length >= 10 && /[a-zA-Z]{3,}/.test(desc)) {
+      return desc;
+    }
   }
   return null;
 }
@@ -88,13 +116,26 @@ function descFromName(name) {
     "terraform-code-generation": "Generate Terraform HCL code from infrastructure requirements.",
     "terraform-module-generation": "Create reusable Terraform modules following best practices.",
     "terraform-provider-development": "Build custom Terraform providers for new infrastructure APIs.",
+    // tob skills without parseable YAML
+    "tob-debug-buttercup": "Debug Buttercup password manager issues and extension failures.",
+    "tob-differential-review": "Security-focused differential code review for pull requests.",
+    "tob-gh-cli": "Automate GitHub workflows using the gh CLI for issues, PRs, and releases.",
+    "tob-static-analysis": "Run and interpret static analysis tools across multiple languages.",
+    "tob-testing-handbook-skills": "Apply Trail of Bits testing handbook best practices.",
+    "tob-workflow-skill-design": "Design and structure new Claude Code skills and workflows.",
+    "tob-yara-authoring": "Author and validate YARA rules for malware detection and threat hunting.",
+    // seo
+    "seo": "Deterministic LLM-first SEO audits for websites, blogs, and repositories.",
   };
   if (map[name]) return map[name];
 
-  // Auto-generate from name
-  const parts = name.replace(/^(tob|anthropic|agents|cloudflare|sentry)-/, "").split("-");
+  // Auto-generate from name (strip known prefixes)
+  const cleaned = name
+    .replace(/^(tob|anthropic|agents|cloudflare|sentry|google|finance|terraform)-/, "");
+  const parts = cleaned.split("-");
   const readable = parts.map((p) => p.charAt(0).toUpperCase() + p.slice(1)).join(" ");
-  return `${readable}.`;
+  // Make it a full sentence
+  return `${readable} tooling and automation.`;
 }
 
 function main() {
