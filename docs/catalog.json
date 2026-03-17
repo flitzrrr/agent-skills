@@ -1,11 +1,31 @@
 {
-  "generated": "2026-03-14T21:04:27.334Z",
-  "total": 127,
+  "generated": "2026-03-17T22:35:20.473Z",
+  "total": 231,
   "skills": [
+    {
+      "name": "ab-test-setup",
+      "source": "ab",
+      "description": "When the user wants to plan, design, or implement an A/B test or experiment."
+    },
+    {
+      "name": "ad-creative",
+      "source": "ad",
+      "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advert..."
+    },
     {
       "name": "agents-md",
       "source": "agents",
       "description": "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep..."
+    },
+    {
+      "name": "ai-seo",
+      "source": "ai",
+      "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers."
+    },
+    {
+      "name": "analytics-tracking",
+      "source": "analytics",
+      "description": "When the user wants to set up, improve, or audit analytics tracking and measurement."
     },
     {
       "name": "anthropic-algorithmic-art",
@@ -138,6 +158,11 @@
       "description": "Upgrades React Native apps to newer versions by applying rn-diff-purge template diffs, updating package.json dependencies, migrating native iOS and..."
     },
     {
+      "name": "churn-prevention",
+      "source": "churn",
+      "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies."
+    },
+    {
       "name": "claude-settings-audit",
       "source": "claude",
       "description": "Analyze a repository to generate recommended Claude Code settings.json permissions."
@@ -198,9 +223,34 @@
       "description": "Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality."
     },
     {
+      "name": "cold-email",
+      "source": "cold",
+      "description": "Write B2B cold emails and follow-up sequences that get replies."
+    },
+    {
       "name": "commit",
       "source": "commit",
       "description": "ALWAYS use this skill when committing code changes — never commit directly without it."
+    },
+    {
+      "name": "competitor-alternatives",
+      "source": "competitor",
+      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement."
+    },
+    {
+      "name": "content-strategy",
+      "source": "content",
+      "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover."
+    },
+    {
+      "name": "copy-editing",
+      "source": "copy",
+      "description": "When the user wants to edit, review, or improve existing marketing copy."
+    },
+    {
+      "name": "copywriting",
+      "source": "copywriting",
+      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, ab..."
     },
     {
       "name": "create-branch",
@@ -231,6 +281,11 @@
       "name": "doc-coauthoring",
       "source": "doc",
       "description": "Guide users through a structured workflow for co-authoring documentation."
+    },
+    {
+      "name": "email-sequence",
+      "source": "email",
+      "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program."
     },
     {
       "name": "execute-work-packet",
@@ -283,6 +338,16 @@
       "description": "Find bugs, security vulnerabilities, and code quality issues in local branch changes."
     },
     {
+      "name": "form-cro",
+      "source": "form",
+      "description": "When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, applica..."
+    },
+    {
+      "name": "free-tool-strategy",
+      "source": "free",
+      "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness."
+    },
+    {
       "name": "generate-docs",
       "source": "generate",
       "description": "Generate project documentation from an existing codebase."
@@ -308,6 +373,406 @@
       "description": "Iterate on a PR until CI passes."
     },
     {
+      "name": "itsmostafa-api-gateway",
+      "source": "itsmostafa",
+      "description": "AWS API Gateway for REST and HTTP API management."
+    },
+    {
+      "name": "itsmostafa-bedrock",
+      "source": "itsmostafa",
+      "description": "AWS Bedrock foundation models for generative AI."
+    },
+    {
+      "name": "itsmostafa-cloudformation",
+      "source": "itsmostafa",
+      "description": "AWS CloudFormation infrastructure as code for stack management."
+    },
+    {
+      "name": "itsmostafa-cloudwatch",
+      "source": "itsmostafa",
+      "description": "AWS CloudWatch monitoring for logs, metrics, alarms, and dashboards."
+    },
+    {
+      "name": "itsmostafa-cognito",
+      "source": "itsmostafa",
+      "description": "AWS Cognito user authentication and authorization service."
+    },
+    {
+      "name": "itsmostafa-dynamodb",
+      "source": "itsmostafa",
+      "description": "AWS DynamoDB NoSQL database for scalable data storage."
+    },
+    {
+      "name": "itsmostafa-ec2",
+      "source": "itsmostafa",
+      "description": "AWS EC2 virtual machine management for instances, AMIs, and networking."
+    },
+    {
+      "name": "itsmostafa-ecs",
+      "source": "itsmostafa",
+      "description": "AWS ECS container orchestration for running Docker containers."
+    },
+    {
+      "name": "itsmostafa-eks",
+      "source": "itsmostafa",
+      "description": "AWS EKS Kubernetes management for clusters, node groups, and workloads."
+    },
+    {
+      "name": "itsmostafa-eventbridge",
+      "source": "itsmostafa",
+      "description": "AWS EventBridge serverless event bus for event-driven architectures."
+    },
+    {
+      "name": "itsmostafa-iam",
+      "source": "itsmostafa",
+      "description": "AWS Identity and Access Management for users, roles, policies, and permissions."
+    },
+    {
+      "name": "itsmostafa-lambda",
+      "source": "itsmostafa",
+      "description": "AWS Lambda serverless functions for event-driven compute."
+    },
+    {
+      "name": "itsmostafa-rds",
+      "source": "itsmostafa",
+      "description": "AWS RDS relational database service for managed databases."
+    },
+    {
+      "name": "itsmostafa-s3",
+      "source": "itsmostafa",
+      "description": "AWS S3 object storage for bucket management, object operations, and access control."
+    },
+    {
+      "name": "itsmostafa-secrets-manager",
+      "source": "itsmostafa",
+      "description": "AWS Secrets Manager for secure secret storage and rotation."
+    },
+    {
+      "name": "itsmostafa-sns",
+      "source": "itsmostafa",
+      "description": "AWS SNS notification service for pub/sub messaging."
+    },
+    {
+      "name": "itsmostafa-sqs",
+      "source": "itsmostafa",
+      "description": "AWS SQS message queue service for decoupled architectures."
+    },
+    {
+      "name": "itsmostafa-step-functions",
+      "source": "itsmostafa",
+      "description": "AWS Step Functions workflow orchestration with state machines."
+    },
+    {
+      "name": "JackyST0-api-doc-generator",
+      "source": "JackyST0",
+      "description": "Generate API documentation from source code, supporting REST APIs, GraphQL, and various documentation formats."
+    },
+    {
+      "name": "JackyST0-code-review",
+      "source": "JackyST0",
+      "description": "Smart code review skill that helps review code quality, identify potential issues, and provide improvement suggestions."
+    },
+    {
+      "name": "JackyST0-debug-helper",
+      "source": "JackyST0",
+      "description": "Help debug code by analyzing error messages, identifying root causes, and providing fix suggestions."
+    },
+    {
+      "name": "JackyST0-git-commit",
+      "source": "JackyST0",
+      "description": "Git commit message generator that creates conventional commit messages based on code changes."
+    },
+    {
+      "name": "JackyST0-unit-test-generator",
+      "source": "JackyST0",
+      "description": "Automatically generate unit tests based on source code, supporting multiple languages and testing frameworks."
+    },
+    {
+      "name": "launch-strategy",
+      "source": "launch",
+      "description": "When the user wants to plan a product launch, feature announcement, or release strategy."
+    },
+    {
+      "name": "lead-magnets",
+      "source": "lead",
+      "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation."
+    },
+    {
+      "name": "marketing-ideas",
+      "source": "marketing",
+      "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product."
+    },
+    {
+      "name": "marketing-psychology",
+      "source": "marketing",
+      "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing."
+    },
+    {
+      "name": "MoizIbnYousaf-algorithmic-art",
+      "source": "MoizIbnYousaf",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration."
+    },
+    {
+      "name": "MoizIbnYousaf-artifacts-builder",
+      "source": "MoizIbnYousaf",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn..."
+    },
+    {
+      "name": "MoizIbnYousaf-ask-questions-if-underspecified",
+      "source": "MoizIbnYousaf",
+      "description": "Clarify requirements before implementing."
+    },
+    {
+      "name": "MoizIbnYousaf-backend-development",
+      "source": "MoizIbnYousaf",
+      "description": "Backend API design, database architecture, microservices patterns, and test-driven development."
+    },
+    {
+      "name": "MoizIbnYousaf-best-practices",
+      "source": "MoizIbnYousaf",
+      "description": "Transforms vague prompts into optimized Claude Code prompts."
+    },
+    {
+      "name": "MoizIbnYousaf-brand-guidelines",
+      "source": "MoizIbnYousaf",
+      "description": "Apply brand colors and typography to artifacts."
+    },
+    {
+      "name": "MoizIbnYousaf-canvas-design",
+      "source": "MoizIbnYousaf",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy."
+    },
+    {
+      "name": "MoizIbnYousaf-changelog-generator",
+      "source": "MoizIbnYousaf",
+      "description": "Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits..."
+    },
+    {
+      "name": "MoizIbnYousaf-code-documentation",
+      "source": "MoizIbnYousaf",
+      "description": "Writing effective code documentation - API docs, README files, inline comments, and technical guides."
+    },
+    {
+      "name": "MoizIbnYousaf-code-refactoring",
+      "source": "MoizIbnYousaf",
+      "description": "Code refactoring patterns and techniques for improving code quality without changing behavior."
+    },
+    {
+      "name": "MoizIbnYousaf-code-review",
+      "source": "MoizIbnYousaf",
+      "description": "Automated code review for pull requests using specialized review patterns."
+    },
+    {
+      "name": "MoizIbnYousaf-competitive-ads-extractor",
+      "source": "MoizIbnYousaf",
+      "description": "Extracts and analyzes competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand what messaging, problems, and creative approaches..."
+    },
+    {
+      "name": "MoizIbnYousaf-content-research-writer",
+      "source": "MoizIbnYousaf",
+      "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time f..."
+    },
+    {
+      "name": "MoizIbnYousaf-database-design",
+      "source": "MoizIbnYousaf",
+      "description": "Database schema design, optimization, and migration patterns for PostgreSQL, MySQL, and NoSQL databases."
+    },
+    {
+      "name": "MoizIbnYousaf-developer-growth-analysis",
+      "source": "MoizIbnYousaf",
+      "description": "Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and areas for improvement, curates relevant learning r..."
+    },
+    {
+      "name": "MoizIbnYousaf-doc-coauthoring",
+      "source": "MoizIbnYousaf",
+      "description": "Guide users through a structured workflow for co-authoring documentation."
+    },
+    {
+      "name": "MoizIbnYousaf-docx",
+      "source": "MoizIbnYousaf",
+      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction."
+    },
+    {
+      "name": "MoizIbnYousaf-domain-name-brainstormer",
+      "source": "MoizIbnYousaf",
+      "description": "Generates creative domain name ideas for your project and checks availability across multiple TLDs (.com, .io, .dev, .ai, etc.)."
+    },
+    {
+      "name": "MoizIbnYousaf-figma",
+      "source": "MoizIbnYousaf",
+      "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code."
+    },
+    {
+      "name": "MoizIbnYousaf-figma-implement-design",
+      "source": "MoizIbnYousaf",
+      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and pr..."
+    },
+    {
+      "name": "MoizIbnYousaf-file-organizer",
+      "source": "MoizIbnYousaf",
+      "description": "Intelligently organizes your files and folders across your computer by understanding context, finding duplicates, suggesting better structures, and..."
+    },
+    {
+      "name": "MoizIbnYousaf-frontend-design",
+      "source": "MoizIbnYousaf",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality."
+    },
+    {
+      "name": "MoizIbnYousaf-gh-fix-ci",
+      "source": "MoizIbnYousaf",
+      "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure co..."
+    },
+    {
+      "name": "MoizIbnYousaf-image-enhancer",
+      "source": "MoizIbnYousaf",
+      "description": "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity."
+    },
+    {
+      "name": "MoizIbnYousaf-internal-comms",
+      "source": "MoizIbnYousaf",
+      "description": "Write internal communications using company formats."
+    },
+    {
+      "name": "MoizIbnYousaf-invoice-organizer",
+      "source": "MoizIbnYousaf",
+      "description": "Automatically organizes invoices and receipts for tax preparation by reading messy files, extracting key information, renaming them consistently, a..."
+    },
+    {
+      "name": "MoizIbnYousaf-javascript-typescript",
+      "source": "MoizIbnYousaf",
+      "description": "JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks."
+    },
+    {
+      "name": "MoizIbnYousaf-jira-issues",
+      "source": "MoizIbnYousaf",
+      "description": "Create, update, and manage Jira issues from natural language."
+    },
+    {
+      "name": "MoizIbnYousaf-job-application",
+      "source": "MoizIbnYousaf",
+      "description": "Write tailored cover letters and job applications using your CV and preferred style"
+    },
+    {
+      "name": "MoizIbnYousaf-lead-research-assistant",
+      "source": "MoizIbnYousaf",
+      "description": "Identifies high-quality leads for your product or service by analyzing your business, searching for target companies, and providing actionable cont..."
+    },
+    {
+      "name": "MoizIbnYousaf-llm-application-dev",
+      "source": "MoizIbnYousaf",
+      "description": "Building applications with Large Language Models - prompt engineering, RAG patterns, and LLM integration."
+    },
+    {
+      "name": "MoizIbnYousaf-mcp-builder",
+      "source": "MoizIbnYousaf",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools."
+    },
+    {
+      "name": "MoizIbnYousaf-meeting-insights-analyzer",
+      "source": "MoizIbnYousaf",
+      "description": "Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback."
+    },
+    {
+      "name": "MoizIbnYousaf-notion-spec-to-implementation",
+      "source": "MoizIbnYousaf",
+      "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tas..."
+    },
+    {
+      "name": "MoizIbnYousaf-openai-docs",
+      "source": "MoizIbnYousaf",
+      "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations, help choosing the late..."
+    },
+    {
+      "name": "MoizIbnYousaf-pdf",
+      "source": "MoizIbnYousaf",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms."
+    },
+    {
+      "name": "MoizIbnYousaf-playwright",
+      "source": "MoizIbnYousaf",
+      "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow ..."
+    },
+    {
+      "name": "MoizIbnYousaf-pptx",
+      "source": "MoizIbnYousaf",
+      "description": "Presentation creation, editing, and analysis."
+    },
+    {
+      "name": "MoizIbnYousaf-python-development",
+      "source": "MoizIbnYousaf",
+      "description": "Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices."
+    },
+    {
+      "name": "MoizIbnYousaf-qa-regression",
+      "source": "MoizIbnYousaf",
+      "description": "Automate QA regression testing with reusable test skills."
+    },
+    {
+      "name": "MoizIbnYousaf-raffle-winner-picker",
+      "source": "MoizIbnYousaf",
+      "description": "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests."
+    },
+    {
+      "name": "MoizIbnYousaf-sentry",
+      "source": "MoizIbnYousaf",
+      "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry API;..."
+    },
+    {
+      "name": "MoizIbnYousaf-skill-creator",
+      "source": "MoizIbnYousaf",
+      "description": "Guide for creating effective skills."
+    },
+    {
+      "name": "MoizIbnYousaf-slack-gif-creator",
+      "source": "MoizIbnYousaf",
+      "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and composable animation primitives."
+    },
+    {
+      "name": "MoizIbnYousaf-theme-factory",
+      "source": "MoizIbnYousaf",
+      "description": "Toolkit for styling artifacts with a theme."
+    },
+    {
+      "name": "MoizIbnYousaf-video-downloader",
+      "source": "MoizIbnYousaf",
+      "description": "Downloads videos from YouTube and other platforms for offline viewing, editing, or archival."
+    },
+    {
+      "name": "MoizIbnYousaf-webapp-testing",
+      "source": "MoizIbnYousaf",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright."
+    },
+    {
+      "name": "MoizIbnYousaf-xlsx",
+      "source": "MoizIbnYousaf",
+      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization."
+    },
+    {
+      "name": "onboarding-cro",
+      "source": "onboarding",
+      "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value."
+    },
+    {
+      "name": "page-cro",
+      "source": "page",
+      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature..."
+    },
+    {
+      "name": "paid-ads",
+      "source": "paid",
+      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms."
+    },
+    {
+      "name": "paywall-upgrade-cro",
+      "source": "paywall",
+      "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates."
+    },
+    {
+      "name": "popup-cro",
+      "source": "popup",
+      "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes."
+    },
+    {
       "name": "pr-writer",
       "source": "pr",
       "description": "ALWAYS use this skill when creating or updating pull requests — never create or edit a PR directly without it."
@@ -318,9 +783,44 @@
       "description": "Create data-driven presentation slides using React, Vite, and Recharts with Sentry branding."
     },
     {
+      "name": "pricing-strategy",
+      "source": "pricing",
+      "description": "When the user wants help with pricing decisions, packaging, or monetization strategy."
+    },
+    {
+      "name": "product-marketing-context",
+      "source": "product",
+      "description": "When the user wants to create or update their product marketing context document."
+    },
+    {
+      "name": "programmatic-seo",
+      "source": "programmatic",
+      "description": "When the user wants to create SEO-driven pages at scale using templates and data."
+    },
+    {
+      "name": "referral-program",
+      "source": "referral",
+      "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
+    },
+    {
       "name": "resume-plan",
       "source": "resume",
       "description": "Bootstrap a new session to continue working on an existing plan."
+    },
+    {
+      "name": "revops",
+      "source": "revops",
+      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes."
+    },
+    {
+      "name": "sales-enablement",
+      "source": "sales",
+      "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts."
+    },
+    {
+      "name": "schema-markup",
+      "source": "schema",
+      "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site."
     },
     {
       "name": "scientific",
@@ -338,6 +838,21 @@
       "description": "Deterministic LLM-first SEO audits for websites, blog posts, and GitHub repositories."
     },
     {
+      "name": "seo-audit",
+      "source": "seo",
+      "description": "When the user wants to audit, review, or diagnose SEO issues on their site."
+    },
+    {
+      "name": "signup-flow-cro",
+      "source": "signup",
+      "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows."
+    },
+    {
+      "name": "site-architecture",
+      "source": "site",
+      "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking."
+    },
+    {
       "name": "skill-creator",
       "source": "skill",
       "description": "Alias for sentry-skills:skill-writer."
@@ -351,6 +866,11 @@
       "name": "skill-writer",
       "source": "skill",
       "description": "Create, synthesize, and iteratively improve agent skills following the Agent Skills specification."
+    },
+    {
+      "name": "social-content",
+      "source": "social",
+      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other pl..."
     },
     {
       "name": "sred-project-organizer",
