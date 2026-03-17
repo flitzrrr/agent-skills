@@ -244,16 +244,18 @@ jobs:
           git push origin main --tags
 
       - name: Create report issue
+        if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TITLE="Weekly Skill Discovery Report - $(date +%Y-%m-%d)"
-          BODY=$(cat <<'ISSUE_BODY'
+          cat > /tmp/issue_body.md << 'EOF'
           ## Skill Discovery Report
 
-          **Scanned:** ${{ steps.evaluate.outputs.scanned }} candidates
-          **Accepted:** ${{ steps.evaluate.outputs.accepted }} new sources
-          **Added:** ${{ steps.evaluate.outputs.added || 'None' }}
+          | Metric | Value |
+          |--------|-------|
+          | Scanned | ${{ steps.evaluate.outputs.scanned || '0' }} candidates |
+          | Accepted | ${{ steps.evaluate.outputs.accepted || '0' }} new sources |
 
           ### Quality Gates
 
@@ -265,13 +267,6 @@ jobs:
           | No obfuscated code | eval/exec/subprocess |
           | No hardcoded credentials | passwords, API keys |
           | Executable file limit | max 5 |
+          EOF
 
-          ### Candidate Results
-
-          | Status | Repository | Stars | Skills | License | Notes |
-          |--------|-----------|-------|--------|---------|-------|
-          ${{ steps.evaluate.outputs.report }}
-          ISSUE_BODY
-          )
-
-          gh issue create --title "$TITLE" --body "$BODY" --label "automation"
+          gh issue create --title "$TITLE" --body-file /tmp/issue_body.md --label "automation" || echo "Issue creation failed (non-fatal)"
