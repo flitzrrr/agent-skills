@@ -37,15 +37,17 @@ jobs:
         run: |
           echo "Searching for trending agent skill repos..."
           EXISTING=$(git submodule status | awk '{print $2}' | xargs -I{} basename {} | sort)
-          echo "existing=$EXISTING" >> $GITHUB_OUTPUT
+          echo "existing<<EOF" >> $GITHUB_OUTPUT
+          echo "$EXISTING" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
           TRENDING=$(gh api "search/repositories?q=SKILL.md+in:path+pushed:>$(date -d '7 days ago' +%Y-%m-%d)&sort=stars&per_page=20" \
-            --jq '.items[] | select(.stargazers_count > 50) | {name: .full_name, stars: .stargazers_count, url: .html_url, desc: .description}' 2>/dev/null || echo "")
+            --jq '[.items[] | select(.stargazers_count > 50) | {name: .full_name, stars: .stargazers_count, url: .html_url, desc: .description}]' 2>/dev/null || echo "[]")
 
           TOP=$(gh api "search/repositories?q=agent+skills+in:name+topic:agent-skills&sort=stars&per_page=20" \
-            --jq '.items[] | select(.stargazers_count > 100) | {name: .full_name, stars: .stargazers_count, url: .html_url, desc: .description}' 2>/dev/null || echo "")
+            --jq '[.items[] | select(.stargazers_count > 100) | {name: .full_name, stars: .stargazers_count, url: .html_url, desc: .description}]' 2>/dev/null || echo "[]")
 
-          echo "$TRENDING" "$TOP" | jq -s 'unique_by(.name) | sort_by(-.stars) | .[0:10]' > /tmp/candidates.json
+          echo "$TRENDING" "$TOP" | jq -s 'add | unique_by(.name) | sort_by(-.stars) | .[0:10]' > /tmp/candidates.json
           cat /tmp/candidates.json
           echo "candidates_file=/tmp/candidates.json" >> $GITHUB_OUTPUT
 
