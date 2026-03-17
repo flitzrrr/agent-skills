@@ -43,3 +43,6 @@
 [submodule "vendor/anthropic-finance"]
 	path = vendor/anthropic-finance
 	url = https://github.com/anthropics/financial-services-plugins.git
+[submodule "vendor/marketingskills"]
+	path = vendor/marketingskills
+	url = https://github.com/coreyhaines31/marketingskills.git
