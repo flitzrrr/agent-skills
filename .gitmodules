@@ -46,3 +46,12 @@
 [submodule "vendor/marketingskills"]
 	path = vendor/marketingskills
 	url = https://github.com/coreyhaines31/marketingskills.git
+[submodule "vendor/itsmostafa-aws-agent-skills"]
+	path = vendor/itsmostafa-aws-agent-skills
+	url = https://github.com/itsmostafa/aws-agent-skills.git
+[submodule "vendor/MoizIbnYousaf-Ai-Agent-Skills"]
+	path = vendor/MoizIbnYousaf-Ai-Agent-Skills
+	url = https://github.com/MoizIbnYousaf/Ai-Agent-Skills.git
+[submodule "vendor/JackyST0-awesome-agent-skills"]
+	path = vendor/JackyST0-awesome-agent-skills
+	url = https://github.com/JackyST0/awesome-agent-skills.git

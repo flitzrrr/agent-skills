@@ -2,12 +2,12 @@
 
 [![npm version](https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
 [![npm downloads](https://img.shields.io/npm/dm/@flitzrrr/agent-skills?style=flat-square)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
-[![Skills](https://img.shields.io/badge/skills-127-blue?style=flat-square)](skills/)
-[![Sources](https://img.shields.io/badge/sources-15-green?style=flat-square)](vendor/)
+[![Skills](https://img.shields.io/badge/skills-231-blue?style=flat-square)](skills/)
+[![Sources](https://img.shields.io/badge/sources-19-green?style=flat-square)](vendor/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Weekly Discovery](https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square)](.github/workflows/skill-discovery.yml)
 
-A curated collection of **127 agent skills** from **15 industry-leading sources**, organized for flat access and compatible with all major AI coding assistants.
+A curated collection of **231 agent skills** from **19 industry-leading sources**, organized for flat access and compatible with all major AI coding assistants.
 
 ---
 
@@ -100,8 +100,8 @@ New sources are discovered and added automatically every Monday via [GitHub Acti
 
 ```
 agent-skills/
-├── skills/          127 symlinks (flat access)
-├── vendor/          15 Git submodules (upstream sources)
+├── skills/          231 symlinks (flat access)
+├── vendor/          19 Git submodules (upstream sources)
 ├── bin/cli.js       npx installer
 ├── AGENTS.md        Codex / OpenCode / Windsurf
 ├── CLAUDE.md        Claude Code

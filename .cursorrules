@@ -2,7 +2,7 @@
 # This file makes skills discoverable in Cursor IDE.
 # For detailed skill usage, see CHEATSHEET.md or individual SKILL.md files.
 
-## Available Skills (55 total from 15 sources)
+## Available Skills (55 total from 19 sources)
 
 ### Security & Code Quality
 - Use `skills/security-review/SKILL.md` for OWASP-based security audits
