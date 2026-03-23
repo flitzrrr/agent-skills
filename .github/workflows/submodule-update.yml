@@ -70,9 +70,9 @@ jobs:
             cd "${GITHUB_WORKSPACE}"
           done
 
-          echo "updated=${UPDATED}" >> "${GITHUB_OUTPUT}"
-          echo "count=${COUNT}" >> "${GITHUB_OUTPUT}"
           {
+            echo "updated=${UPDATED}"
+            echo "count=${COUNT}"
             echo "report<<EOF"
             echo "${REPORT}"
             echo "EOF"
