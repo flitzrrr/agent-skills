@@ -2,40 +2,24 @@
 
 [![npm version](https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
 [![npm downloads](https://img.shields.io/npm/dm/@flitzrrr/agent-skills?style=flat-square)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
-[![Skills](https://img.shields.io/badge/skills-231-blue?style=flat-square)](skills/)
+[![Skills](https://img.shields.io/badge/skills-503-blue?style=flat-square)](skills/)
 [![Sources](https://img.shields.io/badge/sources-19-green?style=flat-square)](vendor/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Weekly Discovery](https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square)](.github/workflows/skill-discovery.yml)
 
-A curated collection of **231 agent skills** from **19 industry-leading sources**, organized for flat access and compatible with all major AI coding assistants.
+**503 agent skills** from **19 sources**, flat-access, works with Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and Windsurf.
+
+[Browse the full catalog](https://flitzrrr.github.io/agent-skills/) | [Decision guide](CHEATSHEET.md)
 
 ---
 
-## Quick Install
-
-**Ask your AI agent** — paste this into any AI coding assistant:
-
-> Clone the agent-skills repository from https://github.com/flitzrrr/agent-skills with all submodules. Then symlink all skills from the `skills/` directory into my local agent skills directory. Preserve any existing skills I already have — do not overwrite them.
-
-**Or use the CLI:**
+## Install
 
 ```bash
 npx @flitzrrr/agent-skills install
 ```
 
-<details>
-<summary>More CLI commands</summary>
-
-| Command | Description |
-|---------|-------------|
-| `npx @flitzrrr/agent-skills install` | Install for all platforms |
-| `npx @flitzrrr/agent-skills install antigravity` | Antigravity only |
-| `npx @flitzrrr/agent-skills install codex` | Codex only |
-| `npx @flitzrrr/agent-skills install opencode` | OpenCode only |
-| `npx @flitzrrr/agent-skills update` | Pull latest skills |
-| `npx @flitzrrr/agent-skills list` | List available skills |
-
-</details>
+Installs for all detected platforms. Target a specific one with `install codex`, `install antigravity`, or `install opencode`.
 
 <details>
 <summary>Manual setup</summary>
@@ -55,44 +39,60 @@ git submodule update --remote --merge
 
 </details>
 
+<details>
+<summary>All CLI commands</summary>
+
+| Command                                       | Description              |
+| --------------------------------------------- | ------------------------ |
+| `npx @flitzrrr/agent-skills install`          | Install for all platforms|
+| `npx @flitzrrr/agent-skills install <target>` | Install for one platform |
+| `npx @flitzrrr/agent-skills update`           | Pull latest skills       |
+| `npx @flitzrrr/agent-skills list`             | List available skills    |
+
+</details>
+
 ---
 
 ## Platform Support
 
-| Platform | Config | Auto-Discovery |
-|----------|--------|:--------------:|
-| Claude Code | `CLAUDE.md` | Yes |
-| Antigravity | `skills/` symlinks | — |
-| Codex | `AGENTS.md` | Yes |
-| OpenCode | `AGENTS.md` + `skills/` | — |
-| Cursor | `.cursorrules` | Yes |
-| Lovable | `.lovable` | Yes |
-| Windsurf | `AGENTS.md` | Yes |
-| Any agent | `SKILL.md` per skill | — |
+| Platform    | Config                 | Auto-Discovery |
+| ----------- | ---------------------- | :------------: |
+| Claude Code | `CLAUDE.md`            | Yes            |
+| Codex       | `AGENTS.md`            | Yes            |
+| Cursor      | `.cursorrules`         | Yes            |
+| Lovable     | `.lovable`             | Yes            |
+| Windsurf    | `AGENTS.md`            | Yes            |
+| Antigravity | `skills/` symlinks     | --             |
+| OpenCode    | `AGENTS.md` + `skills/`| --             |
+| Any agent   | `SKILL.md` per skill   | --             |
 
 ---
 
 ## Sources
 
-| Source | Skills | Focus | Added |
-|--------|:------:|-------|-------|
-| [getsentry/skills](https://github.com/getsentry/skills) | 24 | Security, code review, Git workflow, Django | 2026-03-14 |
-| [Bhanunamikaze/Agentic-SEO-Skill](https://github.com/Bhanunamikaze/Agentic-SEO-Skill) | 16 | SEO auditing | 2026-03-14 |
-| [DasDigitaleMomentum/opencode-processing-skills](https://github.com/DasDigitaleMomentum/opencode-processing-skills) | 9 | Multi-session planning | 2026-03-14 |
-| [anthropics/skills](https://github.com/anthropics/skills) | 17 | Document gen, creative design, MCP | 2026-03-14 |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 5 | React, Next.js, web design | 2026-03-14 |
-| [trailofbits/skills](https://github.com/trailofbits/skills) | 30 | Security auditing, static analysis, smart contracts | 2026-03-14 |
-| [cloudflare/skills](https://github.com/cloudflare/skills) | 9 | Workers, Durable Objects, MCP | 2026-03-14 |
-| [stripe/ai](https://github.com/stripe/ai) | 2 | Stripe best practices | 2026-03-14 |
-| [expo/skills](https://github.com/expo/skills) | 3 | Expo design and deployment | 2026-03-14 |
-| [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | 7 | Design-to-code, shadcn/ui, Remotion | 2026-03-14 |
-| [hashicorp/agent-skills](https://github.com/hashicorp/agent-skills) | 3 | Terraform generation | 2026-03-14 |
-| [supabase/agent-skills](https://github.com/supabase/agent-skills) | 1 | Postgres best practices | 2026-03-14 |
-| [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) | 5 | React Native, GitHub workflows | 2026-03-14 |
-| [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) | 100+ | Science, bioinformatics, ML, chemistry | 2026-03-14 |
-| [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | 7 | Finance: IB, equity research, PE, wealth mgmt | 2026-03-14 |
+| Source                                                                                           | Skills | Focus                                              |
+| ------------------------------------------------------------------------------------------------ | -----: | -------------------------------------------------- |
+| [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)    |    175 | Science, bioinformatics, ML, chemistry             |
+| [trailofbits/skills](https://github.com/trailofbits/skills)                                     |     60 | Security auditing, static analysis, smart contracts|
+| [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins)|     56 | Finance: IB, equity research, PE, wealth mgmt      |
+| [MoizIbnYousaf/Ai-Agent-Skills](https://github.com/MoizIbnYousaf/Ai-Agent-Skills)               |     48 | Database design, debugging, code patterns          |
+| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)                |     33 | Marketing: SEO, email, content, analytics          |
+| [getsentry/skills](https://github.com/getsentry/skills)                                         |     24 | Security, code review, Git workflow, Django        |
+| [itsmostafa/aws-agent-skills](https://github.com/itsmostafa/aws-agent-skills)                    |     18 | AWS infrastructure and services                    |
+| [anthropics/skills](https://github.com/anthropics/skills)                                        |     17 | Document gen, creative design, MCP                 |
+| [hashicorp/agent-skills](https://github.com/hashicorp/agent-skills)                              |     14 | Terraform generation                               |
+| [expo/skills](https://github.com/expo/skills)                                                    |     11 | Expo design and deployment                         |
+| [cloudflare/skills](https://github.com/cloudflare/skills)                                        |      9 | Workers, Durable Objects, MCP                      |
+| [DasDigitaleMomentum/opencode-processing-skills](https://github.com/DasDigitaleMomentum/opencode-processing-skills) | 9 | Multi-session planning                 |
+| [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)              |      7 | Design-to-code, shadcn/ui, Remotion                |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)                          |      5 | React, Next.js, web design                         |
+| [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills)            |      5 | React Native, GitHub workflows                     |
+| [JackyST0/awesome-agent-skills](https://github.com/JackyST0/awesome-agent-skills)                |      5 | General-purpose agent patterns                     |
+| [stripe/ai](https://github.com/stripe/ai)                                                        |      2 | Stripe best practices                              |
+| [Bhanunamikaze/Agentic-SEO-Skill](https://github.com/Bhanunamikaze/Agentic-SEO-Skill)           |      1 | SEO auditing (16 sub-skills in one SKILL.md)       |
+| [supabase/agent-skills](https://github.com/supabase/agent-skills)                                |      1 | Postgres best practices                            |
 
-New sources are discovered and added automatically every Monday via [GitHub Actions](.github/workflows/skill-discovery.yml). All candidates are security-scanned before integration.
+New sources are discovered weekly via [GitHub Actions](.github/workflows/skill-discovery.yml). All candidates are security-scanned before integration.
 
 ---
 
@@ -100,14 +100,16 @@ New sources are discovered and added automatically every Monday via [GitHub Acti
 
 ```
 agent-skills/
-├── skills/          231 symlinks (flat access)
-├── vendor/          19 Git submodules (upstream sources)
-├── bin/cli.js       npx installer
-├── AGENTS.md        Codex / OpenCode / Windsurf
-├── CLAUDE.md        Claude Code
-├── .cursorrules     Cursor
-├── .lovable         Lovable
-└── CHEATSHEET.md    Decision guide
+  skills/           503 symlinks (flat access to all skills)
+  vendor/           19 Git submodules (upstream sources)
+  bin/              CLI + build scripts (catalog, sync, wiki)
+  docs/             GitHub Pages catalog + project documentation
+  .github/          CI workflows (discovery, linting, publishing, submodule sync)
+  CLAUDE.md         Claude Code config
+  AGENTS.md         Codex / OpenCode / Windsurf config
+  CHEATSHEET.md     Which skill to use when
+  .cursorrules      Cursor config
+  .lovable          Lovable config
 ```
 
 ---
@@ -116,31 +118,35 @@ agent-skills/
 
 Skills are namespaced by source to avoid collisions:
 
-| Source | Prefix | Example |
-|--------|--------|---------|
-| Sentry | — | `code-review`, `security-review` |
-| Anthropic | `anthropic-` | `anthropic-pdf`, `anthropic-mcp-builder` |
-| Vercel | `vercel-` | `vercel-react-best-practices` |
-| Trail of Bits | `tob-` | `tob-static-analysis` |
-| Cloudflare | `cloudflare-` | `cloudflare-wrangler` |
-| Google Stitch | `stitch-` | `stitch-shadcn-ui` |
-| HashiCorp | `terraform-` | `terraform-code-generation` |
-| Finance | `finance-` | `finance-equity-research` |
-| Scientific | `scientific` | `scientific` (100+ sub-skills) |
+| Source        | Prefix         | Example                           |
+| ------------- | -------------- | --------------------------------- |
+| Sentry        | --             | `code-review`, `security-review`  |
+| Anthropic     | `anthropic-`   | `anthropic-pdf`                   |
+| Vercel        | `vercel-`      | `vercel-react-best-practices`     |
+| Trail of Bits | `tob-`         | `tob-static-analysis`             |
+| Cloudflare    | `cloudflare-`  | `cloudflare-wrangler`             |
+| Google Stitch | `stitch-`      | `stitch-shadcn-ui`                |
+| HashiCorp     | `terraform-`   | `terraform-code-generation`       |
+| Finance       | `finance-`     | `finance-equity-research`         |
+| Scientific    | `scientific-`  | `scientific-bioinformatics`       |
+| Marketing     | --             | `content-strategy`, `seo-audit`   |
+| AWS           | `aws-`         | `aws-lambda`                      |
+| Callstack     | `callstack-`   | `callstack-react-native-best-practices` |
 
 ---
 
 ## Automation
 
-| Workflow | Schedule | What it does |
-|----------|----------|-------------|
-| [Skill Discovery](.github/workflows/skill-discovery.yml) | Weekly | Finds trending repos, security-scans, auto-adds |
-| [npm Publish](.github/workflows/npm-publish.yml) | On tag `v*` | Publishes to npm + creates GitHub Release |
-| [MegaLinter](.github/workflows/megalinter.yml) | On push/PR | Lints markdown, YAML, JSON |
+| Workflow                                                              | Trigger     | What it does                                    |
+| --------------------------------------------------------------------- | ----------- | ----------------------------------------------- |
+| [Skill Discovery](.github/workflows/skill-discovery.yml)             | Weekly      | Finds trending repos, security-scans, auto-adds |
+| [Submodule Update](.github/workflows/submodule-update.yml)           | Weekly      | Pulls upstream changes, creates PR              |
+| [MegaLinter](.github/workflows/megalinter.yml)                       | Push / PR   | Lints markdown, YAML, JSON                      |
+| [npm Publish](.github/workflows/npm-publish.yml)                     | Tag `v*`    | Publishes to npm, creates GitHub Release        |
 
 ---
 
 ## License
 
-MIT — applies to the CLI, workflows, and documentation in this repository.
+MIT -- applies to the CLI, workflows, and documentation in this repository.
 Each vendored submodule in `vendor/` retains its own original license.
