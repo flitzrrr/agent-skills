@@ -58,13 +58,11 @@ def main():
         desc = p.get(desc_field, "")
         if re.search(r'<[^>]+>', desc):
             errors.append(f"SKU {p.get('sku', '?')}: HTML tags found in description")
-        if "<br>" in desc or "<p>" in desc:
-            errors.append(f"SKU {p.get('sku', '?')}: HTML tags instead of \\n\\n for paragraphs")
 
     # Slug format
     for p in products:
         slug = p.get("slug", "")
-        if slug and not re.match(r'^[a-z0-9\-]+$', slug):
+        if slug and not re.match(r'^[a-z0-9\-_\.]+$', slug):
             warnings.append(f"SKU {p.get('sku', '?')}: slug '{slug}' contains invalid characters")
 
     # Report

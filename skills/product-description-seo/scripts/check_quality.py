@@ -101,14 +101,18 @@ def check_description(product: dict, min_words: int = 200, max_words: int = 350,
         else:
             results["warnings"] += 1
 
-    # 5. Cross-sell reference
+    # 5. Cross-sell reference (warning only — not all products have natural cross-sells)
     has_cross_sell = any(ind in text_lower for ind in CROSS_SELL_INDICATORS)
     if has_cross_sell:
         results["checks"].append(("PASS", "Cross-sell reference present"))
         results["passed"] += 1
     else:
-        results["checks"].append(("FAIL", "No cross-sell reference found"))
-        results["failed"] += 1
+        level = "FAIL" if strict else "WARN"
+        results["checks"].append((level, "No cross-sell reference found"))
+        if strict:
+            results["failed"] += 1
+        else:
+            results["warnings"] += 1
 
     # 6. Formal address
     informal_found = []

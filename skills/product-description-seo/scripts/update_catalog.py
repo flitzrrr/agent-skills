@@ -15,6 +15,7 @@ Creates an automatic backup before writing.
 
 import json
 import sys
+import argparse
 import shutil
 from datetime import datetime
 
@@ -24,12 +25,13 @@ NAME_FIELD = "name"
 
 
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: python update_catalog.py <catalog.json> <updates.json>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Write updated descriptions back to catalog JSON")
+    parser.add_argument("catalog_path", help="Path to catalog JSON file")
+    parser.add_argument("updates_path", help="Path to updates JSON file")
+    args = parser.parse_args()
 
-    catalog_path = sys.argv[1]
-    updates_path = sys.argv[2]
+    catalog_path = args.catalog_path
+    updates_path = args.updates_path
 
     with open(catalog_path, "r", encoding="utf-8") as f:
         catalog = json.load(f)

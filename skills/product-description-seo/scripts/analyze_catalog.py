@@ -74,8 +74,10 @@ def analyze(catalog_path: str, category_filter: str | None = None, min_words: in
     print(f"CATALOG DESCRIPTION ANALYSIS")
     print(f"{'=' * 70}")
     print(f"Active products:       {total}")
-    print(f"Below {min_words} words:       {below_threshold} ({below_threshold * 100 // total}%)")
-    print(f"Above {min_words} words:       {total - below_threshold} ({(total - below_threshold) * 100 // total}%)")
+    below_pct = below_threshold * 100 // total if total > 0 else 0
+    above_pct = (total - below_threshold) * 100 // total if total > 0 else 0
+    print(f"Below {min_words} words:       {below_threshold} ({below_pct}%)")
+    print(f"Above {min_words} words:       {total - below_threshold} ({above_pct}%)")
     print()
 
     print(f"{'Category':<45} {'Count':>5} {'Avg Words':>9} {'< {}'.format(min_words):>7}")

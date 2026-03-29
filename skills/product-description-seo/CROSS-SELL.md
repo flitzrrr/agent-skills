@@ -8,20 +8,20 @@ For each category, list which other categories make natural companions — produ
 
 ## Template
 
-| Category | Cross-Sell To | Example Phrasing |
-|----------|--------------|-------------------|
-| [Category A] | [Category B], [Category C] | "Pairs well with our [Category B]..." |
+| Category     | Cross-Sell To              | Example Phrasing                        |
+| ------------ | -------------------------- | --------------------------------------- |
+| [Category A] | [Category B], [Category C] | "Pairs well with our [Category B]..."   |
 | [Category B] | [Category A], [Category D] | "For a complete setup, combine with..." |
 
 ## Example (Industrial Equipment)
 
-| Category | Cross-Sell To | Example Phrasing |
-|----------|--------------|-------------------|
-| Power Drills | Drill Bits, Safety Equipment | "For optimal results, pair with our professional drill bit sets..." |
-| Drill Bits | Power Drills, Storage Cases | "Designed for use with our industrial power drills..." |
-| Safety Equipment | All tool categories | "Complete your safety setup with our full PPE range..." |
-| Hand Tools | Tool Storage, Safety Gloves | "Store your set securely in our professional tool cases..." |
-| Tool Storage | Hand Tools, Power Tools | "Organize your complete toolkit with matching drawer inserts..." |
+| Category         | Cross-Sell To                | Example Phrasing                                                    |
+| ---------------- | ---------------------------- | ------------------------------------------------------------------- |
+| Power Drills     | Drill Bits, Safety Equipment | "For optimal results, pair with our professional drill bit sets..." |
+| Drill Bits       | Power Drills, Storage Cases  | "Designed for use with our industrial power drills..."              |
+| Safety Equipment | All tool categories          | "Complete your safety setup with our full PPE range..."             |
+| Hand Tools       | Tool Storage, Safety Gloves  | "Store your set securely in our professional tool cases..."         |
+| Tool Storage     | Hand Tools, Power Tools      | "Organize your complete toolkit with matching drawer inserts..."     |
 
 ## Principles
 

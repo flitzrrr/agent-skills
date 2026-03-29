@@ -9,17 +9,17 @@ A complete pipeline for turning thin or missing product descriptions into SEO-op
 
 ## Quick Reference
 
-| Phase | Task | Tool |
-|-------|------|------|
-| 1. Inventory | Analyze catalog, find thin descriptions | `scripts/analyze_catalog.py` |
-| 2. Progress | Check current completion status | `scripts/track_progress.py` |
-| 3. Extraction | Pull category products as batch-ready JSON | `scripts/extract_category.py` |
-| 4. Generation | Write descriptions using 4-paragraph structure | See structure below |
-| 5. QA | Automated quality check (8 criteria) | `scripts/check_quality.py` |
-| 6. Update | Write descriptions back to catalog JSON | `scripts/update_catalog.py` |
-| 7. Validation | Verify JSON structure after update | `scripts/validate_json.py` |
-| 8. Rendering | Adapt frontend for multi-paragraph text | Code guidance below |
-| 9. Deploy | Feature branch, PR, merge | Git workflow |
+| Phase          | Task                                             | Tool                          |
+| -------------- | ------------------------------------------------ | ----------------------------- |
+| 1. Inventory   | Analyze catalog, find thin descriptions          | `scripts/analyze_catalog.py`  |
+| 2. Progress    | Check current completion status                  | `scripts/track_progress.py`   |
+| 3. Extraction  | Pull category products as batch-ready JSON       | `scripts/extract_category.py` |
+| 4. Generation  | Write descriptions using 4-paragraph structure   | See structure below           |
+| 5. QA          | Automated quality check (8 criteria)             | `scripts/check_quality.py`    |
+| 6. Update      | Write descriptions back to catalog JSON          | `scripts/update_catalog.py`   |
+| 7. Validation  | Verify JSON structure after update               | `scripts/validate_json.py`    |
+| 8. Rendering   | Adapt frontend for multi-paragraph text          | Code guidance below           |
+| 9. Deploy      | Feature branch, PR, merge                        | Git workflow                  |
 
 ## Setup
 
@@ -336,24 +336,24 @@ gh pr create --title "Content: Product descriptions Tools"
 
 Not required, but improve output quality when present alongside the skill:
 
-| File | Purpose |
-|------|---------|
-| KEYWORDS.md | Category-specific keyword targets (primary, secondary, longtail) |
-| CROSS-SELL.md | Cross-sell matrix defining which categories reference each other |
-| product-seo-config.json | Company context, field mappings, priorities |
+| File                    | Purpose                                                          |
+| ----------------------- | ---------------------------------------------------------------- |
+| KEYWORDS.md             | Category-specific keyword targets (primary, secondary, longtail) |
+| CROSS-SELL.md           | Cross-sell matrix defining which categories reference each other |
+| product-seo-config.json | Company context, field mappings, priorities                      |
 
 Templates for KEYWORDS.md and CROSS-SELL.md are included — fill them in for your catalog.
 
 ## Scripts
 
-| Script | Purpose |
-|--------|---------|
-| `scripts/analyze_catalog.py` | Catalog analysis (thinnest descriptions, word counts) |
-| `scripts/track_progress.py` | Progress tracking with priority support |
+| Script                        | Purpose                                               |
+| ----------------------------- | ----------------------------------------------------- |
+| `scripts/analyze_catalog.py`  | Catalog analysis (thinnest descriptions, word counts) |
+| `scripts/track_progress.py`   | Progress tracking with priority support               |
 | `scripts/extract_category.py` | Category extraction for batch prompting (fuzzy match) |
-| `scripts/check_quality.py` | Automated QA with 8 configurable checks |
-| `scripts/update_catalog.py` | Write descriptions to catalog with automatic backup |
-| `scripts/validate_json.py` | JSON structure validation |
+| `scripts/check_quality.py`    | Automated QA with 8 configurable checks               |
+| `scripts/update_catalog.py`   | Write descriptions to catalog with automatic backup   |
+| `scripts/validate_json.py`    | JSON structure validation                             |
 
 ## Dependencies
 
