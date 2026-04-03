@@ -107,8 +107,6 @@ const copilotPath = path.join(ROOT, ".github", "copilot-instructions.md");
 if (fs.existsSync(copilotPath)) {
   let copilot = fs.readFileSync(copilotPath, "utf8");
   copilot = copilot.replace(/\d+ curated AI agent skills/, `${skillCount} curated AI agent skills`);
-  copilot = copilot.replace(/\d+ skills/g, `${skillCount} skills`);
-  copilot = copilot.replace(/\d+ sources/g, `${sourceCount} sources`);
   fs.writeFileSync(copilotPath, copilot, "utf8");
   console.log("Updated .github/copilot-instructions.md");
 }

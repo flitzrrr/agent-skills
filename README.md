@@ -78,7 +78,7 @@ git submodule update --remote --merge
 npx @flitzrrr/agent-skills install vscode
 ```
 
-This symlinks all 503 skills into `~/.copilot/skills/`, making them available as **slash commands** (`/skill-name`) and for **automatic model-invocation** across all your VS Code workspaces.
+This symlinks all 504 skills into `~/.copilot/skills/`, making them available as **slash commands** (`/skill-name`) and for **automatic model-invocation** across all your VS Code workspaces.
 
 ### Project-Level Setup
 
