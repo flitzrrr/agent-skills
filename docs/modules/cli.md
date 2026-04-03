@@ -54,7 +54,7 @@ IS NOT responsible for: building the catalog, syncing documentation, or discover
 ## Configuration
 
 - **`SKILL_DIR`**: Hardcoded to `~/.agent-skills` — not configurable
-- **`PLATFORMS`**: Defines 5 platforms (claude, antigravity, codex, opencode, cursor) with their skill directories
+- **`PLATFORMS`**: Defines 6 platforms (claude, antigravity, codex, opencode, vscode, cursor) with their skill directories
 
 ## Inventory Notes
 

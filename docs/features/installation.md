@@ -11,7 +11,7 @@ version: 1.0
 
 ## Summary
 
-Multi-platform skill installation that creates symlinks from a central repository clone into each AI coding assistant's skill directory. Supports Claude Code, Codex, Antigravity (Gemini), OpenCode, and Cursor.
+Multi-platform skill installation that creates symlinks from a central repository clone into each AI coding assistant's skill directory. Supports VS Code (GitHub Copilot), Claude Code, Codex, Antigravity (Gemini), OpenCode, and Cursor.
 
 ## How It Works
 
@@ -44,6 +44,7 @@ Multi-platform skill installation that creates symlinks from a central repositor
 
 | Platform     | Skill directory                          | Notes                               |
 | ------------ | ---------------------------------------- | ----------------------------------- |
+| VS Code      | `~/.copilot/skills/`                     | Symlinks created, copilot-instructions.md|
 | Claude Code  | (project-level, no symlinks)             | CLAUDE.md auto-discovery            |
 | Antigravity  | `~/.gemini/antigravity/skills/`          | Symlinks created                    |
 | Codex        | `~/.codex/skills/`                       | Symlinks created                    |

@@ -16,7 +16,7 @@ The project follows a **vendor-symlink** architecture:
 
 1. **Upstream sources** are tracked as Git submodules under `vendor/`
 2. **Skills are exposed** as symlinks under `skills/`, providing flat access regardless of upstream directory structure
-3. **Platform config files** at the repo root (`CLAUDE.md`, `AGENTS.md`, `.cursorrules`, `.lovable`) enable auto-discovery by each platform
+3. **Platform config files** at the repo root (`CLAUDE.md`, `AGENTS.md`, `.cursorrules`, `.lovable`) and `.github/copilot-instructions.md` (VS Code) enable auto-discovery by each platform
 4. **Build scripts** in `bin/` keep counts, catalogs, and platform configs in sync
 5. **GitHub Actions** automate discovery of new sources, submodule updates, linting, npm publishing, and wiki updates
 
