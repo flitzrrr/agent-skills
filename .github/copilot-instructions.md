@@ -30,7 +30,7 @@ Use `CHEATSHEET.md` for a decision guide on which skill to use when.
 ### Project Planning (Multi-Session)
 - `skills/create-plan/` — Start a structured project plan
 - `skills/resume-plan/` — Continue a previous plan
-- `skills/execute-work-packet/` — Execute plan items
+- `skills/execute-work-package/` — Execute plan items
 - `skills/generate-handover/` — Session handoff
 
 ### Document Generation

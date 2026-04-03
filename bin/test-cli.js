@@ -6,6 +6,7 @@
  */
 
 const { execSync } = require("child_process");
+const fs = require("fs");
 const path = require("path");
 const assert = require("assert");
 
@@ -78,7 +79,7 @@ test("vscode platform is listed", () => {
 test("copilot-instructions.md exists", () => {
   const copilotPath = path.join(__dirname, "..", ".github", "copilot-instructions.md");
   assert(
-    require("fs").existsSync(copilotPath),
+    fs.existsSync(copilotPath),
     "Should have .github/copilot-instructions.md"
   );
 });
@@ -86,7 +87,7 @@ test("copilot-instructions.md exists", () => {
 // Test: copilot-instructions.md has required content
 test("copilot-instructions.md has skill references", () => {
   const copilotPath = path.join(__dirname, "..", ".github", "copilot-instructions.md");
-  const content = require("fs").readFileSync(copilotPath, "utf8");
+  const content = fs.readFileSync(copilotPath, "utf8");
   assert(content.includes("skills/"), "Should reference skills/ directory");
   assert(content.includes("SKILL.md"), "Should mention SKILL.md");
   assert(content.includes("CHEATSHEET.md"), "Should reference CHEATSHEET.md");
