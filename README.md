@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
 [![npm downloads](https://img.shields.io/npm/dm/@flitzrrr/agent-skills?style=flat-square)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
-[![Skills](https://img.shields.io/badge/skills-503-blue?style=flat-square)](skills/)
+[![Skills](https://img.shields.io/badge/skills-504-blue?style=flat-square)](skills/)
 [![Sources](https://img.shields.io/badge/sources-19-green?style=flat-square)](vendor/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Weekly Discovery](https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square)](.github/workflows/skill-discovery.yml)
@@ -100,8 +100,8 @@ New sources are discovered weekly via [GitHub Actions](.github/workflows/skill-d
 
 ```
 agent-skills/
-  skills/           503 symlinks (flat access to all skills)
-  vendor/           19 Git submodules (upstream sources)
+  skills/          504 symlinks (flat access to all skills)
+  vendor/          19 Git submodules (upstream sources)
   bin/              CLI + build scripts (catalog, sync, wiki)
   docs/             GitHub Pages catalog + project documentation
   .github/          CI workflows (discovery, linting, publishing, submodule sync)
@@ -143,6 +143,12 @@ Skills are namespaced by source to avoid collisions:
 | [Submodule Update](.github/workflows/submodule-update.yml)           | Weekly      | Pulls upstream changes, creates PR              |
 | [MegaLinter](.github/workflows/megalinter.yml)                       | Push / PR   | Lints markdown, YAML, JSON                      |
 | [npm Publish](.github/workflows/npm-publish.yml)                     | Tag `v*`    | Publishes to npm, creates GitHub Release        |
+
+---
+
+## l4l -- MCP Execution Backend
+
+The [execute-work-package](skills/execute-work-package) skill can use [l4l](https://github.com/DasDigitaleMomentum/l4l) as its MCP execution backend. l4l exposes 5 MCP tools (`precheck_new`, `precheck_iterate`, `approve_blueprint`, `execute`, `handle_report`) that implement the gated precheck-approve-execute lifecycle. See the [l4l Claude Code setup guide](https://github.com/DasDigitaleMomentum/l4l/blob/main/docs/CLAUDE_CODE_SETUP.md) for configuration instructions.
 
 ---
 

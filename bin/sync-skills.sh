@@ -4,7 +4,9 @@
 SKILLS_DIR="/Users/Martin/.gemini/antigravity/skills"
 SOURCE="/Users/Martin/git/agent-skills/vendor/opencode-processing-skills/skills"
 
-DDM_SKILLS="archive-legacy-docs author-and-verify-implementation-plan create-plan execute-work-package generate-docs generate-handover resume-plan update-docs update-plan"
+# execute-work-package is excluded: local copy has transport extensions (Options A/B/C)
+# that are not yet upstreamed to DasDigitaleMomentum/opencode-processing-skills.
+DDM_SKILLS="archive-legacy-docs author-and-verify-implementation-plan create-plan generate-docs generate-handover resume-plan update-docs update-plan"
 
 for skill in $DDM_SKILLS; do
     rm -rf "${SKILLS_DIR:?}/${skill:?}"
