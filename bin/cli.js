@@ -26,6 +26,10 @@ const PLATFORMS = {
     name: "OpenCode",
     dir: path.join(os.homedir(), ".config", "opencode", "skills"),
   },
+  vscode: {
+    name: "VS Code (GitHub Copilot)",
+    dir: path.join(os.homedir(), ".copilot", "skills"),
+  },
   cursor: {
     name: "Cursor",
     dir: null,

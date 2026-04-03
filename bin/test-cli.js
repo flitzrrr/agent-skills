@@ -68,6 +68,30 @@ test("cli.js parses without syntax errors", () => {
   execSync(`node -c "${CLI}"`, { encoding: "utf8" });
 });
 
+// Test: vscode platform is registered
+test("vscode platform is listed", () => {
+  const out = run("");
+  assert(out.includes("vscode"), "Should list vscode as available platform");
+});
+
+// Test: copilot-instructions.md exists
+test("copilot-instructions.md exists", () => {
+  const copilotPath = path.join(__dirname, "..", ".github", "copilot-instructions.md");
+  assert(
+    require("fs").existsSync(copilotPath),
+    "Should have .github/copilot-instructions.md"
+  );
+});
+
+// Test: copilot-instructions.md has required content
+test("copilot-instructions.md has skill references", () => {
+  const copilotPath = path.join(__dirname, "..", ".github", "copilot-instructions.md");
+  const content = require("fs").readFileSync(copilotPath, "utf8");
+  assert(content.includes("skills/"), "Should reference skills/ directory");
+  assert(content.includes("SKILL.md"), "Should mention SKILL.md");
+  assert(content.includes("CHEATSHEET.md"), "Should reference CHEATSHEET.md");
+});
+
 // Test: sync-docs.js is valid Node
 test("sync-docs.js parses without syntax errors", () => {
   const syncDocs = path.join(__dirname, "sync-docs.js");
@@ -82,6 +106,7 @@ test("sync-docs.js produces correct counts", () => {
   });
   assert(out.includes("Found"), "Should report found skills");
   assert(out.includes("Updated README.md"), "Should update README");
+  assert(out.includes("copilot-instructions"), "Should update copilot-instructions.md");
   assert(out.includes("Done"), "Should finish successfully");
 });
 
