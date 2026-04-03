@@ -24,7 +24,7 @@
 | **Run SEO audit** on a website | `seo` | Agentic SEO | 5/5 |
 | **Plan a multi-session** project | `create-plan` | OpenCode | 5/5 |
 | **Resume** a previous plan | `resume-plan` | OpenCode | 5/5 |
-| **Execute** a work packet from plan | `execute-work-packet` | OpenCode | 5/5 |
+| **Execute** a work packet from plan | `execute-work-package` | OpenCode | 5/5 |
 | **Generate project docs** | `generate-docs` | OpenCode | 4/5 |
 | **Update existing docs** | `update-docs` | OpenCode | 4/5 |
 | **Create handover** summary for next session | `generate-handover` | OpenCode | 4/5 |
@@ -132,7 +132,7 @@ Multi-session project planning and documentation framework.
 | `create-plan` | Initialize structured project plan | Starting a new multi-step project |
 | `resume-plan` | Continue previous session's plan | Returning to unfinished work |
 | `update-plan` | Modify plan with new requirements | Scope changes mid-project |
-| `execute-work-packet` | Execute a specific plan item | Implementing individual tasks |
+| `execute-work-package` | Execute a specific plan item | Implementing individual tasks |
 | `generate-docs` | Create project documentation | After major milestones |
 | `update-docs` | Update existing documentation | After changes to documented features |
 | `generate-handover` | Create session handover summary | End of work session |
@@ -204,7 +204,7 @@ React/Next.js performance, web design, and deployment.
 
 1. `create-plan` — Structure the work
 2. `create-branch` — Create feature branch
-3. `execute-work-packet` — Implement tasks from plan
+3. `execute-work-package` — Implement tasks from plan
 4. `commit` — Write proper commits
 5. `pr-writer` — Create PR description
 6. `iterate-pr` — Fix CI until green

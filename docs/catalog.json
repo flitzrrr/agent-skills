@@ -288,7 +288,7 @@
       "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program."
     },
     {
-      "name": "execute-work-packet",
+      "name": "execute-work-package",
       "source": "execute",
       "description": "Execute a significant implementation unit (phase or major slice) using a gated, stateful subagent loop (steps -> gate -> execute -> digest) without..."
     },

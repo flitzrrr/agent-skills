@@ -8,7 +8,7 @@ Skills are located in the `skills/` directory — each contains a `SKILL.md` wit
 - **Security & Code Review**: `security-review`, `code-review`, `find-bugs`, `gha-security-review`
 - **Git Workflow**: `commit`, `create-branch`, `pr-writer`, `iterate-pr`
 - **Django**: `django-access-review`, `django-perf-review`
-- **Planning & Docs**: `create-plan`, `resume-plan`, `execute-work-packet`, `generate-docs`
+- **Planning & Docs**: `create-plan`, `resume-plan`, `execute-work-package`, `generate-docs`
 - **Documents**: `anthropic-pdf`, `anthropic-docx`, `anthropic-pptx`, `anthropic-xlsx`
 - **Frontend & Design**: `anthropic-frontend-design`, `vercel-react-best-practices`, `vercel-web-design-guidelines`
 - **Developer Tools**: `anthropic-mcp-builder`, `anthropic-webapp-testing`, `anthropic-claude-api`
