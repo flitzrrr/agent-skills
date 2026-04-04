@@ -30,6 +30,7 @@ IS NOT responsible for: upstream skill content (vendor module), installation (cl
 | ------------------------------------------ | ------- | ----------------------------------------------------------- |
 | `skills/`                                  | dir     | Root directory — ~503 entries, mostly symlinks               |
 | `skills/<name> → ../vendor/<source>/...`   | symlink | Symlink to upstream skill in a vendor submodule              |
+| `skills/execute-work-package/`             | dir     | Local fork of DDM skill — transport extensions (MCP/Stateful/Fresh) |
 | `skills/product-description-seo/`          | dir     | Custom first-party skill — SEO product descriptions          |
 | `skills/dispatch-parallel-agents/`         | dir     | Custom first-party skill — parallel subagent dispatch        |
 | `skills/systematic-debugging/`             | dir     | Custom first-party skill — root-cause debugging workflow     |
@@ -63,6 +64,7 @@ IS NOT responsible for: upstream skill content (vendor module), installation (cl
 
 | Skill                     | Description                                                  | Contents                              |
 | ------------------------- | ------------------------------------------------------------ | ------------------------------------- |
+| `execute-work-package`    | Local fork with multi-transport (MCP/Stateful/Fresh Agent)    | SKILL.md, 4 templates                |
 | `product-description-seo` | E2E workflow for SEO product descriptions (9 phases)          | SKILL.md, KEYWORDS.md, CROSS-SELL.md, 6 Python scripts |
 | `dispatch-parallel-agents`| Dispatch independent tasks to parallel subagents              | skill.md                              |
 | `systematic-debugging`    | Root-cause analysis debugging workflow                        | skill.md                              |
@@ -86,7 +88,7 @@ Skills are not code — they are instruction documents (SKILL.md). The only skil
 ```
 vendor/<source>/skills/<name>/SKILL.md
     │
-    │  symlink
+    │  symlink (most skills)
     ▼
 skills/<prefix>-<name>/SKILL.md
     │
@@ -94,6 +96,14 @@ skills/<prefix>-<name>/SKILL.md
     ▼
 Agent follows SKILL.md instructions
 ```
+
+### Local Forks
+
+Some skills are copied from vendor into real directories (not symlinks) to allow local extensions that are not yet upstreamed. These are excluded from `bin/sync-skills.sh` to prevent overwriting:
+
+| Skill | Vendor Source | Reason for Local Fork |
+| ----- | ------------- | --------------------- |
+| `execute-work-package` | `opencode-processing-skills` | Transport extensions (Options A/B/C) for multi-platform support via l4l MCP |
 
 ## Configuration
 

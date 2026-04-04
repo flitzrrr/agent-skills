@@ -78,9 +78,9 @@ Do **not** use this skill to:
 
 ### Transport
 
-This skill supports three transport mechanisms. Choose based on your platform:
+This skill supports three transport mechanisms. **If l4l MCP tools are available** (check: do you have `precheck_new`, `approve_blueprint`, `execute` tools?), **always use Option A.** Only fall back to B/C if MCP is not configured.
 
-#### Option A: MCP via l4l (Recommended)
+#### Option A: MCP via l4l (Default)
 
 Use the l4l Sub-Agent MCP server. The primary calls MCP tools directly — no Agent spawning needed:
 

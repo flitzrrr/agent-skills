@@ -15,10 +15,11 @@ Agent Skills Hub is a curated collection of AI agent skills from multiple open-s
 The project follows a **vendor-symlink** architecture:
 
 1. **Upstream sources** are tracked as Git submodules under `vendor/`
-2. **Skills are exposed** as symlinks under `skills/`, providing flat access regardless of upstream directory structure
+2. **Skills are exposed** as symlinks under `skills/`, providing flat access regardless of upstream directory structure. Some skills are local forks (real directories) for extensions not yet upstreamed.
 3. **Platform config files** at the repo root (`CLAUDE.md`, `AGENTS.md`, `.cursorrules`, `.lovable`) enable auto-discovery by each platform
 4. **Build scripts** in `bin/` keep counts, catalogs, and platform configs in sync
 5. **GitHub Actions** automate discovery of new sources, submodule updates, linting, npm publishing, and wiki updates
+6. **Plans** in `plans/` track multi-phase implementation work using the `create-plan` / `update-plan` skill workflow
 
 ### System Diagram
 
@@ -34,7 +35,7 @@ The project follows a **vendor-symlink** architecture:
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │                    Repository                         │   │
 │  │  vendor/          19 Git submodules (upstream)        │   │
-│  │  skills/          symlinks → vendor/ (flat access)    │   │
+│  │  skills/          symlinks → vendor/ + local forks     │   │
 │  │  bin/             CLI + build scripts                 │   │
 │  │  docs/            GitHub Pages catalog                │   │
 │  │  .github/         CI workflows                        │   │
@@ -73,6 +74,7 @@ The project follows a **vendor-symlink** architecture:
 | Auto-Discovery  | Weekly automated discovery and security-scanning of new skill repos  | [Detail](features/auto-discovery.md)       |
 | Catalog         | Searchable GitHub Pages site and Wiki with all skills                | [Detail](features/catalog.md)              |
 | Vendor Sync     | Automated weekly submodule updates via PR                            | [Detail](features/vendor-sync.md)          |
+| l4l Integration | MCP execution backend for execute-work-package (multi-transport)     | See [l4l repo](https://github.com/flitzrrr/l4l) |
 
 ## Development
 

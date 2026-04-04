@@ -54,6 +54,7 @@ A weekly GitHub Actions workflow that checks all 19 vendor submodules for upstre
 - **No conflict resolution**: If a submodule update conflicts with local changes, the workflow will fail
 - **PR-based**: Updates are not pushed directly — they require manual merge, adding a review gate
 - **Stale PRs**: If previous update PRs are not merged, new ones will be created alongside them
+- **Local fork exclusions**: `bin/sync-skills.sh` excludes locally forked skills (e.g., `execute-work-package`) to prevent overwriting transport extensions not yet upstreamed
 
 ## Related Features
 

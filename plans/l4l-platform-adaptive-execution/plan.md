@@ -106,6 +106,9 @@ l4l already implements the same protocol as an MCP server (precheck → execute 
 - Phase 3 deviation: changes kept local in agent-skills instead of PR to DDM upstream; execute-work-package excluded from sync-skills.sh
 - MCP stdio integration test added (5 tests covering full protocol flow)
 - Total test suite: 46 tests passing in l4l repo
+- l4l repo moved from `DasDigitaleMomentum/l4l` (origin→ddm) to `flitzrrr/l4l` (private, new origin)
+- Project docs updated: `docs/modules/skills.md` (local fork pattern), `docs/features/vendor-sync.md` (exclusion note), `docs/overview.md` (l4l integration feature)
+- Both repos committed: l4l `32c4e51`, agent-skills `9561ccf`
 
 ### 2026-04-03
 
