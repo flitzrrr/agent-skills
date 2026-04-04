@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Weekly Discovery](https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square)](.github/workflows/skill-discovery.yml)
 
-**503 agent skills** from **19 sources**, flat-access, works with Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and Windsurf.
+**504 agent skills** from **19 sources**, flat-access, works with Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and Windsurf.
 
 [Browse the full catalog](https://flitzrrr.github.io/agent-skills/) | [Decision guide](CHEATSHEET.md)
 
@@ -100,7 +100,7 @@ New sources are discovered weekly via [GitHub Actions](.github/workflows/skill-d
 
 ```
 agent-skills/
-  skills/          504 symlinks (flat access to all skills)
+  skills/          504 entries (symlinks + local forks, flat access to all skills)
   vendor/          19 Git submodules (upstream sources)
   bin/              CLI + build scripts (catalog, sync, wiki)
   docs/             GitHub Pages catalog + project documentation
@@ -148,7 +148,7 @@ Skills are namespaced by source to avoid collisions:
 
 ## l4l -- MCP Execution Backend
 
-The [execute-work-package](skills/execute-work-package) skill can use [l4l](https://github.com/DasDigitaleMomentum/l4l) as its MCP execution backend. l4l exposes 5 MCP tools (`precheck_new`, `precheck_iterate`, `approve_blueprint`, `execute`, `handle_report`) that implement the gated precheck-approve-execute lifecycle. See the [l4l Claude Code setup guide](https://github.com/DasDigitaleMomentum/l4l/blob/main/docs/CLAUDE_CODE_SETUP.md) for configuration instructions.
+The [execute-work-package](skills/execute-work-package) skill uses [l4l](https://github.com/flitzrrr/l4l) as its default MCP execution backend. l4l exposes 5 MCP tools (`precheck_new`, `precheck_iterate`, `approve_blueprint`, `execute`, `handle_report`) that implement the gated precheck-approve-execute lifecycle. When l4l MCP tools are available, the skill uses them automatically (Option A); fresh-agent and stateful transports are documented fallbacks. See the [l4l Claude Code setup guide](https://github.com/flitzrrr/l4l/blob/main/docs/CLAUDE_CODE_SETUP.md) for configuration instructions.
 
 ---
 
