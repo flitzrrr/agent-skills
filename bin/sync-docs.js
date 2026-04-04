@@ -102,6 +102,15 @@ if (fs.existsSync(lovablePath)) {
   console.log("Updated .lovable");
 }
 
+// --- Update .github/copilot-instructions.md ---
+const copilotPath = path.join(ROOT, ".github", "copilot-instructions.md");
+if (fs.existsSync(copilotPath)) {
+  let copilot = fs.readFileSync(copilotPath, "utf8");
+  copilot = copilot.replace(/\d+ curated AI agent skills/, `${skillCount} curated AI agent skills`);
+  fs.writeFileSync(copilotPath, copilot, "utf8");
+  console.log("Updated .github/copilot-instructions.md");
+}
+
 // --- Update CHEATSHEET.md ---
 const cheatsheetPath = path.join(ROOT, "CHEATSHEET.md");
 if (fs.existsSync(cheatsheetPath)) {

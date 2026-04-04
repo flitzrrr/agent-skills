@@ -28,7 +28,7 @@ IS NOT responsible for: upstream skill content (vendor module), installation (cl
 
 | Path                                       | Type    | Purpose                                                     |
 | ------------------------------------------ | ------- | ----------------------------------------------------------- |
-| `skills/`                                  | dir     | Root directory — ~503 entries, mostly symlinks               |
+| `skills/`                                  | dir     | Root directory — ~504 entries, mostly symlinks               |
 | `skills/<name> → ../vendor/<source>/...`   | symlink | Symlink to upstream skill in a vendor submodule              |
 | `skills/execute-work-package/`             | dir     | Local fork of DDM skill — transport extensions (MCP/Stateful/Fresh) |
 | `skills/product-description-seo/`          | dir     | Custom first-party skill — SEO product descriptions          |

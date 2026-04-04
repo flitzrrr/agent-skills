@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Weekly Discovery](https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square)](.github/workflows/skill-discovery.yml)
 
-**504 agent skills** from **19 sources**, flat-access, works with Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and Windsurf.
+**504 agent skills** from **19 sources**, flat-access, works with **VS Code (GitHub Copilot)**, Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and Windsurf.
 
 [Browse the full catalog](https://flitzrrr.github.io/agent-skills/) | [Decision guide](CHEATSHEET.md)
 
@@ -19,7 +19,7 @@
 npx @flitzrrr/agent-skills install
 ```
 
-Installs for all detected platforms. Target a specific one with `install codex`, `install antigravity`, or `install opencode`.
+Installs for all detected platforms. Target a specific one with `install vscode`, `install codex`, `install antigravity`, or `install opencode`.
 
 <details>
 <summary>Manual setup</summary>
@@ -32,6 +32,7 @@ cd agent-skills
 ln -sf $(pwd)/skills/* ~/.gemini/antigravity/skills/
 ln -sf $(pwd)/skills/* ~/.codex/skills/
 ln -sf $(pwd)/skills/* ~/.config/opencode/skills/
+ln -sf $(pwd)/skills/* ~/.copilot/skills/
 
 # Update later:
 git submodule update --remote --merge
@@ -61,10 +62,61 @@ git submodule update --remote --merge
 | Codex       | `AGENTS.md`            | Yes            |
 | Cursor      | `.cursorrules`         | Yes            |
 | Lovable     | `.lovable`             | Yes            |
+| VS Code     | `copilot-instructions.md` + `skills/` | Yes |
 | Windsurf    | `AGENTS.md`            | Yes            |
 | Antigravity | `skills/` symlinks     | --             |
 | OpenCode    | `AGENTS.md` + `skills/`| --             |
 | Any agent   | `SKILL.md` per skill   | --             |
+
+---
+
+## VS Code / GitHub Copilot Setup
+
+### Quick Install (recommended)
+
+```bash
+npx @flitzrrr/agent-skills install vscode
+```
+
+This symlinks all 504 skills into `~/.copilot/skills/`, making them available as **slash commands** (`/skill-name`) and for **automatic model-invocation** across all your VS Code workspaces.
+
+### Project-Level Setup
+
+Clone the repo into your project for team-shared skills:
+
+```bash
+cd your-project
+git clone https://github.com/flitzrrr/agent-skills.git .agent-skills
+```
+
+The `.github/copilot-instructions.md` provides workspace-level context. For project-level skills, symlink into `.github/skills/`:
+
+```bash
+mkdir -p .github/skills
+ln -sf $(pwd)/.agent-skills/skills/* .github/skills/
+```
+
+### How Skills Work in VS Code
+
+| Feature | Behavior |
+| --- | --- |
+| **Slash commands** | Type `/` in Copilot Chat to see all installed skills |
+| **Auto-invocation** | Copilot reads `description` fields and loads relevant skills automatically |
+| **Progressive loading** | Only the skill's `name` + `description` are indexed (~100 tokens each) |
+| **On-demand** | Full `SKILL.md` body loads only when the skill is triggered |
+
+### Recommended VS Code Settings
+
+Add to your `settings.json` for the best experience:
+
+```json
+{
+  "chat.agent.enabled": true,
+  "github.copilot.chat.skills.enabled": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.agent.thinkingEnabled": true
+}
+```
 
 ---
 
@@ -104,7 +156,7 @@ agent-skills/
   vendor/          19 Git submodules (upstream sources)
   bin/              CLI + build scripts (catalog, sync, wiki)
   docs/             GitHub Pages catalog + project documentation
-  .github/          CI workflows (discovery, linting, publishing, submodule sync)
+  .github/          CI workflows + copilot-instructions.md (VS Code)
   CLAUDE.md         Claude Code config
   AGENTS.md         Codex / OpenCode / Windsurf config
   CHEATSHEET.md     Which skill to use when

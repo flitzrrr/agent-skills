@@ -1,7 +1,7 @@
 {
   "name": "@flitzrrr/agent-skills",
   "version": "1.0.4",
-  "description": "127 AI agent skills from 15 sources — multiplatform-ready for Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and more.",
+  "description": "504 AI agent skills from 19 sources — multiplatform-ready for VS Code (GitHub Copilot), Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and more.",
   "scripts": {
     "test": "node bin/test-cli.js"
   },
@@ -12,6 +12,9 @@
     "ai",
     "agent",
     "skills",
+    "vscode",
+    "github-copilot",
+    "copilot",
     "claude",
     "codex",
     "cursor",
@@ -35,6 +38,7 @@
     "CHEATSHEET.md",
     ".cursorrules",
     ".lovable",
+    ".github/copilot-instructions.md",
     "README.md"
   ]
 }
