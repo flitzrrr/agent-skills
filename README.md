@@ -165,6 +165,55 @@ The [execute-work-package](skills/execute-work-package) skill supports three tra
 
 When l4l MCP tools are available (`precheck_new`, `precheck_iterate`, `approve_blueprint`, `execute`, `handle_report`), the skill uses them automatically. See the [l4l setup guide](https://github.com/flitzrrr/l4l/blob/main/docs/CLAUDE_CODE_SETUP.md) for configuration.
 
+### Lifecycle
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Primary as Primary Agent<br/>(IDE)
+    participant MCP as l4l MCP Server
+    participant Sub as Sub-LLM<br/>(configurable)
+
+    User->>Primary: Task with scope and DoD
+
+    rect rgb(240, 245, 250)
+    Note over Primary,Sub: Blueprint Phase
+    Primary->>MCP: precheck_new(intent, scope_paths)
+    MCP->>Sub: Generate Execution Blueprint
+    Sub-->>MCP: Blueprint (ordered steps)
+    MCP-->>Primary: handle_id + Blueprint
+    end
+
+    Primary->>User: Present Blueprint for review
+
+    alt Revision needed
+        User->>Primary: Feedback
+        Primary->>MCP: precheck_iterate(handle_id, feedback)
+        MCP->>Sub: Revise Blueprint
+        Sub-->>MCP: Updated Blueprint
+        MCP-->>Primary: Updated Blueprint
+    end
+
+    User->>Primary: Approve
+
+    rect rgb(240, 250, 240)
+    Note over Primary,Sub: Gate
+    Primary->>MCP: approve_blueprint(handle_id)
+    MCP-->>Primary: Approved
+    end
+
+    rect rgb(250, 245, 240)
+    Note over Primary,Sub: Execute Phase
+    Primary->>MCP: execute(handle_id)
+    MCP->>Sub: Implement Blueprint steps
+    Sub->>Sub: Edit files, run verification
+    Sub-->>MCP: Execution Digest
+    MCP-->>Primary: Digest (outcome, files, verify result)
+    end
+
+    Primary->>User: Report results
+```
+
 ---
 
 ## License
