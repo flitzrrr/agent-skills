@@ -28,7 +28,7 @@ Execution invariants (must):
   - Concrete reason
   - What input is missing
 
-<!-- IF MCP: This prompt is used for Options B/C (Stateful/Fresh Agent). For Option A (MCP), call approve_blueprint() then execute() — this template is not needed. -->
+<!-- IF MCP: This prompt is used for Options B/C (Stateful/Fresh Agent). For Option A (MCP), run `skills/execute-work-package/scripts/start-l4l-oci.sh` first, then call `submit_gate()` and `execute_handle()`. -->
 
 ## Approved Step List
 {{approved_steps}}
@@ -43,7 +43,7 @@ Execution invariants (must):
 - Modules (optional): {{docs_modules_ref}}
 - Features (optional): {{docs_features_ref}}
 
-<!-- IF MCP: When using l4l MCP (Option A), the execute tool runs verification automatically. The output_format="skill" parameter returns a digest matching tpl-execution-digest.md format. -->
+<!-- IF MCP: When using l4l-oci MCP (Option A), poll `get_status()` and fetch digest via `get_digest()`. -->
 
 ## Verify Command
 {{verify_command}}

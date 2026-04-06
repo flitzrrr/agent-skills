@@ -78,19 +78,40 @@ Do **not** use this skill to:
 
 ### Transport
 
-This skill supports three transport mechanisms. **If l4l MCP tools are available** (check: do you have `precheck_new`, `approve_blueprint`, `execute` tools?), **always use Option A.** Only fall back to B/C if MCP is not configured.
+This skill supports three transport mechanisms. **If l4l-oci MCP tools are available** (check: do you have `create_handle`, `generate_blueprint`, `submit_gate`, `execute_handle`, `get_digest` tools?), **always use Option A.** Only fall back to B/C if MCP is not configured.
 
-#### Option A: MCP via l4l (Default)
+#### Pre-flight: Ensure l4l-oci server is running
 
-Use the l4l Sub-Agent MCP server. The primary calls MCP tools directly — no Agent spawning needed:
+Before using Option A, run the bundled helper:
 
-1. `precheck_new(intent, scope_paths, output_format="skill")` → returns Execution Blueprint
-2. `approve_blueprint(handle_id)` → explicit gate
-3. `execute(handle_id, output_format="skill")` → returns Execution Digest
+```bash
+skills/execute-work-package/scripts/start-l4l-oci.sh
+```
+
+Behavior:
+- Uses `L4L_OCI_ROOT` (default: `$HOME/git/l4l-oci`)
+- Starts `python -m l4l_oci` in background if needed
+- Waits for MCP `health` to return `ok`
+- Exports `L4L_OCI_DEFAULT_MODEL=qwen-openrouter` for startup unless already set
+
+Prerequisites:
+- `OPENROUTER_API_KEY` (or `QWEN_API_KEY`) must be available in the environment
+
+#### Option A: MCP via l4l-oci (Default)
+
+Use the l4l-oci MCP server. The primary calls MCP tools directly — no Agent spawning needed:
+
+1. `create_handle(project_root)` → returns `handle_id`
+2. `generate_blueprint(handle_id, prompt)` → async; poll with `get_status(handle_id)` until complete
+3. `get_blueprint(handle_id, format="markdown")` → review the Execution Blueprint
+4. `submit_gate(handle_id, decision="accept"|"reject", notes=...)` → explicit gate
+5. `execute_handle(handle_id)` → async; poll with `get_status(handle_id)` until complete
+6. `get_digest(handle_id, format="markdown")` → returns Execution Digest
+7. `cleanup_handle(handle_id)` → optional cleanup
 
 Benefits: state persistence across restarts, model decoupling (cheap Sub-LLM), scope enforcement, iterative blueprint refinement.
 
-Setup: See l4l's `docs/CLAUDE_CODE_SETUP.md`.
+Additional tools: `health()` (service health check), `list_handles()` (list all active handles).
 
 #### Option B: Stateful Subagent (OpenCode)
 
@@ -147,7 +168,7 @@ Before delegating:
 
 ### 1) MODE: BLUEPRINT (Execution Blueprint)
 
-> **Option A (MCP):** Call `precheck_new(intent=..., scope_paths=..., output_format="skill")`. The blueprint is returned directly — no Agent spawn needed.
+> **Option A (MCP):** Call `create_handle(project_root)`, then `generate_blueprint(handle_id, prompt)`. Poll `get_status(handle_id)` until complete, then `get_blueprint(handle_id, format="markdown")` to review.
 
 Primary delegates to `implementer` with a prompt based on `tpl-implementer-preflight-prompt.md`.
 
@@ -167,7 +188,7 @@ If the user requests changes, the step list must be revised and re-approved with
 
 ### 2) Execute (new Agent)
 
-> **Option A (MCP):** Call `approve_blueprint(handle_id)` then `execute(handle_id, output_format="skill")`. The digest is returned directly — no Agent spawn needed.
+> **Option A (MCP):** Call `submit_gate(handle_id, decision="accept")` then `execute_handle(handle_id)`. Poll `get_status(handle_id)` until complete, then `get_digest(handle_id, format="markdown")` for the digest.
 
 Primary spawns a **new** `implementer` Agent with a prompt based on `tpl-implementer-execute-prompt.md`. The prompt includes the full approved step list, all references, and the verify command. Do NOT use SendMessage to resume the BLUEPRINT agent — spawn a fresh Agent instead.
 
@@ -179,7 +200,7 @@ The execute prompt MUST start with a clear mode indicator:
 
 and MUST include the approval token.
 
-> **Option A (MCP):** Skip Steps 2–3 above. The `execute` MCP tool returns the digest directly.
+> **Option A (MCP):** Skip the Agent spawn above. Call `submit_gate` → `execute_handle` → poll `get_status` → `get_digest` directly via MCP tools.
 
 ### 3) Digest back to Primary
 
