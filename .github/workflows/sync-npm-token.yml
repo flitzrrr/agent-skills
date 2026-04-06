@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: Set NPM_TOKEN on frontend-design-skills
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_TOKEN cannot set secrets on other repos.
+          # Requires a PAT with repo scope stored as GH_PAT.
+          GH_TOKEN: ${{ secrets.GH_PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           gh secret set NPM_TOKEN --repo flitzrrr/frontend-design-skills --body "$NPM_TOKEN"
