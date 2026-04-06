@@ -1,1161 +1,2626 @@
 {
-  "generated": "2026-03-17T22:37:35.593Z",
-  "total": 231,
+  "generated": "2026-04-06T10:01:52.930Z",
+  "total": 524,
   "skills": [
     {
       "name": "ab-test-setup",
       "source": "ab",
-      "description": "When the user wants to plan, design, or implement an A/B test or experiment."
+      "description": "Ab Test Setup tooling and automation."
     },
     {
       "name": "ad-creative",
       "source": "ad",
-      "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advert..."
+      "description": "Ad Creative tooling and automation."
+    },
+    {
+      "name": "addyosmani-api-and-interface-design",
+      "source": "addyosmani",
+      "description": "Guides stable API and interface design."
+    },
+    {
+      "name": "addyosmani-browser-testing-with-devtools",
+      "source": "addyosmani",
+      "description": "Tests in real browsers."
+    },
+    {
+      "name": "addyosmani-ci-cd-and-automation",
+      "source": "addyosmani",
+      "description": "Automates CI/CD pipeline setup."
+    },
+    {
+      "name": "addyosmani-code-review-and-quality",
+      "source": "addyosmani",
+      "description": "Conducts multi-axis code review."
+    },
+    {
+      "name": "addyosmani-code-simplification",
+      "source": "addyosmani",
+      "description": "Simplifies code for clarity."
+    },
+    {
+      "name": "addyosmani-context-engineering",
+      "source": "addyosmani",
+      "description": "Optimizes agent context setup."
+    },
+    {
+      "name": "addyosmani-debugging-and-error-recovery",
+      "source": "addyosmani",
+      "description": "Guides systematic root-cause debugging."
+    },
+    {
+      "name": "addyosmani-deprecation-and-migration",
+      "source": "addyosmani",
+      "description": "Manages deprecation and migration."
+    },
+    {
+      "name": "addyosmani-documentation-and-adrs",
+      "source": "addyosmani",
+      "description": "Records decisions and documentation."
+    },
+    {
+      "name": "addyosmani-frontend-ui-engineering",
+      "source": "addyosmani",
+      "description": "Builds production-quality UIs."
+    },
+    {
+      "name": "addyosmani-git-workflow-and-versioning",
+      "source": "addyosmani",
+      "description": "Structures git workflow practices."
+    },
+    {
+      "name": "addyosmani-idea-refine",
+      "source": "addyosmani",
+      "description": "Refines ideas iteratively."
+    },
+    {
+      "name": "addyosmani-incremental-implementation",
+      "source": "addyosmani",
+      "description": "Delivers changes incrementally."
+    },
+    {
+      "name": "addyosmani-performance-optimization",
+      "source": "addyosmani",
+      "description": "Optimizes application performance."
+    },
+    {
+      "name": "addyosmani-planning-and-task-breakdown",
+      "source": "addyosmani",
+      "description": "Breaks work into ordered tasks."
+    },
+    {
+      "name": "addyosmani-security-and-hardening",
+      "source": "addyosmani",
+      "description": "Hardens code against vulnerabilities."
+    },
+    {
+      "name": "addyosmani-shipping-and-launch",
+      "source": "addyosmani",
+      "description": "Prepares production launches."
+    },
+    {
+      "name": "addyosmani-spec-driven-development",
+      "source": "addyosmani",
+      "description": "Creates specs before coding."
+    },
+    {
+      "name": "addyosmani-test-driven-development",
+      "source": "addyosmani",
+      "description": "Drives development with tests."
+    },
+    {
+      "name": "addyosmani-using-agent-skills",
+      "source": "addyosmani",
+      "description": "Discovers and invokes agent skills."
     },
     {
       "name": "agents-md",
       "source": "agents",
-      "description": "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep..."
+      "description": "Md tooling and automation."
     },
     {
       "name": "ai-seo",
       "source": "ai",
-      "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers."
+      "description": "Ai Seo tooling and automation."
     },
     {
       "name": "analytics-tracking",
       "source": "analytics",
-      "description": "When the user wants to set up, improve, or audit analytics tracking and measurement."
+      "description": "Analytics Tracking tooling and automation."
     },
     {
       "name": "anthropic-algorithmic-art",
       "source": "anthropic",
-      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration."
+      "description": "Algorithmic Art tooling and automation."
     },
     {
       "name": "anthropic-brand-guidelines",
       "source": "anthropic",
-      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel."
+      "description": "Brand Guidelines tooling and automation."
     },
     {
       "name": "anthropic-canvas-design",
       "source": "anthropic",
-      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy."
+      "description": "Canvas Design tooling and automation."
     },
     {
       "name": "anthropic-claude-api",
       "source": "anthropic",
-      "description": "Build apps with the Claude API or Anthropic SDK."
+      "description": "Claude Api tooling and automation."
     },
     {
       "name": "anthropic-doc-coauthoring",
       "source": "anthropic",
-      "description": "Guide users through a structured workflow for co-authoring documentation."
+      "description": "Doc Coauthoring tooling and automation."
     },
     {
       "name": "anthropic-docx",
       "source": "anthropic",
-      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files)."
+      "description": "Docx tooling and automation."
     },
     {
       "name": "anthropic-frontend-design",
       "source": "anthropic",
-      "description": "Create distinctive, production-grade frontend interfaces with high design quality."
+      "description": "Frontend Design tooling and automation."
     },
     {
       "name": "anthropic-internal-comms",
       "source": "anthropic",
-      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use."
+      "description": "Internal Comms tooling and automation."
     },
     {
       "name": "anthropic-mcp-builder",
       "source": "anthropic",
-      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools."
+      "description": "Mcp Builder tooling and automation."
     },
     {
       "name": "anthropic-pdf",
       "source": "anthropic",
-      "description": "Use this skill whenever the user wants to do anything with PDF files."
+      "description": "Pdf tooling and automation."
     },
     {
       "name": "anthropic-pptx",
       "source": "anthropic",
-      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both."
+      "description": "Pptx tooling and automation."
     },
     {
       "name": "anthropic-skill-creator",
       "source": "anthropic",
-      "description": "Create new skills, modify and improve existing skills, and measure skill performance."
+      "description": "Skill Creator tooling and automation."
     },
     {
       "name": "anthropic-slack-gif-creator",
       "source": "anthropic",
-      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack."
+      "description": "Slack Gif Creator tooling and automation."
     },
     {
       "name": "anthropic-theme-factory",
       "source": "anthropic",
-      "description": "Toolkit for styling artifacts with a theme."
+      "description": "Theme Factory tooling and automation."
     },
     {
       "name": "anthropic-web-artifacts-builder",
       "source": "anthropic",
-      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn..."
+      "description": "Web Artifacts Builder tooling and automation."
     },
     {
       "name": "anthropic-webapp-testing",
       "source": "anthropic",
-      "description": "Toolkit for interacting with and testing local web applications using Playwright."
+      "description": "Webapp Testing tooling and automation."
     },
     {
       "name": "anthropic-xlsx",
       "source": "anthropic",
-      "description": "Use this skill any time a spreadsheet file is the primary input or output."
+      "description": "Xlsx tooling and automation."
     },
     {
       "name": "archive-legacy-docs",
       "source": "archive",
-      "description": "Normalize legacy repositories by moving scattered documentation into docs-legacy/ (git-aware) and generating a docs-legacy/summary.md before genera..."
+      "description": "Archive Legacy Docs tooling and automation."
     },
     {
       "name": "author-and-verify-implementation-plan",
       "source": "author",
-      "description": "Author and verify per-phase implementation plans by cross-checking the gated phase intent against the current source code and existing docs invento..."
+      "description": "Author And Verify Implementation Plan tooling and automation."
     },
     {
       "name": "blog-writing-guide",
       "source": "blog",
-      "description": "Write, review, and improve blog posts for the Sentry engineering blog following Sentry's specific writing standards, voice, and quality bar."
+      "description": "Blog Writing Guide tooling and automation."
     },
     {
       "name": "brand-guidelines",
       "source": "brand",
-      "description": "Write copy following Sentry brand guidelines."
+      "description": "Brand Guidelines tooling and automation."
     },
     {
       "name": "callstack-github",
       "source": "callstack",
-      "description": "GitHub patterns using gh CLI for pull requests, stacked PRs, code review, branching strategies, and repository automation."
+      "description": "Callstack Github tooling and automation."
     },
     {
       "name": "callstack-github-actions",
       "source": "callstack",
-      "description": "GitHub Actions workflow patterns for React Native iOS simulator and Android emulator cloud builds with downloadable artifacts."
+      "description": "Callstack Github Actions tooling and automation."
     },
     {
       "name": "callstack-react-native-best-practices",
       "source": "callstack",
-      "description": "Provides React Native performance optimization guidelines for FPS, TTI, bundle size, memory leaks, re-renders, and animations."
+      "description": "Callstack React Native Best Practices tooling and automation."
     },
     {
       "name": "callstack-react-native-brownfield-migration",
       "source": "callstack",
-      "description": "Provides an incremental adoption strategy to migrate native iOS or Android apps to React Native or Expo using @callstack/react-native-brownfield fo..."
+      "description": "Callstack React Native Brownfield Migration tooling and automation."
     },
     {
       "name": "callstack-upgrading-react-native",
       "source": "callstack",
-      "description": "Upgrades React Native apps to newer versions by applying rn-diff-purge template diffs, updating package.json dependencies, migrating native iOS and..."
+      "description": "Callstack Upgrading React Native tooling and automation."
     },
     {
       "name": "churn-prevention",
       "source": "churn",
-      "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies."
+      "description": "Churn Prevention tooling and automation."
     },
     {
       "name": "claude-settings-audit",
       "source": "claude",
-      "description": "Analyze a repository to generate recommended Claude Code settings.json permissions."
+      "description": "Claude Settings Audit tooling and automation."
     },
     {
       "name": "cloudflare-agents-sdk",
       "source": "cloudflare",
-      "description": "Build AI agents on Cloudflare Workers using the Agents SDK."
+      "description": "Agents Sdk tooling and automation."
     },
     {
       "name": "cloudflare-building-ai-agent-on-cloudflare",
       "source": "cloudflare",
-      "description": "Builds AI agents on Cloudflare using the Agents SDK with state management, real-time WebSockets, scheduled tasks, tool integration, and chat capabi..."
+      "description": "Building Ai Agent On Cloudflare tooling and automation."
     },
     {
       "name": "cloudflare-building-mcp-server-on-cloudflare",
       "source": "cloudflare",
-      "description": "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers with tools, OAuth authentication, and production deployment."
+      "description": "Building Mcp Server On Cloudflare tooling and automation."
     },
     {
       "name": "cloudflare-cloudflare",
       "source": "cloudflare",
-      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, ..."
+      "description": "Cloudflare tooling and automation."
     },
     {
       "name": "cloudflare-durable-objects",
       "source": "cloudflare",
-      "description": "Create and review Cloudflare Durable Objects."
+      "description": "Durable Objects tooling and automation."
     },
     {
       "name": "cloudflare-sandbox-sdk",
       "source": "cloudflare",
-      "description": "Build sandboxed applications for secure code execution."
+      "description": "Sandbox Sdk tooling and automation."
     },
     {
       "name": "cloudflare-web-perf",
       "source": "cloudflare",
-      "description": "Analyzes web performance using Chrome DevTools MCP."
+      "description": "Web Perf tooling and automation."
     },
     {
       "name": "cloudflare-workers-best-practices",
       "source": "cloudflare",
-      "description": "Reviews and authors Cloudflare Workers code against production best practices."
+      "description": "Workers Best Practices tooling and automation."
     },
     {
       "name": "cloudflare-wrangler",
       "source": "cloudflare",
-      "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflow..."
+      "description": "Wrangler tooling and automation."
     },
     {
       "name": "code-review",
       "source": "code",
-      "description": "Perform code reviews following Sentry engineering practices."
+      "description": "Code Review tooling and automation."
     },
     {
       "name": "code-simplifier",
       "source": "code",
-      "description": "Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality."
+      "description": "Code Simplifier tooling and automation."
     },
     {
       "name": "cold-email",
       "source": "cold",
-      "description": "Write B2B cold emails and follow-up sequences that get replies."
+      "description": "Cold Email tooling and automation."
     },
     {
       "name": "commit",
       "source": "commit",
-      "description": "ALWAYS use this skill when committing code changes — never commit directly without it."
+      "description": "Commit tooling and automation."
     },
     {
       "name": "competitor-alternatives",
       "source": "competitor",
-      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement."
+      "description": "Competitor Alternatives tooling and automation."
     },
     {
       "name": "content-strategy",
       "source": "content",
-      "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover."
+      "description": "Content Strategy tooling and automation."
     },
     {
       "name": "copy-editing",
       "source": "copy",
-      "description": "When the user wants to edit, review, or improve existing marketing copy."
+      "description": "Copy Editing tooling and automation."
     },
     {
       "name": "copywriting",
       "source": "copywriting",
-      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, ab..."
+      "description": "Copywriting tooling and automation."
     },
     {
       "name": "create-branch",
       "source": "create",
-      "description": "Create a git branch following Sentry naming conventions."
+      "description": "Create Branch tooling and automation."
     },
     {
       "name": "create-plan",
       "source": "create",
-      "description": "Create a structured plan (plan.md, phases/, todo.md) for a feature or change."
+      "description": "Create Plan tooling and automation."
     },
     {
       "name": "create-pr",
       "source": "create",
-      "description": "Alias for sentry-skills:pr-writer."
+      "description": "Create Pr tooling and automation."
+    },
+    {
+      "name": "dispatch-parallel-agents",
+      "source": "dispatch",
+      "description": "Dispatch independent tasks to parallel subagents when 2+ problems can be solved without shared state or sequential dependencies."
     },
     {
       "name": "django-access-review",
       "source": "django",
-      "description": "'Django access control and IDOR security review."
+      "description": "Django Access Review tooling and automation."
     },
     {
       "name": "django-perf-review",
       "source": "django",
-      "description": "Django performance code review."
+      "description": "Django Perf Review tooling and automation."
     },
     {
       "name": "doc-coauthoring",
       "source": "doc",
-      "description": "Guide users through a structured workflow for co-authoring documentation."
+      "description": "Doc Coauthoring tooling and automation."
     },
     {
       "name": "email-sequence",
       "source": "email",
-      "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program."
+      "description": "Email Sequence tooling and automation."
     },
     {
       "name": "execute-work-package",
       "source": "execute",
-      "description": "Execute a significant implementation unit (phase or major slice) using a gated, stateful subagent loop (steps -> gate -> execute -> digest) without..."
+      "description": "Execute a significant implementation unit (phase or major slice) using a gated subagent loop (blueprint -> gate -> execute -> digest) without creat..."
     },
     {
-      "name": "expo",
+      "name": "expo-building-native-ui",
       "source": "expo",
-      "description": "Complete guide for building beautiful apps with Expo Router."
+      "description": "Expo Building Native Ui tooling and automation."
     },
     {
-      "name": "finance-equity-research",
-      "source": "finance",
-      "description": "description: Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regula..."
+      "name": "expo-expo-api-routes",
+      "source": "expo",
+      "description": "Expo Expo Api Routes tooling and automation."
     },
     {
-      "name": "finance-financial-analysis",
-      "source": "finance",
-      "description": "Complete, populate and fill out 3-statement financial model templates (Income Statement, Balance Sheet, Cash Flow Statement) ."
+      "name": "expo-expo-cicd-workflows",
+      "source": "expo",
+      "description": "Expo Expo Cicd Workflows tooling and automation."
     },
     {
-      "name": "finance-investment-banking",
-      "source": "finance",
-      "description": "description: Build and organize a universe of potential acquirers for sell-side M&A processes."
+      "name": "expo-expo-deployment",
+      "source": "expo",
+      "description": "Expo Expo Deployment tooling and automation."
     },
     {
-      "name": "finance-lseg",
-      "source": "finance",
-      "description": "Analyze the bond futures basis by pricing futures, identifying the cheapest-to-deliver, and comparing with yield curves to assess delivery option v..."
+      "name": "expo-expo-dev-client",
+      "source": "expo",
+      "description": "Expo Expo Dev Client tooling and automation."
     },
     {
-      "name": "finance-private-equity",
-      "source": "finance",
-      "description": "description: Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time."
+      "name": "expo-expo-tailwind-setup",
+      "source": "expo",
+      "description": "Expo Expo Tailwind Setup tooling and automation."
     },
     {
-      "name": "finance-spglobal",
-      "source": "finance",
-      "description": "Generate a concise 4-5 page equity research earnings preview for a single company."
+      "name": "expo-expo-ui-jetpack-compose",
+      "source": "expo",
+      "description": "Expo Expo Ui Jetpack Compose tooling and automation."
     },
     {
-      "name": "finance-wealth-management",
+      "name": "expo-expo-ui-swift-ui",
+      "source": "expo",
+      "description": "Expo Expo Ui Swift Ui tooling and automation."
+    },
+    {
+      "name": "expo-native-data-fetching",
+      "source": "expo",
+      "description": "Expo Native Data Fetching tooling and automation."
+    },
+    {
+      "name": "expo-upgrading-expo",
+      "source": "expo",
+      "description": "Expo Upgrading Expo tooling and automation."
+    },
+    {
+      "name": "expo-use-dom",
+      "source": "expo",
+      "description": "Expo Use Dom tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-catalyst-calendar",
       "source": "finance",
-      "description": "description: Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary."
+      "description": "Equity Research Catalyst Calendar tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-earnings-analysis",
+      "source": "finance",
+      "description": "Equity Research Earnings Analysis tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-earnings-preview",
+      "source": "finance",
+      "description": "Equity Research Earnings Preview tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-idea-generation",
+      "source": "finance",
+      "description": "Equity Research Idea Generation tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-initiating-coverage",
+      "source": "finance",
+      "description": "Equity Research Initiating Coverage tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-model-update",
+      "source": "finance",
+      "description": "Equity Research Model Update tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-morning-note",
+      "source": "finance",
+      "description": "Equity Research Morning Note tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-sector-overview",
+      "source": "finance",
+      "description": "Equity Research Sector Overview tooling and automation."
+    },
+    {
+      "name": "finance-equity-research-thesis-tracker",
+      "source": "finance",
+      "description": "Equity Research Thesis Tracker tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-3-statement-model",
+      "source": "finance",
+      "description": "Financial Analysis 3 Statement Model tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-audit-xls",
+      "source": "finance",
+      "description": "Financial Analysis Audit Xls tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-clean-data-xls",
+      "source": "finance",
+      "description": "Financial Analysis Clean Data Xls tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-competitive-analysis",
+      "source": "finance",
+      "description": "Financial Analysis Competitive Analysis tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-comps-analysis",
+      "source": "finance",
+      "description": "Financial Analysis Comps Analysis tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-dcf-model",
+      "source": "finance",
+      "description": "Financial Analysis Dcf Model tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-deck-refresh",
+      "source": "finance",
+      "description": "Financial Analysis Deck Refresh tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-ib-check-deck",
+      "source": "finance",
+      "description": "Financial Analysis Ib Check Deck tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-lbo-model",
+      "source": "finance",
+      "description": "Financial Analysis Lbo Model tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-ppt-template-creator",
+      "source": "finance",
+      "description": "Financial Analysis Ppt Template Creator tooling and automation."
+    },
+    {
+      "name": "finance-financial-analysis-skill-creator",
+      "source": "finance",
+      "description": "Financial Analysis Skill Creator tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-buyer-list",
+      "source": "finance",
+      "description": "Investment Banking Buyer List tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-cim-builder",
+      "source": "finance",
+      "description": "Investment Banking Cim Builder tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-datapack-builder",
+      "source": "finance",
+      "description": "Investment Banking Datapack Builder tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-deal-tracker",
+      "source": "finance",
+      "description": "Investment Banking Deal Tracker tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-merger-model",
+      "source": "finance",
+      "description": "Investment Banking Merger Model tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-pitch-deck",
+      "source": "finance",
+      "description": "Investment Banking Pitch Deck tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-process-letter",
+      "source": "finance",
+      "description": "Investment Banking Process Letter tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-strip-profile",
+      "source": "finance",
+      "description": "Investment Banking Strip Profile tooling and automation."
+    },
+    {
+      "name": "finance-investment-banking-teaser",
+      "source": "finance",
+      "description": "Investment Banking Teaser tooling and automation."
+    },
+    {
+      "name": "finance-lseg-bond-futures-basis",
+      "source": "finance",
+      "description": "Lseg Bond Futures Basis tooling and automation."
+    },
+    {
+      "name": "finance-lseg-bond-relative-value",
+      "source": "finance",
+      "description": "Lseg Bond Relative Value tooling and automation."
+    },
+    {
+      "name": "finance-lseg-equity-research",
+      "source": "finance",
+      "description": "Lseg Equity Research tooling and automation."
+    },
+    {
+      "name": "finance-lseg-fixed-income-portfolio",
+      "source": "finance",
+      "description": "Lseg Fixed Income Portfolio tooling and automation."
+    },
+    {
+      "name": "finance-lseg-fx-carry-trade",
+      "source": "finance",
+      "description": "Lseg Fx Carry Trade tooling and automation."
+    },
+    {
+      "name": "finance-lseg-macro-rates-monitor",
+      "source": "finance",
+      "description": "Lseg Macro Rates Monitor tooling and automation."
+    },
+    {
+      "name": "finance-lseg-option-vol-analysis",
+      "source": "finance",
+      "description": "Lseg Option Vol Analysis tooling and automation."
+    },
+    {
+      "name": "finance-lseg-swap-curve-strategy",
+      "source": "finance",
+      "description": "Lseg Swap Curve Strategy tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-ai-readiness",
+      "source": "finance",
+      "description": "Private Equity Ai Readiness tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-dd-checklist",
+      "source": "finance",
+      "description": "Private Equity Dd Checklist tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-dd-meeting-prep",
+      "source": "finance",
+      "description": "Private Equity Dd Meeting Prep tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-deal-screening",
+      "source": "finance",
+      "description": "Private Equity Deal Screening tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-deal-sourcing",
+      "source": "finance",
+      "description": "Private Equity Deal Sourcing tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-ic-memo",
+      "source": "finance",
+      "description": "Private Equity Ic Memo tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-portfolio-monitoring",
+      "source": "finance",
+      "description": "Private Equity Portfolio Monitoring tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-returns-analysis",
+      "source": "finance",
+      "description": "Private Equity Returns Analysis tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-unit-economics",
+      "source": "finance",
+      "description": "Private Equity Unit Economics tooling and automation."
+    },
+    {
+      "name": "finance-private-equity-value-creation-plan",
+      "source": "finance",
+      "description": "Private Equity Value Creation Plan tooling and automation."
+    },
+    {
+      "name": "finance-spglobal-earnings-preview-beta",
+      "source": "finance",
+      "description": "Spglobal Earnings Preview Beta tooling and automation."
+    },
+    {
+      "name": "finance-spglobal-funding-digest",
+      "source": "finance",
+      "description": "Spglobal Funding Digest tooling and automation."
+    },
+    {
+      "name": "finance-spglobal-tear-sheet",
+      "source": "finance",
+      "description": "Spglobal Tear Sheet tooling and automation."
+    },
+    {
+      "name": "finance-wealth-management-client-report",
+      "source": "finance",
+      "description": "Wealth Management Client Report tooling and automation."
+    },
+    {
+      "name": "finance-wealth-management-client-review",
+      "source": "finance",
+      "description": "Wealth Management Client Review tooling and automation."
+    },
+    {
+      "name": "finance-wealth-management-financial-plan",
+      "source": "finance",
+      "description": "Wealth Management Financial Plan tooling and automation."
+    },
+    {
+      "name": "finance-wealth-management-investment-proposal",
+      "source": "finance",
+      "description": "Wealth Management Investment Proposal tooling and automation."
+    },
+    {
+      "name": "finance-wealth-management-portfolio-rebalance",
+      "source": "finance",
+      "description": "Wealth Management Portfolio Rebalance tooling and automation."
+    },
+    {
+      "name": "finance-wealth-management-tax-loss-harvesting",
+      "source": "finance",
+      "description": "Wealth Management Tax Loss Harvesting tooling and automation."
     },
     {
       "name": "find-bugs",
       "source": "find",
-      "description": "Find bugs, security vulnerabilities, and code quality issues in local branch changes."
+      "description": "Find Bugs tooling and automation."
     },
     {
       "name": "form-cro",
       "source": "form",
-      "description": "When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, applica..."
+      "description": "Form Cro tooling and automation."
     },
     {
       "name": "free-tool-strategy",
       "source": "free",
-      "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness."
+      "description": "Free Tool Strategy tooling and automation."
     },
     {
       "name": "generate-docs",
       "source": "generate",
-      "description": "Generate project documentation from an existing codebase."
+      "description": "Generate Docs tooling and automation."
     },
     {
       "name": "generate-handover",
       "source": "generate",
-      "description": "Generate a session handover document that captures progress, decisions, and context for seamless session continuity."
+      "description": "Generate Handover tooling and automation."
     },
     {
       "name": "gh-review-requests",
       "source": "gh",
-      "description": "Fetch unread GitHub notifications for open PRs where review is requested from a specified team or opened by a team member."
+      "description": "Gh Review Requests tooling and automation."
     },
     {
       "name": "gha-security-review",
       "source": "gha",
-      "description": "'GitHub Actions security review for workflow exploitation vulnerabilities."
+      "description": "Gha Security Review tooling and automation."
     },
     {
       "name": "iterate-pr",
       "source": "iterate",
-      "description": "Iterate on a PR until CI passes."
+      "description": "Iterate Pr tooling and automation."
     },
     {
       "name": "itsmostafa-api-gateway",
       "source": "itsmostafa",
-      "description": "AWS API Gateway for REST and HTTP API management."
+      "description": "Itsmostafa Api Gateway tooling and automation."
     },
     {
       "name": "itsmostafa-bedrock",
       "source": "itsmostafa",
-      "description": "AWS Bedrock foundation models for generative AI."
+      "description": "Itsmostafa Bedrock tooling and automation."
     },
     {
       "name": "itsmostafa-cloudformation",
       "source": "itsmostafa",
-      "description": "AWS CloudFormation infrastructure as code for stack management."
+      "description": "Itsmostafa Cloudformation tooling and automation."
     },
     {
       "name": "itsmostafa-cloudwatch",
       "source": "itsmostafa",
-      "description": "AWS CloudWatch monitoring for logs, metrics, alarms, and dashboards."
+      "description": "Itsmostafa Cloudwatch tooling and automation."
     },
     {
       "name": "itsmostafa-cognito",
       "source": "itsmostafa",
-      "description": "AWS Cognito user authentication and authorization service."
+      "description": "Itsmostafa Cognito tooling and automation."
     },
     {
       "name": "itsmostafa-dynamodb",
       "source": "itsmostafa",
-      "description": "AWS DynamoDB NoSQL database for scalable data storage."
+      "description": "Itsmostafa Dynamodb tooling and automation."
     },
     {
       "name": "itsmostafa-ec2",
       "source": "itsmostafa",
-      "description": "AWS EC2 virtual machine management for instances, AMIs, and networking."
+      "description": "Itsmostafa Ec2 tooling and automation."
     },
     {
       "name": "itsmostafa-ecs",
       "source": "itsmostafa",
-      "description": "AWS ECS container orchestration for running Docker containers."
+      "description": "Itsmostafa Ecs tooling and automation."
     },
     {
       "name": "itsmostafa-eks",
       "source": "itsmostafa",
-      "description": "AWS EKS Kubernetes management for clusters, node groups, and workloads."
+      "description": "Itsmostafa Eks tooling and automation."
     },
     {
       "name": "itsmostafa-eventbridge",
       "source": "itsmostafa",
-      "description": "AWS EventBridge serverless event bus for event-driven architectures."
+      "description": "Itsmostafa Eventbridge tooling and automation."
     },
     {
       "name": "itsmostafa-iam",
       "source": "itsmostafa",
-      "description": "AWS Identity and Access Management for users, roles, policies, and permissions."
+      "description": "Itsmostafa Iam tooling and automation."
     },
     {
       "name": "itsmostafa-lambda",
       "source": "itsmostafa",
-      "description": "AWS Lambda serverless functions for event-driven compute."
+      "description": "Itsmostafa Lambda tooling and automation."
     },
     {
       "name": "itsmostafa-rds",
       "source": "itsmostafa",
-      "description": "AWS RDS relational database service for managed databases."
+      "description": "Itsmostafa Rds tooling and automation."
     },
     {
       "name": "itsmostafa-s3",
       "source": "itsmostafa",
-      "description": "AWS S3 object storage for bucket management, object operations, and access control."
+      "description": "Itsmostafa S3 tooling and automation."
     },
     {
       "name": "itsmostafa-secrets-manager",
       "source": "itsmostafa",
-      "description": "AWS Secrets Manager for secure secret storage and rotation."
+      "description": "Itsmostafa Secrets Manager tooling and automation."
     },
     {
       "name": "itsmostafa-sns",
       "source": "itsmostafa",
-      "description": "AWS SNS notification service for pub/sub messaging."
+      "description": "Itsmostafa Sns tooling and automation."
     },
     {
       "name": "itsmostafa-sqs",
       "source": "itsmostafa",
-      "description": "AWS SQS message queue service for decoupled architectures."
+      "description": "Itsmostafa Sqs tooling and automation."
     },
     {
       "name": "itsmostafa-step-functions",
       "source": "itsmostafa",
-      "description": "AWS Step Functions workflow orchestration with state machines."
+      "description": "Itsmostafa Step Functions tooling and automation."
     },
     {
       "name": "JackyST0-api-doc-generator",
       "source": "JackyST0",
-      "description": "Generate API documentation from source code, supporting REST APIs, GraphQL, and various documentation formats."
+      "description": "JackyST0 Api Doc Generator tooling and automation."
     },
     {
       "name": "JackyST0-code-review",
       "source": "JackyST0",
-      "description": "Smart code review skill that helps review code quality, identify potential issues, and provide improvement suggestions."
+      "description": "JackyST0 Code Review tooling and automation."
     },
     {
       "name": "JackyST0-debug-helper",
       "source": "JackyST0",
-      "description": "Help debug code by analyzing error messages, identifying root causes, and providing fix suggestions."
+      "description": "JackyST0 Debug Helper tooling and automation."
     },
     {
       "name": "JackyST0-git-commit",
       "source": "JackyST0",
-      "description": "Git commit message generator that creates conventional commit messages based on code changes."
+      "description": "JackyST0 Git Commit tooling and automation."
     },
     {
       "name": "JackyST0-unit-test-generator",
       "source": "JackyST0",
-      "description": "Automatically generate unit tests based on source code, supporting multiple languages and testing frameworks."
+      "description": "JackyST0 Unit Test Generator tooling and automation."
     },
     {
       "name": "launch-strategy",
       "source": "launch",
-      "description": "When the user wants to plan a product launch, feature announcement, or release strategy."
+      "description": "Launch Strategy tooling and automation."
     },
     {
       "name": "lead-magnets",
       "source": "lead",
-      "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation."
+      "description": "Lead Magnets tooling and automation."
     },
     {
       "name": "marketing-ideas",
       "source": "marketing",
-      "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product."
+      "description": "Marketing Ideas tooling and automation."
     },
     {
       "name": "marketing-psychology",
       "source": "marketing",
-      "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing."
+      "description": "Marketing Psychology tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-algorithmic-art",
       "source": "MoizIbnYousaf",
-      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration."
+      "description": "MoizIbnYousaf Algorithmic Art tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-artifacts-builder",
       "source": "MoizIbnYousaf",
-      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn..."
+      "description": "MoizIbnYousaf Artifacts Builder tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-ask-questions-if-underspecified",
       "source": "MoizIbnYousaf",
-      "description": "Clarify requirements before implementing."
+      "description": "MoizIbnYousaf Ask Questions If Underspecified tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-backend-development",
       "source": "MoizIbnYousaf",
-      "description": "Backend API design, database architecture, microservices patterns, and test-driven development."
+      "description": "MoizIbnYousaf Backend Development tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-best-practices",
       "source": "MoizIbnYousaf",
-      "description": "Transforms vague prompts into optimized Claude Code prompts."
+      "description": "MoizIbnYousaf Best Practices tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-brand-guidelines",
       "source": "MoizIbnYousaf",
-      "description": "Apply brand colors and typography to artifacts."
+      "description": "MoizIbnYousaf Brand Guidelines tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-canvas-design",
       "source": "MoizIbnYousaf",
-      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy."
+      "description": "MoizIbnYousaf Canvas Design tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-changelog-generator",
       "source": "MoizIbnYousaf",
-      "description": "Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits..."
+      "description": "MoizIbnYousaf Changelog Generator tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-code-documentation",
       "source": "MoizIbnYousaf",
-      "description": "Writing effective code documentation - API docs, README files, inline comments, and technical guides."
+      "description": "MoizIbnYousaf Code Documentation tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-code-refactoring",
       "source": "MoizIbnYousaf",
-      "description": "Code refactoring patterns and techniques for improving code quality without changing behavior."
+      "description": "MoizIbnYousaf Code Refactoring tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-code-review",
       "source": "MoizIbnYousaf",
-      "description": "Automated code review for pull requests using specialized review patterns."
+      "description": "MoizIbnYousaf Code Review tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-competitive-ads-extractor",
       "source": "MoizIbnYousaf",
-      "description": "Extracts and analyzes competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand what messaging, problems, and creative approaches..."
+      "description": "MoizIbnYousaf Competitive Ads Extractor tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-content-research-writer",
       "source": "MoizIbnYousaf",
-      "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time f..."
+      "description": "MoizIbnYousaf Content Research Writer tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-database-design",
       "source": "MoizIbnYousaf",
-      "description": "Database schema design, optimization, and migration patterns for PostgreSQL, MySQL, and NoSQL databases."
+      "description": "MoizIbnYousaf Database Design tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-developer-growth-analysis",
       "source": "MoizIbnYousaf",
-      "description": "Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and areas for improvement, curates relevant learning r..."
+      "description": "MoizIbnYousaf Developer Growth Analysis tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-doc-coauthoring",
       "source": "MoizIbnYousaf",
-      "description": "Guide users through a structured workflow for co-authoring documentation."
+      "description": "MoizIbnYousaf Doc Coauthoring tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-docx",
       "source": "MoizIbnYousaf",
-      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction."
+      "description": "MoizIbnYousaf Docx tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-domain-name-brainstormer",
       "source": "MoizIbnYousaf",
-      "description": "Generates creative domain name ideas for your project and checks availability across multiple TLDs (.com, .io, .dev, .ai, etc.)."
+      "description": "MoizIbnYousaf Domain Name Brainstormer tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-figma",
       "source": "MoizIbnYousaf",
-      "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code."
+      "description": "MoizIbnYousaf Figma tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-figma-implement-design",
       "source": "MoizIbnYousaf",
-      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and pr..."
+      "description": "MoizIbnYousaf Figma Implement Design tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-file-organizer",
       "source": "MoizIbnYousaf",
-      "description": "Intelligently organizes your files and folders across your computer by understanding context, finding duplicates, suggesting better structures, and..."
+      "description": "MoizIbnYousaf File Organizer tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-frontend-design",
       "source": "MoizIbnYousaf",
-      "description": "Create distinctive, production-grade frontend interfaces with high design quality."
+      "description": "MoizIbnYousaf Frontend Design tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-gh-fix-ci",
       "source": "MoizIbnYousaf",
-      "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure co..."
+      "description": "MoizIbnYousaf Gh Fix Ci tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-image-enhancer",
       "source": "MoizIbnYousaf",
-      "description": "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity."
+      "description": "MoizIbnYousaf Image Enhancer tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-internal-comms",
       "source": "MoizIbnYousaf",
-      "description": "Write internal communications using company formats."
+      "description": "MoizIbnYousaf Internal Comms tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-invoice-organizer",
       "source": "MoizIbnYousaf",
-      "description": "Automatically organizes invoices and receipts for tax preparation by reading messy files, extracting key information, renaming them consistently, a..."
+      "description": "MoizIbnYousaf Invoice Organizer tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-javascript-typescript",
       "source": "MoizIbnYousaf",
-      "description": "JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks."
+      "description": "MoizIbnYousaf Javascript Typescript tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-jira-issues",
       "source": "MoizIbnYousaf",
-      "description": "Create, update, and manage Jira issues from natural language."
+      "description": "MoizIbnYousaf Jira Issues tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-job-application",
       "source": "MoizIbnYousaf",
-      "description": "Write tailored cover letters and job applications using your CV and preferred style"
+      "description": "MoizIbnYousaf Job Application tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-lead-research-assistant",
       "source": "MoizIbnYousaf",
-      "description": "Identifies high-quality leads for your product or service by analyzing your business, searching for target companies, and providing actionable cont..."
+      "description": "MoizIbnYousaf Lead Research Assistant tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-llm-application-dev",
       "source": "MoizIbnYousaf",
-      "description": "Building applications with Large Language Models - prompt engineering, RAG patterns, and LLM integration."
+      "description": "MoizIbnYousaf Llm Application Dev tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-mcp-builder",
       "source": "MoizIbnYousaf",
-      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools."
+      "description": "MoizIbnYousaf Mcp Builder tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-meeting-insights-analyzer",
       "source": "MoizIbnYousaf",
-      "description": "Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback."
+      "description": "MoizIbnYousaf Meeting Insights Analyzer tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-notion-spec-to-implementation",
       "source": "MoizIbnYousaf",
-      "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tas..."
+      "description": "MoizIbnYousaf Notion Spec To Implementation tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-openai-docs",
       "source": "MoizIbnYousaf",
-      "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations, help choosing the late..."
+      "description": "MoizIbnYousaf Openai Docs tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-pdf",
       "source": "MoizIbnYousaf",
-      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms."
+      "description": "MoizIbnYousaf Pdf tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-playwright",
       "source": "MoizIbnYousaf",
-      "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow ..."
+      "description": "MoizIbnYousaf Playwright tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-pptx",
       "source": "MoizIbnYousaf",
-      "description": "Presentation creation, editing, and analysis."
+      "description": "MoizIbnYousaf Pptx tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-python-development",
       "source": "MoizIbnYousaf",
-      "description": "Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices."
+      "description": "MoizIbnYousaf Python Development tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-qa-regression",
       "source": "MoizIbnYousaf",
-      "description": "Automate QA regression testing with reusable test skills."
+      "description": "MoizIbnYousaf Qa Regression tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-raffle-winner-picker",
       "source": "MoizIbnYousaf",
-      "description": "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests."
+      "description": "MoizIbnYousaf Raffle Winner Picker tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-sentry",
       "source": "MoizIbnYousaf",
-      "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry API;..."
+      "description": "MoizIbnYousaf Sentry tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-skill-creator",
       "source": "MoizIbnYousaf",
-      "description": "Guide for creating effective skills."
+      "description": "MoizIbnYousaf Skill Creator tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-slack-gif-creator",
       "source": "MoizIbnYousaf",
-      "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and composable animation primitives."
+      "description": "MoizIbnYousaf Slack Gif Creator tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-theme-factory",
       "source": "MoizIbnYousaf",
-      "description": "Toolkit for styling artifacts with a theme."
+      "description": "MoizIbnYousaf Theme Factory tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-video-downloader",
       "source": "MoizIbnYousaf",
-      "description": "Downloads videos from YouTube and other platforms for offline viewing, editing, or archival."
+      "description": "MoizIbnYousaf Video Downloader tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-webapp-testing",
       "source": "MoizIbnYousaf",
-      "description": "Toolkit for interacting with and testing local web applications using Playwright."
+      "description": "MoizIbnYousaf Webapp Testing tooling and automation."
     },
     {
       "name": "MoizIbnYousaf-xlsx",
       "source": "MoizIbnYousaf",
-      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization."
+      "description": "MoizIbnYousaf Xlsx tooling and automation."
     },
     {
       "name": "onboarding-cro",
       "source": "onboarding",
-      "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value."
+      "description": "Onboarding Cro tooling and automation."
+    },
+    {
+      "name": "packer-aws-ami-builder",
+      "source": "packer",
+      "description": "Packer Aws Ami Builder tooling and automation."
+    },
+    {
+      "name": "packer-azure-image-builder",
+      "source": "packer",
+      "description": "Packer Azure Image Builder tooling and automation."
+    },
+    {
+      "name": "packer-push-to-registry",
+      "source": "packer",
+      "description": "Packer Push To Registry tooling and automation."
+    },
+    {
+      "name": "packer-windows-builder",
+      "source": "packer",
+      "description": "Packer Windows Builder tooling and automation."
     },
     {
       "name": "page-cro",
       "source": "page",
-      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature..."
+      "description": "Page Cro tooling and automation."
     },
     {
       "name": "paid-ads",
       "source": "paid",
-      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms."
+      "description": "Paid Ads tooling and automation."
     },
     {
       "name": "paywall-upgrade-cro",
       "source": "paywall",
-      "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates."
+      "description": "Paywall Upgrade Cro tooling and automation."
     },
     {
       "name": "popup-cro",
       "source": "popup",
-      "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes."
+      "description": "Popup Cro tooling and automation."
     },
     {
       "name": "pr-writer",
       "source": "pr",
-      "description": "ALWAYS use this skill when creating or updating pull requests — never create or edit a PR directly without it."
+      "description": "Pr Writer tooling and automation."
     },
     {
       "name": "presentation-creator",
       "source": "presentation",
-      "description": "Create data-driven presentation slides using React, Vite, and Recharts with Sentry branding."
+      "description": "Presentation Creator tooling and automation."
     },
     {
       "name": "pricing-strategy",
       "source": "pricing",
-      "description": "When the user wants help with pricing decisions, packaging, or monetization strategy."
+      "description": "Pricing Strategy tooling and automation."
+    },
+    {
+      "name": "product-description-seo",
+      "source": "product",
+      "description": "End-to-end skill for SEO-optimized product descriptions: inventory analysis, generation, quality assurance, catalog update, and deployment."
     },
     {
       "name": "product-marketing-context",
       "source": "product",
-      "description": "When the user wants to create or update their product marketing context document."
+      "description": "Product Marketing Context tooling and automation."
     },
     {
       "name": "programmatic-seo",
       "source": "programmatic",
-      "description": "When the user wants to create SEO-driven pages at scale using templates and data."
+      "description": "Programmatic Seo tooling and automation."
     },
     {
       "name": "referral-program",
       "source": "referral",
-      "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
+      "description": "Referral Program tooling and automation."
     },
     {
       "name": "resume-plan",
       "source": "resume",
-      "description": "Bootstrap a new session to continue working on an existing plan."
+      "description": "Resume Plan tooling and automation."
     },
     {
       "name": "revops",
       "source": "revops",
-      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes."
+      "description": "Revops tooling and automation."
     },
     {
       "name": "sales-enablement",
       "source": "sales",
-      "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts."
+      "description": "Sales Enablement tooling and automation."
     },
     {
       "name": "schema-markup",
       "source": "schema",
-      "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site."
+      "description": "Schema Markup tooling and automation."
     },
     {
-      "name": "scientific",
+      "name": "scientific-adaptyv",
       "source": "scientific",
-      "description": "Cloud laboratory platform for automated protein testing and validation."
+      "description": "Scientific Adaptyv tooling and automation."
+    },
+    {
+      "name": "scientific-aeon",
+      "source": "scientific",
+      "description": "Scientific Aeon tooling and automation."
+    },
+    {
+      "name": "scientific-alpha-vantage",
+      "source": "scientific",
+      "description": "Scientific Alpha Vantage tooling and automation."
+    },
+    {
+      "name": "scientific-alphafold-database",
+      "source": "scientific",
+      "description": "Scientific Alphafold Database tooling and automation."
+    },
+    {
+      "name": "scientific-anndata",
+      "source": "scientific",
+      "description": "Scientific Anndata tooling and automation."
+    },
+    {
+      "name": "scientific-arboreto",
+      "source": "scientific",
+      "description": "Scientific Arboreto tooling and automation."
+    },
+    {
+      "name": "scientific-arxiv-database",
+      "source": "scientific",
+      "description": "Scientific Arxiv Database tooling and automation."
+    },
+    {
+      "name": "scientific-astropy",
+      "source": "scientific",
+      "description": "Scientific Astropy tooling and automation."
+    },
+    {
+      "name": "scientific-benchling-integration",
+      "source": "scientific",
+      "description": "Scientific Benchling Integration tooling and automation."
+    },
+    {
+      "name": "scientific-bgpt-paper-search",
+      "source": "scientific",
+      "description": "Scientific Bgpt Paper Search tooling and automation."
+    },
+    {
+      "name": "scientific-bindingdb-database",
+      "source": "scientific",
+      "description": "Scientific Bindingdb Database tooling and automation."
+    },
+    {
+      "name": "scientific-biopython",
+      "source": "scientific",
+      "description": "Scientific Biopython tooling and automation."
+    },
+    {
+      "name": "scientific-biorxiv-database",
+      "source": "scientific",
+      "description": "Scientific Biorxiv Database tooling and automation."
+    },
+    {
+      "name": "scientific-bioservices",
+      "source": "scientific",
+      "description": "Scientific Bioservices tooling and automation."
+    },
+    {
+      "name": "scientific-brenda-database",
+      "source": "scientific",
+      "description": "Scientific Brenda Database tooling and automation."
+    },
+    {
+      "name": "scientific-cbioportal-database",
+      "source": "scientific",
+      "description": "Scientific Cbioportal Database tooling and automation."
+    },
+    {
+      "name": "scientific-cellxgene-census",
+      "source": "scientific",
+      "description": "Scientific Cellxgene Census tooling and automation."
+    },
+    {
+      "name": "scientific-chembl-database",
+      "source": "scientific",
+      "description": "Scientific Chembl Database tooling and automation."
+    },
+    {
+      "name": "scientific-cirq",
+      "source": "scientific",
+      "description": "Scientific Cirq tooling and automation."
+    },
+    {
+      "name": "scientific-citation-management",
+      "source": "scientific",
+      "description": "Scientific Citation Management tooling and automation."
+    },
+    {
+      "name": "scientific-clinical-decision-support",
+      "source": "scientific",
+      "description": "Scientific Clinical Decision Support tooling and automation."
+    },
+    {
+      "name": "scientific-clinical-reports",
+      "source": "scientific",
+      "description": "Scientific Clinical Reports tooling and automation."
+    },
+    {
+      "name": "scientific-clinicaltrials-database",
+      "source": "scientific",
+      "description": "Scientific Clinicaltrials Database tooling and automation."
+    },
+    {
+      "name": "scientific-clinpgx-database",
+      "source": "scientific",
+      "description": "Scientific Clinpgx Database tooling and automation."
+    },
+    {
+      "name": "scientific-clinvar-database",
+      "source": "scientific",
+      "description": "Scientific Clinvar Database tooling and automation."
+    },
+    {
+      "name": "scientific-cobrapy",
+      "source": "scientific",
+      "description": "Scientific Cobrapy tooling and automation."
+    },
+    {
+      "name": "scientific-consciousness-council",
+      "source": "scientific",
+      "description": "Scientific Consciousness Council tooling and automation."
+    },
+    {
+      "name": "scientific-cosmic-database",
+      "source": "scientific",
+      "description": "Scientific Cosmic Database tooling and automation."
+    },
+    {
+      "name": "scientific-dask",
+      "source": "scientific",
+      "description": "Scientific Dask tooling and automation."
+    },
+    {
+      "name": "scientific-datacommons-client",
+      "source": "scientific",
+      "description": "Scientific Datacommons Client tooling and automation."
+    },
+    {
+      "name": "scientific-datamol",
+      "source": "scientific",
+      "description": "Scientific Datamol tooling and automation."
+    },
+    {
+      "name": "scientific-deepchem",
+      "source": "scientific",
+      "description": "Scientific Deepchem tooling and automation."
+    },
+    {
+      "name": "scientific-deeptools",
+      "source": "scientific",
+      "description": "Scientific Deeptools tooling and automation."
+    },
+    {
+      "name": "scientific-denario",
+      "source": "scientific",
+      "description": "Scientific Denario tooling and automation."
+    },
+    {
+      "name": "scientific-depmap",
+      "source": "scientific",
+      "description": "Scientific Depmap tooling and automation."
+    },
+    {
+      "name": "scientific-dhdna-profiler",
+      "source": "scientific",
+      "description": "Scientific Dhdna Profiler tooling and automation."
+    },
+    {
+      "name": "scientific-diffdock",
+      "source": "scientific",
+      "description": "Scientific Diffdock tooling and automation."
+    },
+    {
+      "name": "scientific-dnanexus-integration",
+      "source": "scientific",
+      "description": "Scientific Dnanexus Integration tooling and automation."
+    },
+    {
+      "name": "scientific-docx",
+      "source": "scientific",
+      "description": "Scientific Docx tooling and automation."
+    },
+    {
+      "name": "scientific-drugbank-database",
+      "source": "scientific",
+      "description": "Scientific Drugbank Database tooling and automation."
+    },
+    {
+      "name": "scientific-edgartools",
+      "source": "scientific",
+      "description": "Scientific Edgartools tooling and automation."
+    },
+    {
+      "name": "scientific-ena-database",
+      "source": "scientific",
+      "description": "Scientific Ena Database tooling and automation."
+    },
+    {
+      "name": "scientific-ensembl-database",
+      "source": "scientific",
+      "description": "Scientific Ensembl Database tooling and automation."
+    },
+    {
+      "name": "scientific-esm",
+      "source": "scientific",
+      "description": "Scientific Esm tooling and automation."
+    },
+    {
+      "name": "scientific-etetoolkit",
+      "source": "scientific",
+      "description": "Scientific Etetoolkit tooling and automation."
+    },
+    {
+      "name": "scientific-exploratory-data-analysis",
+      "source": "scientific",
+      "description": "Scientific Exploratory Data Analysis tooling and automation."
+    },
+    {
+      "name": "scientific-fda-database",
+      "source": "scientific",
+      "description": "Scientific Fda Database tooling and automation."
+    },
+    {
+      "name": "scientific-flowio",
+      "source": "scientific",
+      "description": "Scientific Flowio tooling and automation."
+    },
+    {
+      "name": "scientific-fluidsim",
+      "source": "scientific",
+      "description": "Scientific Fluidsim tooling and automation."
+    },
+    {
+      "name": "scientific-fred-economic-data",
+      "source": "scientific",
+      "description": "Scientific Fred Economic Data tooling and automation."
+    },
+    {
+      "name": "scientific-gene-database",
+      "source": "scientific",
+      "description": "Scientific Gene Database tooling and automation."
+    },
+    {
+      "name": "scientific-generate-image",
+      "source": "scientific",
+      "description": "Scientific Generate Image tooling and automation."
+    },
+    {
+      "name": "scientific-geniml",
+      "source": "scientific",
+      "description": "Scientific Geniml tooling and automation."
+    },
+    {
+      "name": "scientific-geo-database",
+      "source": "scientific",
+      "description": "Scientific Geo Database tooling and automation."
+    },
+    {
+      "name": "scientific-geomaster",
+      "source": "scientific",
+      "description": "Scientific Geomaster tooling and automation."
+    },
+    {
+      "name": "scientific-geopandas",
+      "source": "scientific",
+      "description": "Scientific Geopandas tooling and automation."
+    },
+    {
+      "name": "scientific-get-available-resources",
+      "source": "scientific",
+      "description": "Scientific Get Available Resources tooling and automation."
+    },
+    {
+      "name": "scientific-gget",
+      "source": "scientific",
+      "description": "Scientific Gget tooling and automation."
+    },
+    {
+      "name": "scientific-ginkgo-cloud-lab",
+      "source": "scientific",
+      "description": "Scientific Ginkgo Cloud Lab tooling and automation."
+    },
+    {
+      "name": "scientific-glycoengineering",
+      "source": "scientific",
+      "description": "Scientific Glycoengineering tooling and automation."
+    },
+    {
+      "name": "scientific-gnomad-database",
+      "source": "scientific",
+      "description": "Scientific Gnomad Database tooling and automation."
+    },
+    {
+      "name": "scientific-gtars",
+      "source": "scientific",
+      "description": "Scientific Gtars tooling and automation."
+    },
+    {
+      "name": "scientific-gtex-database",
+      "source": "scientific",
+      "description": "Scientific Gtex Database tooling and automation."
+    },
+    {
+      "name": "scientific-gwas-database",
+      "source": "scientific",
+      "description": "Scientific Gwas Database tooling and automation."
+    },
+    {
+      "name": "scientific-hedgefundmonitor",
+      "source": "scientific",
+      "description": "Scientific Hedgefundmonitor tooling and automation."
+    },
+    {
+      "name": "scientific-histolab",
+      "source": "scientific",
+      "description": "Scientific Histolab tooling and automation."
+    },
+    {
+      "name": "scientific-hmdb-database",
+      "source": "scientific",
+      "description": "Scientific Hmdb Database tooling and automation."
+    },
+    {
+      "name": "scientific-hypogenic",
+      "source": "scientific",
+      "description": "Scientific Hypogenic tooling and automation."
+    },
+    {
+      "name": "scientific-hypothesis-generation",
+      "source": "scientific",
+      "description": "Scientific Hypothesis Generation tooling and automation."
+    },
+    {
+      "name": "scientific-imaging-data-commons",
+      "source": "scientific",
+      "description": "Scientific Imaging Data Commons tooling and automation."
+    },
+    {
+      "name": "scientific-infographics",
+      "source": "scientific",
+      "description": "Scientific Infographics tooling and automation."
+    },
+    {
+      "name": "scientific-interpro-database",
+      "source": "scientific",
+      "description": "Scientific Interpro Database tooling and automation."
+    },
+    {
+      "name": "scientific-iso-13485-certification",
+      "source": "scientific",
+      "description": "Scientific Iso 13485 Certification tooling and automation."
+    },
+    {
+      "name": "scientific-jaspar-database",
+      "source": "scientific",
+      "description": "Scientific Jaspar Database tooling and automation."
+    },
+    {
+      "name": "scientific-kegg-database",
+      "source": "scientific",
+      "description": "Scientific Kegg Database tooling and automation."
+    },
+    {
+      "name": "scientific-labarchive-integration",
+      "source": "scientific",
+      "description": "Scientific Labarchive Integration tooling and automation."
+    },
+    {
+      "name": "scientific-lamindb",
+      "source": "scientific",
+      "description": "Scientific Lamindb tooling and automation."
+    },
+    {
+      "name": "scientific-latchbio-integration",
+      "source": "scientific",
+      "description": "Scientific Latchbio Integration tooling and automation."
+    },
+    {
+      "name": "scientific-latex-posters",
+      "source": "scientific",
+      "description": "Scientific Latex Posters tooling and automation."
+    },
+    {
+      "name": "scientific-literature-review",
+      "source": "scientific",
+      "description": "Scientific Literature Review tooling and automation."
+    },
+    {
+      "name": "scientific-markdown-mermaid-writing",
+      "source": "scientific",
+      "description": "Scientific Markdown Mermaid Writing tooling and automation."
+    },
+    {
+      "name": "scientific-market-research-reports",
+      "source": "scientific",
+      "description": "Scientific Market Research Reports tooling and automation."
+    },
+    {
+      "name": "scientific-markitdown",
+      "source": "scientific",
+      "description": "Scientific Markitdown tooling and automation."
+    },
+    {
+      "name": "scientific-matchms",
+      "source": "scientific",
+      "description": "Scientific Matchms tooling and automation."
+    },
+    {
+      "name": "scientific-matlab",
+      "source": "scientific",
+      "description": "Scientific Matlab tooling and automation."
+    },
+    {
+      "name": "scientific-matplotlib",
+      "source": "scientific",
+      "description": "Scientific Matplotlib tooling and automation."
+    },
+    {
+      "name": "scientific-medchem",
+      "source": "scientific",
+      "description": "Scientific Medchem tooling and automation."
+    },
+    {
+      "name": "scientific-metabolomics-workbench-database",
+      "source": "scientific",
+      "description": "Scientific Metabolomics Workbench Database tooling and automation."
+    },
+    {
+      "name": "scientific-modal",
+      "source": "scientific",
+      "description": "Scientific Modal tooling and automation."
+    },
+    {
+      "name": "scientific-molecular-dynamics",
+      "source": "scientific",
+      "description": "Scientific Molecular Dynamics tooling and automation."
+    },
+    {
+      "name": "scientific-molfeat",
+      "source": "scientific",
+      "description": "Scientific Molfeat tooling and automation."
+    },
+    {
+      "name": "scientific-monarch-database",
+      "source": "scientific",
+      "description": "Scientific Monarch Database tooling and automation."
+    },
+    {
+      "name": "scientific-networkx",
+      "source": "scientific",
+      "description": "Scientific Networkx tooling and automation."
+    },
+    {
+      "name": "scientific-neurokit2",
+      "source": "scientific",
+      "description": "Scientific Neurokit2 tooling and automation."
+    },
+    {
+      "name": "scientific-neuropixels-analysis",
+      "source": "scientific",
+      "description": "Scientific Neuropixels Analysis tooling and automation."
+    },
+    {
+      "name": "scientific-offer-k-dense-web",
+      "source": "scientific",
+      "description": "Scientific Offer K Dense Web tooling and automation."
+    },
+    {
+      "name": "scientific-omero-integration",
+      "source": "scientific",
+      "description": "Scientific Omero Integration tooling and automation."
+    },
+    {
+      "name": "scientific-open-notebook",
+      "source": "scientific",
+      "description": "Scientific Open Notebook tooling and automation."
+    },
+    {
+      "name": "scientific-openalex-database",
+      "source": "scientific",
+      "description": "Scientific Openalex Database tooling and automation."
+    },
+    {
+      "name": "scientific-opentargets-database",
+      "source": "scientific",
+      "description": "Scientific Opentargets Database tooling and automation."
+    },
+    {
+      "name": "scientific-opentrons-integration",
+      "source": "scientific",
+      "description": "Scientific Opentrons Integration tooling and automation."
+    },
+    {
+      "name": "scientific-paper-2-web",
+      "source": "scientific",
+      "description": "Scientific Paper 2 Web tooling and automation."
+    },
+    {
+      "name": "scientific-parallel-web",
+      "source": "scientific",
+      "description": "Scientific Parallel Web tooling and automation."
+    },
+    {
+      "name": "scientific-pathml",
+      "source": "scientific",
+      "description": "Scientific Pathml tooling and automation."
+    },
+    {
+      "name": "scientific-pdb-database",
+      "source": "scientific",
+      "description": "Scientific Pdb Database tooling and automation."
+    },
+    {
+      "name": "scientific-pdf",
+      "source": "scientific",
+      "description": "Scientific Pdf tooling and automation."
+    },
+    {
+      "name": "scientific-peer-review",
+      "source": "scientific",
+      "description": "Scientific Peer Review tooling and automation."
+    },
+    {
+      "name": "scientific-pennylane",
+      "source": "scientific",
+      "description": "Scientific Pennylane tooling and automation."
+    },
+    {
+      "name": "scientific-perplexity-search",
+      "source": "scientific",
+      "description": "Scientific Perplexity Search tooling and automation."
+    },
+    {
+      "name": "scientific-phylogenetics",
+      "source": "scientific",
+      "description": "Scientific Phylogenetics tooling and automation."
+    },
+    {
+      "name": "scientific-plotly",
+      "source": "scientific",
+      "description": "Scientific Plotly tooling and automation."
+    },
+    {
+      "name": "scientific-polars",
+      "source": "scientific",
+      "description": "Scientific Polars tooling and automation."
+    },
+    {
+      "name": "scientific-pptx",
+      "source": "scientific",
+      "description": "Scientific Pptx tooling and automation."
+    },
+    {
+      "name": "scientific-pptx-posters",
+      "source": "scientific",
+      "description": "Scientific Pptx Posters tooling and automation."
+    },
+    {
+      "name": "scientific-primekg",
+      "source": "scientific",
+      "description": "Scientific Primekg tooling and automation."
+    },
+    {
+      "name": "scientific-protocolsio-integration",
+      "source": "scientific",
+      "description": "Scientific Protocolsio Integration tooling and automation."
+    },
+    {
+      "name": "scientific-pubchem-database",
+      "source": "scientific",
+      "description": "Scientific Pubchem Database tooling and automation."
+    },
+    {
+      "name": "scientific-pubmed-database",
+      "source": "scientific",
+      "description": "Scientific Pubmed Database tooling and automation."
+    },
+    {
+      "name": "scientific-pufferlib",
+      "source": "scientific",
+      "description": "Scientific Pufferlib tooling and automation."
+    },
+    {
+      "name": "scientific-pydeseq2",
+      "source": "scientific",
+      "description": "Scientific Pydeseq2 tooling and automation."
+    },
+    {
+      "name": "scientific-pydicom",
+      "source": "scientific",
+      "description": "Scientific Pydicom tooling and automation."
+    },
+    {
+      "name": "scientific-pyhealth",
+      "source": "scientific",
+      "description": "Scientific Pyhealth tooling and automation."
+    },
+    {
+      "name": "scientific-pylabrobot",
+      "source": "scientific",
+      "description": "Scientific Pylabrobot tooling and automation."
+    },
+    {
+      "name": "scientific-pymatgen",
+      "source": "scientific",
+      "description": "Scientific Pymatgen tooling and automation."
+    },
+    {
+      "name": "scientific-pymc",
+      "source": "scientific",
+      "description": "Scientific Pymc tooling and automation."
+    },
+    {
+      "name": "scientific-pymoo",
+      "source": "scientific",
+      "description": "Scientific Pymoo tooling and automation."
+    },
+    {
+      "name": "scientific-pyopenms",
+      "source": "scientific",
+      "description": "Scientific Pyopenms tooling and automation."
+    },
+    {
+      "name": "scientific-pysam",
+      "source": "scientific",
+      "description": "Scientific Pysam tooling and automation."
+    },
+    {
+      "name": "scientific-pytdc",
+      "source": "scientific",
+      "description": "Scientific Pytdc tooling and automation."
+    },
+    {
+      "name": "scientific-pytorch-lightning",
+      "source": "scientific",
+      "description": "Scientific Pytorch Lightning tooling and automation."
+    },
+    {
+      "name": "scientific-pyzotero",
+      "source": "scientific",
+      "description": "Scientific Pyzotero tooling and automation."
+    },
+    {
+      "name": "scientific-qiskit",
+      "source": "scientific",
+      "description": "Scientific Qiskit tooling and automation."
+    },
+    {
+      "name": "scientific-qutip",
+      "source": "scientific",
+      "description": "Scientific Qutip tooling and automation."
+    },
+    {
+      "name": "scientific-rdkit",
+      "source": "scientific",
+      "description": "Scientific Rdkit tooling and automation."
+    },
+    {
+      "name": "scientific-reactome-database",
+      "source": "scientific",
+      "description": "Scientific Reactome Database tooling and automation."
+    },
+    {
+      "name": "scientific-research-grants",
+      "source": "scientific",
+      "description": "Scientific Research Grants tooling and automation."
+    },
+    {
+      "name": "scientific-research-lookup",
+      "source": "scientific",
+      "description": "Scientific Research Lookup tooling and automation."
+    },
+    {
+      "name": "scientific-rowan",
+      "source": "scientific",
+      "description": "Scientific Rowan tooling and automation."
+    },
+    {
+      "name": "scientific-scanpy",
+      "source": "scientific",
+      "description": "Scientific Scanpy tooling and automation."
+    },
+    {
+      "name": "scientific-scholar-evaluation",
+      "source": "scientific",
+      "description": "Scientific Scholar Evaluation tooling and automation."
+    },
+    {
+      "name": "scientific-scientific-brainstorming",
+      "source": "scientific",
+      "description": "Scientific Scientific Brainstorming tooling and automation."
+    },
+    {
+      "name": "scientific-scientific-critical-thinking",
+      "source": "scientific",
+      "description": "Scientific Scientific Critical Thinking tooling and automation."
+    },
+    {
+      "name": "scientific-scientific-schematics",
+      "source": "scientific",
+      "description": "Scientific Scientific Schematics tooling and automation."
+    },
+    {
+      "name": "scientific-scientific-slides",
+      "source": "scientific",
+      "description": "Scientific Scientific Slides tooling and automation."
+    },
+    {
+      "name": "scientific-scientific-visualization",
+      "source": "scientific",
+      "description": "Scientific Scientific Visualization tooling and automation."
+    },
+    {
+      "name": "scientific-scientific-writing",
+      "source": "scientific",
+      "description": "Scientific Scientific Writing tooling and automation."
+    },
+    {
+      "name": "scientific-scikit-bio",
+      "source": "scientific",
+      "description": "Scientific Scikit Bio tooling and automation."
+    },
+    {
+      "name": "scientific-scikit-learn",
+      "source": "scientific",
+      "description": "Scientific Scikit Learn tooling and automation."
+    },
+    {
+      "name": "scientific-scikit-survival",
+      "source": "scientific",
+      "description": "Scientific Scikit Survival tooling and automation."
+    },
+    {
+      "name": "scientific-scvelo",
+      "source": "scientific",
+      "description": "Scientific Scvelo tooling and automation."
+    },
+    {
+      "name": "scientific-scvi-tools",
+      "source": "scientific",
+      "description": "Scientific Scvi Tools tooling and automation."
+    },
+    {
+      "name": "scientific-seaborn",
+      "source": "scientific",
+      "description": "Scientific Seaborn tooling and automation."
+    },
+    {
+      "name": "scientific-shap",
+      "source": "scientific",
+      "description": "Scientific Shap tooling and automation."
+    },
+    {
+      "name": "scientific-simpy",
+      "source": "scientific",
+      "description": "Scientific Simpy tooling and automation."
+    },
+    {
+      "name": "scientific-stable-baselines3",
+      "source": "scientific",
+      "description": "Scientific Stable Baselines3 tooling and automation."
+    },
+    {
+      "name": "scientific-statistical-analysis",
+      "source": "scientific",
+      "description": "Scientific Statistical Analysis tooling and automation."
+    },
+    {
+      "name": "scientific-statsmodels",
+      "source": "scientific",
+      "description": "Scientific Statsmodels tooling and automation."
+    },
+    {
+      "name": "scientific-string-database",
+      "source": "scientific",
+      "description": "Scientific String Database tooling and automation."
+    },
+    {
+      "name": "scientific-sympy",
+      "source": "scientific",
+      "description": "Scientific Sympy tooling and automation."
+    },
+    {
+      "name": "scientific-tiledbvcf",
+      "source": "scientific",
+      "description": "Scientific Tiledbvcf tooling and automation."
+    },
+    {
+      "name": "scientific-timesfm-forecasting",
+      "source": "scientific",
+      "description": "Scientific Timesfm Forecasting tooling and automation."
+    },
+    {
+      "name": "scientific-torch-geometric",
+      "source": "scientific",
+      "description": "Scientific Torch Geometric tooling and automation."
+    },
+    {
+      "name": "scientific-torchdrug",
+      "source": "scientific",
+      "description": "Scientific Torchdrug tooling and automation."
+    },
+    {
+      "name": "scientific-transformers",
+      "source": "scientific",
+      "description": "Scientific Transformers tooling and automation."
+    },
+    {
+      "name": "scientific-treatment-plans",
+      "source": "scientific",
+      "description": "Scientific Treatment Plans tooling and automation."
+    },
+    {
+      "name": "scientific-umap-learn",
+      "source": "scientific",
+      "description": "Scientific Umap Learn tooling and automation."
+    },
+    {
+      "name": "scientific-uniprot-database",
+      "source": "scientific",
+      "description": "Scientific Uniprot Database tooling and automation."
+    },
+    {
+      "name": "scientific-usfiscaldata",
+      "source": "scientific",
+      "description": "Scientific Usfiscaldata tooling and automation."
+    },
+    {
+      "name": "scientific-uspto-database",
+      "source": "scientific",
+      "description": "Scientific Uspto Database tooling and automation."
+    },
+    {
+      "name": "scientific-vaex",
+      "source": "scientific",
+      "description": "Scientific Vaex tooling and automation."
+    },
+    {
+      "name": "scientific-venue-templates",
+      "source": "scientific",
+      "description": "Scientific Venue Templates tooling and automation."
+    },
+    {
+      "name": "scientific-what-if-oracle",
+      "source": "scientific",
+      "description": "Scientific What If Oracle tooling and automation."
+    },
+    {
+      "name": "scientific-xlsx",
+      "source": "scientific",
+      "description": "Scientific Xlsx tooling and automation."
+    },
+    {
+      "name": "scientific-zarr-python",
+      "source": "scientific",
+      "description": "Scientific Zarr Python tooling and automation."
+    },
+    {
+      "name": "scientific-zinc-database",
+      "source": "scientific",
+      "description": "Scientific Zinc Database tooling and automation."
     },
     {
       "name": "security-review",
       "source": "security",
-      "description": "Security code review for vulnerabilities."
+      "description": "Security Review tooling and automation."
     },
     {
       "name": "seo",
       "source": "seo",
-      "description": "Deterministic LLM-first SEO audits for websites, blog posts, and GitHub repositories."
+      "description": "Deterministic LLM-first SEO audits for websites, blogs, and repositories."
     },
     {
       "name": "seo-audit",
       "source": "seo",
-      "description": "When the user wants to audit, review, or diagnose SEO issues on their site."
+      "description": "Seo Audit tooling and automation."
     },
     {
       "name": "signup-flow-cro",
       "source": "signup",
-      "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows."
+      "description": "Signup Flow Cro tooling and automation."
     },
     {
       "name": "site-architecture",
       "source": "site",
-      "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking."
+      "description": "Site Architecture tooling and automation."
     },
     {
       "name": "skill-creator",
       "source": "skill",
-      "description": "Alias for sentry-skills:skill-writer."
+      "description": "Skill Creator tooling and automation."
     },
     {
       "name": "skill-scanner",
       "source": "skill",
-      "description": "Scan agent skills for security issues."
+      "description": "Skill Scanner tooling and automation."
     },
     {
       "name": "skill-writer",
       "source": "skill",
-      "description": "Create, synthesize, and iteratively improve agent skills following the Agent Skills specification."
+      "description": "Skill Writer tooling and automation."
     },
     {
       "name": "social-content",
       "source": "social",
-      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other pl..."
+      "description": "Social Content tooling and automation."
     },
     {
       "name": "sred-project-organizer",
       "source": "sred",
-      "description": "Take a list of projects and their related documentation, and organize them into the SRED format for submission."
+      "description": "Sred Project Organizer tooling and automation."
     },
     {
       "name": "sred-work-summary",
       "source": "sred",
-      "description": "Go back through the previous year of work and create a Notion doc that groups relevant links into projects that can then be documented as SRED proj..."
+      "description": "Sred Work Summary tooling and automation."
     },
     {
       "name": "stitch-design-md",
       "source": "stitch",
-      "description": "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files"
+      "description": "Stitch Design Md tooling and automation."
     },
     {
       "name": "stitch-enhance-prompt",
       "source": "stitch",
-      "description": "Transforms vague UI ideas into polished, Stitch-optimized prompts."
+      "description": "Stitch Enhance Prompt tooling and automation."
     },
     {
       "name": "stitch-react-components",
       "source": "stitch",
-      "description": "Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation."
+      "description": "Stitch React Components tooling and automation."
     },
     {
       "name": "stitch-remotion",
       "source": "stitch",
-      "description": "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays"
+      "description": "Stitch Remotion tooling and automation."
     },
     {
       "name": "stitch-shadcn-ui",
       "source": "stitch",
-      "description": "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, an..."
+      "description": "Stitch Shadcn Ui tooling and automation."
     },
     {
       "name": "stitch-stitch-design",
       "source": "stitch",
-      "description": "Unified entry point for Stitch design work."
+      "description": "Stitch Stitch Design tooling and automation."
     },
     {
       "name": "stitch-stitch-loop",
       "source": "stitch",
-      "description": "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern"
+      "description": "Stitch Stitch Loop tooling and automation."
     },
     {
       "name": "stripe-stripe-best-practices",
       "source": "stripe",
-      "description": "Guides Stripe integration decisions — API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properti..."
+      "description": "Stripe Stripe Best Practices tooling and automation."
     },
     {
       "name": "stripe-upgrade-stripe",
       "source": "stripe",
-      "description": "Guide for upgrading Stripe API versions and SDKs"
+      "description": "Stripe Upgrade Stripe tooling and automation."
     },
     {
       "name": "supabase-postgres",
       "source": "supabase",
-      "description": "Postgres performance optimization and best practices from Supabase."
+      "description": "Supabase Postgres tooling and automation."
     },
     {
-      "name": "terraform-code-generation",
-      "source": "terraform",
-      "description": "Azure Verified Modules (AVM) requirements and best practices for developing certified Azure Terraform modules."
+      "name": "systematic-debugging",
+      "source": "systematic",
+      "description": "Investigate bugs, test failures, and unexpected behavior through root-cause analysis before proposing fixes."
     },
     {
-      "name": "terraform-module-generation",
+      "name": "terraform-azure-verified-modules",
       "source": "terraform",
-      "description": "Transform monolithic Terraform configurations into reusable, maintainable modules following HashiCorp's module design principles and community best..."
+      "description": "Azure Verified Modules tooling and automation."
     },
     {
-      "name": "terraform-provider-development",
+      "name": "terraform-new-terraform-provider",
       "source": "terraform",
-      "description": "Use this when scaffolding a new Terraform provider."
+      "description": "New Terraform Provider tooling and automation."
+    },
+    {
+      "name": "terraform-provider-actions",
+      "source": "terraform",
+      "description": "Provider Actions tooling and automation."
+    },
+    {
+      "name": "terraform-provider-resources",
+      "source": "terraform",
+      "description": "Provider Resources tooling and automation."
+    },
+    {
+      "name": "terraform-refactor-module",
+      "source": "terraform",
+      "description": "Refactor Module tooling and automation."
+    },
+    {
+      "name": "terraform-run-acceptance-tests",
+      "source": "terraform",
+      "description": "Run Acceptance Tests tooling and automation."
+    },
+    {
+      "name": "terraform-terraform-search-import",
+      "source": "terraform",
+      "description": "Terraform Search Import tooling and automation."
+    },
+    {
+      "name": "terraform-terraform-stacks",
+      "source": "terraform",
+      "description": "Terraform Stacks tooling and automation."
+    },
+    {
+      "name": "terraform-terraform-style-guide",
+      "source": "terraform",
+      "description": "Terraform Style Guide tooling and automation."
+    },
+    {
+      "name": "terraform-terraform-test",
+      "source": "terraform",
+      "description": "Terraform Test tooling and automation."
+    },
+    {
+      "name": "tob-address-sanitizer",
+      "source": "tob",
+      "description": "Address Sanitizer tooling and automation."
+    },
+    {
+      "name": "tob-aflpp",
+      "source": "tob",
+      "description": "Aflpp tooling and automation."
     },
     {
       "name": "tob-agentic-actions-auditor",
       "source": "tob",
-      "description": "Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations including Claude Code Action, Gemini CLI, OpenAI Codex, and G..."
+      "description": "Agentic Actions Auditor tooling and automation."
+    },
+    {
+      "name": "tob-algorand-vulnerability-scanner",
+      "source": "tob",
+      "description": "Algorand Vulnerability Scanner tooling and automation."
     },
     {
       "name": "tob-ask-questions-if-underspecified",
       "source": "tob",
-      "description": "Clarify requirements before implementing."
+      "description": "Ask Questions If Underspecified tooling and automation."
+    },
+    {
+      "name": "tob-atheris",
+      "source": "tob",
+      "description": "Atheris tooling and automation."
     },
     {
       "name": "tob-audit-context-building",
       "source": "tob",
-      "description": "Enables ultra-granular, line-by-line code analysis to build deep architectural context before vulnerability or bug finding."
+      "description": "Audit Context Building tooling and automation."
     },
     {
-      "name": "tob-building-secure-contracts",
+      "name": "tob-audit-prep-assistant",
       "source": "tob",
-      "description": "Scans Algorand smart contracts for 11 common vulnerabilities including rekeying attacks, unchecked transaction fees, missing field validations, and..."
+      "description": "Audit Prep Assistant tooling and automation."
     },
     {
       "name": "tob-burpsuite-project-parser",
       "source": "tob",
-      "description": "Searches and explores Burp Suite project files (.burp) from the command line."
+      "description": "Burpsuite Project Parser tooling and automation."
+    },
+    {
+      "name": "tob-cairo-vulnerability-scanner",
+      "source": "tob",
+      "description": "Cairo Vulnerability Scanner tooling and automation."
+    },
+    {
+      "name": "tob-cargo-fuzz",
+      "source": "tob",
+      "description": "Cargo Fuzz tooling and automation."
     },
     {
       "name": "tob-claude-in-chrome-troubleshooting",
       "source": "tob",
-      "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues."
+      "description": "Claude In Chrome Troubleshooting tooling and automation."
+    },
+    {
+      "name": "tob-code-maturity-assessor",
+      "source": "tob",
+      "description": "Code Maturity Assessor tooling and automation."
+    },
+    {
+      "name": "tob-codeql",
+      "source": "tob",
+      "description": "Codeql tooling and automation."
     },
     {
       "name": "tob-constant-time-analysis",
       "source": "tob",
-      "description": "Detects timing side-channel vulnerabilities in cryptographic code."
+      "description": "Constant Time Analysis tooling and automation."
     },
     {
-      "name": "tob-culture-index",
+      "name": "tob-constant-time-testing",
       "source": "tob",
-      "description": "Interprets Culture Index (CI) surveys, behavioral profiles, and personality assessment data."
+      "description": "Constant Time Testing tooling and automation."
+    },
+    {
+      "name": "tob-cosmos-vulnerability-scanner",
+      "source": "tob",
+      "description": "Cosmos Vulnerability Scanner tooling and automation."
+    },
+    {
+      "name": "tob-coverage-analysis",
+      "source": "tob",
+      "description": "Coverage Analysis tooling and automation."
     },
     {
       "name": "tob-debug-buttercup",
       "source": "tob",
-      "description": "Debugs the Buttercup CRS (Cyber Reasoning System) running on Kubernetes."
+      "description": "Debug Buttercup password manager issues and extension failures."
+    },
+    {
+      "name": "tob-designing-workflow-skills",
+      "source": "tob",
+      "description": "Designing Workflow Skills tooling and automation."
     },
     {
       "name": "tob-devcontainer-setup",
       "source": "tob",
-      "description": "Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), and persistent volumes."
+      "description": "Devcontainer Setup tooling and automation."
     },
     {
       "name": "tob-differential-review",
       "source": "tob",
-      "description": "Performs security-focused differential review of code changes (PRs, commits, diffs)."
+      "description": "Security-focused differential code review for pull requests."
     },
     {
       "name": "tob-dwarf-expert",
       "source": "tob",
-      "description": "Provides expertise for analyzing DWARF debug files and understanding the DWARF debug format/standard (v3-v5)."
+      "description": "Dwarf Expert tooling and automation."
     },
     {
       "name": "tob-entry-point-analyzer",
       "source": "tob",
-      "description": "Analyzes smart contract codebases to identify state-changing entry points for security auditing."
+      "description": "Entry Point Analyzer tooling and automation."
     },
     {
       "name": "tob-firebase-apk-scanner",
       "source": "tob",
-      "description": "Scans Android APKs for Firebase security misconfigurations including open databases, storage buckets, authentication issues, and exposed cloud func..."
+      "description": "Firebase Apk Scanner tooling and automation."
     },
     {
       "name": "tob-fp-check",
       "source": "tob",
-      "description": "Systematically verifies suspected security bugs to eliminate false positives."
+      "description": "Fp Check tooling and automation."
+    },
+    {
+      "name": "tob-fuzzing-dictionary",
+      "source": "tob",
+      "description": "Fuzzing Dictionary tooling and automation."
+    },
+    {
+      "name": "tob-fuzzing-obstacles",
+      "source": "tob",
+      "description": "Fuzzing Obstacles tooling and automation."
     },
     {
       "name": "tob-gh-cli",
       "source": "tob",
-      "description": "Automate GitHub workflows using the gh CLI for issues, PRs, and releases."
+      "description": "Intercepts GitHub URL fetches and redirects to the authenticated `gh` CLI."
     },
     {
       "name": "tob-git-cleanup",
       "source": "tob",
-      "description": "Safely analyzes and cleans up local git branches and worktrees by categorizing them as merged, squash-merged, superseded, or active work."
+      "description": "Git Cleanup tooling and automation."
+    },
+    {
+      "name": "tob-guidelines-advisor",
+      "source": "tob",
+      "description": "Guidelines Advisor tooling and automation."
+    },
+    {
+      "name": "tob-harness-writing",
+      "source": "tob",
+      "description": "Harness Writing tooling and automation."
     },
     {
       "name": "tob-insecure-defaults",
       "source": "tob",
-      "description": "Detects fail-open insecure defaults (hardcoded secrets, weak auth, permissive security) that allow apps to run insecurely in production."
+      "description": "Insecure Defaults tooling and automation."
+    },
+    {
+      "name": "tob-interpreting-culture-index",
+      "source": "tob",
+      "description": "Interpreting Culture Index tooling and automation."
     },
     {
       "name": "tob-let-fate-decide",
       "source": "tob",
-      "description": "Draws 4 Tarot cards using os.urandom() to inject entropy into planning when prompts are vague or underspecified."
+      "description": "Let Fate Decide tooling and automation."
+    },
+    {
+      "name": "tob-libafl",
+      "source": "tob",
+      "description": "Libafl tooling and automation."
+    },
+    {
+      "name": "tob-libfuzzer",
+      "source": "tob",
+      "description": "Libfuzzer tooling and automation."
     },
     {
       "name": "tob-modern-python",
       "source": "tob",
-      "description": "Configures Python projects with modern tooling (uv, ruff, ty)."
+      "description": "Modern Python tooling and automation."
+    },
+    {
+      "name": "tob-ossfuzz",
+      "source": "tob",
+      "description": "Ossfuzz tooling and automation."
     },
     {
       "name": "tob-property-based-testing",
       "source": "tob",
-      "description": "Provides guidance for property-based testing across multiple languages and smart contracts."
+      "description": "Property Based Testing tooling and automation."
+    },
+    {
+      "name": "tob-ruzzy",
+      "source": "tob",
+      "description": "Ruzzy tooling and automation."
+    },
+    {
+      "name": "tob-sarif-parsing",
+      "source": "tob",
+      "description": "Sarif Parsing tooling and automation."
     },
     {
       "name": "tob-seatbelt-sandboxer",
       "source": "tob",
-      "description": "Generates minimal macOS Seatbelt sandbox configurations."
+      "description": "Seatbelt Sandboxer tooling and automation."
     },
     {
       "name": "tob-second-opinion",
       "source": "tob",
-      "description": "Runs external LLM code reviews (OpenAI Codex or Google Gemini CLI) on uncommitted changes, branch diffs, or specific commits."
+      "description": "Second Opinion tooling and automation."
+    },
+    {
+      "name": "tob-secure-workflow-guide",
+      "source": "tob",
+      "description": "Secure Workflow Guide tooling and automation."
+    },
+    {
+      "name": "tob-semgrep",
+      "source": "tob",
+      "description": "Semgrep tooling and automation."
     },
     {
       "name": "tob-semgrep-rule-creator",
       "source": "tob",
-      "description": "Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns."
+      "description": "Semgrep Rule Creator tooling and automation."
     },
     {
       "name": "tob-semgrep-rule-variant-creator",
       "source": "tob",
-      "description": "Creates language variants of existing Semgrep rules."
+      "description": "Semgrep Rule Variant Creator tooling and automation."
     },
     {
       "name": "tob-sharp-edges",
       "source": "tob",
-      "description": "Identifies error-prone APIs, dangerous configurations, and footgun designs that enable security mistakes."
+      "description": "Sharp Edges tooling and automation."
     },
     {
       "name": "tob-skill-improver",
       "source": "tob",
-      "description": "Iteratively reviews and fixes Claude Code skill quality issues until they meet standards."
+      "description": "Skill Improver tooling and automation."
+    },
+    {
+      "name": "tob-solana-vulnerability-scanner",
+      "source": "tob",
+      "description": "Solana Vulnerability Scanner tooling and automation."
     },
     {
       "name": "tob-spec-to-code-compliance",
       "source": "tob",
-      "description": "Verifies code implements exactly what documentation specifies for blockchain audits."
+      "description": "Spec To Code Compliance tooling and automation."
     },
     {
-      "name": "tob-static-analysis",
+      "name": "tob-substrate-vulnerability-scanner",
       "source": "tob",
-      "description": "Scans a codebase for security vulnerabilities using CodeQL's interprocedural data flow and taint tracking analysis."
+      "description": "Substrate Vulnerability Scanner tooling and automation."
     },
     {
       "name": "tob-supply-chain-risk-auditor",
       "source": "tob",
-      "description": "Identifies dependencies at heightened risk of exploitation or takeover."
+      "description": "Supply Chain Risk Auditor tooling and automation."
     },
     {
-      "name": "tob-testing-handbook-skills",
+      "name": "tob-testing-handbook-generator",
       "source": "tob",
-      "description": "AddressSanitizer detects memory errors during fuzzing."
+      "description": "Testing Handbook Generator tooling and automation."
+    },
+    {
+      "name": "tob-token-integration-analyzer",
+      "source": "tob",
+      "description": "Token Integration Analyzer tooling and automation."
+    },
+    {
+      "name": "tob-ton-vulnerability-scanner",
+      "source": "tob",
+      "description": "Ton Vulnerability Scanner tooling and automation."
     },
     {
       "name": "tob-variant-analysis",
       "source": "tob",
-      "description": "Find similar vulnerabilities and bugs across codebases using pattern-based analysis."
+      "description": "Variant Analysis tooling and automation."
     },
     {
-      "name": "tob-workflow-skill-design",
+      "name": "tob-wycheproof",
       "source": "tob",
-      "description": "Guides the design and structuring of workflow-based Claude Code skills with multi-step phases, decision trees, subagent delegation, and progressive..."
+      "description": "Wycheproof tooling and automation."
     },
     {
-      "name": "tob-yara-authoring",
+      "name": "tob-yara-rule-authoring",
       "source": "tob",
-      "description": "Guides authoring of high-quality YARA-X detection rules for malware identification."
+      "description": "Yara Rule Authoring tooling and automation."
     },
     {
       "name": "tob-zeroize-audit",
       "source": "tob",
-      "description": "Detects missing zeroization of sensitive data in source code and identifies zeroization removed by compiler optimizations, with assembly-level anal..."
+      "description": "Zeroize Audit tooling and automation."
     },
     {
       "name": "update-docs",
       "source": "update",
-      "description": "Update existing project documentation after code changes."
+      "description": "Update Docs tooling and automation."
     },
     {
       "name": "update-plan",
       "source": "update",
-      "description": "Update an existing plan's status, todo list, and phase progress."
+      "description": "Update Plan tooling and automation."
     },
     {
       "name": "vercel-composition-patterns",
       "source": "vercel",
-      "description": "React composition patterns that scale."
+      "description": "Vercel Composition Patterns tooling and automation."
     },
     {
       "name": "vercel-deploy-to-vercel",
       "source": "vercel",
-      "description": "Deploy applications and websites to Vercel."
+      "description": "Vercel Deploy To Vercel tooling and automation."
     },
     {
       "name": "vercel-react-best-practices",
       "source": "vercel",
-      "description": "React and Next.js performance optimization guidelines from Vercel Engineering."
+      "description": "Vercel React Best Practices tooling and automation."
     },
     {
       "name": "vercel-react-native-skills",
       "source": "vercel",
-      "description": "React Native and Expo best practices for building performant mobile apps."
+      "description": "Vercel React Native Skills tooling and automation."
     },
     {
       "name": "vercel-web-design-guidelines",
       "source": "vercel",
-      "description": "Review UI code for Web Interface Guidelines compliance."
+      "description": "Vercel Web Design Guidelines tooling and automation."
     }
   ]
 }
