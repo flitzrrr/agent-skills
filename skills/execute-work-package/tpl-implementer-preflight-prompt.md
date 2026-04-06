@@ -24,7 +24,7 @@ In BLUEPRINT mode:
 - Do NOT run commands.
 - Do NOT claim you changed code.
 
-<!-- IF MCP: This prompt is used for Options B/C (Stateful/Fresh Agent). For Option A (MCP), call precheck_new() directly — this template is not needed. -->
+<!-- IF MCP: This prompt is used for Options B/C (Stateful/Fresh Agent). For Option A (MCP), run `skills/execute-work-package/scripts/start-l4l-oci.sh` first, then call `create_handle()` and `generate_blueprint()`. -->
 
 ## Work Packet
 
@@ -53,7 +53,7 @@ In BLUEPRINT mode:
 
 If `{{verify_command}}` is empty/unknown, propose exactly **one** verify command.
 
-<!-- IF MCP: When using l4l MCP (Option A), the precheck_new tool accepts plan_ref, phase_ref, impl_plan_ref, and docs_refs parameters directly — no need to embed them in the prompt. -->
+<!-- IF MCP: When using l4l-oci MCP (Option A), pass planning/doc refs through the `generate_blueprint` prompt and retrieve results with `get_blueprint()`. -->
 
 ## Output
 
