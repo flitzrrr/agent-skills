@@ -29,16 +29,9 @@ jobs:
           fetch-depth: 0
 
       - name: MegaLinter
-        uses: oxsecurity/megalinter/flavors/documentation@v9
+        uses: oxsecurity/megalinter@v9
         env:
-          VALIDATE_ALL_CODEBASE: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MARKDOWN_MARKDOWNLINT_FILTER_REGEX_INCLUDE: "(README|CHEATSHEET|AGENTS|CLAUDE)\\.md"
-          SPELL_CSPELL_DISABLE_ERRORS: true
-          COPYPASTE_JSCPD_DISABLE_ERRORS: true
-          YAML_YAMLLINT_FILTER_REGEX_INCLUDE: "(\\.github/)"
-          JSON_JSONLINT_FILTER_REGEX_INCLUDE: "(package\\.json)"
-          DISABLE_LINTERS: SPELL_CSPELL,COPYPASTE_JSCPD,REPOSITORY_CHECKOV,REPOSITORY_DEVSKIM,REPOSITORY_GITLEAKS,REPOSITORY_GRYPE,REPOSITORY_SECRETLINT,REPOSITORY_SEMGREP,REPOSITORY_SYFT,REPOSITORY_TRIVY,REPOSITORY_TRIVY_SBOM,REPOSITORY_TRUFFLEHOG
 
       - name: Upload report
         if: success() || failure()
