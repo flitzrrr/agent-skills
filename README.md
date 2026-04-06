@@ -153,17 +153,17 @@ Skills are namespaced by source to avoid collisions: `anthropic-pdf`, `tob-stati
 
 ---
 
-## MCP Execution Backend (l4l)
+## MCP Execution Backend (l4l-oci)
 
 The [execute-work-package](skills/execute-work-package) skill supports three transport modes for delegating implementation to a sub-agent:
 
 | Transport | Mechanism | When to use |
 | --- | --- | --- |
-| **MCP via l4l** (default) | [l4l](https://github.com/flitzrrr/l4l) exposes 5 MCP tools for the gated precheck-approve-execute lifecycle | Any IDE with MCP support |
-| **Fresh Agent** | IDE spawns a new sub-agent per step (no external server) | Fallback when l4l is not configured |
+| **MCP via l4l-oci** (default) | [l4l-oci](https://github.com/DasDigitaleMomentum/l4l-oci) exposes 10 MCP tools for the gated blueprint-gate-execute lifecycle | Any IDE with MCP support |
+| **Fresh Agent** | IDE spawns a new sub-agent per step (no external server) | Fallback when l4l-oci is not configured |
 | **Stateful Session** | Sub-agent session resumed across steps | OpenCode only |
 
-When l4l MCP tools are available (`precheck_new`, `precheck_iterate`, `approve_blueprint`, `execute`, `handle_report`), the skill uses them automatically. See the [l4l setup guide](https://github.com/flitzrrr/l4l/blob/main/docs/CLAUDE_CODE_SETUP.md) for configuration.
+When l4l-oci MCP tools are available (`create_handle`, `generate_blueprint`, `submit_gate`, `execute_handle`, `get_digest`), the skill uses them automatically. The bundled `scripts/start-l4l-oci.sh` auto-starts the server if needed. See the [l4l-oci setup guide](https://github.com/DasDigitaleMomentum/l4l-oci/blob/main/docs/setup.md) for configuration.
 
 ### Lifecycle
 
@@ -171,43 +171,39 @@ When l4l MCP tools are available (`precheck_new`, `precheck_iterate`, `approve_b
 sequenceDiagram
     participant User
     participant Primary as Primary Agent<br/>(IDE)
-    participant MCP as l4l MCP Server
+    participant MCP as l4l-oci MCP Server
     participant Sub as Sub-LLM<br/>(configurable)
 
     User->>Primary: Task with scope and DoD
 
     rect rgb(240, 245, 250)
     Note over Primary,Sub: Blueprint Phase
-    Primary->>MCP: precheck_new(intent, scope_paths)
+    Primary->>MCP: create_handle(project_root)
+    MCP-->>Primary: handle_id
+    Primary->>MCP: generate_blueprint(handle_id, prompt)
     MCP->>Sub: Generate Execution Blueprint
     Sub-->>MCP: Blueprint (ordered steps)
-    MCP-->>Primary: handle_id + Blueprint
+    Primary->>MCP: get_blueprint(handle_id)
+    MCP-->>Primary: Blueprint for review
     end
 
     Primary->>User: Present Blueprint for review
-
-    alt Revision needed
-        User->>Primary: Feedback
-        Primary->>MCP: precheck_iterate(handle_id, feedback)
-        MCP->>Sub: Revise Blueprint
-        Sub-->>MCP: Updated Blueprint
-        MCP-->>Primary: Updated Blueprint
-    end
 
     User->>Primary: Approve
 
     rect rgb(240, 250, 240)
     Note over Primary,Sub: Gate
-    Primary->>MCP: approve_blueprint(handle_id)
-    MCP-->>Primary: Approved
+    Primary->>MCP: submit_gate(handle_id, "accept")
+    MCP-->>Primary: Gated
     end
 
     rect rgb(250, 245, 240)
     Note over Primary,Sub: Execute Phase
-    Primary->>MCP: execute(handle_id)
+    Primary->>MCP: execute_handle(handle_id)
     MCP->>Sub: Implement Blueprint steps
     Sub->>Sub: Edit files, run verification
     Sub-->>MCP: Execution Digest
+    Primary->>MCP: get_digest(handle_id)
     MCP-->>Primary: Digest (outcome, files, verify result)
     end
 
