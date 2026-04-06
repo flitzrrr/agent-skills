@@ -55,3 +55,6 @@
 [submodule "vendor/JackyST0-awesome-agent-skills"]
 	path = vendor/JackyST0-awesome-agent-skills
 	url = https://github.com/JackyST0/awesome-agent-skills.git
+[submodule "vendor/addyosmani-agent-skills"]
+	path = vendor/addyosmani-agent-skills
+	url = https://github.com/addyosmani/agent-skills.git

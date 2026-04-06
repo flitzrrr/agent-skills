@@ -2,8 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/@flitzrrr/agent-skills?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
 [![npm downloads](https://img.shields.io/npm/dm/@flitzrrr/agent-skills?style=flat-square)](https://www.npmjs.com/package/@flitzrrr/agent-skills)
-[![Skills](https://img.shields.io/badge/skills-504-blue?style=flat-square)](skills/)
-[![Sources](https://img.shields.io/badge/sources-19-green?style=flat-square)](vendor/)
+[![Skills](https://img.shields.io/badge/skills-524-blue?style=flat-square)](skills/)
+[![Sources](https://img.shields.io/badge/sources-20-green?style=flat-square)](vendor/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Weekly Discovery](https://img.shields.io/badge/auto--discovery-weekly-purple?style=flat-square)](.github/workflows/skill-discovery.yml)
 
@@ -130,7 +130,7 @@ New sources are discovered weekly via [GitHub Actions](.github/workflows/skill-d
 ```
 agent-skills/
   skills/            504 entries (symlinks to vendor + local forks)
-  vendor/          19 Git submodules (upstream sources)
+  vendor/          20 Git submodules (upstream sources)
   bin/               CLI and build scripts
   docs/              GitHub Pages catalog and project documentation
   .github/           CI workflows and copilot-instructions.md
