@@ -1,7 +1,17 @@
 {
-  "generated": "2026-04-10T22:50:13.086Z",
-  "total": 346,
+  "generated": "2026-04-10T22:56:05.021Z",
+  "total": 479,
   "skills": [
+    {
+      "name": "ab-test-setup",
+      "source": "ab",
+      "description": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program."
+    },
+    {
+      "name": "ad-creative",
+      "source": "ad",
+      "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advert..."
+    },
     {
       "name": "addyosmani-api-and-interface-design",
       "source": "addyosmani",
@@ -108,14 +118,14 @@
       "description": "Discovers and invokes agent skills."
     },
     {
-      "name": "anthropic-3-statement-model",
-      "source": "anthropic",
-      "description": "Complete, populate and fill out 3-statement financial model templates (Income Statement, Balance Sheet, Cash Flow Statement) ."
+      "name": "ai-seo",
+      "source": "ai",
+      "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers."
     },
     {
-      "name": "anthropic-ai-readiness",
-      "source": "anthropic",
-      "description": "description: Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time."
+      "name": "analytics-tracking",
+      "source": "analytics",
+      "description": "When the user wants to set up, improve, or audit analytics tracking and measurement."
     },
     {
       "name": "anthropic-algorithmic-art",
@@ -123,19 +133,9 @@
       "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration."
     },
     {
-      "name": "anthropic-audit-xls",
-      "source": "anthropic",
-      "description": "Audit a spreadsheet for formula accuracy, errors, and common mistakes."
-    },
-    {
       "name": "anthropic-brand-guidelines",
       "source": "anthropic",
       "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel."
-    },
-    {
-      "name": "anthropic-buyer-list",
-      "source": "anthropic",
-      "description": "description: Build and organize a universe of potential acquirers for sell-side M&A processes."
     },
     {
       "name": "anthropic-canvas-design",
@@ -143,84 +143,9 @@
       "description": "Create beautiful visual art in .png and .pdf documents using design philosophy."
     },
     {
-      "name": "anthropic-catalyst-calendar",
-      "source": "anthropic",
-      "description": "description: Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regula..."
-    },
-    {
-      "name": "anthropic-cim-builder",
-      "source": "anthropic",
-      "description": "description: Structure and draft a Confidential Information Memorandum for sell-side M&A processes."
-    },
-    {
       "name": "anthropic-claude-api",
       "source": "anthropic",
       "description": "Build, debug, and optimize Claude API / Anthropic SDK apps."
-    },
-    {
-      "name": "anthropic-clean-data-xls",
-      "source": "anthropic",
-      "description": "Clean up messy spreadsheet data — trim whitespace, fix inconsistent casing, convert numbers-stored-as-text, standardize dates, remove duplicates, a..."
-    },
-    {
-      "name": "anthropic-client-report",
-      "source": "anthropic",
-      "description": "description: Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary."
-    },
-    {
-      "name": "anthropic-client-review",
-      "source": "anthropic",
-      "description": "description: Prepare for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items."
-    },
-    {
-      "name": "anthropic-competitive-analysis",
-      "source": "anthropic",
-      "description": "Framework for building competitive landscape decks — market positioning, competitor deep-dives, comparative analysis, strategic synthesis."
-    },
-    {
-      "name": "anthropic-comps-analysis",
-      "source": "anthropic",
-      "description": "Build institutional-grade comparable company analyses with operating metrics, valuation multiples, and statistical benchmarking in Excel/spreadshee..."
-    },
-    {
-      "name": "anthropic-datapack-builder",
-      "source": "anthropic",
-      "description": "Build professional financial services data packs from various sources including CIMs, offering memorandums, SEC filings, web search, or MCP servers."
-    },
-    {
-      "name": "anthropic-dcf-model",
-      "source": "anthropic",
-      "description": "Real DCF (Discounted Cash Flow) model creation for equity valuation."
-    },
-    {
-      "name": "anthropic-dd-checklist",
-      "source": "anthropic",
-      "description": "description: Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity."
-    },
-    {
-      "name": "anthropic-dd-meeting-prep",
-      "source": "anthropic",
-      "description": "description: Prepare for due diligence meetings — management presentations, expert network calls, customer references, and advisor sessions."
-    },
-    {
-      "name": "anthropic-deal-screening",
-      "source": "anthropic",
-      "description": "description: Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria."
-    },
-    {
-      "name": "anthropic-deal-sourcing",
-      "source": "anthropic",
-      "description": "description: PE deal sourcing workflow — discover target companies, check CRM for existing relationships, and draft personalized founder outreach e..."
-    },
-    {
-      "name": "anthropic-deal-tracker",
-      "source": "anthropic",
-      "description": "description: Track multiple live deals with milestones, deadlines, action items, and status updates."
-    },
-    {
-      "name": "anthropic-deck-refresh",
-      "source": "anthropic",
-      "description": "Updates a presentation with new numbers — quarterly refreshes, earnings updates, comp rolls, rebased market data."
     },
     {
       "name": "anthropic-doc-coauthoring",
@@ -233,44 +158,9 @@
       "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files)."
     },
     {
-      "name": "anthropic-earnings-analysis",
-      "source": "anthropic",
-      "description": "Create professional equity research earnings update reports (8-12 pages, 3,000-5,000 words) analyzing quarterly results for companies already under..."
-    },
-    {
-      "name": "anthropic-earnings-preview",
-      "source": "anthropic",
-      "description": "description: Build pre-earnings analysis with estimate models, scenario frameworks, and key metrics to watch."
-    },
-    {
-      "name": "anthropic-financial-plan",
-      "source": "anthropic",
-      "description": "description: Build or update a comprehensive financial plan covering retirement projections, education funding, estate planning, and cash flow anal..."
-    },
-    {
       "name": "anthropic-frontend-design",
       "source": "anthropic",
       "description": "Create distinctive, production-grade frontend interfaces with high design quality."
-    },
-    {
-      "name": "anthropic-ib-check-deck",
-      "source": "anthropic",
-      "description": "Investment banking presentation quality checker."
-    },
-    {
-      "name": "anthropic-ic-memo",
-      "source": "anthropic",
-      "description": "description: Draft a structured investment committee memo for PE deal approval."
-    },
-    {
-      "name": "anthropic-idea-generation",
-      "source": "anthropic",
-      "description": "description: Systematic stock screening and investment idea sourcing."
-    },
-    {
-      "name": "anthropic-initiating-coverage",
-      "source": "anthropic",
-      "description": "Create institutional-quality equity research initiation reports through a 5-task workflow."
     },
     {
       "name": "anthropic-internal-comms",
@@ -278,34 +168,9 @@
       "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use."
     },
     {
-      "name": "anthropic-investment-proposal",
-      "source": "anthropic",
-      "description": "description: Create professional investment proposals for prospective clients."
-    },
-    {
-      "name": "anthropic-lbo-model",
-      "source": "anthropic",
-      "description": "This skill should be used when completing LBO (Leveraged Buyout) model templates in Excel for private equity transactions, deal materials, or inves..."
-    },
-    {
       "name": "anthropic-mcp-builder",
       "source": "anthropic",
       "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools."
-    },
-    {
-      "name": "anthropic-merger-model",
-      "source": "anthropic",
-      "description": "description: Build accretion/dilution analysis for M&A transactions."
-    },
-    {
-      "name": "anthropic-model-update",
-      "source": "anthropic",
-      "description": "description: Update financial models with new data — quarterly earnings, management guidance, macro changes, or revised assumptions."
-    },
-    {
-      "name": "anthropic-morning-note",
-      "source": "anthropic",
-      "description": "description: Draft concise morning meeting notes summarizing overnight developments, trade ideas, and key events for coverage stocks."
     },
     {
       "name": "anthropic-pdf",
@@ -313,44 +178,9 @@
       "description": "Use this skill whenever the user wants to do anything with PDF files."
     },
     {
-      "name": "anthropic-pitch-deck",
-      "source": "anthropic",
-      "description": "Populates investment banking pitch deck templates with data from source files."
-    },
-    {
-      "name": "anthropic-portfolio-monitoring",
-      "source": "anthropic",
-      "description": "description: Track and analyze portfolio company performance against plan."
-    },
-    {
-      "name": "anthropic-portfolio-rebalance",
-      "source": "anthropic",
-      "description": "description: Analyze portfolio allocation drift and generate rebalancing trade recommendations across accounts."
-    },
-    {
-      "name": "anthropic-ppt-template-creator",
-      "source": "anthropic",
-      "description": "Creates self-contained PPT template SKILLS (not presentations) from user-provided PowerPoint templates."
-    },
-    {
       "name": "anthropic-pptx",
       "source": "anthropic",
       "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both."
-    },
-    {
-      "name": "anthropic-process-letter",
-      "source": "anthropic",
-      "description": "description: Draft process letters and bid instructions for sell-side M&A processes."
-    },
-    {
-      "name": "anthropic-returns-analysis",
-      "source": "anthropic",
-      "description": "description: Build quick IRR/MOIC sensitivity tables for PE deal evaluation."
-    },
-    {
-      "name": "anthropic-sector-overview",
-      "source": "anthropic",
-      "description": "description: Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and themati..."
     },
     {
       "name": "anthropic-skill-creator",
@@ -363,21 +193,6 @@
       "description": "Knowledge and utilities for creating animated GIFs optimized for Slack."
     },
     {
-      "name": "anthropic-strip-profile",
-      "source": "anthropic",
-      "description": "Creates professional investment banking strip profiles (company profiles) for pitch books, deal materials, and client presentations."
-    },
-    {
-      "name": "anthropic-tax-loss-harvesting",
-      "source": "anthropic",
-      "description": "description: Identify tax-loss harvesting opportunities across taxable accounts."
-    },
-    {
-      "name": "anthropic-teaser",
-      "source": "anthropic",
-      "description": "description: Draft anonymous one-page company teasers for sell-side M&A processes."
-    },
-    {
       "name": "anthropic-template",
       "source": "anthropic",
       "description": "Replace with description of the skill and when Claude should use it."
@@ -386,21 +201,6 @@
       "name": "anthropic-theme-factory",
       "source": "anthropic",
       "description": "Toolkit for styling artifacts with a theme."
-    },
-    {
-      "name": "anthropic-thesis-tracker",
-      "source": "anthropic",
-      "description": "description: Maintain and update investment theses for portfolio positions and watchlist names."
-    },
-    {
-      "name": "anthropic-unit-economics",
-      "source": "anthropic",
-      "description": "description: Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall."
-    },
-    {
-      "name": "anthropic-value-creation-plan",
-      "source": "anthropic",
-      "description": "description: Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge."
     },
     {
       "name": "anthropic-web-artifacts-builder",
@@ -416,6 +216,96 @@
       "name": "anthropic-xlsx",
       "source": "anthropic",
       "description": "Use this skill any time a spreadsheet file is the primary input or output."
+    },
+    {
+      "name": "aws-api-gateway",
+      "source": "aws",
+      "description": "AWS API Gateway for REST and HTTP API management."
+    },
+    {
+      "name": "aws-bedrock",
+      "source": "aws",
+      "description": "AWS Bedrock foundation models for generative AI."
+    },
+    {
+      "name": "aws-cloudformation",
+      "source": "aws",
+      "description": "AWS CloudFormation infrastructure as code for stack management."
+    },
+    {
+      "name": "aws-cloudwatch",
+      "source": "aws",
+      "description": "AWS CloudWatch monitoring for logs, metrics, alarms, and dashboards."
+    },
+    {
+      "name": "aws-cognito",
+      "source": "aws",
+      "description": "AWS Cognito user authentication and authorization service."
+    },
+    {
+      "name": "aws-dynamodb",
+      "source": "aws",
+      "description": "AWS DynamoDB NoSQL database for scalable data storage."
+    },
+    {
+      "name": "aws-ec2",
+      "source": "aws",
+      "description": "AWS EC2 virtual machine management for instances, AMIs, and networking."
+    },
+    {
+      "name": "aws-ecs",
+      "source": "aws",
+      "description": "AWS ECS container orchestration for running Docker containers."
+    },
+    {
+      "name": "aws-eks",
+      "source": "aws",
+      "description": "AWS EKS Kubernetes management for clusters, node groups, and workloads."
+    },
+    {
+      "name": "aws-eventbridge",
+      "source": "aws",
+      "description": "AWS EventBridge serverless event bus for event-driven architectures."
+    },
+    {
+      "name": "aws-iam",
+      "source": "aws",
+      "description": "AWS Identity and Access Management for users, roles, policies, and permissions."
+    },
+    {
+      "name": "aws-lambda",
+      "source": "aws",
+      "description": "AWS Lambda serverless functions for event-driven compute."
+    },
+    {
+      "name": "aws-rds",
+      "source": "aws",
+      "description": "AWS RDS relational database service for managed databases."
+    },
+    {
+      "name": "aws-s3",
+      "source": "aws",
+      "description": "AWS S3 object storage for bucket management, object operations, and access control."
+    },
+    {
+      "name": "aws-secrets-manager",
+      "source": "aws",
+      "description": "AWS Secrets Manager for secure secret storage and rotation."
+    },
+    {
+      "name": "aws-sns",
+      "source": "aws",
+      "description": "AWS SNS notification service for pub/sub messaging."
+    },
+    {
+      "name": "aws-sqs",
+      "source": "aws",
+      "description": "AWS SQS message queue service for decoupled architectures."
+    },
+    {
+      "name": "aws-step-functions",
+      "source": "aws",
+      "description": "AWS Step Functions workflow orchestration with state machines."
     },
     {
       "name": "callstack-github",
@@ -446,6 +336,11 @@
       "name": "callstack-validate-skills",
       "source": "callstack",
       "description": "Validates skills in this repo against agentskills.io spec and Claude Code best practices."
+    },
+    {
+      "name": "churn-prevention",
+      "source": "churn",
+      "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies."
     },
     {
       "name": "cloudflare-agents-sdk",
@@ -493,14 +388,404 @@
       "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflow..."
     },
     {
+      "name": "cold-email",
+      "source": "cold",
+      "description": "Write B2B cold emails and follow-up sequences that get replies."
+    },
+    {
+      "name": "community-marketing",
+      "source": "community",
+      "description": "Build and leverage online communities to drive product growth and brand loyalty."
+    },
+    {
+      "name": "competitor-alternatives",
+      "source": "competitor",
+      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement."
+    },
+    {
+      "name": "content-strategy",
+      "source": "content",
+      "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover."
+    },
+    {
+      "name": "copy-editing",
+      "source": "copy",
+      "description": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content."
+    },
+    {
+      "name": "copywriting",
+      "source": "copywriting",
+      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, ab..."
+    },
+    {
+      "name": "customer-research",
+      "source": "customer",
+      "description": "When the user wants to conduct, analyze, or synthesize customer research."
+    },
+    {
       "name": "dispatch-parallel-agents",
       "source": "dispatch",
       "description": "Dispatch independent tasks to parallel subagents when 2+ problems can be solved without shared state or sequential dependencies."
     },
     {
+      "name": "email-sequence",
+      "source": "email",
+      "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program."
+    },
+    {
       "name": "execute-work-package",
       "source": "execute",
       "description": "Execute a significant implementation unit (phase or major slice) using a gated subagent loop (blueprint -> gate -> execute -> digest) without creat..."
+    },
+    {
+      "name": "expo-building-native-ui",
+      "source": "expo",
+      "description": "Complete guide for building beautiful apps with Expo Router."
+    },
+    {
+      "name": "expo-expo-api-routes",
+      "source": "expo",
+      "description": "Guidelines for creating API routes in Expo Router with EAS Hosting"
+    },
+    {
+      "name": "expo-expo-cicd-workflows",
+      "source": "expo",
+      "description": "Helps understand and write EAS workflow YAML files for Expo projects."
+    },
+    {
+      "name": "expo-expo-deployment",
+      "source": "expo",
+      "description": "Deploying Expo apps to iOS App Store, Android Play Store, web hosting, and API routes"
+    },
+    {
+      "name": "expo-expo-dev-client",
+      "source": "expo",
+      "description": "Build and distribute Expo development clients locally or via TestFlight"
+    },
+    {
+      "name": "expo-expo-module",
+      "source": "expo",
+      "description": "Guide for writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript)."
+    },
+    {
+      "name": "expo-expo-tailwind-setup",
+      "source": "expo",
+      "description": "Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styling"
+    },
+    {
+      "name": "expo-expo-ui-jetpack-compose",
+      "source": "expo",
+      "description": "`@expo/ui/jetpack-compose` package lets you use Jetpack Compose Views and modifiers in your app."
+    },
+    {
+      "name": "expo-expo-ui-swift-ui",
+      "source": "expo",
+      "description": "`@expo/ui/swift-ui` package lets you use SwiftUI Views and modifiers in your app."
+    },
+    {
+      "name": "expo-native-data-fetching",
+      "source": "expo",
+      "description": "Use when implementing or debugging ANY network request, API call, or data fetching."
+    },
+    {
+      "name": "expo-upgrading-expo",
+      "source": "expo",
+      "description": "Guidelines for upgrading Expo SDK versions and fixing dependency issues"
+    },
+    {
+      "name": "expo-use-dom",
+      "source": "expo",
+      "description": "Use Expo DOM components to run web code in a webview on native and as-is on web."
+    },
+    {
+      "name": "finance-3-statement-model",
+      "source": "finance",
+      "description": "Complete, populate and fill out 3-statement financial model templates (Income Statement, Balance Sheet, Cash Flow Statement) ."
+    },
+    {
+      "name": "finance-ai-readiness",
+      "source": "finance",
+      "description": "description: Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time."
+    },
+    {
+      "name": "finance-audit-xls",
+      "source": "finance",
+      "description": "Audit a spreadsheet for formula accuracy, errors, and common mistakes."
+    },
+    {
+      "name": "finance-bond-futures-basis",
+      "source": "finance",
+      "description": "Analyze the bond futures basis by pricing futures, identifying the cheapest-to-deliver, and comparing with yield curves to assess delivery option v..."
+    },
+    {
+      "name": "finance-bond-relative-value",
+      "source": "finance",
+      "description": "Perform relative value analysis on bonds by combining pricing, yield curve context, credit spreads, and scenario stress testing."
+    },
+    {
+      "name": "finance-buyer-list",
+      "source": "finance",
+      "description": "description: Build and organize a universe of potential acquirers for sell-side M&A processes."
+    },
+    {
+      "name": "finance-catalyst-calendar",
+      "source": "finance",
+      "description": "description: Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regula..."
+    },
+    {
+      "name": "finance-cim-builder",
+      "source": "finance",
+      "description": "description: Structure and draft a Confidential Information Memorandum for sell-side M&A processes."
+    },
+    {
+      "name": "finance-clean-data-xls",
+      "source": "finance",
+      "description": "Clean up messy spreadsheet data — trim whitespace, fix inconsistent casing, convert numbers-stored-as-text, standardize dates, remove duplicates, a..."
+    },
+    {
+      "name": "finance-client-report",
+      "source": "finance",
+      "description": "description: Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary."
+    },
+    {
+      "name": "finance-client-review",
+      "source": "finance",
+      "description": "description: Prepare for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items."
+    },
+    {
+      "name": "finance-competitive-analysis",
+      "source": "finance",
+      "description": "Framework for building competitive landscape decks — market positioning, competitor deep-dives, comparative analysis, strategic synthesis."
+    },
+    {
+      "name": "finance-comps-analysis",
+      "source": "finance",
+      "description": "Build institutional-grade comparable company analyses with operating metrics, valuation multiples, and statistical benchmarking in Excel/spreadshee..."
+    },
+    {
+      "name": "finance-datapack-builder",
+      "source": "finance",
+      "description": "Build professional financial services data packs from various sources including CIMs, offering memorandums, SEC filings, web search, or MCP servers."
+    },
+    {
+      "name": "finance-dcf-model",
+      "source": "finance",
+      "description": "Real DCF (Discounted Cash Flow) model creation for equity valuation."
+    },
+    {
+      "name": "finance-dd-checklist",
+      "source": "finance",
+      "description": "description: Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity."
+    },
+    {
+      "name": "finance-dd-meeting-prep",
+      "source": "finance",
+      "description": "description: Prepare for due diligence meetings — management presentations, expert network calls, customer references, and advisor sessions."
+    },
+    {
+      "name": "finance-deal-screening",
+      "source": "finance",
+      "description": "description: Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria."
+    },
+    {
+      "name": "finance-deal-sourcing",
+      "source": "finance",
+      "description": "description: PE deal sourcing workflow — discover target companies, check CRM for existing relationships, and draft personalized founder outreach e..."
+    },
+    {
+      "name": "finance-deal-tracker",
+      "source": "finance",
+      "description": "description: Track multiple live deals with milestones, deadlines, action items, and status updates."
+    },
+    {
+      "name": "finance-deck-refresh",
+      "source": "finance",
+      "description": "Updates a presentation with new numbers — quarterly refreshes, earnings updates, comp rolls, rebased market data."
+    },
+    {
+      "name": "finance-earnings-analysis",
+      "source": "finance",
+      "description": "Create professional equity research earnings update reports (8-12 pages, 3,000-5,000 words) analyzing quarterly results for companies already under..."
+    },
+    {
+      "name": "finance-earnings-preview",
+      "source": "finance",
+      "description": "description: Build pre-earnings analysis with estimate models, scenario frameworks, and key metrics to watch."
+    },
+    {
+      "name": "finance-earnings-preview-beta",
+      "source": "finance",
+      "description": "Generate a concise 4-5 page equity research earnings preview for a single company."
+    },
+    {
+      "name": "finance-equity-research",
+      "source": "finance",
+      "description": "Generate comprehensive equity research snapshots combining analyst consensus estimates, company fundamentals, historical prices, and macroeconomic ..."
+    },
+    {
+      "name": "finance-financial-plan",
+      "source": "finance",
+      "description": "description: Build or update a comprehensive financial plan covering retirement projections, education funding, estate planning, and cash flow anal..."
+    },
+    {
+      "name": "finance-fixed-income-portfolio",
+      "source": "finance",
+      "description": "Review fixed income portfolios by pricing multiple bonds, retrieving reference data, analyzing cashflows, and running scenario analysis."
+    },
+    {
+      "name": "finance-funding-digest",
+      "source": "finance",
+      "description": "Generate a polished one-page PowerPoint slide summarizing key takeaways from recent funding rounds and notable capital markets activity across a us..."
+    },
+    {
+      "name": "finance-fx-carry-trade",
+      "source": "finance",
+      "description": "Evaluate FX carry trade opportunities by combining spot rates, forward points, interest rate differentials, volatility surface analysis, and histor..."
+    },
+    {
+      "name": "finance-ib-check-deck",
+      "source": "finance",
+      "description": "Investment banking presentation quality checker."
+    },
+    {
+      "name": "finance-ic-memo",
+      "source": "finance",
+      "description": "description: Draft a structured investment committee memo for PE deal approval."
+    },
+    {
+      "name": "finance-idea-generation",
+      "source": "finance",
+      "description": "description: Systematic stock screening and investment idea sourcing."
+    },
+    {
+      "name": "finance-initiating-coverage",
+      "source": "finance",
+      "description": "Create institutional-quality equity research initiation reports through a 5-task workflow."
+    },
+    {
+      "name": "finance-investment-proposal",
+      "source": "finance",
+      "description": "description: Create professional investment proposals for prospective clients."
+    },
+    {
+      "name": "finance-lbo-model",
+      "source": "finance",
+      "description": "This skill should be used when completing LBO (Leveraged Buyout) model templates in Excel for private equity transactions, deal materials, or inves..."
+    },
+    {
+      "name": "finance-macro-rates-monitor",
+      "source": "finance",
+      "description": "Build macroeconomic and rates dashboards combining macro indicators, yield curves, inflation breakevens, and swap rates."
+    },
+    {
+      "name": "finance-merger-model",
+      "source": "finance",
+      "description": "description: Build accretion/dilution analysis for M&A transactions."
+    },
+    {
+      "name": "finance-model-update",
+      "source": "finance",
+      "description": "description: Update financial models with new data — quarterly earnings, management guidance, macro changes, or revised assumptions."
+    },
+    {
+      "name": "finance-morning-note",
+      "source": "finance",
+      "description": "description: Draft concise morning meeting notes summarizing overnight developments, trade ideas, and key events for coverage stocks."
+    },
+    {
+      "name": "finance-option-vol-analysis",
+      "source": "finance",
+      "description": "Analyze option volatility by combining vol surface data, option pricing with Greeks, and historical price data to assess implied vs realized volati..."
+    },
+    {
+      "name": "finance-pitch-deck",
+      "source": "finance",
+      "description": "Populates investment banking pitch deck templates with data from source files."
+    },
+    {
+      "name": "finance-portfolio-monitoring",
+      "source": "finance",
+      "description": "description: Track and analyze portfolio company performance against plan."
+    },
+    {
+      "name": "finance-portfolio-rebalance",
+      "source": "finance",
+      "description": "description: Analyze portfolio allocation drift and generate rebalancing trade recommendations across accounts."
+    },
+    {
+      "name": "finance-ppt-template-creator",
+      "source": "finance",
+      "description": "Creates self-contained PPT template SKILLS (not presentations) from user-provided PowerPoint templates."
+    },
+    {
+      "name": "finance-process-letter",
+      "source": "finance",
+      "description": "description: Draft process letters and bid instructions for sell-side M&A processes."
+    },
+    {
+      "name": "finance-returns-analysis",
+      "source": "finance",
+      "description": "description: Build quick IRR/MOIC sensitivity tables for PE deal evaluation."
+    },
+    {
+      "name": "finance-sector-overview",
+      "source": "finance",
+      "description": "description: Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and themati..."
+    },
+    {
+      "name": "finance-skill-creator",
+      "source": "finance",
+      "description": "Guide for creating effective skills."
+    },
+    {
+      "name": "finance-strip-profile",
+      "source": "finance",
+      "description": "Creates professional investment banking strip profiles (company profiles) for pitch books, deal materials, and client presentations."
+    },
+    {
+      "name": "finance-swap-curve-strategy",
+      "source": "finance",
+      "description": "Analyze the interest rate swap curve by pricing swaps at multiple tenors, overlaying government and inflation curves, and identifying curve trade o..."
+    },
+    {
+      "name": "finance-tax-loss-harvesting",
+      "source": "finance",
+      "description": "description: Identify tax-loss harvesting opportunities across taxable accounts."
+    },
+    {
+      "name": "finance-tear-sheet",
+      "source": "finance",
+      "description": "Generate professional company tear sheets using S&P Capital IQ data via the Kensho LLM-ready API MCP server."
+    },
+    {
+      "name": "finance-teaser",
+      "source": "finance",
+      "description": "description: Draft anonymous one-page company teasers for sell-side M&A processes."
+    },
+    {
+      "name": "finance-thesis-tracker",
+      "source": "finance",
+      "description": "description: Maintain and update investment theses for portfolio positions and watchlist names."
+    },
+    {
+      "name": "finance-unit-economics",
+      "source": "finance",
+      "description": "description: Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall."
+    },
+    {
+      "name": "finance-value-creation-plan",
+      "source": "finance",
+      "description": "description: Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge."
+    },
+    {
+      "name": "form-cro",
+      "source": "form",
+      "description": "When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, applica..."
+    },
+    {
+      "name": "free-tool-strategy",
+      "source": "free",
+      "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness."
     },
     {
       "name": "google-design-md",
@@ -543,94 +828,84 @@
       "description": "Semantic Design System Skill for Google Stitch."
     },
     {
-      "name": "itsmostafa-api-gateway",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Api Gateway tooling and automation."
+      "name": "hashicorp-aws-ami-builder",
+      "source": "hashicorp",
+      "description": "Build Amazon Machine Images (AMIs) with Packer using the amazon-ebs builder."
     },
     {
-      "name": "itsmostafa-bedrock",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Bedrock tooling and automation."
+      "name": "hashicorp-azure-image-builder",
+      "source": "hashicorp",
+      "description": "Build Azure managed images and Azure Compute Gallery images with Packer."
     },
     {
-      "name": "itsmostafa-cloudformation",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Cloudformation tooling and automation."
+      "name": "hashicorp-azure-verified-modules",
+      "source": "hashicorp",
+      "description": "Azure Verified Modules (AVM) requirements and best practices for developing certified Azure Terraform modules."
     },
     {
-      "name": "itsmostafa-cloudwatch",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Cloudwatch tooling and automation."
+      "name": "hashicorp-new-terraform-provider",
+      "source": "hashicorp",
+      "description": "Use this when scaffolding a new Terraform provider."
     },
     {
-      "name": "itsmostafa-cognito",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Cognito tooling and automation."
+      "name": "hashicorp-provider-actions",
+      "source": "hashicorp",
+      "description": "Implement Terraform Provider actions using the Plugin Framework."
     },
     {
-      "name": "itsmostafa-dynamodb",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Dynamodb tooling and automation."
+      "name": "hashicorp-provider-docs",
+      "source": "hashicorp",
+      "description": "Create, update, and review Terraform provider documentation for Terraform Registry using HashiCorp-recommended patterns, tfplugindocs templates, an..."
     },
     {
-      "name": "itsmostafa-ec2",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Ec2 tooling and automation."
+      "name": "hashicorp-provider-resources",
+      "source": "hashicorp",
+      "description": "Implement Terraform Provider resources and data sources using the Plugin Framework."
     },
     {
-      "name": "itsmostafa-ecs",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Ecs tooling and automation."
+      "name": "hashicorp-provider-test-patterns",
+      "source": "hashicorp",
+      "description": "Terraform provider acceptance test patterns using terraform-plugin-testing with the Plugin Framework."
     },
     {
-      "name": "itsmostafa-eks",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Eks tooling and automation."
+      "name": "hashicorp-push-to-registry",
+      "source": "hashicorp",
+      "description": "Push Packer build metadata to HCP Packer registry for tracking and managing image lifecycle."
     },
     {
-      "name": "itsmostafa-eventbridge",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Eventbridge tooling and automation."
+      "name": "hashicorp-refactor-module",
+      "source": "hashicorp",
+      "description": "Transform monolithic Terraform configurations into reusable, maintainable modules following HashiCorp's module design principles and community best..."
     },
     {
-      "name": "itsmostafa-iam",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Iam tooling and automation."
+      "name": "hashicorp-run-acceptance-tests",
+      "source": "hashicorp",
+      "description": "Guide for running acceptance tests for a Terraform provider."
     },
     {
-      "name": "itsmostafa-lambda",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Lambda tooling and automation."
+      "name": "hashicorp-terraform-search-import",
+      "source": "hashicorp",
+      "description": "Discover existing cloud resources using Terraform Search queries and bulk import them into Terraform management."
     },
     {
-      "name": "itsmostafa-rds",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Rds tooling and automation."
+      "name": "hashicorp-terraform-stacks",
+      "source": "hashicorp",
+      "description": "Comprehensive guide for working with HashiCorp Terraform Stacks."
     },
     {
-      "name": "itsmostafa-s3",
-      "source": "itsmostafa",
-      "description": "Itsmostafa S3 tooling and automation."
+      "name": "hashicorp-terraform-style-guide",
+      "source": "hashicorp",
+      "description": "Generate Terraform HCL code following HashiCorp's official style conventions and best practices."
     },
     {
-      "name": "itsmostafa-secrets-manager",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Secrets Manager tooling and automation."
+      "name": "hashicorp-terraform-test",
+      "source": "hashicorp",
+      "description": "Comprehensive guide for writing and running Terraform tests."
     },
     {
-      "name": "itsmostafa-sns",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Sns tooling and automation."
-    },
-    {
-      "name": "itsmostafa-sqs",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Sqs tooling and automation."
-    },
-    {
-      "name": "itsmostafa-step-functions",
-      "source": "itsmostafa",
-      "description": "Itsmostafa Step Functions tooling and automation."
+      "name": "hashicorp-windows-builder",
+      "source": "hashicorp",
+      "description": "Build Windows images with Packer using WinRM communicator and PowerShell provisioners."
     },
     {
       "name": "JackyST0-api-doc-generator",
@@ -658,179 +933,24 @@
       "description": "Automatically generate unit tests based on source code, supporting multiple languages and testing frameworks."
     },
     {
-      "name": "marketingskills-ab-test-setup",
-      "source": "marketingskills",
-      "description": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program."
-    },
-    {
-      "name": "marketingskills-ad-creative",
-      "source": "marketingskills",
-      "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advert..."
-    },
-    {
-      "name": "marketingskills-ai-seo",
-      "source": "marketingskills",
-      "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers."
-    },
-    {
-      "name": "marketingskills-analytics-tracking",
-      "source": "marketingskills",
-      "description": "When the user wants to set up, improve, or audit analytics tracking and measurement."
-    },
-    {
-      "name": "marketingskills-churn-prevention",
-      "source": "marketingskills",
-      "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies."
-    },
-    {
-      "name": "marketingskills-cold-email",
-      "source": "marketingskills",
-      "description": "Write B2B cold emails and follow-up sequences that get replies."
-    },
-    {
-      "name": "marketingskills-community-marketing",
-      "source": "marketingskills",
-      "description": "Build and leverage online communities to drive product growth and brand loyalty."
-    },
-    {
-      "name": "marketingskills-competitor-alternatives",
-      "source": "marketingskills",
-      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement."
-    },
-    {
-      "name": "marketingskills-content-strategy",
-      "source": "marketingskills",
-      "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover."
-    },
-    {
-      "name": "marketingskills-copy-editing",
-      "source": "marketingskills",
-      "description": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content."
-    },
-    {
-      "name": "marketingskills-copywriting",
-      "source": "marketingskills",
-      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, ab..."
-    },
-    {
-      "name": "marketingskills-customer-research",
-      "source": "marketingskills",
-      "description": "When the user wants to conduct, analyze, or synthesize customer research."
-    },
-    {
-      "name": "marketingskills-email-sequence",
-      "source": "marketingskills",
-      "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program."
-    },
-    {
-      "name": "marketingskills-form-cro",
-      "source": "marketingskills",
-      "description": "When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, applica..."
-    },
-    {
-      "name": "marketingskills-free-tool-strategy",
-      "source": "marketingskills",
-      "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness."
-    },
-    {
-      "name": "marketingskills-launch-strategy",
-      "source": "marketingskills",
+      "name": "launch-strategy",
+      "source": "launch",
       "description": "When the user wants to plan a product launch, feature announcement, or release strategy."
     },
     {
-      "name": "marketingskills-lead-magnets",
-      "source": "marketingskills",
+      "name": "lead-magnets",
+      "source": "lead",
       "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation."
     },
     {
-      "name": "marketingskills-marketing-ideas",
-      "source": "marketingskills",
+      "name": "marketing-ideas",
+      "source": "marketing",
       "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product."
     },
     {
-      "name": "marketingskills-marketing-psychology",
-      "source": "marketingskills",
+      "name": "marketing-psychology",
+      "source": "marketing",
       "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing."
-    },
-    {
-      "name": "marketingskills-onboarding-cro",
-      "source": "marketingskills",
-      "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value."
-    },
-    {
-      "name": "marketingskills-page-cro",
-      "source": "marketingskills",
-      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature..."
-    },
-    {
-      "name": "marketingskills-paid-ads",
-      "source": "marketingskills",
-      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms."
-    },
-    {
-      "name": "marketingskills-paywall-upgrade-cro",
-      "source": "marketingskills",
-      "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates."
-    },
-    {
-      "name": "marketingskills-popup-cro",
-      "source": "marketingskills",
-      "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes."
-    },
-    {
-      "name": "marketingskills-pricing-strategy",
-      "source": "marketingskills",
-      "description": "When the user wants help with pricing decisions, packaging, or monetization strategy."
-    },
-    {
-      "name": "marketingskills-product-marketing-context",
-      "source": "marketingskills",
-      "description": "When the user wants to create or update their product marketing context document."
-    },
-    {
-      "name": "marketingskills-programmatic-seo",
-      "source": "marketingskills",
-      "description": "When the user wants to create SEO-driven pages at scale using templates and data."
-    },
-    {
-      "name": "marketingskills-referral-program",
-      "source": "marketingskills",
-      "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
-    },
-    {
-      "name": "marketingskills-revops",
-      "source": "marketingskills",
-      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes."
-    },
-    {
-      "name": "marketingskills-sales-enablement",
-      "source": "marketingskills",
-      "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts."
-    },
-    {
-      "name": "marketingskills-schema-markup",
-      "source": "marketingskills",
-      "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site."
-    },
-    {
-      "name": "marketingskills-seo-audit",
-      "source": "marketingskills",
-      "description": "When the user wants to audit, review, or diagnose SEO issues on their site."
-    },
-    {
-      "name": "marketingskills-signup-flow-cro",
-      "source": "marketingskills",
-      "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows."
-    },
-    {
-      "name": "marketingskills-site-architecture",
-      "source": "marketingskills",
-      "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking."
-    },
-    {
-      "name": "marketingskills-social-content",
-      "source": "marketingskills",
-      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other pl..."
     },
     {
       "name": "MoizIbnYousaf-ask-questions-if-underspecified",
@@ -918,6 +1038,11 @@
       "description": "Use when syncing or updating previously installed skills to their latest version."
     },
     {
+      "name": "onboarding-cro",
+      "source": "onboarding",
+      "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value."
+    },
+    {
       "name": "opencode-archive-legacy-docs",
       "source": "opencode",
       "description": "Normalize legacy repositories by moving scattered documentation into docs-legacy/ (git-aware) and generating a docs-legacy/summary.md before genera..."
@@ -978,9 +1103,64 @@
       "description": "Update an existing plan's status, todo list, and phase progress."
     },
     {
+      "name": "page-cro",
+      "source": "page",
+      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature..."
+    },
+    {
+      "name": "paid-ads",
+      "source": "paid",
+      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms."
+    },
+    {
+      "name": "paywall-upgrade-cro",
+      "source": "paywall",
+      "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates."
+    },
+    {
+      "name": "popup-cro",
+      "source": "popup",
+      "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes."
+    },
+    {
+      "name": "pricing-strategy",
+      "source": "pricing",
+      "description": "When the user wants help with pricing decisions, packaging, or monetization strategy."
+    },
+    {
       "name": "product-description-seo",
       "source": "product",
       "description": "End-to-end skill for SEO-optimized product descriptions: inventory analysis, generation, quality assurance, catalog update, and deployment."
+    },
+    {
+      "name": "product-marketing-context",
+      "source": "product",
+      "description": "When the user wants to create or update their product marketing context document."
+    },
+    {
+      "name": "programmatic-seo",
+      "source": "programmatic",
+      "description": "When the user wants to create SEO-driven pages at scale using templates and data."
+    },
+    {
+      "name": "referral-program",
+      "source": "referral",
+      "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
+    },
+    {
+      "name": "revops",
+      "source": "revops",
+      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes."
+    },
+    {
+      "name": "sales-enablement",
+      "source": "sales",
+      "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts."
+    },
+    {
+      "name": "schema-markup",
+      "source": "schema",
+      "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site."
     },
     {
       "name": "scientific-adaptyv",
@@ -1653,9 +1833,139 @@
       "description": "Chunked N-D arrays for cloud storage."
     },
     {
+      "name": "sentry-agents-md",
+      "source": "sentry",
+      "description": "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep..."
+    },
+    {
+      "name": "sentry-blog-writing-guide",
+      "source": "sentry",
+      "description": "Write, review, and improve blog posts for the Sentry engineering blog following Sentry's specific writing standards, voice, and quality bar."
+    },
+    {
+      "name": "sentry-brand-guidelines",
+      "source": "sentry",
+      "description": "Write copy following Sentry brand guidelines."
+    },
+    {
+      "name": "sentry-claude-settings-audit",
+      "source": "sentry",
+      "description": "Analyze a repository to generate recommended Claude Code settings.json permissions."
+    },
+    {
+      "name": "sentry-code-review",
+      "source": "sentry",
+      "description": "Perform code reviews following Sentry engineering practices."
+    },
+    {
+      "name": "sentry-code-simplifier",
+      "source": "sentry",
+      "description": "Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality."
+    },
+    {
+      "name": "sentry-commit",
+      "source": "sentry",
+      "description": "ALWAYS use this skill when committing code changes — never commit directly without it."
+    },
+    {
+      "name": "sentry-create-branch",
+      "source": "sentry",
+      "description": "Create a git branch following Sentry naming conventions."
+    },
+    {
+      "name": "sentry-django-access-review",
+      "source": "sentry",
+      "description": "'Django access control and IDOR security review."
+    },
+    {
+      "name": "sentry-django-perf-review",
+      "source": "sentry",
+      "description": "Django performance code review."
+    },
+    {
+      "name": "sentry-doc-coauthoring",
+      "source": "sentry",
+      "description": "Guide users through a structured workflow for co-authoring documentation."
+    },
+    {
+      "name": "sentry-find-bugs",
+      "source": "sentry",
+      "description": "Find bugs, security vulnerabilities, and code quality issues in local branch changes."
+    },
+    {
+      "name": "sentry-gh-review-requests",
+      "source": "sentry",
+      "description": "Fetch unread GitHub notifications for open PRs where review is requested from a specified team or opened by a team member."
+    },
+    {
+      "name": "sentry-gha-security-review",
+      "source": "sentry",
+      "description": "'GitHub Actions security review for workflow exploitation vulnerabilities."
+    },
+    {
+      "name": "sentry-iterate-pr",
+      "source": "sentry",
+      "description": "Iterate on a PR until CI passes."
+    },
+    {
+      "name": "sentry-pr-writer",
+      "source": "sentry",
+      "description": "ALWAYS use this skill when creating or updating pull requests — never create or edit a PR directly without it."
+    },
+    {
+      "name": "sentry-presentation-creator",
+      "source": "sentry",
+      "description": "Create data-driven presentation slides using React, Vite, and Recharts with Sentry branding."
+    },
+    {
+      "name": "sentry-security-review",
+      "source": "sentry",
+      "description": "Security code review for vulnerabilities."
+    },
+    {
+      "name": "sentry-skill-scanner",
+      "source": "sentry",
+      "description": "Scan agent skills for security issues."
+    },
+    {
+      "name": "sentry-skill-writer",
+      "source": "sentry",
+      "description": "Create, synthesize, and iteratively improve agent skills following the Agent Skills specification."
+    },
+    {
+      "name": "sentry-sred-project-organizer",
+      "source": "sentry",
+      "description": "Take a list of projects and their related documentation, and organize them into the SRED format for submission."
+    },
+    {
+      "name": "sentry-sred-work-summary",
+      "source": "sentry",
+      "description": "Go back through the previous year of work and create a Notion doc that groups relevant links into projects that can then be documented as SRED proj..."
+    },
+    {
       "name": "seo",
       "source": "seo",
-      "description": "Deterministic LLM-first SEO audits for websites, blogs, and repositories."
+      "description": "Deterministic LLM-first SEO audits for websites, blog posts, and GitHub repositories."
+    },
+    {
+      "name": "seo-audit",
+      "source": "seo",
+      "description": "When the user wants to audit, review, or diagnose SEO issues on their site."
+    },
+    {
+      "name": "signup-flow-cro",
+      "source": "signup",
+      "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows."
+    },
+    {
+      "name": "site-architecture",
+      "source": "site",
+      "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking."
+    },
+    {
+      "name": "social-content",
+      "source": "social",
+      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other pl..."
     },
     {
       "name": "stripe-stripe-best-practices",
@@ -1688,14 +1998,369 @@
       "description": "Investigate bugs, test failures, and unexpected behavior through root-cause analysis before proposing fixes."
     },
     {
+      "name": "tob-address-sanitizer",
+      "source": "tob",
+      "description": "AddressSanitizer detects memory errors during fuzzing."
+    },
+    {
+      "name": "tob-aflpp",
+      "source": "tob",
+      "description": "AFL++ is a fork of AFL with better fuzzing performance and advanced features."
+    },
+    {
+      "name": "tob-agentic-actions-auditor",
+      "source": "tob",
+      "description": "Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations including Claude Code Action, Gemini CLI, OpenAI Codex, and G..."
+    },
+    {
+      "name": "tob-algorand-vulnerability-scanner",
+      "source": "tob",
+      "description": "Scans Algorand smart contracts for 11 common vulnerabilities including rekeying attacks, unchecked transaction fees, missing field validations, and..."
+    },
+    {
+      "name": "tob-ask-questions-if-underspecified",
+      "source": "tob",
+      "description": "Clarify requirements before implementing."
+    },
+    {
+      "name": "tob-atheris",
+      "source": "tob",
+      "description": "Atheris is a coverage-guided Python fuzzer based on libFuzzer."
+    },
+    {
+      "name": "tob-audit-augmentation",
+      "source": "tob",
+      "description": "Augments Trailmark code graphs with external audit findings from SARIF static analysis results and weAudit annotation files."
+    },
+    {
+      "name": "tob-audit-context-building",
+      "source": "tob",
+      "description": "Enables ultra-granular, line-by-line code analysis to build deep architectural context before vulnerability or bug finding."
+    },
+    {
+      "name": "tob-audit-prep-assistant",
+      "source": "tob",
+      "description": "Prepares codebases for security review using Trail of Bits' checklist."
+    },
+    {
+      "name": "tob-burpsuite-project-parser",
+      "source": "tob",
+      "description": "Searches and explores Burp Suite project files (.burp) from the command line."
+    },
+    {
+      "name": "tob-cairo-vulnerability-scanner",
+      "source": "tob",
+      "description": "Scans Cairo/StarkNet smart contracts for 6 critical vulnerabilities including felt252 arithmetic overflow, L1-L2 messaging issues, address conversi..."
+    },
+    {
+      "name": "tob-cargo-fuzz",
+      "source": "tob",
+      "description": "cargo-fuzz is the de facto fuzzing tool for Rust projects using Cargo."
+    },
+    {
+      "name": "tob-claude-in-chrome-troubleshooting",
+      "source": "tob",
+      "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues."
+    },
+    {
+      "name": "tob-code-maturity-assessor",
+      "source": "tob",
+      "description": "Systematic code maturity assessment using Trail of Bits' 9-category framework."
+    },
+    {
+      "name": "tob-codeql",
+      "source": "tob",
+      "description": "Scans a codebase for security vulnerabilities using CodeQL's interprocedural data flow and taint tracking analysis."
+    },
+    {
+      "name": "tob-constant-time-analysis",
+      "source": "tob",
+      "description": "Detects timing side-channel vulnerabilities in cryptographic code."
+    },
+    {
+      "name": "tob-constant-time-testing",
+      "source": "tob",
+      "description": "Constant-time testing detects timing side channels in cryptographic code."
+    },
+    {
+      "name": "tob-cosmos-vulnerability-scanner",
+      "source": "tob",
+      "description": "Scans Cosmos SDK blockchain modules and CosmWasm contracts for consensus-critical vulnerabilities — chain halts, fund loss, state divergence."
+    },
+    {
+      "name": "tob-coverage-analysis",
+      "source": "tob",
+      "description": "Coverage analysis measures code exercised during fuzzing."
+    },
+    {
+      "name": "tob-crypto-protocol-diagram",
+      "source": "tob",
+      "description": "Extracts protocol message flow from source code, RFCs, academic papers, pseudocode, informal prose, ProVerif (.pv), or Tamarin (.spthy) models and ..."
+    },
+    {
+      "name": "tob-debug-buttercup",
+      "source": "tob",
+      "description": "Debugs the Buttercup CRS (Cyber Reasoning System) running on Kubernetes."
+    },
+    {
+      "name": "tob-designing-workflow-skills",
+      "source": "tob",
+      "description": "Guides the design and structuring of workflow-based Claude Code skills with multi-step phases, decision trees, subagent delegation, and progressive..."
+    },
+    {
+      "name": "tob-devcontainer-setup",
+      "source": "tob",
+      "description": "Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), and persistent volumes."
+    },
+    {
+      "name": "tob-diagramming-code",
+      "source": "tob",
+      "description": "Generates Mermaid diagrams from Trailmark code graphs."
+    },
+    {
+      "name": "tob-differential-review",
+      "source": "tob",
+      "description": "Performs security-focused differential review of code changes (PRs, commits, diffs)."
+    },
+    {
+      "name": "tob-dimensional-analysis",
+      "source": "tob",
+      "description": "Annotates codebases with dimensional analysis comments documenting units, dimensions, and decimal scaling."
+    },
+    {
+      "name": "tob-dwarf-expert",
+      "source": "tob",
+      "description": "Provides expertise for analyzing DWARF debug files and understanding the DWARF debug format/standard (v3-v5)."
+    },
+    {
+      "name": "tob-entry-point-analyzer",
+      "source": "tob",
+      "description": "Analyzes smart contract codebases to identify state-changing entry points for security auditing."
+    },
+    {
+      "name": "tob-firebase-apk-scanner",
+      "source": "tob",
+      "description": "Scans Android APKs for Firebase security misconfigurations including open databases, storage buckets, authentication issues, and exposed cloud func..."
+    },
+    {
+      "name": "tob-fp-check",
+      "source": "tob",
+      "description": "Systematically verifies suspected security bugs to eliminate false positives."
+    },
+    {
+      "name": "tob-fuzzing-dictionary",
+      "source": "tob",
+      "description": "Fuzzing dictionaries guide fuzzers with domain-specific tokens."
+    },
+    {
+      "name": "tob-fuzzing-obstacles",
+      "source": "tob",
+      "description": "Techniques for patching code to overcome fuzzing obstacles."
+    },
+    {
+      "name": "tob-genotoxic",
+      "source": "tob",
+      "description": "Graph-informed mutation testing triage."
+    },
+    {
       "name": "tob-gh-cli",
       "source": "tob",
       "description": "Intercepts GitHub URL fetches and redirects to the authenticated `gh` CLI."
     },
     {
-      "name": "trailofbits-gh-cli",
-      "source": "trailofbits",
-      "description": "Enforces authenticated gh CLI workflows over unauthenticated curl/WebFetch patterns."
+      "name": "tob-git-cleanup",
+      "source": "tob",
+      "description": "Safely analyzes and cleans up local git branches and worktrees by categorizing them as merged, squash-merged, superseded, or active work."
+    },
+    {
+      "name": "tob-graph-evolution",
+      "source": "tob",
+      "description": "Compares Trailmark code graphs at two source code snapshots (git commits, tags, or directories) to surface security-relevant structural changes."
+    },
+    {
+      "name": "tob-guidelines-advisor",
+      "source": "tob",
+      "description": "Smart contract development advisor based on Trail of Bits' best practices."
+    },
+    {
+      "name": "tob-harness-writing",
+      "source": "tob",
+      "description": "Techniques for writing effective fuzzing harnesses across languages."
+    },
+    {
+      "name": "tob-insecure-defaults",
+      "source": "tob",
+      "description": "Detects fail-open insecure defaults (hardcoded secrets, weak auth, permissive security) that allow apps to run insecurely in production."
+    },
+    {
+      "name": "tob-interpreting-culture-index",
+      "source": "tob",
+      "description": "Interprets Culture Index (CI) surveys, behavioral profiles, and personality assessment data."
+    },
+    {
+      "name": "tob-let-fate-decide",
+      "source": "tob",
+      "description": "Draws 4 Tarot cards to inject entropy into planning when prompts are vague, ambiguous, or casually delegated."
+    },
+    {
+      "name": "tob-libafl",
+      "source": "tob",
+      "description": "LibAFL is a modular fuzzing library for building custom fuzzers."
+    },
+    {
+      "name": "tob-libfuzzer",
+      "source": "tob",
+      "description": "Coverage-guided fuzzer built into LLVM for C/C++ projects."
+    },
+    {
+      "name": "tob-mermaid-to-proverif",
+      "source": "tob",
+      "description": "Translates Mermaid sequenceDiagrams describing cryptographic protocols into ProVerif formal verification models (.pv files)."
+    },
+    {
+      "name": "tob-modern-python",
+      "source": "tob",
+      "description": "Configures Python projects with modern tooling (uv, ruff, ty)."
+    },
+    {
+      "name": "tob-mutation-testing",
+      "source": "tob",
+      "description": "Configures mewt or muton mutation testing campaigns — scopes targets, tunes timeouts, and optimizes long-running runs."
+    },
+    {
+      "name": "tob-ossfuzz",
+      "source": "tob",
+      "description": "OSS-Fuzz provides free continuous fuzzing for open source projects."
+    },
+    {
+      "name": "tob-property-based-testing",
+      "source": "tob",
+      "description": "Provides guidance for property-based testing across multiple languages and smart contracts."
+    },
+    {
+      "name": "tob-ruzzy",
+      "source": "tob",
+      "description": "Ruzzy is a coverage-guided Ruby fuzzer by Trail of Bits."
+    },
+    {
+      "name": "tob-sarif-parsing",
+      "source": "tob",
+      "description": "Parses and processes SARIF files from static analysis tools like CodeQL, Semgrep, or other scanners."
+    },
+    {
+      "name": "tob-seatbelt-sandboxer",
+      "source": "tob",
+      "description": "Generates minimal macOS Seatbelt sandbox configurations."
+    },
+    {
+      "name": "tob-second-opinion",
+      "source": "tob",
+      "description": "Runs external LLM code reviews (OpenAI Codex or Google Gemini CLI) on uncommitted changes, branch diffs, or specific commits."
+    },
+    {
+      "name": "tob-secure-workflow-guide",
+      "source": "tob",
+      "description": "Guides through Trail of Bits' 5-step secure development workflow."
+    },
+    {
+      "name": "tob-semgrep",
+      "source": "tob",
+      "description": "Run Semgrep static analysis scan on a codebase using parallel subagents."
+    },
+    {
+      "name": "tob-semgrep-rule-creator",
+      "source": "tob",
+      "description": "Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns."
+    },
+    {
+      "name": "tob-semgrep-rule-variant-creator",
+      "source": "tob",
+      "description": "Creates language variants of existing Semgrep rules."
+    },
+    {
+      "name": "tob-sharp-edges",
+      "source": "tob",
+      "description": "Identifies error-prone APIs, dangerous configurations, and footgun designs that enable security mistakes."
+    },
+    {
+      "name": "tob-skill-improver",
+      "source": "tob",
+      "description": "Iteratively reviews and fixes Claude Code skill quality issues until they meet standards."
+    },
+    {
+      "name": "tob-solana-vulnerability-scanner",
+      "source": "tob",
+      "description": "Scans Solana programs for 6 critical vulnerabilities including arbitrary CPI, improper PDA validation, missing signer/ownership checks, and sysvar ..."
+    },
+    {
+      "name": "tob-spec-to-code-compliance",
+      "source": "tob",
+      "description": "Verifies code implements exactly what documentation specifies for blockchain audits."
+    },
+    {
+      "name": "tob-substrate-vulnerability-scanner",
+      "source": "tob",
+      "description": "Scans Substrate/Polkadot pallets for 7 critical vulnerabilities including arithmetic overflow, panic DoS, incorrect weights, and bad origin checks."
+    },
+    {
+      "name": "tob-supply-chain-risk-auditor",
+      "source": "tob",
+      "description": "Identifies dependencies at heightened risk of exploitation or takeover."
+    },
+    {
+      "name": "tob-testing-handbook-generator",
+      "source": "tob",
+      "description": "Meta-skill that analyzes the Trail of Bits Testing Handbook (appsec.guide) and generates Claude Code skills for security testing tools and techniques."
+    },
+    {
+      "name": "tob-token-integration-analyzer",
+      "source": "tob",
+      "description": "Token integration and implementation analyzer based on Trail of Bits' token integration checklist."
+    },
+    {
+      "name": "tob-ton-vulnerability-scanner",
+      "source": "tob",
+      "description": "Scans TON (The Open Network) smart contracts for 3 critical vulnerabilities including integer-as-boolean misuse, fake Jetton contracts, and forward..."
+    },
+    {
+      "name": "tob-trailmark",
+      "source": "tob",
+      "description": "Builds and queries multi-language source code graphs for security analysis."
+    },
+    {
+      "name": "tob-trailmark-structural",
+      "source": "tob",
+      "description": "Runs full trailmark structural analysis with all pre-analysis passes (blast radius, taint propagation, privilege boundaries, complexity hotspots)."
+    },
+    {
+      "name": "tob-trailmark-summary",
+      "source": "tob",
+      "description": "Runs a trailmark summary analysis on a codebase."
+    },
+    {
+      "name": "tob-variant-analysis",
+      "source": "tob",
+      "description": "Find similar vulnerabilities and bugs across codebases using pattern-based analysis."
+    },
+    {
+      "name": "tob-vector-forge",
+      "source": "tob",
+      "description": "Mutation-driven test vector generation."
+    },
+    {
+      "name": "tob-wycheproof",
+      "source": "tob",
+      "description": "Wycheproof provides test vectors for validating cryptographic implementations."
+    },
+    {
+      "name": "tob-yara-rule-authoring",
+      "source": "tob",
+      "description": "Guides authoring of high-quality YARA-X detection rules for malware identification."
+    },
+    {
+      "name": "tob-zeroize-audit",
+      "source": "tob",
+      "description": "Detects missing zeroization of sensitive data in source code and identifies zeroization removed by compiler optimizations, with assembly-level anal..."
     },
     {
       "name": "vercel-composition-patterns",

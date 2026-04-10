@@ -155,7 +155,7 @@ function main() {
       const stats = fs.lstatSync(entryPath);
       if (stats.isSymbolicLink()) {
         const linkTarget = fs.readlinkSync(entryPath);
-        const normalized = linkTarget.replace(/^\.\.\/\.\.\//, "");
+        const normalized = linkTarget.replace(/^(\.\.\/)+/, "");
         realDir = path.join(ROOT, normalized);
       } else if (stats.isDirectory()) {
         realDir = entryPath;

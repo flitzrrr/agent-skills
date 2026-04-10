@@ -140,13 +140,6 @@ jobs:
 
             git submodule add "https://github.com/$repo_name.git" "vendor/$BASENAME" 2>/dev/null || true
 
-            SKILL_DIRS=$(find "vendor/$BASENAME" -name "SKILL.md" -maxdepth 3 -exec dirname {} \; 2>/dev/null)
-            for skill_dir in $SKILL_DIRS; do
-              skill_name=$(basename "$skill_dir")
-              prefix=$(echo "$BASENAME" | cut -d'-' -f1)
-              ln -sf "../../$skill_dir" "skills/${prefix}-${skill_name}" 2>/dev/null || true
-            done
-
             ADDED="${ADDED}${repo_name} "
             REPORT="${REPORT}\n| ADDED | [$repo_name](https://github.com/$repo_name) | $STARS | $SKILL_COUNT | $LICENSE | Passed (${MD_RATIO}%% markdown) |"
 
@@ -175,12 +168,14 @@ jobs:
           git pull --rebase origin main
           git push origin main
 
-      - name: Rebuild GH Pages catalog
+      - name: Rebuild symlinks and catalog
         run: |
-          node bin/build-catalog.js
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/catalog.json README.md AGENTS.md CLAUDE.md .cursorrules CHEATSHEET.md .lovable .github/copilot-instructions.md 2>/dev/null || true
+          node bin/rebuild-symlinks.js
+          node bin/sync-docs.js
+          node bin/build-catalog.js
+          git add -A skills/ docs/ README.md AGENTS.md CLAUDE.md .cursorrules CHEATSHEET.md .lovable .github/copilot-instructions.md 2>/dev/null || true
           git diff --cached --quiet || git commit -m "docs: update skill catalog and docs [$(date +%Y-%m-%d)]"
           git pull --rebase origin main
           git push origin main || true

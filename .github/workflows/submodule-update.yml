@@ -91,31 +91,12 @@ jobs:
 
           Submodules: ${UPDATE_LIST}"
 
-      - name: Rebuild symlinks for updated submodules
+      - name: Rebuild symlinks
         if: steps.check.outputs.count != '0'
         run: |
-          for submodule in ${{ steps.check.outputs.updated }}; do
-            VENDOR_PATH="vendor/${submodule}"
-            [ ! -d "${VENDOR_PATH}" ] && continue
-
-            # Remove existing symlinks pointing to this vendor
-            find skills/ -type l | while read -r link; do
-              target="$(readlink "${link}" 2>/dev/null || true)"
-              if echo "${target}" | grep -q "${submodule}"; then
-                rm -f "${link}"
-              fi
-            done
-
-            # Recreate symlinks for all SKILL.md directories
-            find "${VENDOR_PATH}" -name "SKILL.md" -maxdepth 4 -exec dirname {} \; | while read -r skill_dir; do
-              skill_name="$(basename "${skill_dir}")"
-              prefix="$(echo "${submodule}" | cut -d'-' -f1)"
-              ln -sf "../../${skill_dir}" "skills/${prefix}-${skill_name}" 2>/dev/null || true
-            done
-          done
-
+          node bin/rebuild-symlinks.js
           git add -A skills/
-          git diff --cached --quiet || git commit -m "chore: rebuild symlinks for updated submodules"
+          git diff --cached --quiet || git commit -m "chore: rebuild skill symlinks"
 
       - name: Sync documentation
         if: steps.check.outputs.count != '0'
