@@ -172,6 +172,7 @@ jobs:
 
           Auto-discovered and security-scanned by weekly pipeline.
           Sources added: ${{ steps.evaluate.outputs.added }}" || exit 0
+          git pull --rebase origin main
           git push origin main
 
       - name: Rebuild GH Pages catalog
@@ -181,6 +182,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/catalog.json README.md AGENTS.md CLAUDE.md .cursorrules 2>/dev/null || true
           git diff --cached --quiet || git commit -m "docs: update skill catalog and docs [$(date +%Y-%m-%d)]"
+          git pull --rebase origin main
           git push origin main || true
 
       - name: Update Wiki
@@ -241,6 +243,7 @@ jobs:
           git add package.json
           git commit -m "chore: release v$VERSION"
           git tag "v$VERSION"
+          git pull --rebase origin main
           git push origin main --tags
 
       - name: Create report issue
