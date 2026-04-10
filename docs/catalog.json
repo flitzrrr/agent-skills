@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-10T22:56:05.021Z",
-  "total": 479,
+  "generated": "2026-04-10T22:58:09.694Z",
+  "total": 480,
   "skills": [
     {
       "name": "ab-test-setup",
@@ -1506,6 +1506,11 @@
       "name": "scientific-paper-lookup",
       "source": "scientific",
       "description": "Search 10 academic paper databases via their REST APIs to find research papers, preprints, and scholarly articles."
+    },
+    {
+      "name": "scientific-paperzilla",
+      "source": "scientific",
+      "description": "Chat with your agent about projects, recommendations, and canonical papers in Paperzilla."
     },
     {
       "name": "scientific-parallel-web",
