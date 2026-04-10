@@ -180,7 +180,7 @@ jobs:
           node bin/build-catalog.js
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/catalog.json README.md AGENTS.md CLAUDE.md .cursorrules 2>/dev/null || true
+          git add docs/catalog.json README.md AGENTS.md CLAUDE.md .cursorrules CHEATSHEET.md .lovable .github/copilot-instructions.md 2>/dev/null || true
           git diff --cached --quiet || git commit -m "docs: update skill catalog and docs [$(date +%Y-%m-%d)]"
           git pull --rebase origin main
           git push origin main || true

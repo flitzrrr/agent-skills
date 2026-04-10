@@ -122,7 +122,7 @@ jobs:
         run: |
           node bin/sync-docs.js
           node bin/build-catalog.js
-          git add -A docs/ README.md AGENTS.md CLAUDE.md .cursorrules CHEATSHEET.md 2>/dev/null || true
+          git add docs/ README.md AGENTS.md CLAUDE.md .cursorrules CHEATSHEET.md .lovable .github/copilot-instructions.md 2>/dev/null || true
           git diff --cached --quiet || git commit -m "docs: update skill catalog and docs [$(date +%Y-%m-%d)]"
 
       - name: Push to main

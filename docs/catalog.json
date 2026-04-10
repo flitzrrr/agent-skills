@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-10T22:44:06.699Z",
+  "generated": "2026-04-10T22:46:35.894Z",
   "total": 524,
   "skills": [
     {
@@ -15,102 +15,102 @@
     {
       "name": "addyosmani-api-and-interface-design",
       "source": "addyosmani",
-      "description": "Guides stable API and interface design."
+      "description": "Addyosmani Api And Interface Design tooling and automation."
     },
     {
       "name": "addyosmani-browser-testing-with-devtools",
       "source": "addyosmani",
-      "description": "Tests in real browsers."
+      "description": "Addyosmani Browser Testing With Devtools tooling and automation."
     },
     {
       "name": "addyosmani-ci-cd-and-automation",
       "source": "addyosmani",
-      "description": "Automates CI/CD pipeline setup."
+      "description": "Addyosmani Ci Cd And Automation tooling and automation."
     },
     {
       "name": "addyosmani-code-review-and-quality",
       "source": "addyosmani",
-      "description": "Conducts multi-axis code review."
+      "description": "Addyosmani Code Review And Quality tooling and automation."
     },
     {
       "name": "addyosmani-code-simplification",
       "source": "addyosmani",
-      "description": "Simplifies code for clarity."
+      "description": "Addyosmani Code Simplification tooling and automation."
     },
     {
       "name": "addyosmani-context-engineering",
       "source": "addyosmani",
-      "description": "Optimizes agent context setup."
+      "description": "Addyosmani Context Engineering tooling and automation."
     },
     {
       "name": "addyosmani-debugging-and-error-recovery",
       "source": "addyosmani",
-      "description": "Guides systematic root-cause debugging."
+      "description": "Addyosmani Debugging And Error Recovery tooling and automation."
     },
     {
       "name": "addyosmani-deprecation-and-migration",
       "source": "addyosmani",
-      "description": "Manages deprecation and migration."
+      "description": "Addyosmani Deprecation And Migration tooling and automation."
     },
     {
       "name": "addyosmani-documentation-and-adrs",
       "source": "addyosmani",
-      "description": "Records decisions and documentation."
+      "description": "Addyosmani Documentation And Adrs tooling and automation."
     },
     {
       "name": "addyosmani-frontend-ui-engineering",
       "source": "addyosmani",
-      "description": "Builds production-quality UIs."
+      "description": "Addyosmani Frontend Ui Engineering tooling and automation."
     },
     {
       "name": "addyosmani-git-workflow-and-versioning",
       "source": "addyosmani",
-      "description": "Structures git workflow practices."
+      "description": "Addyosmani Git Workflow And Versioning tooling and automation."
     },
     {
       "name": "addyosmani-idea-refine",
       "source": "addyosmani",
-      "description": "Refines ideas iteratively."
+      "description": "Addyosmani Idea Refine tooling and automation."
     },
     {
       "name": "addyosmani-incremental-implementation",
       "source": "addyosmani",
-      "description": "Delivers changes incrementally."
+      "description": "Addyosmani Incremental Implementation tooling and automation."
     },
     {
       "name": "addyosmani-performance-optimization",
       "source": "addyosmani",
-      "description": "Optimizes application performance."
+      "description": "Addyosmani Performance Optimization tooling and automation."
     },
     {
       "name": "addyosmani-planning-and-task-breakdown",
       "source": "addyosmani",
-      "description": "Breaks work into ordered tasks."
+      "description": "Addyosmani Planning And Task Breakdown tooling and automation."
     },
     {
       "name": "addyosmani-security-and-hardening",
       "source": "addyosmani",
-      "description": "Hardens code against vulnerabilities."
+      "description": "Addyosmani Security And Hardening tooling and automation."
     },
     {
       "name": "addyosmani-shipping-and-launch",
       "source": "addyosmani",
-      "description": "Prepares production launches."
+      "description": "Addyosmani Shipping And Launch tooling and automation."
     },
     {
       "name": "addyosmani-spec-driven-development",
       "source": "addyosmani",
-      "description": "Creates specs before coding."
+      "description": "Addyosmani Spec Driven Development tooling and automation."
     },
     {
       "name": "addyosmani-test-driven-development",
       "source": "addyosmani",
-      "description": "Drives development with tests."
+      "description": "Addyosmani Test Driven Development tooling and automation."
     },
     {
       "name": "addyosmani-using-agent-skills",
       "source": "addyosmani",
-      "description": "Discovers and invokes agent skills."
+      "description": "Addyosmani Using Agent Skills tooling and automation."
     },
     {
       "name": "agents-md",
