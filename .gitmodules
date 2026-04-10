@@ -1,18 +1,18 @@
 [submodule "vendor/getsentry-skills"]
 	path = vendor/getsentry-skills
-	url = git@github.com:getsentry/skills.git
+	url = https://github.com/getsentry/skills.git
 [submodule "vendor/agentic-seo-skill"]
 	path = vendor/agentic-seo-skill
-	url = git@github.com:Bhanunamikaze/Agentic-SEO-Skill.git
+	url = https://github.com/Bhanunamikaze/Agentic-SEO-Skill.git
 [submodule "vendor/opencode-processing-skills"]
 	path = vendor/opencode-processing-skills
 	url = https://github.com/DasDigitaleMomentum/opencode-processing-skills.git
 [submodule "vendor/anthropic-skills"]
 	path = vendor/anthropic-skills
-	url = git@github.com:anthropics/skills.git
+	url = https://github.com/anthropics/skills.git
 [submodule "vendor/vercel-agent-skills"]
 	path = vendor/vercel-agent-skills
-	url = git@github.com:vercel-labs/agent-skills.git
+	url = https://github.com/vercel-labs/agent-skills.git
 [submodule "vendor/trailofbits-skills"]
 	path = vendor/trailofbits-skills
 	url = https://github.com/trailofbits/skills.git

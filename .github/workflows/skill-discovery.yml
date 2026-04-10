@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Discover trending skill repos
         id: discover
@@ -247,15 +247,24 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SCANNED: ${{ steps.evaluate.outputs.scanned || '0' }}
+          ACCEPTED: ${{ steps.evaluate.outputs.accepted || '0' }}
+          EVAL_REPORT: ${{ steps.evaluate.outputs.report }}
         run: |
           TITLE="Weekly Skill Discovery Report - $(date +%Y-%m-%d)"
-          cat > /tmp/issue_body.md << 'EOF'
+          cat > /tmp/issue_body.md <<EOF
           ## Skill Discovery Report
 
           | Metric | Value |
           |--------|-------|
-          | Scanned | ${{ steps.evaluate.outputs.scanned || '0' }} candidates |
-          | Accepted | ${{ steps.evaluate.outputs.accepted || '0' }} new sources |
+          | Scanned | ${SCANNED} candidates |
+          | Accepted | ${ACCEPTED} new sources |
+
+          ### Evaluation Details
+
+          | Status | Repo | Stars | Skills | License | Notes |
+          |--------|------|-------|--------|---------|-------|
+          ${EVAL_REPORT}
 
           ### Quality Gates
 
