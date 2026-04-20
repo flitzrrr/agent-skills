@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-13T10:27:20.288Z",
-  "total": 480,
+  "generated": "2026-04-20T09:51:51.514Z",
+  "total": 481,
   "skills": [
     {
       "name": "ab-test-setup",
@@ -353,19 +353,14 @@
       "description": "Build AI agents on Cloudflare Workers using the Agents SDK."
     },
     {
-      "name": "cloudflare-building-ai-agent-on-cloudflare",
-      "source": "cloudflare",
-      "description": "Builds AI agents on Cloudflare using the Agents SDK with state management, real-time WebSockets, scheduled tasks, tool integration, and chat capabi..."
-    },
-    {
-      "name": "cloudflare-building-mcp-server-on-cloudflare",
-      "source": "cloudflare",
-      "description": "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers with tools, OAuth authentication, and production deployment."
-    },
-    {
       "name": "cloudflare-cloudflare",
       "source": "cloudflare",
       "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, ..."
+    },
+    {
+      "name": "cloudflare-cloudflare-email-service",
+      "source": "cloudflare",
+      "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing)."
     },
     {
       "name": "cloudflare-durable-objects",
@@ -1665,7 +1660,7 @@
     {
       "name": "scientific-research-lookup",
       "source": "scientific",
-      "description": "Look up current research information using the Parallel Chat API (primary) or Perplexity sonar-pro-search (academic paper searches)."
+      "description": "Look up current research information using parallel-cli search (primary, fast web search), the Parallel Chat API (deep research), or Perplexity son..."
     },
     {
       "name": "scientific-rowan",
@@ -1923,6 +1918,11 @@
       "description": "Create data-driven presentation slides using React, Vite, and Recharts with Sentry branding."
     },
     {
+      "name": "sentry-prompt-optimizer",
+      "source": "sentry",
+      "description": "Create, optimize, and iteratively refine agent prompts and system prompts."
+    },
+    {
       "name": "sentry-security-review",
       "source": "sentry",
       "description": "Security code review for vulnerabilities."
@@ -1946,6 +1946,11 @@
       "name": "sentry-sred-work-summary",
       "source": "sentry",
       "description": "Go back through the previous year of work and create a Notion doc that groups relevant links into projects that can then be documented as SRED proj..."
+    },
+    {
+      "name": "sentry-typing-exclusion-worker",
+      "source": "sentry",
+      "description": "Python typing exclusion worker: remove assigned mypy exclusion modules in small scoped batches, fix typing issues, run validation, and produce a st..."
     },
     {
       "name": "seo",
