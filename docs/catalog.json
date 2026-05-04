@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-27T10:55:16.287Z",
-  "total": 487,
+  "generated": "2026-05-04T10:07:05.942Z",
+  "total": 490,
   "skills": [
     {
       "name": "ab-test-setup",
@@ -355,7 +355,7 @@
     {
       "name": "cloudflare-cloudflare",
       "source": "cloudflare",
-      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, ..."
+      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flags..."
     },
     {
       "name": "cloudflare-cloudflare-email-service",
@@ -1208,6 +1208,11 @@
       "description": "Comprehensive Python library for astronomy and astrophysics."
     },
     {
+      "name": "scientific-autoskill",
+      "source": "scientific",
+      "description": "Observe the user's screen via screenpipe, detect repeated research workflows, match them against existing scientific-agent-skills, and draft new sk..."
+    },
+    {
       "name": "scientific-benchling-integration",
       "source": "scientific",
       "description": "Benchling R&D platform integration."
@@ -1386,6 +1391,11 @@
       "name": "scientific-histolab",
       "source": "scientific",
       "description": "Lightweight WSI tile extraction and preprocessing."
+    },
+    {
+      "name": "scientific-hugging-science",
+      "source": "scientific",
+      "description": "Use when the user is doing AI/ML work in a scientific domain — biology, chemistry, physics, astronomy, climate, genomics, materials science, medici..."
     },
     {
       "name": "scientific-hypogenic",
@@ -1610,7 +1620,7 @@
     {
       "name": "scientific-pyhealth",
       "source": "scientific",
-      "description": "Comprehensive healthcare AI toolkit for developing, testing, and deploying machine learning models with clinical data."
+      "description": "Build clinical/healthcare deep-learning pipelines with PyHealth — loading EHR/signal/imaging datasets (MIMIC-III/IV, eICU, OMOP, SleepEDF, ChestXra..."
     },
     {
       "name": "scientific-pylabrobot",
@@ -1930,7 +1940,7 @@
     {
       "name": "sentry-pr-writer",
       "source": "sentry",
-      "description": "ALWAYS use this skill when creating or updating pull requests — never create or edit a PR directly without it."
+      "description": "Create and update pull requests following Sentry conventions."
     },
     {
       "name": "sentry-presentation-creator",
@@ -2081,6 +2091,11 @@
       "name": "tob-burpsuite-project-parser",
       "source": "tob",
       "description": "Searches and explores Burp Suite project files (.burp) from the command line."
+    },
+    {
+      "name": "tob-c-review",
+      "source": "tob",
+      "description": "Performs comprehensive C/C++ security review for memory corruption, integer overflows, race conditions, and platform-specific vulnerabilities."
     },
     {
       "name": "tob-cairo-vulnerability-scanner",
@@ -2365,12 +2380,12 @@
     {
       "name": "tob-trailmark-structural",
       "source": "tob",
-      "description": "Runs full trailmark structural analysis with all pre-analysis passes (blast radius, taint propagation, privilege boundaries, complexity hotspots)."
+      "description": "Runs full Trailmark structural analysis on Trailmark 0.2.x by building a graph, running `preanalysis()`, and reporting hotspots, taint, blast radiu..."
     },
     {
       "name": "tob-trailmark-summary",
       "source": "tob",
-      "description": "Runs a trailmark summary analysis on a codebase."
+      "description": "Runs a Trailmark summary analysis on a codebase."
     },
     {
       "name": "tob-variant-analysis",
