@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-04T10:58:04.197Z",
-  "total": 490,
+  "generated": "2026-05-11T10:55:02.203Z",
+  "total": 437,
   "skills": [
     {
       "name": "ab-test-setup",
@@ -56,6 +56,11 @@
       "name": "addyosmani-documentation-and-adrs",
       "source": "addyosmani",
       "description": "Records decisions and documentation."
+    },
+    {
+      "name": "addyosmani-doubt-driven-development",
+      "source": "addyosmani",
+      "description": "Subjects every non-trivial decision to a fresh-context adversarial review before it stands."
     },
     {
       "name": "addyosmani-frontend-ui-engineering",
@@ -388,6 +393,11 @@
       "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflow..."
     },
     {
+      "name": "co-marketing",
+      "source": "co",
+      "description": "When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities."
+    },
+    {
       "name": "cold-email",
       "source": "cold",
       "description": "Write B2B cold emails and follow-up sequences that get replies."
@@ -480,7 +490,7 @@
     {
       "name": "expo-expo-module",
       "source": "expo",
-      "description": "Guide for writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript)."
+      "description": "Guide for creating and writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript)."
     },
     {
       "name": "expo-expo-tailwind-setup",
@@ -511,286 +521,6 @@
       "name": "expo-use-dom",
       "source": "expo",
       "description": "Use Expo DOM components to run web code in a webview on native and as-is on web."
-    },
-    {
-      "name": "finance-3-statement-model",
-      "source": "finance",
-      "description": "Complete, populate and fill out 3-statement financial model templates (Income Statement, Balance Sheet, Cash Flow Statement) ."
-    },
-    {
-      "name": "finance-ai-readiness",
-      "source": "finance",
-      "description": "description: Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time."
-    },
-    {
-      "name": "finance-audit-xls",
-      "source": "finance",
-      "description": "Audit a spreadsheet for formula accuracy, errors, and common mistakes."
-    },
-    {
-      "name": "finance-bond-futures-basis",
-      "source": "finance",
-      "description": "Analyze the bond futures basis by pricing futures, identifying the cheapest-to-deliver, and comparing with yield curves to assess delivery option v..."
-    },
-    {
-      "name": "finance-bond-relative-value",
-      "source": "finance",
-      "description": "Perform relative value analysis on bonds by combining pricing, yield curve context, credit spreads, and scenario stress testing."
-    },
-    {
-      "name": "finance-buyer-list",
-      "source": "finance",
-      "description": "description: Build and organize a universe of potential acquirers for sell-side M&A processes."
-    },
-    {
-      "name": "finance-catalyst-calendar",
-      "source": "finance",
-      "description": "description: Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regula..."
-    },
-    {
-      "name": "finance-cim-builder",
-      "source": "finance",
-      "description": "description: Structure and draft a Confidential Information Memorandum for sell-side M&A processes."
-    },
-    {
-      "name": "finance-clean-data-xls",
-      "source": "finance",
-      "description": "Clean up messy spreadsheet data — trim whitespace, fix inconsistent casing, convert numbers-stored-as-text, standardize dates, remove duplicates, a..."
-    },
-    {
-      "name": "finance-client-report",
-      "source": "finance",
-      "description": "description: Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, and market commentary."
-    },
-    {
-      "name": "finance-client-review",
-      "source": "finance",
-      "description": "description: Prepare for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items."
-    },
-    {
-      "name": "finance-competitive-analysis",
-      "source": "finance",
-      "description": "Framework for building competitive landscape decks — market positioning, competitor deep-dives, comparative analysis, strategic synthesis."
-    },
-    {
-      "name": "finance-comps-analysis",
-      "source": "finance",
-      "description": "Build institutional-grade comparable company analyses with operating metrics, valuation multiples, and statistical benchmarking in Excel/spreadshee..."
-    },
-    {
-      "name": "finance-datapack-builder",
-      "source": "finance",
-      "description": "Build professional financial services data packs from various sources including CIMs, offering memorandums, SEC filings, web search, or MCP servers."
-    },
-    {
-      "name": "finance-dcf-model",
-      "source": "finance",
-      "description": "Real DCF (Discounted Cash Flow) model creation for equity valuation."
-    },
-    {
-      "name": "finance-dd-checklist",
-      "source": "finance",
-      "description": "description: Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity."
-    },
-    {
-      "name": "finance-dd-meeting-prep",
-      "source": "finance",
-      "description": "description: Prepare for due diligence meetings — management presentations, expert network calls, customer references, and advisor sessions."
-    },
-    {
-      "name": "finance-deal-screening",
-      "source": "finance",
-      "description": "description: Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria."
-    },
-    {
-      "name": "finance-deal-sourcing",
-      "source": "finance",
-      "description": "description: PE deal sourcing workflow — discover target companies, check CRM for existing relationships, and draft personalized founder outreach e..."
-    },
-    {
-      "name": "finance-deal-tracker",
-      "source": "finance",
-      "description": "description: Track multiple live deals with milestones, deadlines, action items, and status updates."
-    },
-    {
-      "name": "finance-deck-refresh",
-      "source": "finance",
-      "description": "Updates a presentation with new numbers — quarterly refreshes, earnings updates, comp rolls, rebased market data."
-    },
-    {
-      "name": "finance-earnings-analysis",
-      "source": "finance",
-      "description": "Create professional equity research earnings update reports (8-12 pages, 3,000-5,000 words) analyzing quarterly results for companies already under..."
-    },
-    {
-      "name": "finance-earnings-preview",
-      "source": "finance",
-      "description": "description: Build pre-earnings analysis with estimate models, scenario frameworks, and key metrics to watch."
-    },
-    {
-      "name": "finance-earnings-preview-beta",
-      "source": "finance",
-      "description": "Generate a concise 4-5 page equity research earnings preview for a single company."
-    },
-    {
-      "name": "finance-equity-research",
-      "source": "finance",
-      "description": "Generate comprehensive equity research snapshots combining analyst consensus estimates, company fundamentals, historical prices, and macroeconomic ..."
-    },
-    {
-      "name": "finance-financial-plan",
-      "source": "finance",
-      "description": "description: Build or update a comprehensive financial plan covering retirement projections, education funding, estate planning, and cash flow anal..."
-    },
-    {
-      "name": "finance-fixed-income-portfolio",
-      "source": "finance",
-      "description": "Review fixed income portfolios by pricing multiple bonds, retrieving reference data, analyzing cashflows, and running scenario analysis."
-    },
-    {
-      "name": "finance-funding-digest",
-      "source": "finance",
-      "description": "Generate a polished one-page PowerPoint slide summarizing key takeaways from recent funding rounds and notable capital markets activity across a us..."
-    },
-    {
-      "name": "finance-fx-carry-trade",
-      "source": "finance",
-      "description": "Evaluate FX carry trade opportunities by combining spot rates, forward points, interest rate differentials, volatility surface analysis, and histor..."
-    },
-    {
-      "name": "finance-ib-check-deck",
-      "source": "finance",
-      "description": "Investment banking presentation quality checker."
-    },
-    {
-      "name": "finance-ic-memo",
-      "source": "finance",
-      "description": "description: Draft a structured investment committee memo for PE deal approval."
-    },
-    {
-      "name": "finance-idea-generation",
-      "source": "finance",
-      "description": "description: Systematic stock screening and investment idea sourcing."
-    },
-    {
-      "name": "finance-initiating-coverage",
-      "source": "finance",
-      "description": "Create institutional-quality equity research initiation reports through a 5-task workflow."
-    },
-    {
-      "name": "finance-investment-proposal",
-      "source": "finance",
-      "description": "description: Create professional investment proposals for prospective clients."
-    },
-    {
-      "name": "finance-lbo-model",
-      "source": "finance",
-      "description": "This skill should be used when completing LBO (Leveraged Buyout) model templates in Excel for private equity transactions, deal materials, or inves..."
-    },
-    {
-      "name": "finance-macro-rates-monitor",
-      "source": "finance",
-      "description": "Build macroeconomic and rates dashboards combining macro indicators, yield curves, inflation breakevens, and swap rates."
-    },
-    {
-      "name": "finance-merger-model",
-      "source": "finance",
-      "description": "description: Build accretion/dilution analysis for M&A transactions."
-    },
-    {
-      "name": "finance-model-update",
-      "source": "finance",
-      "description": "description: Update financial models with new data — quarterly earnings, management guidance, macro changes, or revised assumptions."
-    },
-    {
-      "name": "finance-morning-note",
-      "source": "finance",
-      "description": "description: Draft concise morning meeting notes summarizing overnight developments, trade ideas, and key events for coverage stocks."
-    },
-    {
-      "name": "finance-option-vol-analysis",
-      "source": "finance",
-      "description": "Analyze option volatility by combining vol surface data, option pricing with Greeks, and historical price data to assess implied vs realized volati..."
-    },
-    {
-      "name": "finance-pitch-deck",
-      "source": "finance",
-      "description": "Populates investment banking pitch deck templates with data from source files."
-    },
-    {
-      "name": "finance-portfolio-monitoring",
-      "source": "finance",
-      "description": "description: Track and analyze portfolio company performance against plan."
-    },
-    {
-      "name": "finance-portfolio-rebalance",
-      "source": "finance",
-      "description": "description: Analyze portfolio allocation drift and generate rebalancing trade recommendations across accounts."
-    },
-    {
-      "name": "finance-ppt-template-creator",
-      "source": "finance",
-      "description": "Creates self-contained PPT template SKILLS (not presentations) from user-provided PowerPoint templates."
-    },
-    {
-      "name": "finance-process-letter",
-      "source": "finance",
-      "description": "description: Draft process letters and bid instructions for sell-side M&A processes."
-    },
-    {
-      "name": "finance-returns-analysis",
-      "source": "finance",
-      "description": "description: Build quick IRR/MOIC sensitivity tables for PE deal evaluation."
-    },
-    {
-      "name": "finance-sector-overview",
-      "source": "finance",
-      "description": "description: Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and themati..."
-    },
-    {
-      "name": "finance-skill-creator",
-      "source": "finance",
-      "description": "Guide for creating effective skills."
-    },
-    {
-      "name": "finance-strip-profile",
-      "source": "finance",
-      "description": "Creates professional investment banking strip profiles (company profiles) for pitch books, deal materials, and client presentations."
-    },
-    {
-      "name": "finance-swap-curve-strategy",
-      "source": "finance",
-      "description": "Analyze the interest rate swap curve by pricing swaps at multiple tenors, overlaying government and inflation curves, and identifying curve trade o..."
-    },
-    {
-      "name": "finance-tax-loss-harvesting",
-      "source": "finance",
-      "description": "description: Identify tax-loss harvesting opportunities across taxable accounts."
-    },
-    {
-      "name": "finance-tear-sheet",
-      "source": "finance",
-      "description": "Generate professional company tear sheets using S&P Capital IQ data via the Kensho LLM-ready API MCP server."
-    },
-    {
-      "name": "finance-teaser",
-      "source": "finance",
-      "description": "description: Draft anonymous one-page company teasers for sell-side M&A processes."
-    },
-    {
-      "name": "finance-thesis-tracker",
-      "source": "finance",
-      "description": "description: Maintain and update investment theses for portfolio positions and watchlist names."
-    },
-    {
-      "name": "finance-unit-economics",
-      "source": "finance",
-      "description": "description: Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall."
-    },
-    {
-      "name": "finance-value-creation-plan",
-      "source": "finance",
-      "description": "description: Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge."
     },
     {
       "name": "form-cro",
@@ -1326,6 +1056,11 @@
       "name": "scientific-etetoolkit",
       "source": "scientific",
       "description": "Phylogenetic tree toolkit (ETE)."
+    },
+    {
+      "name": "scientific-exa-search",
+      "source": "scientific",
+      "description": "Web toolkit powered by Exa, tuned for scientific and technical content."
     },
     {
       "name": "scientific-exploratory-data-analysis",
@@ -1865,7 +1600,7 @@
     {
       "name": "sentry-agents-md",
       "source": "sentry",
-      "description": "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep..."
+      "description": "Creates and maintains concise AGENTS.md and CLAUDE.md project instruction files."
     },
     {
       "name": "sentry-blog-writing-guide",
@@ -1950,7 +1685,7 @@
     {
       "name": "sentry-prompt-optimizer",
       "source": "sentry",
-      "description": "Create, optimize, and iteratively refine agent prompts and system prompts."
+      "description": "Creates, optimizes, and iteratively refines agent prompts, system prompts, developer prompts, and reusable prompt templates."
     },
     {
       "name": "sentry-replay-ux-research",
@@ -2020,7 +1755,7 @@
     {
       "name": "stripe-stripe-projects",
       "source": "stripe",
-      "description": "Use when setting up a new app or local repo with Stripe Projects, provisioning a software stack, or bootstrapping the Projects CLI from a coding ag..."
+      "description": "Use when the user needs to provision a third-party service available on https://projects.dev/providers; create or retrieve a provider/service API, ..."
     },
     {
       "name": "stripe-upgrade-stripe",
