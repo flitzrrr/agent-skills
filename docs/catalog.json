@@ -1,9 +1,9 @@
 {
-  "generated": "2026-05-11T11:58:57.416Z",
-  "total": 437,
+  "generated": "2026-05-18T11:38:34.740Z",
+  "total": 438,
   "skills": [
     {
-      "name": "ab-test-setup",
+      "name": "ab-testing",
       "source": "ab",
       "description": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program."
     },
@@ -20,7 +20,7 @@
     {
       "name": "addyosmani-browser-testing-with-devtools",
       "source": "addyosmani",
-      "description": "Tests in real browsers."
+      "description": "Tests in real browsers via Chrome DevTools MCP."
     },
     {
       "name": "addyosmani-ci-cd-and-automation",
@@ -75,12 +75,17 @@
     {
       "name": "addyosmani-idea-refine",
       "source": "addyosmani",
-      "description": "Refines ideas iteratively."
+      "description": "Refines raw ideas into sharp, actionable concepts through structured divergent and convergent thinking."
     },
     {
       "name": "addyosmani-incremental-implementation",
       "source": "addyosmani",
       "description": "Delivers changes incrementally."
+    },
+    {
+      "name": "addyosmani-interview-me",
+      "source": "addyosmani",
+      "description": "Extracts what the user actually wants instead of what they think they should want."
     },
     {
       "name": "addyosmani-performance-optimization",
@@ -123,12 +128,17 @@
       "description": "Discovers and invokes agent skills."
     },
     {
+      "name": "ads",
+      "source": "ads",
+      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms."
+    },
+    {
       "name": "ai-seo",
       "source": "ai",
       "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers."
     },
     {
-      "name": "analytics-tracking",
+      "name": "analytics",
       "source": "analytics",
       "description": "When the user wants to set up, improve, or audit analytics tracking and measurement."
     },
@@ -223,7 +233,7 @@
       "description": "Use this skill any time a spreadsheet file is the primary input or output."
     },
     {
-      "name": "aso-audit",
+      "name": "aso",
       "source": "aso",
       "description": "When the user wants to audit or optimize an App Store or Google Play listing."
     },
@@ -260,7 +270,7 @@
     {
       "name": "aws-ec2",
       "source": "aws",
-      "description": "AWS EC2 virtual machine management for instances, AMIs, and networking."
+      "description": "AWS EC2 virtual machine management — instances, security groups, key pairs, AMIs, EBS volumes, Auto Scaling Groups, Spot Instances, Session Manager..."
     },
     {
       "name": "aws-ecs",
@@ -408,14 +418,14 @@
       "description": "Build and leverage online communities to drive product growth and brand loyalty."
     },
     {
-      "name": "competitor-alternatives",
-      "source": "competitor",
-      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement."
-    },
-    {
       "name": "competitor-profiling",
       "source": "competitor",
       "description": "When the user wants to research, profile, or analyze competitors from their URLs."
+    },
+    {
+      "name": "competitors",
+      "source": "competitors",
+      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement."
     },
     {
       "name": "content-strategy",
@@ -433,6 +443,11 @@
       "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, ab..."
     },
     {
+      "name": "cro",
+      "source": "cro",
+      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages,..."
+    },
+    {
       "name": "customer-research",
       "source": "customer",
       "description": "When the user wants to conduct, analyze, or synthesize customer research."
@@ -448,8 +463,8 @@
       "description": "Dispatch independent tasks to parallel subagents when 2+ problems can be solved without shared state or sequential dependencies."
     },
     {
-      "name": "email-sequence",
-      "source": "email",
+      "name": "emails",
+      "source": "emails",
       "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program."
     },
     {
@@ -523,12 +538,7 @@
       "description": "Use Expo DOM components to run web code in a webview on native and as-is on web."
     },
     {
-      "name": "form-cro",
-      "source": "form",
-      "description": "When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, applica..."
-    },
-    {
-      "name": "free-tool-strategy",
+      "name": "free-tools",
       "source": "free",
       "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness."
     },
@@ -683,7 +693,7 @@
       "description": "Automatically generate unit tests based on source code, supporting multiple languages and testing frameworks."
     },
     {
-      "name": "launch-strategy",
+      "name": "launch",
       "source": "launch",
       "description": "When the user wants to plan a product launch, feature announcement, or release strategy."
     },
@@ -788,7 +798,7 @@
       "description": "Use when syncing or updating previously installed skills to their latest version."
     },
     {
-      "name": "onboarding-cro",
+      "name": "onboarding",
       "source": "onboarding",
       "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value."
     },
@@ -853,27 +863,17 @@
       "description": "Update an existing plan's status, todo list, and phase progress."
     },
     {
-      "name": "page-cro",
-      "source": "page",
-      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature..."
-    },
-    {
-      "name": "paid-ads",
-      "source": "paid",
-      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms."
-    },
-    {
-      "name": "paywall-upgrade-cro",
-      "source": "paywall",
+      "name": "paywalls",
+      "source": "paywalls",
       "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates."
     },
     {
-      "name": "popup-cro",
-      "source": "popup",
+      "name": "popups",
+      "source": "popups",
       "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes."
     },
     {
-      "name": "pricing-strategy",
+      "name": "pricing",
       "source": "pricing",
       "description": "When the user wants help with pricing decisions, packaging, or monetization strategy."
     },
@@ -883,7 +883,7 @@
       "description": "End-to-end skill for SEO-optimized product descriptions: inventory analysis, generation, quality assurance, catalog update, and deployment."
     },
     {
-      "name": "product-marketing-context",
+      "name": "product-marketing",
       "source": "product",
       "description": "When the user wants to create or update their product marketing context document."
     },
@@ -893,8 +893,8 @@
       "description": "When the user wants to create SEO-driven pages at scale using templates and data."
     },
     {
-      "name": "referral-program",
-      "source": "referral",
+      "name": "referrals",
+      "source": "referrals",
       "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
     },
     {
@@ -908,7 +908,7 @@
       "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts."
     },
     {
-      "name": "schema-markup",
+      "name": "schema",
       "source": "schema",
       "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site."
     },
@@ -951,6 +951,11 @@
       "name": "scientific-bgpt-paper-search",
       "source": "scientific",
       "description": "Search scientific papers and retrieve structured experimental data extracted from full-text studies via the BGPT MCP server."
+    },
+    {
+      "name": "scientific-bids",
+      "source": "scientific",
+      "description": "Use this skill when working with Brain Imaging Data Structure (BIDS) datasets: organizing neuroscience and biomedical data (MRI, EEG, MEG, iEEG, PE..."
     },
     {
       "name": "scientific-biopython",
@@ -1425,7 +1430,7 @@
     {
       "name": "scientific-research-lookup",
       "source": "scientific",
-      "description": "Look up current research information using parallel-cli search (primary, fast web search), the Parallel Chat API (deep research), or Perplexity son..."
+      "description": "'Look up current research information using parallel-cli search (primary, fast web search), the Parallel Chat API (deep research), or Perplexity so..."
     },
     {
       "name": "scientific-rowan",
@@ -1733,7 +1738,7 @@
       "description": "When the user wants to audit, review, or diagnose SEO issues on their site."
     },
     {
-      "name": "signup-flow-cro",
+      "name": "signup",
       "source": "signup",
       "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows."
     },
@@ -1743,7 +1748,7 @@
       "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking."
     },
     {
-      "name": "social-content",
+      "name": "social",
       "source": "social",
       "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other pl..."
     },
