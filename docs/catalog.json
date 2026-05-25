@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-18T12:22:41.310Z",
-  "total": 438,
+  "generated": "2026-05-25T11:46:00.203Z",
+  "total": 450,
   "skills": [
     {
       "name": "ab-testing",
@@ -473,6 +473,11 @@
       "description": "Execute a significant implementation unit (phase or major slice) using a gated subagent loop (blueprint -> gate -> execute -> digest) without creat..."
     },
     {
+      "name": "expo-add-app-clip",
+      "source": "expo",
+      "description": "Add an iOS App Clip target to an Expo app."
+    },
+    {
       "name": "expo-building-native-ui",
       "source": "expo",
       "description": "Complete guide for building beautiful apps with Expo Router."
@@ -486,6 +491,11 @@
       "name": "expo-expo-api-routes",
       "source": "expo",
       "description": "Guidelines for creating API routes in Expo Router with EAS Hosting"
+    },
+    {
+      "name": "expo-expo-brownfield",
+      "source": "expo",
+      "description": "Integrate Expo and React Native into an existing native iOS or Android app."
     },
     {
       "name": "expo-expo-cicd-workflows",
@@ -543,6 +553,11 @@
       "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness."
     },
     {
+      "name": "google-code-to-design",
+      "source": "google",
+      "description": "Convert frontend code (Vite, React, etc.) to a Stitch Design by chaining static HTML extraction, design system extraction, and file upload."
+    },
+    {
       "name": "google-design-md",
       "source": "google",
       "description": "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files"
@@ -551,6 +566,26 @@
       "name": "google-enhance-prompt",
       "source": "google",
       "description": "Transforms vague UI ideas into polished, Stitch-optimized prompts."
+    },
+    {
+      "name": "google-extract-design-md",
+      "source": "google",
+      "description": "Extract a comprehensive design system (DESIGN.md) directly from frontend source code — React, Vue, Svelte, Angular, plain HTML/CSS, or any web fram..."
+    },
+    {
+      "name": "google-extract-static-html",
+      "source": "google",
+      "description": "Extract self-contained static HTML from a built web application or React components by inlining CSS and images."
+    },
+    {
+      "name": "google-generate-design",
+      "source": "google",
+      "description": "Generate new screens from text prompts or images, edit existing screens with prompts and design system tokens, and generate design variants using S..."
+    },
+    {
+      "name": "google-manage-design-system",
+      "source": "google",
+      "description": "Manage design systems in Stitch using MCP tools."
     },
     {
       "name": "google-react-components",
@@ -568,11 +603,6 @@
       "description": "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, an..."
     },
     {
-      "name": "google-stitch-design",
-      "source": "google",
-      "description": "Unified entry point for Stitch design work."
-    },
-    {
       "name": "google-stitch-loop",
       "source": "google",
       "description": "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern"
@@ -581,6 +611,11 @@
       "name": "google-taste-design",
       "source": "google",
       "description": "Semantic Design System Skill for Google Stitch."
+    },
+    {
+      "name": "google-upload-to-stitch",
+      "source": "google",
+      "description": "Upload local assets (images, mockups, extracted HTML) to a Stitch project."
     },
     {
       "name": "hashicorp-aws-ami-builder",
@@ -1273,6 +1308,11 @@
       "description": "GPU-accelerate Python code using CuPy, Numba CUDA, Warp, cuDF, cuML, cuGraph, KvikIO, cuCIM, cuxfilter, cuVS, cuSpatial, and RAFT."
     },
     {
+      "name": "scientific-pacsomatic",
+      "source": "scientific",
+      "description": "Operator toolkit for nf-core/pacsomatic matched tumor-normal workflows from BAM inputs."
+    },
+    {
       "name": "scientific-paper-lookup",
       "source": "scientific",
       "description": "Search 10 academic paper databases via REST APIs for research papers, preprints, and scholarly articles."
@@ -1675,7 +1715,12 @@
     {
       "name": "sentry-iterate-pr",
       "source": "sentry",
-      "description": "Iterate on a PR until CI passes."
+      "description": "Iterate on a PR until actionable CI passes and high/medium review feedback is addressed."
+    },
+    {
+      "name": "sentry-pr-link-issue",
+      "source": "sentry",
+      "description": "Append a GitHub issue link and its Linear ticket to the current PR's description."
     },
     {
       "name": "sentry-pr-writer",
@@ -1723,6 +1768,11 @@
       "description": "Go back through the previous year of work and create a Notion doc that groups relevant links into projects that can then be documented as SRED proj..."
     },
     {
+      "name": "sentry-triage-frontend-issues",
+      "source": "sentry",
+      "description": "Triage new issues in the Sentry `javascript` project by archiving non-actionable noise."
+    },
+    {
       "name": "sentry-typing-exclusion-worker",
       "source": "sentry",
       "description": "Python typing exclusion worker: remove assigned mypy exclusion modules in small scoped batches, fix typing issues, run validation, and produce a st..."
@@ -1746,6 +1796,11 @@
       "name": "site-architecture",
       "source": "site",
       "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking."
+    },
+    {
+      "name": "sms",
+      "source": "sms",
+      "description": "When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, prom..."
     },
     {
       "name": "social",
@@ -2181,6 +2236,11 @@
       "name": "vercel-vercel-cli-with-tokens",
       "source": "vercel",
       "description": "Deploy and manage projects on Vercel using token-based authentication."
+    },
+    {
+      "name": "vercel-vercel-optimize",
+      "source": "vercel",
+      "description": "Use for Vercel cost and performance optimization on deployed projects, especially Next.js, SvelteKit, Nuxt, and limited Astro apps."
     },
     {
       "name": "vercel-web-design-guidelines",
