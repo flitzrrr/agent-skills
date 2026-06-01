@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-25T12:20:42.185Z",
-  "total": 450,
+  "generated": "2026-06-01T13:29:20.520Z",
+  "total": 457,
   "skills": [
     {
       "name": "ab-testing",
@@ -518,6 +518,11 @@
       "description": "Guide for creating and writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript)."
     },
     {
+      "name": "expo-expo-observe",
+      "source": "expo",
+      "description": "Use for anything related to EAS Observe — adding `expo-observe` to an Expo project (AppMetricsRoot/ObserveRoot HOC, markInteractive, the useObserve..."
+    },
+    {
       "name": "expo-expo-tailwind-setup",
       "source": "expo",
       "description": "Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styling"
@@ -743,6 +748,11 @@
       "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product."
     },
     {
+      "name": "marketing-plan",
+      "source": "marketing",
+      "description": "When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product."
+    },
+    {
       "name": "marketing-psychology",
       "source": "marketing",
       "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing."
@@ -928,6 +938,11 @@
       "description": "When the user wants to create SEO-driven pages at scale using templates and data."
     },
     {
+      "name": "prospecting",
+      "source": "prospecting",
+      "description": "When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses."
+    },
+    {
       "name": "referrals",
       "source": "referrals",
       "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
@@ -970,7 +985,7 @@
     {
       "name": "scientific-astropy",
       "source": "scientific",
-      "description": "Comprehensive Python library for astronomy and astrophysics."
+      "description": "Core Python library for astronomy and astrophysics workflows that need Astropy APIs, including units/quantities, coordinates, FITS I/O, tables, tim..."
     },
     {
       "name": "scientific-autoskill",
@@ -980,7 +995,7 @@
     {
       "name": "scientific-benchling-integration",
       "source": "scientific",
-      "description": "Benchling R&D platform integration."
+      "description": "Benchling Python SDK and REST API integration for registry entities, inventory, ELN entries, workflows, Benchling Apps, and Data Warehouse queries."
     },
     {
       "name": "scientific-bgpt-paper-search",
@@ -1001,6 +1016,11 @@
       "name": "scientific-bioservices",
       "source": "scientific",
       "description": "Unified Python interface to 40+ bioinformatics services."
+    },
+    {
+      "name": "scientific-bulk-rnaseq",
+      "source": "scientific",
+      "description": "End-to-end bulk RNA-seq orchestrator — takes raw FASTQ reads through QC and trimming (FastQC, fastp/Trim Galore), alignment and quantification (STA..."
     },
     {
       "name": "scientific-cellxgene-census",
@@ -1090,7 +1110,7 @@
     {
       "name": "scientific-esm",
       "source": "scientific",
-      "description": "Comprehensive toolkit for protein language models including ESM3 (generative multimodal protein design across sequence, structure, and function) an..."
+      "description": "Comprehensive toolkit for EvolutionaryScale protein language models including ESM3 (generative multimodal design across sequence, structure, and fu..."
     },
     {
       "name": "scientific-etetoolkit",
@@ -1130,7 +1150,7 @@
     {
       "name": "scientific-geomaster",
       "source": "scientific",
-      "description": "Comprehensive geospatial science skill covering GIS, remote sensing, spatial analysis, and ML for Earth observation across 70+ topics with 500+ cod..."
+      "description": "Comprehensive geospatial science skill covering remote sensing, GIS, spatial analysis, machine learning for earth observation, and 30+ scientific d..."
     },
     {
       "name": "scientific-geopandas",
@@ -1170,7 +1190,7 @@
     {
       "name": "scientific-hugging-science",
       "source": "scientific",
-      "description": "Use when the user is doing AI/ML work in a scientific domain — biology, chemistry, physics, astronomy, climate, genomics, materials science, medici..."
+      "description": "Use when the user is doing AI/ML work in a scientific domain such as biology, chemistry, physics, astronomy, climate, genomics, materials, medicine..."
     },
     {
       "name": "scientific-hypogenic",
@@ -1218,6 +1238,11 @@
       "description": "Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter."
     },
     {
+      "name": "scientific-liteparse",
+      "source": "scientific",
+      "description": "Local document and PDF parsing with spatial text and bounding boxes."
+    },
+    {
       "name": "scientific-literature-review",
       "source": "scientific",
       "description": "Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.)."
@@ -1255,12 +1280,12 @@
     {
       "name": "scientific-medchem",
       "source": "scientific",
-      "description": "Medicinal chemistry filters."
+      "description": "Medicinal chemistry filters for compound triage."
     },
     {
       "name": "scientific-modal",
       "source": "scientific",
-      "description": "Cloud computing platform for running Python on GPUs and serverless infrastructure."
+      "description": "Modal is a serverless cloud platform for running Python on demand, including on-demand GPUs."
     },
     {
       "name": "scientific-molecular-dynamics",
@@ -1286,6 +1311,11 @@
       "name": "scientific-neuropixels-analysis",
       "source": "scientific",
       "description": "Neuropixels neural recording analysis."
+    },
+    {
+      "name": "scientific-nextflow",
+      "source": "scientific",
+      "description": "Build, run, and debug Nextflow data pipelines and nf-core workflows end to end."
     },
     {
       "name": "scientific-omero-integration",
@@ -1331,6 +1361,11 @@
       "name": "scientific-pathml",
       "source": "scientific",
       "description": "Full-featured computational pathology toolkit."
+    },
+    {
+      "name": "scientific-pathway-enrichment",
+      "source": "scientific",
+      "description": "Run pathway and gene-set enrichment analysis on gene lists or ranked gene data, then interpret the results."
     },
     {
       "name": "scientific-pdf",
@@ -1440,7 +1475,7 @@
     {
       "name": "scientific-pytorch-lightning",
       "source": "scientific",
-      "description": "Deep learning framework (PyTorch Lightning)."
+      "description": "Deep learning framework (PyTorch Lightning / lightning package)."
     },
     {
       "name": "scientific-pyzotero",
@@ -1575,7 +1610,7 @@
     {
       "name": "scientific-sympy",
       "source": "scientific",
-      "description": "Use this skill when working with symbolic mathematics in Python."
+      "description": "Use when you need exact symbolic math in Python — algebra, calculus, equation solving, symbolic linear algebra, or code generation via lambdify/LaTeX."
     },
     {
       "name": "scientific-tiledbvcf",
@@ -1590,7 +1625,7 @@
     {
       "name": "scientific-torch-geometric",
       "source": "scientific",
-      "description": "Guide for building Graph Neural Networks with PyTorch Geometric (PyG)."
+      "description": "PyTorch Geometric (PyG) for graph neural networks — node/link/graph classification, message passing (GCN, GAT, GraphSAGE, GIN), heterogeneous graph..."
     },
     {
       "name": "scientific-torchdrug",
@@ -1600,7 +1635,7 @@
     {
       "name": "scientific-transformers",
       "source": "scientific",
-      "description": "This skill should be used when working with pre-trained transformer models for natural language processing, computer vision, audio, or multimodal t..."
+      "description": "Hugging Face Transformers for loading Hub models, running pipeline inference, text generation, and Trainer fine-tuning on NLP, vision, audio, and m..."
     },
     {
       "name": "scientific-treatment-plans",
@@ -1630,17 +1665,17 @@
     {
       "name": "scientific-what-if-oracle",
       "source": "scientific",
-      "description": "Run structured What-If scenario analysis with multi-branch possibility exploration."
+      "description": "Run structured What-If scenario analysis with 4–6 branch possibility exploration (best, likely, worst, wild card, contrarian, second-order)."
     },
     {
       "name": "scientific-xlsx",
       "source": "scientific",
-      "description": "Use this skill any time a spreadsheet file is the primary input or output."
+      "description": "Create, edit, analyze, or convert Excel spreadsheets (.xlsx, .xlsm) where the workbook file is the primary deliverable."
     },
     {
       "name": "scientific-zarr-python",
       "source": "scientific",
-      "description": "Chunked N-D arrays for cloud storage."
+      "description": "Chunked N-D arrays for cloud storage (Zarr-Python 3)."
     },
     {
       "name": "sentry-agents-md",
@@ -2045,7 +2080,7 @@
     {
       "name": "tob-let-fate-decide",
       "source": "tob",
-      "description": "Draws 4 Tarot cards to inject entropy into planning when prompts are vague, ambiguous, or casually delegated."
+      "description": "Draws the 12 Houses of the Zodiac Tarot spread to inject entropy into planning when prompts are vague, ambiguous, or casually delegated."
     },
     {
       "name": "tob-libafl",
