@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-01T14:51:59.621Z",
-  "total": 457,
+  "generated": "2026-06-08T12:23:00.913Z",
+  "total": 461,
   "skills": [
     {
       "name": "ab-testing",
@@ -160,7 +160,7 @@
     {
       "name": "anthropic-claude-api",
       "source": "anthropic",
-      "description": "Build, debug, and optimize Claude API / Anthropic SDK apps."
+      "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration."
     },
     {
       "name": "anthropic-doc-coauthoring",
@@ -388,6 +388,11 @@
       "description": "Build sandboxed applications for secure code execution."
     },
     {
+      "name": "cloudflare-turnstile-spin",
+      "source": "cloudflare",
+      "description": "Set up Cloudflare Turnstile end-to-end in a project — scan the codebase, create the widget via the Cloudflare API, deploy the managed siteverify Wo..."
+    },
+    {
       "name": "cloudflare-web-perf",
       "source": "cloudflare",
       "description": "Analyzes web performance using Chrome DevTools MCP."
@@ -596,6 +601,11 @@
       "name": "google-react-components",
       "source": "google",
       "description": "Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation."
+    },
+    {
+      "name": "google-react-native",
+      "source": "google",
+      "description": "Convert Stitch HTML designs to React Native components with StyleSheet"
     },
     {
       "name": "google-remotion",
@@ -1025,7 +1035,7 @@
     {
       "name": "scientific-cellxgene-census",
       "source": "scientific",
-      "description": "Query the CELLxGENE Census (61M+ cells) programmatically."
+      "description": "Query the CZ CELLxGENE Census programmatically for versioned public single-cell and spatial transcriptomics data."
     },
     {
       "name": "scientific-cirq",
@@ -1095,7 +1105,7 @@
     {
       "name": "scientific-diffdock",
       "source": "scientific",
-      "description": "Diffusion-based molecular docking."
+      "description": "DiffDock and DiffDock-L molecular docking."
     },
     {
       "name": "scientific-dnanexus-integration",
@@ -1110,7 +1120,7 @@
     {
       "name": "scientific-esm",
       "source": "scientific",
-      "description": "Comprehensive toolkit for EvolutionaryScale protein language models including ESM3 (generative multimodal design across sequence, structure, and fu..."
+      "description": "Use when working directly with the `esm` Python SDK, ESM3 or ESMC model IDs, Forge/Biohub inference clients, or ESMFold2 folding workflows."
     },
     {
       "name": "scientific-etetoolkit",
@@ -1225,7 +1235,7 @@
     {
       "name": "scientific-lamindb",
       "source": "scientific",
-      "description": "This skill should be used when working with LaminDB, an open-source data framework for biology that makes data queryable, traceable, reproducible, ..."
+      "description": "Use when working with LaminDB, the open-source lineage-native lakehouse for biological datasets and models."
     },
     {
       "name": "scientific-latchbio-integration",
@@ -1310,7 +1320,7 @@
     {
       "name": "scientific-neuropixels-analysis",
       "source": "scientific",
-      "description": "Neuropixels neural recording analysis."
+      "description": "Analyze Neuropixels extracellular recordings end-to-end with SpikeInterface."
     },
     {
       "name": "scientific-nextflow",
@@ -1390,7 +1400,7 @@
     {
       "name": "scientific-polars",
       "source": "scientific",
-      "description": "Fast in-memory DataFrame library for datasets that fit in RAM."
+      "description": "High-performance DataFrame library for Python ETL, analytics, and pandas migration."
     },
     {
       "name": "scientific-polars-bio",
@@ -1425,7 +1435,7 @@
     {
       "name": "scientific-pydeseq2",
       "source": "scientific",
-      "description": "Differential gene expression analysis (Python DESeq2)."
+      "description": "Differential gene expression analysis for bulk RNA-seq with PyDESeq2, including formulaic designs, Wald tests, FDR correction, LFC shrinkage, and r..."
     },
     {
       "name": "scientific-pydicom",
@@ -1645,7 +1655,7 @@
     {
       "name": "scientific-umap-learn",
       "source": "scientific",
-      "description": "UMAP dimensionality reduction."
+      "description": "Use UMAP-learn for nonlinear dimensionality reduction, 2D/3D embeddings, clustering preprocessing, supervised or semi-supervised UMAP, DensMAP, Ali..."
     },
     {
       "name": "scientific-usfiscaldata",
@@ -1731,6 +1741,11 @@
       "name": "sentry-doc-coauthoring",
       "source": "sentry",
       "description": "Guide users through a structured workflow for co-authoring documentation."
+    },
+    {
+      "name": "sentry-document-api-endpoint",
+      "source": "sentry",
+      "description": "Document and type a Sentry API endpoint."
     },
     {
       "name": "sentry-find-bugs",
@@ -1850,7 +1865,7 @@
     {
       "name": "stripe-stripe-projects",
       "source": "stripe",
-      "description": "Use when the user needs to provision a third-party service available on https://projects.dev/providers; create or retrieve a provider/service API, ..."
+      "description": "Use when the user wants to provision infrastructure or third-party services using Stripe Projects."
     },
     {
       "name": "stripe-upgrade-stripe",
@@ -1938,7 +1953,7 @@
       "description": "cargo-fuzz is the de facto fuzzing tool for Rust projects using Cargo."
     },
     {
-      "name": "tob-claude-in-chrome-troubleshooting",
+      "name": "tob-chrome-mcp-troubleshooting",
       "source": "tob",
       "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues."
     },
@@ -2281,6 +2296,11 @@
       "name": "vercel-web-design-guidelines",
       "source": "vercel",
       "description": "Review UI code for Web Interface Guidelines compliance."
+    },
+    {
+      "name": "vercel-writing-guidelines",
+      "source": "vercel",
+      "description": "Review docs/prose for Writing Guidelines compliance."
     },
     {
       "name": "video",

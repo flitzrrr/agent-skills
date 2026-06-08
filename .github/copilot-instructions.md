@@ -1,6 +1,6 @@
 # Agent Skills Hub — VS Code / GitHub Copilot
 
-This repository contains 457 curated AI agent skills from 19 sources.
+This repository contains 461 curated AI agent skills from 19 sources.
 Each skill is a self-contained folder under `skills/` with a `SKILL.md` file.
 
 ## How to Use Skills
