@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-08T12:59:26.424Z",
-  "total": 461,
+  "generated": "2026-06-15T13:48:03.997Z",
+  "total": 471,
   "skills": [
     {
       "name": "ab-testing",
@@ -86,6 +86,11 @@
       "name": "addyosmani-interview-me",
       "source": "addyosmani",
       "description": "Extracts what the user actually wants instead of what they think they should want."
+    },
+    {
+      "name": "addyosmani-observability-and-instrumentation",
+      "source": "addyosmani",
+      "description": "Instruments code so production behavior is visible and diagnosable."
     },
     {
       "name": "addyosmani-performance-optimization",
@@ -175,7 +180,7 @@
     {
       "name": "anthropic-frontend-design",
       "source": "anthropic",
-      "description": "Create distinctive, production-grade frontend interfaces with high design quality."
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one."
     },
     {
       "name": "anthropic-internal-comms",
@@ -378,6 +383,16 @@
       "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing)."
     },
     {
+      "name": "cloudflare-cloudflare-one",
+      "source": "cloudflare",
+      "description": "Guides Cloudflare One Zero Trust and SASE work across Access, Gateway, WARP, Tunnel, Cloudflare WAN, DLP, CASB, device posture, and identity."
+    },
+    {
+      "name": "cloudflare-cloudflare-one-migrations",
+      "source": "cloudflare",
+      "description": "Plans migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One."
+    },
+    {
       "name": "cloudflare-durable-objects",
       "source": "cloudflare",
       "description": "Create and review Cloudflare Durable Objects."
@@ -533,14 +548,9 @@
       "description": "Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styling"
     },
     {
-      "name": "expo-expo-ui-jetpack-compose",
+      "name": "expo-expo-ui",
       "source": "expo",
-      "description": "`@expo/ui/jetpack-compose` package lets you use Jetpack Compose Views and modifiers in your app."
-    },
-    {
-      "name": "expo-expo-ui-swift-ui",
-      "source": "expo",
-      "description": "`@expo/ui/swift-ui` package lets you use SwiftUI Views and modifiers in your app."
+      "description": "Build native UI with the @expo/ui package: real SwiftUI on iOS and Jetpack Compose on Android rendered from React in an Expo or React Native app."
     },
     {
       "name": "expo-native-data-fetching",
@@ -888,6 +898,16 @@
       "description": "Generate a session handover document that captures progress, decisions, and context for seamless session continuity."
     },
     {
+      "name": "opencode-ops-orchestrator",
+      "source": "opencode",
+      "description": "Interactive orchestrator for structured planning, documentation, and gated implementation using docs/ and plans/."
+    },
+    {
+      "name": "opencode-ops-orchestrator-direct",
+      "source": "opencode",
+      "description": "Non-interactive orchestrator for structured planning and gated implementation."
+    },
+    {
       "name": "opencode-resume-plan",
       "source": "opencode",
       "description": "Bootstrap a new session to continue working on an existing plan."
@@ -953,6 +973,11 @@
       "description": "When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses."
     },
     {
+      "name": "public-relations",
+      "source": "public",
+      "description": "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests)."
+    },
+    {
       "name": "referrals",
       "source": "referrals",
       "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
@@ -986,6 +1011,11 @@
       "name": "scientific-anndata",
       "source": "scientific",
       "description": "Data structure for annotated matrices in single-cell analysis."
+    },
+    {
+      "name": "scientific-arbor",
+      "source": "scientific",
+      "description": "Autonomously improve a real artifact (code, training recipe, agent harness, data pipeline, prompt) against an objective and an evaluator, using Hyp..."
     },
     {
       "name": "scientific-arboreto",
@@ -1131,6 +1161,11 @@
       "name": "scientific-exa-search",
       "source": "scientific",
       "description": "Web toolkit powered by Exa, tuned for scientific and technical content."
+    },
+    {
+      "name": "scientific-experimental-design",
+      "source": "scientific",
+      "description": "Design experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so the re..."
     },
     {
       "name": "scientific-exploratory-data-analysis",
@@ -1310,7 +1345,7 @@
     {
       "name": "scientific-networkx",
       "source": "scientific",
-      "description": "Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs in Python."
+      "description": "Create, analyze, and visualize complex networks and graphs in Python with NetworkX."
     },
     {
       "name": "scientific-neurokit2",
@@ -1396,6 +1431,11 @@
       "name": "scientific-phylogenetics",
       "source": "scientific",
       "description": "Build and analyze phylogenetic trees using MAFFT (multiple alignment), IQ-TREE 2 (maximum likelihood), and FastTree (fast NJ/ML)."
+    },
+    {
+      "name": "scientific-pi-agent",
+      "source": "scientific",
+      "description": "Build with and use Pi, the minimal terminal coding harness."
     },
     {
       "name": "scientific-polars",
@@ -1613,6 +1653,11 @@
       "description": "Guided statistical analysis with test selection and reporting."
     },
     {
+      "name": "scientific-statistical-power",
+      "source": "scientific",
+      "description": "Sample-size and statistical power calculations for planning studies."
+    },
+    {
       "name": "scientific-statsmodels",
       "source": "scientific",
       "description": "Statistical models library for Python."
@@ -1775,7 +1820,7 @@
     {
       "name": "sentry-pr-writer",
       "source": "sentry",
-      "description": "Create and update pull requests following Sentry conventions."
+      "description": "Create, refresh, and rewrite PR titles and descriptions following Sentry conventions."
     },
     {
       "name": "sentry-presentation-creator",
@@ -1861,6 +1906,11 @@
       "name": "stripe-stripe-best-practices",
       "source": "stripe",
       "description": "Guides Stripe integration decisions — API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properti..."
+    },
+    {
+      "name": "stripe-stripe-directory",
+      "source": "stripe",
+      "description": "Use when the user wants to find businesses, software, service providers, or partners for a specific industry, workflow, pain point, capability, or ..."
     },
     {
       "name": "stripe-stripe-projects",
