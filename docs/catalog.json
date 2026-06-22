@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-15T14:57:49.806Z",
-  "total": 471,
+  "generated": "2026-06-22T13:28:32.378Z",
+  "total": 473,
   "skills": [
     {
       "name": "ab-testing",
@@ -533,6 +533,11 @@
       "description": "Build and distribute Expo development clients locally or via TestFlight"
     },
     {
+      "name": "expo-expo-examples",
+      "source": "expo",
+      "description": "Expo's official example projects — the expo/examples repo of ~70 `with-*` integrations (Stripe, Clerk, Supabase, OpenAI, maps, Reanimated, SQLite, ..."
+    },
+    {
       "name": "expo-expo-module",
       "source": "expo",
       "description": "Guide for creating and writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript)."
@@ -640,7 +645,7 @@
     {
       "name": "google-upload-to-stitch",
       "source": "google",
-      "description": "Upload local assets (images, mockups, extracted HTML) to a Stitch project."
+      "description": "Upload local assets (images, mockups, extracted HTML, design markdown) to a Stitch project."
     },
     {
       "name": "hashicorp-aws-ami-builder",
@@ -861,6 +866,11 @@
       "name": "MoizIbnYousaf-update-installed-skills",
       "source": "MoizIbnYousaf",
       "description": "Use when syncing or updating previously installed skills to their latest version."
+    },
+    {
+      "name": "offers",
+      "source": "offers",
+      "description": "When the user wants to design, construct, or improve an offer — the thing they actually sell — including value framing, bonus stacking, guarantee d..."
     },
     {
       "name": "onboarding",
@@ -1105,7 +1115,7 @@
     {
       "name": "scientific-database-lookup",
       "source": "scientific",
-      "description": "Search 78 public scientific, biomedical, materials science, and economic databases via REST APIs."
+      "description": "Deterministically query 78 public scientific, biomedical, materials science, regulatory, finance, and demographics databases through documented RES..."
     },
     {
       "name": "scientific-datamol",
@@ -2090,7 +2100,7 @@
     {
       "name": "tob-fp-check",
       "source": "tob",
-      "description": "Systematically verifies suspected security bugs to eliminate false positives."
+      "description": "Systematically verifies suspected security bugs to eliminate false positives, producing a TRUE POSITIVE or FALSE POSITIVE verdict with documented e..."
     },
     {
       "name": "tob-fuzzing-dictionary",
