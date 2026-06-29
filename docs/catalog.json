@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-22T14:28:48.387Z",
-  "total": 473,
+  "generated": "2026-06-29T12:24:34.126Z",
+  "total": 477,
   "skills": [
     {
       "name": "ab-testing",
@@ -333,6 +333,11 @@
       "description": "AWS Step Functions workflow orchestration with state machines."
     },
     {
+      "name": "callstack-create-react-native-library",
+      "source": "callstack",
+      "description": "Scaffolds React Native libraries with create-react-native-library for standalone libraries or local native modules and views."
+    },
+    {
       "name": "callstack-github",
       "source": "callstack",
       "description": "GitHub patterns using gh CLI for pull requests, stacked PRs, code review, branching strategies, and repository automation."
@@ -351,6 +356,16 @@
       "name": "callstack-react-native-brownfield-migration",
       "source": "callstack",
       "description": "Provides an incremental adoption strategy to migrate native iOS or Android apps to React Native or Expo using @callstack/react-native-brownfield fo..."
+    },
+    {
+      "name": "callstack-react-native-tv-best-practices",
+      "source": "callstack",
+      "description": "Reviews React Native TV apps for focus/D-pad navigation, 10-foot UI layout, TV playback/DRM integration, low-memory TV performance, and TV accessib..."
+    },
+    {
+      "name": "callstack-react-navigation",
+      "source": "callstack",
+      "description": "Provides React Navigation UI patterns for stacks, tabs, drawers etc."
     },
     {
       "name": "callstack-upgrading-react-native",
@@ -525,7 +540,7 @@
     {
       "name": "expo-expo-deployment",
       "source": "expo",
-      "description": "Deploying Expo apps to iOS App Store, Android Play Store, web hosting, and API routes"
+      "description": "Deploy Expo apps to production with EAS — build and submit to the iOS App Store, Google Play Store, and TestFlight, configure eas.json build and su..."
     },
     {
       "name": "expo-expo-dev-client",
@@ -546,6 +561,11 @@
       "name": "expo-expo-observe",
       "source": "expo",
       "description": "Use for anything related to EAS Observe — adding `expo-observe` to an Expo project (AppMetricsRoot/ObserveRoot HOC, markInteractive, the useObserve..."
+    },
+    {
+      "name": "expo-expo-skill-eval",
+      "source": "expo",
+      "description": "Evaluate Expo skills in this repo end-to-end - trigger accuracy, generated code quality, and runtime screenshots on iOS simulator and Android emula..."
     },
     {
       "name": "expo-expo-tailwind-setup",
