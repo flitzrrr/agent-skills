@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-29T12:58:50.260Z",
-  "total": 477,
+  "generated": "2026-07-06T11:56:55.275Z",
+  "total": 484,
   "skills": [
     {
       "name": "ab-testing",
@@ -515,7 +515,12 @@
     {
       "name": "expo-building-native-ui",
       "source": "expo",
-      "description": "Complete guide for building beautiful apps with Expo Router."
+      "description": "Build beautiful, native-feeling Expo screens."
+    },
+    {
+      "name": "expo-eas-simulator",
+      "source": "expo",
+      "description": "Run and control a user's app on a remote iOS/Android simulator hosted on EAS cloud."
     },
     {
       "name": "expo-eas-update-insights",
@@ -545,7 +550,7 @@
     {
       "name": "expo-expo-dev-client",
       "source": "expo",
-      "description": "Build and distribute Expo development clients locally or via TestFlight"
+      "description": "Build Expo app for development"
     },
     {
       "name": "expo-expo-examples",
@@ -561,6 +566,11 @@
       "name": "expo-expo-observe",
       "source": "expo",
       "description": "Use for anything related to EAS Observe — adding `expo-observe` to an Expo project (AppMetricsRoot/ObserveRoot HOC, markInteractive, the useObserve..."
+    },
+    {
+      "name": "expo-expo-router",
+      "source": "expo",
+      "description": "Navigation and routing for Expo Router."
     },
     {
       "name": "expo-expo-skill-eval",
@@ -591,6 +601,11 @@
       "name": "expo-use-dom",
       "source": "expo",
       "description": "Use Expo DOM components to run web code in a webview on native and as-is on web."
+    },
+    {
+      "name": "expo-web-to-native",
+      "source": "expo",
+      "description": "Migrate an existing web React app to a native iOS/Android app with Expo."
     },
     {
       "name": "free-tools",
@@ -635,12 +650,12 @@
     {
       "name": "google-react-components",
       "source": "google",
-      "description": "Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation."
+      "description": "Converts Stitch designs into modular Vite and React components, or syncs/updates existing React components to align with the latest Stitch designs,..."
     },
     {
       "name": "google-react-native",
       "source": "google",
-      "description": "Convert Stitch HTML designs to React Native components with StyleSheet"
+      "description": "Convert Stitch HTML designs to React Native components, or syncs/updates existing native components to align with the latest Stitch designs, using ..."
     },
     {
       "name": "google-remotion",
@@ -791,6 +806,11 @@
       "name": "marketing-ideas",
       "source": "marketing",
       "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product."
+    },
+    {
+      "name": "marketing-loops",
+      "source": "marketing",
+      "description": "When the user wants to set up a recurring, self-running marketing workflow — a repeatable loop an AI agent runs on a cadence (weekly, daily, on a t..."
     },
     {
       "name": "marketing-plan",
@@ -1135,7 +1155,7 @@
     {
       "name": "scientific-database-lookup",
       "source": "scientific",
-      "description": "Deterministically query 78 public scientific, biomedical, materials science, regulatory, finance, and demographics databases through documented RES..."
+      "description": "Query documented public database APIs with explicit endpoints, filters, pagination, and provenance."
     },
     {
       "name": "scientific-datamol",
@@ -1398,6 +1418,11 @@
       "description": "Microscopy data management platform."
     },
     {
+      "name": "scientific-onekgpd",
+      "source": "scientific",
+      "description": "Query the 1000 Genomes Project dataset (3,202 whole-genome-sequenced individuals, GRCh38) at the level of individual participants."
+    },
+    {
       "name": "scientific-open-notebook",
       "source": "scientific",
       "description": "Self-hosted, open-source alternative to Google NotebookLM for AI-powered research and document analysis."
@@ -1420,7 +1445,7 @@
     {
       "name": "scientific-paper-lookup",
       "source": "scientific",
-      "description": "Search 10 academic paper databases via REST APIs for research papers, preprints, and scholarly articles."
+      "description": "Search 10 academic literature APIs for papers, preprints, citations, and open-access full text, and return results with reproducible provenance."
     },
     {
       "name": "scientific-paperzilla",
@@ -1585,7 +1610,7 @@
     {
       "name": "scientific-research-lookup",
       "source": "scientific",
-      "description": "'Look up current research information using parallel-cli search (primary, fast web search), the Parallel Chat API (deep research), or Perplexity so..."
+      "description": "'Look up current research and scientific information across three backends: fast web search via parallel-cli (default), the Parallel Chat API for d..."
     },
     {
       "name": "scientific-rowan",
@@ -1680,7 +1705,7 @@
     {
       "name": "scientific-statistical-analysis",
       "source": "scientific",
-      "description": "Guided statistical analysis with test selection and reporting."
+      "description": "Guided statistical analysis for research data - test selection, assumption checking, effect sizes, power analysis, Bayesian alternatives, and APA-f..."
     },
     {
       "name": "scientific-statistical-power",
@@ -1696,6 +1721,11 @@
       "name": "scientific-sympy",
       "source": "scientific",
       "description": "Use when you need exact symbolic math in Python — algebra, calculus, equation solving, symbolic linear algebra, or code generation via lambdify/LaTeX."
+    },
+    {
+      "name": "scientific-tamarind",
+      "source": "scientific",
+      "description": "Access a collection of open-source molecular design and structural biology tools on the Tamarind Bio platform, via its REST API or MCP server — no ..."
     },
     {
       "name": "scientific-tiledbvcf",
@@ -2211,6 +2241,11 @@
       "name": "tob-property-based-testing",
       "source": "tob",
       "description": "Provides guidance for property-based testing across multiple languages and smart contracts."
+    },
+    {
+      "name": "tob-rust-review",
+      "source": "tob",
+      "description": "Performs comprehensive Rust security review for safe/unsafe boundary issues, memory safety in unsafe blocks, concurrency hazards, panic-induced DoS..."
     },
     {
       "name": "tob-ruzzy",
