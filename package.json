@@ -1,6 +1,6 @@
 {
   "name": "@flitzrrr/agent-skills",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "480 AI agent skills from 20 sources — multiplatform-ready for VS Code (GitHub Copilot), Claude Code, Codex, Cursor, Antigravity, OpenCode, Lovable, and more.",
   "scripts": {
     "test": "node bin/test-cli.js"
