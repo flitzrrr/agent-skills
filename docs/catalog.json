@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-06T12:38:18.214Z",
-  "total": 484,
+  "generated": "2026-07-13T10:51:33.661Z",
+  "total": 488,
   "skills": [
     {
       "name": "ab-testing",
@@ -65,7 +65,7 @@
     {
       "name": "addyosmani-frontend-ui-engineering",
       "source": "addyosmani",
-      "description": "Builds production-quality UIs."
+      "description": "Builds production-quality, accessible, responsive user-facing UIs."
     },
     {
       "name": "addyosmani-git-workflow-and-versioning",
@@ -95,7 +95,7 @@
     {
       "name": "addyosmani-performance-optimization",
       "source": "addyosmani",
-      "description": "Optimizes application performance."
+      "description": "Optimizes application performance across frontend, backend, queries, and databases."
     },
     {
       "name": "addyosmani-planning-and-task-breakdown",
@@ -333,6 +333,11 @@
       "description": "AWS Step Functions workflow orchestration with state machines."
     },
     {
+      "name": "callstack-assess-react-native-migration",
+      "source": "callstack",
+      "description": "Assesses whether and how an existing mobile product should migrate to React Native."
+    },
+    {
       "name": "callstack-create-react-native-library",
       "source": "callstack",
       "description": "Scaffolds React Native libraries with create-react-native-library for standalone libraries or local native modules and views."
@@ -355,7 +360,7 @@
     {
       "name": "callstack-react-native-brownfield-migration",
       "source": "callstack",
-      "description": "Provides an incremental adoption strategy to migrate native iOS or Android apps to React Native or Expo using @callstack/react-native-brownfield fo..."
+      "description": "Implements an accepted incremental brownfield migration from native iOS or Android to React Native or Expo using @callstack/react-native-brownfield."
     },
     {
       "name": "callstack-react-native-tv-best-practices",
@@ -508,69 +513,79 @@
       "description": "Execute a significant implementation unit (phase or major slice) using a gated subagent loop (blueprint -> gate -> execute -> digest) without creat..."
     },
     {
-      "name": "expo-add-app-clip",
+      "name": "expo-eas-app-stores",
       "source": "expo",
-      "description": "Add an iOS App Clip target to an Expo app."
+      "description": "EAS service (paid)."
     },
     {
-      "name": "expo-building-native-ui",
+      "name": "expo-eas-hosting",
       "source": "expo",
-      "description": "Build beautiful, native-feeling Expo screens."
+      "description": "EAS service (paid)."
+    },
+    {
+      "name": "expo-eas-observe",
+      "source": "expo",
+      "description": "EAS service (paid)."
     },
     {
       "name": "expo-eas-simulator",
       "source": "expo",
-      "description": "Run and control a user's app on a remote iOS/Android simulator hosted on EAS cloud."
+      "description": "EAS service (paid)."
     },
     {
       "name": "expo-eas-update-insights",
       "source": "expo",
-      "description": "Check the health of published EAS Updates: crash rates, install/launch counts, unique users, payload size, and the split between embedded and OTA u..."
+      "description": "EAS service (paid)."
     },
     {
-      "name": "expo-expo-api-routes",
+      "name": "expo-eas-workflows",
       "source": "expo",
-      "description": "Guidelines for creating API routes in Expo Router with EAS Hosting"
+      "description": "EAS service (paid)."
+    },
+    {
+      "name": "expo-expo-app-clip",
+      "source": "expo",
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-brownfield",
       "source": "expo",
-      "description": "Integrate Expo and React Native into an existing native iOS or Android app."
+      "description": "Framework (OSS)."
     },
     {
-      "name": "expo-expo-cicd-workflows",
+      "name": "expo-expo-data-fetching",
       "source": "expo",
-      "description": "Helps understand and write EAS workflow YAML files for Expo projects."
-    },
-    {
-      "name": "expo-expo-deployment",
-      "source": "expo",
-      "description": "Deploy Expo apps to production with EAS — build and submit to the iOS App Store, Google Play Store, and TestFlight, configure eas.json build and su..."
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-dev-client",
       "source": "expo",
-      "description": "Build Expo app for development"
+      "description": "Framework (OSS)."
+    },
+    {
+      "name": "expo-expo-dom",
+      "source": "expo",
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-examples",
       "source": "expo",
-      "description": "Expo's official example projects — the expo/examples repo of ~70 `with-*` integrations (Stripe, Clerk, Supabase, OpenAI, maps, Reanimated, SQLite, ..."
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-module",
       "source": "expo",
-      "description": "Guide for creating and writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript)."
+      "description": "Framework (OSS)."
     },
     {
-      "name": "expo-expo-observe",
+      "name": "expo-expo-native-ui",
       "source": "expo",
-      "description": "Use for anything related to EAS Observe — adding `expo-observe` to an Expo project (AppMetricsRoot/ObserveRoot HOC, markInteractive, the useObserve..."
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-router",
       "source": "expo",
-      "description": "Navigation and routing for Expo Router."
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-skill-eval",
@@ -580,32 +595,22 @@
     {
       "name": "expo-expo-tailwind-setup",
       "source": "expo",
-      "description": "Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styling"
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-ui",
       "source": "expo",
-      "description": "Build native UI with the @expo/ui package: real SwiftUI on iOS and Jetpack Compose on Android rendered from React in an Expo or React Native app."
+      "description": "Framework (OSS)."
     },
     {
-      "name": "expo-native-data-fetching",
+      "name": "expo-expo-upgrade",
       "source": "expo",
-      "description": "Use when implementing or debugging ANY network request, API call, or data fetching."
+      "description": "Framework (OSS)."
     },
     {
-      "name": "expo-upgrading-expo",
+      "name": "expo-expo-web-to-native",
       "source": "expo",
-      "description": "Guidelines for upgrading Expo SDK versions and fixing dependency issues"
-    },
-    {
-      "name": "expo-use-dom",
-      "source": "expo",
-      "description": "Use Expo DOM components to run web code in a webview on native and as-is on web."
-    },
-    {
-      "name": "expo-web-to-native",
-      "source": "expo",
-      "description": "Migrate an existing web React app to a native iOS/Android app with Expo."
+      "description": "Framework (OSS)."
     },
     {
       "name": "free-tools",
@@ -803,6 +808,11 @@
       "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation."
     },
     {
+      "name": "marketing-council",
+      "source": "marketing",
+      "description": "When the user wants multiple expert perspectives on a marketing question — a simulated board of advisors staffed by legendary marketers (Seth Godin..."
+    },
+    {
       "name": "marketing-ideas",
       "source": "marketing",
       "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product."
@@ -933,6 +943,11 @@
       "description": "Create a structured plan (plan.md, phases/, todo.md) for a feature or change."
     },
     {
+      "name": "opencode-delegate-analysis",
+      "source": "opencode",
+      "description": "Skill-driven exploration, targeted reading, web research, and deep-dive analysis for delegate agents."
+    },
+    {
       "name": "opencode-execute-work-package",
       "source": "opencode",
       "description": "Execute a significant implementation unit (phase or major slice) using a gated, stateful subagent loop (steps -> gate -> execute -> digest) without..."
@@ -961,6 +976,11 @@
       "name": "opencode-resume-plan",
       "source": "opencode",
       "description": "Bootstrap a new session to continue working on an existing plan."
+    },
+    {
+      "name": "opencode-review-fix",
+      "source": "opencode",
+      "description": "Apply accepted related findings from an implementation or implementation-plan review by resuming the same reviewer task_id."
     },
     {
       "name": "opencode-review-implementation",
