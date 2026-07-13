@@ -58,3 +58,6 @@
 [submodule "vendor/addyosmani-agent-skills"]
 	path = vendor/addyosmani-agent-skills
 	url = https://github.com/addyosmani/agent-skills.git
+[submodule "vendor/VoltAgent-awesome-agent-skills"]
+	path = vendor/VoltAgent-awesome-agent-skills
+	url = https://github.com/VoltAgent/awesome-agent-skills.git
