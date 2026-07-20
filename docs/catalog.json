@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-13T11:54:12.930Z",
-  "total": 488,
+  "generated": "2026-07-20T10:43:26.674Z",
+  "total": 493,
   "skills": [
     {
       "name": "ab-testing",
@@ -175,7 +175,7 @@
     {
       "name": "anthropic-docx",
       "source": "anthropic",
-      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files)."
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files)."
     },
     {
       "name": "anthropic-frontend-design",
@@ -200,7 +200,7 @@
     {
       "name": "anthropic-pptx",
       "source": "anthropic",
-      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both."
+      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both."
     },
     {
       "name": "anthropic-skill-creator",
@@ -425,7 +425,7 @@
     {
       "name": "cloudflare-turnstile-spin",
       "source": "cloudflare",
-      "description": "Set up Cloudflare Turnstile end-to-end in a project — scan the codebase, create the widget via the Cloudflare API, deploy the managed siteverify Wo..."
+      "description": "Set up Cloudflare Turnstile end-to-end in a project."
     },
     {
       "name": "cloudflare-web-perf",
@@ -573,12 +573,22 @@
       "description": "Framework (OSS)."
     },
     {
+      "name": "expo-expo-migrate-module",
+      "source": "expo",
+      "description": "Framework (OSS)."
+    },
+    {
       "name": "expo-expo-module",
       "source": "expo",
       "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-native-ui",
+      "source": "expo",
+      "description": "Framework (OSS)."
+    },
+    {
+      "name": "expo-expo-project-structure",
       "source": "expo",
       "description": "Framework (OSS)."
     },
@@ -591,6 +601,11 @@
       "name": "expo-expo-skill-eval",
       "source": "expo",
       "description": "Evaluate Expo skills in this repo end-to-end - trigger accuracy, generated code quality, and runtime screenshots on iOS simulator and Android emula..."
+    },
+    {
+      "name": "expo-expo-skill-feedback",
+      "source": "expo",
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-tailwind-setup",
@@ -661,6 +676,11 @@
       "name": "google-react-native",
       "source": "google",
       "description": "Convert Stitch HTML designs to React Native components, or syncs/updates existing native components to align with the latest Stitch designs, using ..."
+    },
+    {
+      "name": "google-react-vite-dashboard",
+      "source": "google",
+      "description": "Convert Stitch designs into production React + Vite dashboards with TanStack Query, accessible tokens from DESIGN.md, and Web3-ready patterns (ethe..."
     },
     {
       "name": "google-remotion",
@@ -741,6 +761,11 @@
       "name": "hashicorp-run-acceptance-tests",
       "source": "hashicorp",
       "description": "Guide for running acceptance tests for a Terraform provider."
+    },
+    {
+      "name": "hashicorp-terraform-policy",
+      "source": "hashicorp",
+      "description": "Write, test, or convert Terraform Policy files (.policy.hcl, .policytest.hcl, Sentinel→tfpolicy)."
     },
     {
       "name": "hashicorp-terraform-search-import",
@@ -1475,7 +1500,7 @@
     {
       "name": "scientific-parallel-web",
       "source": "scientific",
-      "description": "All-in-one web toolkit powered by parallel-cli, with a strong emphasis on academic and scientific sources."
+      "description": "Use Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring."
     },
     {
       "name": "scientific-pathml",
@@ -1630,7 +1655,7 @@
     {
       "name": "scientific-research-lookup",
       "source": "scientific",
-      "description": "'Look up current research and scientific information across three backends: fast web search via parallel-cli (default), the Parallel Chat API for d..."
+      "description": "Compile current scholarly evidence for a scientific manuscript or research brief."
     },
     {
       "name": "scientific-rowan",
@@ -1845,7 +1870,7 @@
     {
       "name": "sentry-commit",
       "source": "sentry",
-      "description": "ALWAYS use this skill when committing code changes — never commit directly without it."
+      "description": "Use for every request to commit changes or draft a commit message."
     },
     {
       "name": "sentry-create-branch",
@@ -1900,7 +1925,7 @@
     {
       "name": "sentry-pr-writer",
       "source": "sentry",
-      "description": "Create, refresh, and rewrite PR titles and descriptions following Sentry conventions."
+      "description": "Create or refresh reviewer-facing PR titles and descriptions."
     },
     {
       "name": "sentry-presentation-creator",
@@ -1985,7 +2010,7 @@
     {
       "name": "stripe-stripe-best-practices",
       "source": "stripe",
-      "description": "Guides Stripe integration decisions — API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properti..."
+      "description": "Guides Stripe integration decisions across API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller pro..."
     },
     {
       "name": "stripe-stripe-directory",
