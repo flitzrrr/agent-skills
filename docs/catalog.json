@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-20T10:43:26.674Z",
-  "total": 493,
+  "generated": "2026-09-28T16:18:35.575Z",
+  "total": 542,
   "skills": [
     {
       "name": "ab-testing",
@@ -36,6 +36,11 @@
       "name": "addyosmani-code-simplification",
       "source": "addyosmani",
       "description": "Simplifies code for clarity."
+    },
+    {
+      "name": "addyosmani-constraint-driven-development",
+      "source": "addyosmani",
+      "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it."
     },
     {
       "name": "addyosmani-context-engineering",
@@ -80,7 +85,7 @@
     {
       "name": "addyosmani-incremental-implementation",
       "source": "addyosmani",
-      "description": "Delivers changes incrementally."
+      "description": "Delivers changes incrementally in thin, verifiable slices."
     },
     {
       "name": "addyosmani-interview-me",
@@ -125,7 +130,7 @@
     {
       "name": "addyosmani-test-driven-development",
       "source": "addyosmani",
-      "description": "Drives development with tests."
+      "description": "Drives development with tests using the red-green-refactor loop."
     },
     {
       "name": "addyosmani-using-agent-skills",
@@ -148,6 +153,11 @@
       "description": "When the user wants to set up, improve, or audit analytics tracking and measurement."
     },
     {
+      "name": "anthropic-academy-guide",
+      "source": "anthropic",
+      "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tu..."
+    },
+    {
       "name": "anthropic-algorithmic-art",
       "source": "anthropic",
       "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration."
@@ -166,6 +176,11 @@
       "name": "anthropic-claude-api",
       "source": "anthropic",
       "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration."
+    },
+    {
+      "name": "anthropic-discernment-nudge",
+      "source": "anthropic",
+      "description": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches,..."
     },
     {
       "name": "anthropic-doc-coauthoring",
@@ -241,6 +256,11 @@
       "name": "aso",
       "source": "aso",
       "description": "When the user wants to audit or optimize an App Store or Google Play listing."
+    },
+    {
+      "name": "attribution",
+      "source": "attribution",
+      "description": "When the user wants to figure out which marketing actually drives conversions and revenue, choose or interpret an attribution model, or reconcile c..."
     },
     {
       "name": "aws-api-gateway",
@@ -343,11 +363,6 @@
       "description": "Scaffolds React Native libraries with create-react-native-library for standalone libraries or local native modules and views."
     },
     {
-      "name": "callstack-github",
-      "source": "callstack",
-      "description": "GitHub patterns using gh CLI for pull requests, stacked PRs, code review, branching strategies, and repository automation."
-    },
-    {
       "name": "callstack-github-actions",
       "source": "callstack",
       "description": "GitHub Actions workflow patterns for React Native iOS simulator and Android emulator cloud builds with downloadable artifacts."
@@ -383,6 +398,11 @@
       "description": "Validates skills in this repo against agentskills.io spec and Claude Code best practices."
     },
     {
+      "name": "callstack-writing-user-docs",
+      "source": "callstack",
+      "description": "House style for user-facing documentation — voice, scope, structure, and what to leave out."
+    },
+    {
       "name": "churn-prevention",
       "source": "churn",
       "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies."
@@ -390,57 +410,72 @@
     {
       "name": "cloudflare-agents-sdk",
       "source": "cloudflare",
-      "description": "Build AI agents on Cloudflare Workers using the Agents SDK."
+      "description": "Build, debug, or review Cloudflare Agents SDK applications using the agents package."
     },
     {
       "name": "cloudflare-cloudflare",
       "source": "cloudflare",
-      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flags..."
+      "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security."
     },
     {
       "name": "cloudflare-cloudflare-email-service",
       "source": "cloudflare",
-      "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing)."
+      "description": "Implement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration."
     },
     {
       "name": "cloudflare-cloudflare-one",
       "source": "cloudflare",
-      "description": "Guides Cloudflare One Zero Trust and SASE work across Access, Gateway, WARP, Tunnel, Cloudflare WAN, DLP, CASB, device posture, and identity."
+      "description": "Design, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments."
     },
     {
       "name": "cloudflare-cloudflare-one-migrations",
       "source": "cloudflare",
-      "description": "Plans migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One."
+      "description": "Assess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout."
     },
     {
       "name": "cloudflare-durable-objects",
       "source": "cloudflare",
-      "description": "Create and review Cloudflare Durable Objects."
+      "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination."
     },
     {
-      "name": "cloudflare-sandbox-sdk",
+      "name": "cloudflare-nextjs-on-cloudflare",
       "source": "cloudflare",
-      "description": "Build sandboxed applications for secure code execution."
+      "description": "Build, migrate, and deploy Next.js apps on Cloudflare Workers with vinext."
+    },
+    {
+      "name": "cloudflare-sandbox-migrate-to-next",
+      "source": "cloudflare",
+      "description": "Migrate Cloudflare Sandbox apps from stable @cloudflare/sandbox to @cloudflare/sandbox@next (SDK 1.0 preview)."
+    },
+    {
+      "name": "cloudflare-sandbox-next",
+      "source": "cloudflare",
+      "description": "Build or maintain Cloudflare Sandbox apps on @cloudflare/sandbox@next (SDK 1.0 preview)."
+    },
+    {
+      "name": "cloudflare-sandbox-stable",
+      "source": "cloudflare",
+      "description": "Build or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package."
     },
     {
       "name": "cloudflare-turnstile-spin",
       "source": "cloudflare",
-      "description": "Set up Cloudflare Turnstile end-to-end in a project."
+      "description": "Set up, repair, or migrate to Cloudflare Turnstile bot verification in an existing frontend and backend, including server-side Siteverify."
     },
     {
       "name": "cloudflare-web-perf",
       "source": "cloudflare",
-      "description": "Analyzes web performance using Chrome DevTools MCP."
+      "description": "Audit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores."
     },
     {
       "name": "cloudflare-workers-best-practices",
       "source": "cloudflare",
-      "description": "Reviews and authors Cloudflare Workers code against production best practices."
+      "description": "Cloudflare Workers best practices for production applications."
     },
     {
       "name": "cloudflare-wrangler",
       "source": "cloudflare",
-      "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflow..."
+      "description": "Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, Previews, deployment, and Cloudflare resource manage..."
     },
     {
       "name": "co-marketing",
@@ -508,6 +543,11 @@
       "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program."
     },
     {
+      "name": "events",
+      "source": "events",
+      "description": "When the user wants to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows, meetups, dinners, workshops,..."
+    },
+    {
       "name": "execute-work-package",
       "source": "execute",
       "description": "Execute a significant implementation unit (phase or major slice) using a gated subagent loop (blueprint -> gate -> execute -> digest) without creat..."
@@ -533,6 +573,11 @@
       "description": "EAS service (paid)."
     },
     {
+      "name": "expo-eas-update",
+      "source": "expo",
+      "description": "EAS service (paid)."
+    },
+    {
       "name": "expo-eas-update-insights",
       "source": "expo",
       "description": "EAS service (paid)."
@@ -541,6 +586,11 @@
       "name": "expo-eas-workflows",
       "source": "expo",
       "description": "EAS service (paid)."
+    },
+    {
+      "name": "expo-expo-animation",
+      "source": "expo",
+      "description": "Framework (OSS)."
     },
     {
       "name": "expo-expo-app-clip",
@@ -554,6 +604,11 @@
     },
     {
       "name": "expo-expo-data-fetching",
+      "source": "expo",
+      "description": "Framework (OSS)."
+    },
+    {
+      "name": "expo-expo-design-system",
       "source": "expo",
       "description": "Framework (OSS)."
     },
@@ -588,6 +643,11 @@
       "description": "Framework (OSS)."
     },
     {
+      "name": "expo-expo-overview",
+      "source": "expo",
+      "description": "Framework (OSS)."
+    },
+    {
       "name": "expo-expo-project-structure",
       "source": "expo",
       "description": "Framework (OSS)."
@@ -605,12 +665,7 @@
     {
       "name": "expo-expo-skill-feedback",
       "source": "expo",
-      "description": "Framework (OSS)."
-    },
-    {
-      "name": "expo-expo-tailwind-setup",
-      "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "'Submit feedback on an Expo skill—or Expo itself—and control bundled anonymous usage telemetry (off by default / opt-in)."
     },
     {
       "name": "expo-expo-ui",
@@ -628,6 +683,11 @@
       "description": "Framework (OSS)."
     },
     {
+      "name": "finance-verify",
+      "source": "finance",
+      "description": "Verify changes to the claude-for-msft-365-install admin scripts and commands by driving them against an isolated fake $HOME."
+    },
+    {
       "name": "free-tools",
       "source": "free",
       "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness."
@@ -635,7 +695,7 @@
     {
       "name": "google-code-to-design",
       "source": "google",
-      "description": "Convert frontend code (Vite, React, etc.) to a Stitch Design by chaining static HTML extraction, design system extraction, and file upload."
+      "description": "Convert frontend code (Vite, React, Angular, Vue, etc.) to a Stitch Design by chaining static HTML extraction, design system extraction, and file u..."
     },
     {
       "name": "google-design-md",
@@ -693,6 +753,11 @@
       "description": "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, an..."
     },
     {
+      "name": "google-site-md",
+      "source": "google",
+      "description": "Analyze a project description or site requirements and synthesize a project constitution into SITE.md for the Stitch Build Loop"
+    },
+    {
       "name": "google-stitch-loop",
       "source": "google",
       "description": "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern"
@@ -725,7 +790,7 @@
     {
       "name": "hashicorp-new-terraform-provider",
       "source": "hashicorp",
-      "description": "Use this when scaffolding a new Terraform provider."
+      "description": "Use this when scaffolding a new Terraform provider with the Plugin Framework: workspace layout, go module setup, provider server main.go, and a pro..."
     },
     {
       "name": "hashicorp-provider-actions",
@@ -733,14 +798,29 @@
       "description": "Implement Terraform Provider actions using the Plugin Framework."
     },
     {
+      "name": "hashicorp-provider-configuration",
+      "source": "hashicorp",
+      "description": "Implement Terraform provider configuration and authentication with the Plugin Framework: provider schema for credentials (Optional + Sensitive attr..."
+    },
+    {
       "name": "hashicorp-provider-docs",
       "source": "hashicorp",
       "description": "Create, update, and review Terraform provider documentation for Terraform Registry using HashiCorp-recommended patterns, tfplugindocs templates, an..."
     },
     {
+      "name": "hashicorp-provider-ephemeral-resources",
+      "source": "hashicorp",
+      "description": "Implement Terraform provider ephemeral resources with the Plugin Framework: the Open/Renew/Close lifecycle, ephemeral schema design, registration v..."
+    },
+    {
+      "name": "hashicorp-provider-framework-migration",
+      "source": "hashicorp",
+      "description": "Migrate Terraform provider resources and data sources from Plugin SDKv2 to the Plugin Framework: muxing both plugins in one provider (terraform-plu..."
+    },
+    {
       "name": "hashicorp-provider-resources",
       "source": "hashicorp",
-      "description": "Implement Terraform Provider resources and data sources using the Plugin Framework."
+      "description": "Implement Terraform Provider resources and data sources using the Plugin Framework: CRUD operations, schema design, plan modifiers and validators, ..."
     },
     {
       "name": "hashicorp-provider-test-patterns",
@@ -796,6 +876,11 @@
       "name": "image",
       "source": "image",
       "description": "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, l..."
+    },
+    {
+      "name": "influencer-marketing",
+      "source": "influencer",
+      "description": "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring dea..."
     },
     {
       "name": "JackyST0-api-doc-generator",
@@ -943,6 +1028,11 @@
       "description": "Use when syncing or updating previously installed skills to their latest version."
     },
     {
+      "name": "MoizIbnYousaf-verification-agent",
+      "source": "MoizIbnYousaf",
+      "description": "Verify claims, quotations, citations and references against live primary sources, and produce a reproducible audit record instead of an assertion."
+    },
+    {
       "name": "offers",
       "source": "offers",
       "description": "When the user wants to design, construct, or improve an offer — the thing they actually sell — including value framing, bonus stacking, guarantee d..."
@@ -963,9 +1053,14 @@
       "description": "Author and verify per-phase implementation plans by cross-checking the gated phase intent against the current source code and existing docs invento..."
     },
     {
+      "name": "opencode-browser-walkthrough",
+      "source": "opencode",
+      "description": "Run Playwright-MCP browser acceptance, agent-observed walkthroughs, or user-attended walkthroughs through the role routing appropriate to each mode..."
+    },
+    {
       "name": "opencode-create-plan",
       "source": "opencode",
-      "description": "Create a structured plan (plan.md, phases/, todo.md) for a feature or change."
+      "description": "Create a persistent structured plan (plan.md, phases/, todo.md) when work needs multi-phase or multi-session coordination, durable tracking, or an ..."
     },
     {
       "name": "opencode-delegate-analysis",
@@ -975,7 +1070,7 @@
     {
       "name": "opencode-execute-work-package",
       "source": "opencode",
-      "description": "Execute a significant implementation unit (phase or major slice) using a gated, stateful subagent loop (steps -> gate -> execute -> digest) without..."
+      "description": "Execute a bounded implementation unit from authoritative plan references or an inline gated brief using a stateful subagent loop (steps -> gate -> ..."
     },
     {
       "name": "opencode-generate-docs",
@@ -990,12 +1085,12 @@
     {
       "name": "opencode-ops-orchestrator",
       "source": "opencode",
-      "description": "Interactive orchestrator for structured planning, documentation, and gated implementation using docs/ and plans/."
+      "description": "Orchestrator for structured planning, documentation, and gated implementation using docs/ and plans/."
     },
     {
-      "name": "opencode-ops-orchestrator-direct",
+      "name": "opencode-report-environment-issue",
       "source": "opencode",
-      "description": "Non-interactive orchestrator for structured planning and gated implementation."
+      "description": "Record environment, harness, or tooling issues that block or degrade agent work into an append-only, deduplicated log so the environment can be imp..."
     },
     {
       "name": "opencode-resume-plan",
@@ -1005,7 +1100,7 @@
     {
       "name": "opencode-review-fix",
       "source": "opencode",
-      "description": "Apply accepted related findings from an implementation or implementation-plan review by resuming the same reviewer task_id."
+      "description": "Apply explicitly accepted, evidence-backed defect fixes in the eligible existing session that produced the review or diagnosis, preserving secured ..."
     },
     {
       "name": "opencode-review-implementation",
@@ -1015,7 +1110,7 @@
     {
       "name": "opencode-review-implementation-plan",
       "source": "opencode",
-      "description": "Independent review of a phase implementation plan against its scope, codebase reality, and actionability."
+      "description": "Independent single-phase or batch review of implementation plans against scope, codebase reality, actionability, and cross-phase consistency."
     },
     {
       "name": "opencode-review-plan",
@@ -1103,6 +1198,16 @@
       "description": "This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, ..."
     },
     {
+      "name": "scientific-alphagenome",
+      "source": "scientific",
+      "description": "Look up precomputed AlphaGenome Atlas effects for any GRCh38 single-nucleotide variant (AVI score with Phred and 18 SHAP feature attributions, plus..."
+    },
+    {
+      "name": "scientific-analytical-method-validation",
+      "source": "scientific",
+      "description": "Plan, execute, and document validation, verification, and transfer of analytical procedures under the governing framework - ICH Q2(R2) and Q14, USP..."
+    },
+    {
       "name": "scientific-anndata",
       "source": "scientific",
       "description": "Data structure for annotated matrices in single-cell analysis."
@@ -1175,12 +1280,12 @@
     {
       "name": "scientific-clinical-decision-support",
       "source": "scientific",
-      "description": "Generate professional clinical decision support (CDS) documents for pharmaceutical and clinical research settings, including patient cohort analyse..."
+      "description": "Prepare and validate research-only clinical decision-support evaluation, evidence-profile, cohort, survival, biomarker/model, privacy, and governan..."
     },
     {
       "name": "scientific-clinical-reports",
       "source": "scientific",
-      "description": "Write comprehensive clinical reports including case reports (CARE guidelines), diagnostic reports (radiology/pathology/lab), clinical trial reports..."
+      "description": "Create safety-bounded draft structures and run local deterministic checks for clinical case, diagnostic, trial, safety, and aggregate research repo..."
     },
     {
       "name": "scientific-cobrapy",
@@ -1203,6 +1308,11 @@
       "description": "Query documented public database APIs with explicit endpoints, filters, pagination, and provenance."
     },
     {
+      "name": "scientific-datalad",
+      "source": "scientific",
+      "description": "Retrieve, version, and publish scientific datasets with DataLad and git-annex, and capture computational provenance with datalad run, rerun, and co..."
+    },
+    {
       "name": "scientific-datamol",
       "source": "scientific",
       "description": "Pythonic wrapper around RDKit with simplified interface and sensible defaults."
@@ -1211,6 +1321,11 @@
       "name": "scientific-deepchem",
       "source": "scientific",
       "description": "Molecular ML with diverse featurizers and pre-built datasets."
+    },
+    {
+      "name": "scientific-deepspot-m",
+      "source": "scientific",
+      "description": "Generate transcriptome-wide virtual spatial transcriptomics from H&E histology with DeepSpot-M."
     },
     {
       "name": "scientific-deeptools",
@@ -1235,12 +1350,12 @@
     {
       "name": "scientific-dnanexus-integration",
       "source": "scientific",
-      "description": "DNAnexus cloud genomics platform."
+      "description": "Build and operate reproducible genomics workloads on DNAnexus with the dx CLI, dxpy, apps/applets, native workflows, dxCompiler, and Nextflow."
     },
     {
       "name": "scientific-docx",
       "source": "scientific",
-      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files)."
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files)."
     },
     {
       "name": "scientific-esm",
@@ -1250,7 +1365,7 @@
     {
       "name": "scientific-etetoolkit",
       "source": "scientific",
-      "description": "Phylogenetic tree toolkit (ETE)."
+      "description": "Analyze, manipulate, compare, annotate, and visualize phylogenetic or other hierarchical trees with ETE 4."
     },
     {
       "name": "scientific-exa-search",
@@ -1260,32 +1375,47 @@
     {
       "name": "scientific-experimental-design",
       "source": "scientific",
-      "description": "Design experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so the re..."
+      "description": "Design experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so result..."
     },
     {
       "name": "scientific-exploratory-data-analysis",
       "source": "scientific",
-      "description": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats."
+      "description": "Perform bounded, local exploratory analysis of explicitly supported scientific files."
     },
     {
       "name": "scientific-flowio",
       "source": "scientific",
-      "description": "Parse FCS (Flow Cytometry Standard) files v2.0-3.1."
+      "description": "Read, inspect, and write Flow Cytometry Standard (FCS) 2.0, 3.0, and 3.1 files with FlowIO."
     },
     {
       "name": "scientific-fluidsim",
       "source": "scientific",
-      "description": "Framework for computational fluid dynamics simulations using Python."
+      "description": "Plan, configure, inspect, restart, and analyze bounded FluidSim computational-fluid-dynamics simulations with explicit numerical-validity and HPC s..."
+    },
+    {
+      "name": "scientific-folklore-variant-evidence",
+      "source": "scientific",
+      "description": "Retrieve ClinGen gene-disease validity assertions for a public gene or disease, and review source-linked public evidence and literature for one sup..."
     },
     {
       "name": "scientific-generate-image",
       "source": "scientific",
-      "description": "Generate or edit images using AI models (FLUX, Nano Banana 2)."
+      "description": "Generate or edit images with AI models through the OpenRouter Image API (Gemini, Seedream, Recraft, GPT-Image, Riverflow)."
     },
     {
       "name": "scientific-geniml",
       "source": "scientific",
-      "description": "This skill should be used when working with genomic interval data (BED files) for machine learning tasks."
+      "description": "Use Geniml for audited local genomic-interval workflows: validate BED and universe contracts, plan Region2Vec or scEmbed runs, inspect model/tokeni..."
+    },
+    {
+      "name": "scientific-genomic-coordinates",
+      "source": "scientific",
+      "description": "Convert genomic intervals between coordinate conventions, normalise and compare variant representations, and detect assembly or contig-naming misma..."
+    },
+    {
+      "name": "scientific-genomic-intelligence",
+      "source": "scientific",
+      "description": "Predict regulatory features, gene structure, and expression directly from DNA sequence using Genomic Intelligence's hosted transformer DNA language..."
     },
     {
       "name": "scientific-geomaster",
@@ -1295,12 +1425,12 @@
     {
       "name": "scientific-geopandas",
       "source": "scientific",
-      "description": "Python library for working with geospatial vector data including shapefiles, GeoJSON, and GeoPackage files."
+      "description": "Guidance and local audit tools for Python workflows that directly use GeoPandas GeoSeries, GeoDataFrame, spatial operations, or vector-data I/O."
     },
     {
       "name": "scientific-get-available-resources",
       "source": "scientific",
-      "description": "This skill should be used at the start of any computationally intensive scientific task to detect and report available system resources (CPU cores,..."
+      "description": "Detect host inventory and effective CPU, memory, disk, scheduler, container, and accelerator limits when a user asks for resource-aware planning or..."
     },
     {
       "name": "scientific-gget",
@@ -1320,7 +1450,7 @@
     {
       "name": "scientific-gtars",
       "source": "scientific",
-      "description": "High-performance toolkit for genomic interval analysis in Rust with Python bindings."
+      "description": "Use Gtars for local genomic interval models and set algebra, overlaps and counts, consensus and coverage, tokenization, fragment processing, and re..."
     },
     {
       "name": "scientific-histolab",
@@ -1335,17 +1465,17 @@
     {
       "name": "scientific-hypogenic",
       "source": "scientific",
-      "description": "Automated LLM-driven hypothesis generation and testing on tabular datasets."
+      "description": "Plans and audits use of ChicagoHAI HypoGeniC/HypoRefine for LLM-assisted hypothesis generation from labeled text datasets."
     },
     {
       "name": "scientific-hypothesis-generation",
       "source": "scientific",
-      "description": "Structured hypothesis formulation from observations."
+      "description": "Formulate evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predictio..."
     },
     {
       "name": "scientific-imaging-data-commons",
       "source": "scientific",
-      "description": "Query and download public cancer imaging data from NCI Imaging Data Commons using idc-index."
+      "description": "Query and download public cancer imaging data from NCI Imaging Data Commons."
     },
     {
       "name": "scientific-infographics",
@@ -1353,14 +1483,19 @@
       "description": "Create professional infographics using Nano Banana Pro AI with smart iterative refinement."
     },
     {
-      "name": "scientific-iso-13485-certification",
+      "name": "scientific-iso-standards-readiness",
       "source": "scientific",
-      "description": "Comprehensive toolkit for preparing ISO 13485 certification documentation for medical device Quality Management Systems."
+      "description": "Prepares and structurally reviews readiness evidence for ISO management-system and laboratory-competence standards - ISO 13485 medical device QMS, ..."
+    },
+    {
+      "name": "scientific-lab-hardware-cad",
+      "source": "scientific",
+      "description": "Design custom laboratory hardware as parametric build123d models and export fabrication-ready STEP, STL, and DXF files - microfluidic chips and mol..."
     },
     {
       "name": "scientific-labarchive-integration",
       "source": "scientific",
-      "description": "Electronic lab notebook API integration."
+      "description": "Securely integrate with the official LabArchives ELN REST-like API and Inventory API v1."
     },
     {
       "name": "scientific-lamindb",
@@ -1370,7 +1505,7 @@
     {
       "name": "scientific-latchbio-integration",
       "source": "scientific",
-      "description": "Latch platform for bioinformatics workflows."
+      "description": "Build, register, debug, and operate bioinformatics workflows on Latch using the Python SDK, CLI, Latch Data and Registry, Nextflow, Snakemake, prog..."
     },
     {
       "name": "scientific-latex-posters",
@@ -1380,7 +1515,7 @@
     {
       "name": "scientific-liteparse",
       "source": "scientific",
-      "description": "Local document and PDF parsing with spatial text and bounding boxes."
+      "description": "Local document and PDF parsing that returns spatial text with bounding boxes."
     },
     {
       "name": "scientific-literature-review",
@@ -1395,22 +1530,22 @@
     {
       "name": "scientific-market-research-reports",
       "source": "scientific",
-      "description": "Generate comprehensive market research reports (50+ pages) in the style of top consulting firms (McKinsey, BCG, Gartner)."
+      "description": "Build evidence-traceable market research reports and assumption-driven market sizing or forecast scenarios."
     },
     {
       "name": "scientific-markitdown",
       "source": "scientific",
-      "description": "Convert files and office documents to Markdown."
+      "description": "Convert heterogeneous documents and selected URIs to Markdown with Microsoft MarkItDown for text analysis, search, and LLM/RAG ingestion."
     },
     {
       "name": "scientific-matchms",
       "source": "scientific",
-      "description": "Spectral similarity and compound identification for metabolomics."
+      "description": "Process, clean, compare, and search tandem mass spectra with matchms."
     },
     {
       "name": "scientific-matlab",
       "source": "scientific",
-      "description": "MATLAB and GNU Octave numerical computing for matrix operations, data analysis, visualization, and scientific computing."
+      "description": "Build, review, migrate, and safely plan MATLAB or GNU Octave numerical workflows, including arrays, tabular/time data, tests, projects, graphics, M..."
     },
     {
       "name": "scientific-matplotlib",
@@ -1438,6 +1573,11 @@
       "description": "Molecular featurization for ML (100+ featurizers)."
     },
     {
+      "name": "scientific-ncats-arax",
+      "source": "scientific",
+      "description": "Queries the NCATS Translator ARAX production API for bounded, typed, provenance-rich one-hop and endpoint-pinned two-hop biomedical knowledge-graph..."
+    },
+    {
       "name": "scientific-networkx",
       "source": "scientific",
       "description": "Create, analyze, and visualize complex networks and graphs in Python with NetworkX."
@@ -1445,7 +1585,7 @@
     {
       "name": "scientific-neurokit2",
       "source": "scientific",
-      "description": "Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and EOG signals."
+      "description": "Use NeuroKit2 to build or audit reproducible research workflows for physiological time-series preprocessing, event/interval analysis, multimodal al..."
     },
     {
       "name": "scientific-neuropixels-analysis",
@@ -1460,7 +1600,7 @@
     {
       "name": "scientific-omero-integration",
       "source": "scientific",
-      "description": "Microscopy data management platform."
+      "description": "Securely inspect and automate microscopy data workflows against OMERO.server with omero-py, BlitzGateway, OMERO CLI, tables, annotations, ROIs, ren..."
     },
     {
       "name": "scientific-onekgpd",
@@ -1468,19 +1608,29 @@
       "description": "Query the 1000 Genomes Project dataset (3,202 whole-genome-sequenced individuals, GRCh38) at the level of individual participants."
     },
     {
+      "name": "scientific-ontology-term-resolution",
+      "source": "scientific",
+      "description": "Resolve free-text scientific labels to ontology term IDs and validate existing CURIEs against the EBI Ontology Lookup Service (OLS4)."
+    },
+    {
       "name": "scientific-open-notebook",
       "source": "scientific",
       "description": "Self-hosted, open-source alternative to Google NotebookLM for AI-powered research and document analysis."
     },
     {
+      "name": "scientific-openpiv",
+      "source": "scientific",
+      "description": "Particle Image Velocimetry (PIV) analysis with OpenPIV."
+    },
+    {
       "name": "scientific-opentrons-integration",
       "source": "scientific",
-      "description": "Official Opentrons Protocol API for OT-2 and Flex robots."
+      "description": "Author, review, migrate, simulate, and troubleshoot official Opentrons Python Protocol API v2 protocols for Flex and OT-2 robots."
     },
     {
       "name": "scientific-optimize-for-gpu",
       "source": "scientific",
-      "description": "GPU-accelerate Python code using CuPy, Numba CUDA, Warp, cuDF, cuML, cuGraph, KvikIO, cuCIM, cuxfilter, cuVS, cuSpatial, and RAFT."
+      "description": "GPU-accelerates scientific Python on NVIDIA hardware and verifies that the result is correct and faster."
     },
     {
       "name": "scientific-pacsomatic",
@@ -1490,7 +1640,12 @@
     {
       "name": "scientific-paper-lookup",
       "source": "scientific",
-      "description": "Search 10 academic literature APIs for papers, preprints, citations, and open-access full text, and return results with reproducible provenance."
+      "description": "Search 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and return results wit..."
+    },
+    {
+      "name": "scientific-paperclip",
+      "source": "scientific",
+      "description": "Search and read full-text biomedical papers, FDA/PMDA/EMA regulatory documents, clinical trial registries, and UniProt/PDB/ChEMBL entries with the ..."
     },
     {
       "name": "scientific-paperzilla",
@@ -1505,7 +1660,12 @@
     {
       "name": "scientific-pathml",
       "source": "scientific",
-      "description": "Full-featured computational pathology toolkit."
+      "description": "Use PathML for local, research-only computational pathology workflows: load and tile slides, build preprocessing and QC pipelines, manage h5path da..."
+    },
+    {
+      "name": "scientific-pathogen-variant-surveillance",
+      "source": "scientific",
+      "description": "Query live pathogen genomic surveillance data through the GenSpectrum LAPIS API to find which viral lineages are circulating now, how fast they are..."
     },
     {
       "name": "scientific-pathway-enrichment",
@@ -1520,7 +1680,7 @@
     {
       "name": "scientific-peer-review",
       "source": "scientific",
-      "description": "Structured manuscript/grant review with checklist-based evaluation."
+      "description": "Prepare evidence-bounded, constructive peer-review drafts and structured manuscript assessments."
     },
     {
       "name": "scientific-pennylane",
@@ -1538,6 +1698,11 @@
       "description": "Build with and use Pi, the minimal terminal coding harness."
     },
     {
+      "name": "scientific-pkpd-modeling",
+      "source": "scientific",
+      "description": "Pharmacokinetic and pharmacodynamic modelling and simulation - non-compartmental analysis, compartmental and population PK, PK/PD and exposure-resp..."
+    },
+    {
       "name": "scientific-polars",
       "source": "scientific",
       "description": "High-performance DataFrame library for Python ETL, analytics, and pandas migration."
@@ -1550,12 +1715,12 @@
     {
       "name": "scientific-pptx",
       "source": "scientific",
-      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both."
+      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both."
     },
     {
       "name": "scientific-pptx-posters",
       "source": "scientific",
-      "description": "Create research posters using HTML/CSS that can be exported to PDF or PPTX."
+      "description": "Create and audit editable scientific posters in macro-free PowerPoint (.pptx) from author-approved local content and assets."
     },
     {
       "name": "scientific-primekg",
@@ -1565,12 +1730,12 @@
     {
       "name": "scientific-protocolsio-integration",
       "source": "scientific",
-      "description": "Integration with protocols.io API for managing scientific protocols."
+      "description": "Read, validate, and safely export protocols.io data with current official REST/MCP contracts, or create non-executing mutation plans."
     },
     {
       "name": "scientific-pufferlib",
       "source": "scientific",
-      "description": "High-performance reinforcement learning framework optimized for speed and scale."
+      "description": "Version-aware guidance for PufferLib reinforcement-learning environments, vectorization, policies, PuffeRL training, evaluation, and safe checkpoin..."
     },
     {
       "name": "scientific-pydeseq2",
@@ -1580,7 +1745,7 @@
     {
       "name": "scientific-pydicom",
       "source": "scientific",
-      "description": "Python library for working with DICOM (Digital Imaging and Communications in Medicine) files."
+      "description": "Use pydicom to read, inspect, write, transform, and safely preflight local DICOM datasets and pixel data."
     },
     {
       "name": "scientific-pyhealth",
@@ -1590,12 +1755,12 @@
     {
       "name": "scientific-pylabrobot",
       "source": "scientific",
-      "description": "Vendor-agnostic lab automation framework."
+      "description": "Develop and review PyLabRobot lab-automation resources, liquid-handling plans, offline simulations, and supported-device integrations."
     },
     {
       "name": "scientific-pymatgen",
       "source": "scientific",
-      "description": "Materials science toolkit."
+      "description": "Analyze, validate, convert, and transform materials structures and computed materials data with current pymatgen APIs, including local phase diagra..."
     },
     {
       "name": "scientific-pymc",
@@ -1615,12 +1780,12 @@
     {
       "name": "scientific-pysam",
       "source": "scientific",
-      "description": "Genomic file toolkit."
+      "description": "Python/HTSlib workflows for genomic files."
     },
     {
       "name": "scientific-pytdc",
       "source": "scientific",
-      "description": "Therapeutics Data Commons."
+      "description": "Use Therapeutics Data Commons through the PyTDC Python package for registry discovery, approved dataset access, task-aware splits, evaluator metric..."
     },
     {
       "name": "scientific-pytorch-lightning",
@@ -1635,17 +1800,22 @@
     {
       "name": "scientific-qiskit",
       "source": "scientific",
-      "description": "IBM quantum computing framework."
+      "description": "Build, simulate, transpile, and execute quantum circuits with Qiskit and IBM Quantum Runtime."
     },
     {
       "name": "scientific-qutip",
       "source": "scientific",
-      "description": "Quantum physics simulation library for open quantum systems."
+      "description": "Simulate and audit closed and open quantum-system models with QuTiP 5, including deterministic, trajectory, steady-state, spectral, and phase-space..."
     },
     {
       "name": "scientific-rdkit",
       "source": "scientific",
       "description": "Cheminformatics toolkit for fine-grained molecular control."
+    },
+    {
+      "name": "scientific-relsa-severity-assessment",
+      "source": "scientific",
+      "description": "Multivariate severity assessment and humane endpoint prediction for laboratory animal studies using the RELSA (RELative Severity Assessment) score ..."
     },
     {
       "name": "scientific-research-grants",
@@ -1670,12 +1840,12 @@
     {
       "name": "scientific-scholar-evaluation",
       "source": "scientific",
-      "description": "Systematically evaluate scholarly work using the ScholarEval framework, providing structured assessment across research quality dimensions includin..."
+      "description": "Provide qualitative-first, evidence-traceable developmental review of scholarly works and audit low-stakes research-assessment rubrics with optiona..."
     },
     {
       "name": "scientific-scientific-brainstorming",
       "source": "scientific",
-      "description": "Creative research ideation and exploration."
+      "description": "Facilitates evidence-aware scientific ideation with independent generation, structured discussion, explicit assumptions, transparent evaluation, ad..."
     },
     {
       "name": "scientific-scientific-critical-thinking",
@@ -1695,12 +1865,12 @@
     {
       "name": "scientific-scientific-visualization",
       "source": "scientific",
-      "description": "Meta-skill for publication-ready figures."
+      "description": "Create and audit truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly."
     },
     {
       "name": "scientific-scientific-writing",
       "source": "scientific",
-      "description": "Core skill for the deep research and writing tool."
+      "description": "Draft, revise, and audit scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountabili..."
     },
     {
       "name": "scientific-scikit-bio",
@@ -1715,7 +1885,7 @@
     {
       "name": "scientific-scikit-survival",
       "source": "scientific",
-      "description": "Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-survival."
+      "description": "Build, evaluate, and audit right-censored or competing-risk survival workflows with scikit-survival, including leakage-safe preprocessing, model se..."
     },
     {
       "name": "scientific-scvelo",
@@ -1735,12 +1905,12 @@
     {
       "name": "scientific-shap",
       "source": "scientific",
-      "description": "Model interpretability and explainability using SHAP (SHapley Additive exPlanations)."
+      "description": "Explain and audit machine-learning predictions with SHAP."
     },
     {
       "name": "scientific-simpy",
       "source": "scientific",
-      "description": "Process-based discrete-event simulation framework in Python."
+      "description": "Build, inspect, test, and analyze bounded process-based discrete-event simulations with SimPy, including events, resources, interrupts, monitoring,..."
     },
     {
       "name": "scientific-stable-baselines3",
@@ -1790,7 +1960,7 @@
     {
       "name": "scientific-torchdrug",
       "source": "scientific",
-      "description": "PyTorch-native graph neural networks for molecules and proteins."
+      "description": "Build and troubleshoot TorchDrug 0.2.1 workflows for molecular graphs, property prediction, self-supervised pretraining, molecule generation, retro..."
     },
     {
       "name": "scientific-transformers",
@@ -1800,12 +1970,17 @@
     {
       "name": "scientific-treatment-plans",
       "source": "scientific",
-      "description": "Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties."
+      "description": "Format and structurally validate local treatment-plan documentation after clinical decisions have already been supplied and verified by authorized ..."
     },
     {
       "name": "scientific-umap-learn",
       "source": "scientific",
       "description": "Use UMAP-learn for nonlinear dimensionality reduction, 2D/3D embeddings, clustering preprocessing, supervised or semi-supervised UMAP, DensMAP, Ali..."
+    },
+    {
+      "name": "scientific-uncertainty-and-units",
+      "source": "scientific",
+      "description": "Track physical units and propagate measurement uncertainty in scientific calculations using pint and uncertainties."
     },
     {
       "name": "scientific-usfiscaldata",
@@ -1820,7 +1995,12 @@
     {
       "name": "scientific-venue-templates",
       "source": "scientific",
-      "description": "Access comprehensive LaTeX templates, formatting requirements, and submission guidelines for major scientific publication venues (Nature, Science, ..."
+      "description": "Prepare journal manuscripts, conference papers, research posters, and grant documents using venue-specific formatting guidance and bundled LaTeX sc..."
+    },
+    {
+      "name": "scientific-waypoint-bio",
+      "source": "scientific",
+      "description": "Use when working with Outpost Bio's open microbiome foundation models - the Waypoint checkpoints (Waypoint-6m, Waypoint-45m, Waypoint-170m), the At..."
     },
     {
       "name": "scientific-what-if-oracle",
@@ -1830,7 +2010,7 @@
     {
       "name": "scientific-xlsx",
       "source": "scientific",
-      "description": "Create, edit, analyze, or convert Excel spreadsheets (.xlsx, .xlsm) where the workbook file is the primary deliverable."
+      "description": "Create, edit, analyze, or convert Excel spreadsheets (.xlsx, .xlsm, .xltx) where the workbook file is the primary deliverable."
     },
     {
       "name": "scientific-zarr-python",
@@ -1938,11 +2118,6 @@
       "description": "Creates, optimizes, and iteratively refines agent prompts, system prompts, developer prompts, and reusable prompt templates."
     },
     {
-      "name": "sentry-replay-ux-research",
-      "source": "sentry",
-      "description": "Analyze Sentry session replays to surface UX patterns, pain points, and user journeys for a given product area."
-    },
-    {
       "name": "sentry-security-review",
       "source": "sentry",
       "description": "Security code review for vulnerabilities."
@@ -2008,14 +2183,44 @@
       "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other pl..."
     },
     {
+      "name": "stripe-connect-recommend",
+      "source": "stripe",
+      "description": "Use this skill when the user asks about Stripe Connect configuration, charge patterns, Dashboard access, or how to get started with Connect, is bui..."
+    },
+    {
+      "name": "stripe-connect-required-verification-information",
+      "source": "stripe",
+      "description": "Use this skill when the user asks what information a Stripe Connect connected account must provide for verification, onboarding, KYC, or account re..."
+    },
+    {
+      "name": "stripe-metronome",
+      "source": "stripe",
+      "description": "Guides Metronome usage-based billing integration decisions — event ingestion (single and batch, idempotency, billable metrics), contract design (ra..."
+    },
+    {
+      "name": "stripe-stripe-apps",
+      "source": "stripe",
+      "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g."
+    },
+    {
       "name": "stripe-stripe-best-practices",
       "source": "stripe",
-      "description": "Guides Stripe integration decisions across API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller pro..."
+      "description": "Guides Stripe integration decisions across development and test environment planning (separate sandboxes vs the shared test mode sandbox), API sele..."
     },
     {
       "name": "stripe-stripe-directory",
       "source": "stripe",
-      "description": "Use when the user wants to find businesses, software, service providers, or partners for a specific industry, workflow, pain point, capability, or ..."
+      "description": "Identifies external providers, merchants, nonprofits, platforms, APIs, and software services, and resolves the documented way to engage them — to p..."
+    },
+    {
+      "name": "stripe-stripe-docs",
+      "source": "stripe",
+      "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference."
+    },
+    {
+      "name": "stripe-stripe-pay",
+      "source": "stripe",
+      "description": "Helps users send funds to another Stripe business, transfer money to a Stripe Profile handle or network ID, or ask whether an agent can pay a Strip..."
     },
     {
       "name": "stripe-stripe-projects",
@@ -2025,7 +2230,7 @@
     {
       "name": "stripe-upgrade-stripe",
       "source": "stripe",
-      "description": "Guide for upgrading Stripe API versions and SDKs"
+      "description": "Guide for upgrading Stripe API versions, webhook endpoints, server-side SDKs, Stripe.js, and mobile SDKs"
     },
     {
       "name": "supabase-supabase",
@@ -2035,7 +2240,7 @@
     {
       "name": "supabase-supabase-postgres-best-practices",
       "source": "supabase",
-      "description": "Postgres performance optimization and best practices from Supabase."
+      "description": "Postgres best practices maintained by Supabase, for Postgres running anywhere."
     },
     {
       "name": "systematic-debugging",
@@ -2045,12 +2250,12 @@
     {
       "name": "tob-address-sanitizer",
       "source": "tob",
-      "description": "AddressSanitizer detects memory errors during fuzzing."
+      "description": "Builds and runs code under AddressSanitizer to catch buffer overflows, use-after-free, and other memory errors during fuzzing or tests."
     },
     {
       "name": "tob-aflpp",
       "source": "tob",
-      "description": "AFL++ is a fork of AFL with better fuzzing performance and advanced features."
+      "description": "Sets up and runs AFL++ for multi-core fuzzing of C/C++ projects built with afl-clang-fast or afl-gcc-fast."
     },
     {
       "name": "tob-agentic-actions-auditor",
@@ -2063,24 +2268,19 @@
       "description": "Scans Algorand smart contracts for 11 common vulnerabilities including rekeying attacks, unchecked transaction fees, missing field validations, and..."
     },
     {
-      "name": "tob-ask-questions-if-underspecified",
-      "source": "tob",
-      "description": "Clarify requirements before implementing."
-    },
-    {
       "name": "tob-atheris",
       "source": "tob",
-      "description": "Atheris is a coverage-guided Python fuzzer based on libFuzzer."
+      "description": "Sets up and runs Atheris, the coverage-guided Python fuzzer built on libFuzzer."
     },
     {
       "name": "tob-audit-augmentation",
       "source": "tob",
-      "description": "Augments Trailmark code graphs with external audit findings from SARIF static analysis results and weAudit annotation files."
+      "description": "Augments Trailmark code graphs with external audit findings from SARIF static analysis results, weAudit annotation files, and version-gated Trailma..."
     },
     {
       "name": "tob-audit-context-building",
       "source": "tob",
-      "description": "Enables ultra-granular, line-by-line code analysis to build deep architectural context before vulnerability or bug finding."
+      "description": "Understand a codebase before looking for bugs in it - what each function assumes, what it guarantees, and what it depends on elsewhere."
     },
     {
       "name": "tob-audit-prep-assistant",
@@ -2105,12 +2305,17 @@
     {
       "name": "tob-cargo-fuzz",
       "source": "tob",
-      "description": "cargo-fuzz is the de facto fuzzing tool for Rust projects using Cargo."
+      "description": "Sets up and runs cargo-fuzz, the standard fuzzing tool for Cargo-based Rust projects."
     },
     {
       "name": "tob-chrome-mcp-troubleshooting",
       "source": "tob",
       "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues."
+    },
+    {
+      "name": "tob-code-improver",
+      "source": "tob",
+      "description": "Runs an autonomous review-and-fix improvement loop over any code target — a skill, plugin, module, or directory — using a reviewer the user names: ..."
     },
     {
       "name": "tob-code-maturity-assessor",
@@ -2130,7 +2335,7 @@
     {
       "name": "tob-constant-time-testing",
       "source": "tob",
-      "description": "Constant-time testing detects timing side channels in cryptographic code."
+      "description": "Measures timing side channels in cryptographic implementations by running them, using dudect for statistical analysis and Timecop over Valgrind for..."
     },
     {
       "name": "tob-cosmos-vulnerability-scanner",
@@ -2140,22 +2345,12 @@
     {
       "name": "tob-coverage-analysis",
       "source": "tob",
-      "description": "Coverage analysis measures code exercised during fuzzing."
+      "description": "Measures and interprets what a fuzzing campaign actually reaches, using llvm-cov, lcov, or a fuzzer's own coverage output."
     },
     {
       "name": "tob-crypto-protocol-diagram",
       "source": "tob",
       "description": "Extracts protocol message flow from source code, RFCs, academic papers, pseudocode, informal prose, ProVerif (.pv), or Tamarin (.spthy) models and ..."
-    },
-    {
-      "name": "tob-debug-buttercup",
-      "source": "tob",
-      "description": "Debugs the Buttercup CRS (Cyber Reasoning System) running on Kubernetes."
-    },
-    {
-      "name": "tob-designing-workflow-skills",
-      "source": "tob",
-      "description": "Guides the design and structuring of workflow-based Claude Code skills with multi-step phases, decision trees, subagent delegation, and progressive..."
     },
     {
       "name": "tob-devcontainer-setup",
@@ -2170,7 +2365,7 @@
     {
       "name": "tob-differential-review",
       "source": "tob",
-      "description": "Performs security-focused differential review of code changes (PRs, commits, diffs)."
+      "description": "Performs security-focused differential review of code changes."
     },
     {
       "name": "tob-dimensional-analysis",
@@ -2180,7 +2375,7 @@
     {
       "name": "tob-dwarf-expert",
       "source": "tob",
-      "description": "Provides expertise for analyzing DWARF debug files and understanding the DWARF debug format/standard (v3-v5)."
+      "description": "Analyzes DWARF debug information in compiled binaries."
     },
     {
       "name": "tob-entry-point-analyzer",
@@ -2200,12 +2395,12 @@
     {
       "name": "tob-fuzzing-dictionary",
       "source": "tob",
-      "description": "Fuzzing dictionaries guide fuzzers with domain-specific tokens."
+      "description": "Builds and applies fuzzing dictionaries so a fuzzer can produce the keywords, magic bytes, and tokens a target expects."
     },
     {
       "name": "tob-fuzzing-obstacles",
       "source": "tob",
-      "description": "Techniques for patching code to overcome fuzzing obstacles."
+      "description": "Patches past the barriers that stop a fuzzer making progress — checksum and hash verification, magic-value validation, time-based seeds, and other ..."
     },
     {
       "name": "tob-genotoxic",
@@ -2218,9 +2413,14 @@
       "description": "Intercepts GitHub URL fetches and redirects to the authenticated `gh` CLI."
     },
     {
-      "name": "tob-git-cleanup",
+      "name": "tob-github-triage",
       "source": "tob",
-      "description": "Safely analyzes and cleans up local git branches and worktrees by categorizing them as merged, squash-merged, superseded, or active work."
+      "description": "Triages a repository's open GitHub issues and pull requests via the gh CLI."
+    },
+    {
+      "name": "tob-goal-prompt",
+      "source": "tob",
+      "description": "Drafts copy-paste-ready /goal commands for goal mode in Claude Code and Codex."
     },
     {
       "name": "tob-graph-evolution",
@@ -2235,12 +2435,7 @@
     {
       "name": "tob-harness-writing",
       "source": "tob",
-      "description": "Techniques for writing effective fuzzing harnesses across languages."
-    },
-    {
-      "name": "tob-insecure-defaults",
-      "source": "tob",
-      "description": "Detects fail-open insecure defaults (hardcoded secrets, weak auth, permissive security) that allow apps to run insecurely in production."
+      "description": "Designs and improves fuzzing harnesses for C/C++ and Rust."
     },
     {
       "name": "tob-interpreting-culture-index",
@@ -2255,17 +2450,22 @@
     {
       "name": "tob-libafl",
       "source": "tob",
-      "description": "LibAFL is a modular fuzzing library for building custom fuzzers."
+      "description": "Builds custom fuzzers with LibAFL, the modular Rust fuzzing library."
     },
     {
       "name": "tob-libfuzzer",
       "source": "tob",
-      "description": "Coverage-guided fuzzer built into LLVM for C/C++ projects."
+      "description": "Sets up and runs libFuzzer, the coverage-guided fuzzer built into LLVM, on C/C++ code that compiles with Clang."
     },
     {
       "name": "tob-mermaid-to-proverif",
       "source": "tob",
       "description": "Translates Mermaid sequenceDiagrams describing cryptographic protocols into ProVerif formal verification models (.pv files)."
+    },
+    {
+      "name": "tob-modern-cpp",
+      "source": "tob",
+      "description": "Guides C++ code toward modern idioms (C++20/23/26)."
     },
     {
       "name": "tob-modern-python",
@@ -2275,17 +2475,37 @@
     {
       "name": "tob-mutation-testing",
       "source": "tob",
-      "description": "Configures mewt or muton mutation testing campaigns — scopes targets, tunes timeouts, and optimizes long-running runs."
+      "description": "Configures mewt or muton campaigns, analyzes surviving mutants, and investigates bugs exposed by testing gaps."
+    },
+    {
+      "name": "tob-open-sourcing",
+      "source": "tob",
+      "description": "This skill should be used when the user asks to \"open source this project\", \"prepare this repository for public release\", \"make this repo public\", ..."
     },
     {
       "name": "tob-ossfuzz",
       "source": "tob",
-      "description": "OSS-Fuzz provides free continuous fuzzing for open source projects."
+      "description": "Enrolls a project in OSS-Fuzz, Google's free continuous fuzzing service for open source, and drives it locally."
+    },
+    {
+      "name": "tob-post-patch-validation",
+      "source": "tob",
+      "description": "Validates security patches with reproducible baseline-versus-patched evidence, including original exploits, root-cause variants, behavior preservat..."
+    },
+    {
+      "name": "tob-pr-improver",
+      "source": "tob",
+      "description": "Runs an autonomous review-and-fix improvement loop over the current branch's changes until a PR review comes back clean, scoped mechanically to the..."
     },
     {
       "name": "tob-property-based-testing",
       "source": "tob",
-      "description": "Provides guidance for property-based testing across multiple languages and smart contracts."
+      "description": "Writes, reviews, and debugs property-based tests — Hypothesis, fast-check, proptest, jqwik, rapid, and Echidna or Medusa for Solidity invariants."
+    },
+    {
+      "name": "tob-review-walkthrough",
+      "source": "tob",
+      "description": "Generates an interactive HTML walkthrough for reviewing code changes."
     },
     {
       "name": "tob-rust-review",
@@ -2295,7 +2515,7 @@
     {
       "name": "tob-ruzzy",
       "source": "tob",
-      "description": "Ruzzy is a coverage-guided Ruby fuzzer by Trail of Bits."
+      "description": "Sets up and runs Ruzzy, Trail of Bits' coverage-guided Ruby fuzzer and the only production-ready one for the language."
     },
     {
       "name": "tob-sarif-parsing",
@@ -2303,14 +2523,9 @@
       "description": "Parses and processes SARIF files from static analysis tools like CodeQL, Semgrep, or other scanners."
     },
     {
-      "name": "tob-seatbelt-sandboxer",
-      "source": "tob",
-      "description": "Generates minimal macOS Seatbelt sandbox configurations."
-    },
-    {
       "name": "tob-second-opinion",
       "source": "tob",
-      "description": "Runs external LLM code reviews (OpenAI Codex or Google Gemini CLI) on uncommitted changes, branch diffs, or specific commits."
+      "description": "Gets independent code reviews from Codex or Antigravity for uncommitted changes, branch diffs, and commits."
     },
     {
       "name": "tob-secure-workflow-guide",
@@ -2320,7 +2535,7 @@
     {
       "name": "tob-semgrep",
       "source": "tob",
-      "description": "Run Semgrep static analysis scan on a codebase using parallel subagents."
+      "description": "Runs a Semgrep security scan over a codebase: detects languages, selects rulesets, presents the plan for explicit approval, then runs every approve..."
     },
     {
       "name": "tob-semgrep-rule-creator",
@@ -2340,7 +2555,12 @@
     {
       "name": "tob-skill-improver",
       "source": "tob",
-      "description": "Iteratively reviews and fixes Claude Code skill quality issues until they meet standards."
+      "description": "Runs an autonomous review-and-fix improvement loop over a Claude Code skill until a review comes back clean, with a cross-round findings ledger, es..."
+    },
+    {
+      "name": "tob-slicing-code-context",
+      "source": "tob",
+      "description": "Selects bounded, graph-informed source slices with Trailmark and delegates focused code analysis or patch-proposal work to a smaller subagent."
     },
     {
       "name": "tob-solana-vulnerability-scanner",
@@ -2350,7 +2570,7 @@
     {
       "name": "tob-spec-to-code-compliance",
       "source": "tob",
-      "description": "Verifies code implements exactly what documentation specifies for blockchain audits."
+      "description": "Check code against the documentation that specifies it - which requirements hold, which the code contradicts, which are absent, and what the code d..."
     },
     {
       "name": "tob-substrate-vulnerability-scanner",
@@ -2360,12 +2580,12 @@
     {
       "name": "tob-supply-chain-risk-auditor",
       "source": "tob",
-      "description": "Identifies dependencies at heightened risk of exploitation or takeover."
+      "description": "Audits a project's dependencies for supply-chain risk: version-matched advisories for direct dependencies and the full lockfile tree, abandoned or ..."
     },
     {
       "name": "tob-testing-handbook-generator",
       "source": "tob",
-      "description": "Meta-skill that analyzes the Trail of Bits Testing Handbook (appsec.guide) and generates Claude Code skills for security testing tools and techniques."
+      "description": "Generates Claude Code skills from the Trail of Bits Testing Handbook (appsec.guide), analyzing handbook pages and emitting SKILL.md files with the ..."
     },
     {
       "name": "tob-token-integration-analyzer",
@@ -2380,12 +2600,22 @@
     {
       "name": "tob-trailmark",
       "source": "tob",
-      "description": "Builds and queries multi-language source code graphs for security analysis."
+      "description": "Builds and queries multi-language source and binary code graphs for security analysis."
+    },
+    {
+      "name": "tob-trailmark-finding-triage",
+      "source": "tob",
+      "description": "Performs graph-assisted triage of a single security finding, SARIF result, weAudit annotation, suspicious function, or report excerpt using Trailma..."
+    },
+    {
+      "name": "tob-trailmark-review-gate",
+      "source": "tob",
+      "description": "Runs a Trailmark structural review gate over a branch, pull request, fix commit, release diff, or git ref range to detect new entrypoints, new tain..."
     },
     {
       "name": "tob-trailmark-structural",
       "source": "tob",
-      "description": "Runs full Trailmark structural analysis on Trailmark 0.2.x by building a graph, running `preanalysis()`, and reporting hotspots, taint, blast radiu..."
+      "description": "Runs full Trailmark structural analysis by building a graph, running `preanalysis()`, and reporting hotspots, taint, blast radius, privilege bounda..."
     },
     {
       "name": "tob-trailmark-summary",
@@ -2393,9 +2623,14 @@
       "description": "Runs a Trailmark summary analysis on a codebase."
     },
     {
+      "name": "tob-trailmark-variant-neighborhood",
+      "source": "tob",
+      "description": "Expands one confirmed or suspected vulnerability into a Trailmark graph neighborhood of variant candidates by finding sibling functions, shared cal..."
+    },
+    {
       "name": "tob-variant-analysis",
       "source": "tob",
-      "description": "Find similar vulnerabilities and bugs across codebases using pattern-based analysis."
+      "description": "Hunts for the other instances of a bug already found — the variants of one root cause across a codebase."
     },
     {
       "name": "tob-vector-forge",
@@ -2403,9 +2638,19 @@
       "description": "Mutation-driven test vector generation."
     },
     {
+      "name": "tob-vulnerability-triage-brocards",
+      "source": "tob",
+      "description": "This skill should be used when the user asks to \"triage a vulnerability report\", \"assess a CVE\", \"evaluate a bug bounty submission\", \"decide if a f..."
+    },
+    {
+      "name": "tob-writing-lean-proofs",
+      "source": "tob",
+      "description": "Writes and reviews structured Lean 4 proofs and designs Lean libraries following Mathlib conventions."
+    },
+    {
       "name": "tob-wycheproof",
       "source": "tob",
-      "description": "Wycheproof provides test vectors for validating cryptographic implementations."
+      "description": "Validates cryptographic implementations against Project Wycheproof's test vectors, which encode known attacks and edge cases across AES, RSA, ECDSA..."
     },
     {
       "name": "tob-yara-rule-authoring",
