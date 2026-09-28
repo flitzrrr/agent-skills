@@ -1,1 +1,1 @@
-../vendor/hashicorp-skills/packer/builders/skills/windows-builder
+../vendor/hashicorp-skills/plugins/packer/skills/windows-builder

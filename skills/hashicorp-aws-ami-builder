@@ -1,1 +1,1 @@
-../vendor/hashicorp-skills/packer/builders/skills/aws-ami-builder
+../vendor/hashicorp-skills/plugins/packer/skills/aws-ami-builder
