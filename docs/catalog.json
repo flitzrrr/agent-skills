@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-28T17:12:53.766Z",
-  "total": 542,
+  "generated": "2026-10-05T16:39:34.585Z",
+  "total": 556,
   "skills": [
     {
       "name": "ab-testing",
@@ -413,6 +413,11 @@
       "description": "Build, debug, or review Cloudflare Agents SDK applications using the agents package."
     },
     {
+      "name": "cloudflare-basin",
+      "source": "cloudflare",
+      "description": "Build and troubleshoot Cloudflare Basin analytics workflows with Basin Pipelines, Basin Catalog, and Basin SQL."
+    },
+    {
       "name": "cloudflare-cloudflare",
       "source": "cloudflare",
       "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security."
@@ -436,6 +441,11 @@
       "name": "cloudflare-durable-objects",
       "source": "cloudflare",
       "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination."
+    },
+    {
+      "name": "cloudflare-k2",
+      "source": "cloudflare",
+      "description": "Build and troubleshoot Cloudflare K2 or K2 Streams durable logs."
     },
     {
       "name": "cloudflare-nextjs-on-cloudflare",
@@ -500,7 +510,7 @@
     {
       "name": "competitors",
       "source": "competitors",
-      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement."
+      "description": "When the user wants to create competitor comparison or alternative pages for SEO and buyer-facing use."
     },
     {
       "name": "content-strategy",
@@ -515,7 +525,7 @@
     {
       "name": "copywriting",
       "source": "copywriting",
-      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, ab..."
+      "description": "When the user wants to write, rewrite, or improve marketing copy for any page, including homepage, landing pages, pricing pages, feature pages, abo..."
     },
     {
       "name": "cro",
@@ -555,107 +565,107 @@
     {
       "name": "expo-eas-app-stores",
       "source": "expo",
-      "description": "EAS service (paid)."
+      "description": "Build and submit iOS and Android apps with EAS to TestFlight, the App Store, or Google Play."
     },
     {
       "name": "expo-eas-hosting",
       "source": "expo",
-      "description": "EAS service (paid)."
+      "description": "Deploy Expo websites and Expo Router API routes to EAS Hosting - export the web bundle, run eas deploy for production and PR preview URLs, manage e..."
     },
     {
       "name": "expo-eas-observe",
       "source": "expo",
-      "description": "EAS service (paid)."
+      "description": "Use for anything related to EAS Observe - adding `expo-observe` to an Expo project (AppMetricsRoot/ObserveRoot HOC, markInteractive and ObserveInte..."
     },
     {
       "name": "expo-eas-simulator",
       "source": "expo",
-      "description": "EAS service (paid)."
+      "description": "Run and control a user's app on a remote iOS/Android simulator hosted on EAS cloud."
     },
     {
       "name": "expo-eas-update",
       "source": "expo",
-      "description": "EAS service (paid)."
+      "description": "Configure and use EAS Update for over-the-air JavaScript and asset updates with expo-updates and EAS CLI."
     },
     {
       "name": "expo-eas-update-insights",
       "source": "expo",
-      "description": "EAS service (paid)."
+      "description": "Check the health of published EAS Update: crash rates, install/launch counts, unique users, payload size, and the split between embedded and OTA us..."
     },
     {
       "name": "expo-eas-workflows",
       "source": "expo",
-      "description": "EAS service (paid)."
+      "description": "Helps understand and write EAS workflow YAML files for Expo projects."
     },
     {
       "name": "expo-expo-animation",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — should it animate, which thr..."
     },
     {
       "name": "expo-expo-app-clip",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Add an iOS App Clip target to an Expo app."
     },
     {
       "name": "expo-expo-brownfield",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Integrate Expo and React Native into an existing native iOS or Android app."
     },
     {
       "name": "expo-expo-data-fetching",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Use when implementing or debugging ANY network request, API call, or data fetching."
     },
     {
       "name": "expo-expo-design-system",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Build and maintain a design system inside an Expo app - a reusable theme of design tokens (color, spacing, typography, radius, shadow, motion), reu..."
     },
     {
       "name": "expo-expo-dev-client",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Build and distribute Expo development clients locally or via TestFlight for internal testing."
     },
     {
       "name": "expo-expo-dom",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Use Expo DOM components to run web code in a webview on native and as-is on web."
     },
     {
       "name": "expo-expo-examples",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Expo's official example projects - the expo/examples repo of ~70 `with-*` integrations (Stripe, Clerk, Supabase, OpenAI, maps, Reanimated, SQLite, ..."
     },
     {
       "name": "expo-expo-migrate-module",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Migrate an existing Apple/Swift Expo native module from the Expo Modules API 1.0 definition DSL to the 2.0 macro API (sometimes called v2) while pr..."
     },
     {
       "name": "expo-expo-module",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Guide for creating and writing Expo native modules and views using the Expo Modules API (Swift, Kotlin, TypeScript)."
     },
     {
       "name": "expo-expo-native-ui",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Build beautiful, native-feeling Expo screens."
     },
     {
       "name": "expo-expo-overview",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Entry point and router for every Expo or EAS task."
     },
     {
       "name": "expo-expo-project-structure",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Folder structure for a new Expo app."
     },
     {
       "name": "expo-expo-router",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Navigation and routing for Expo Router."
     },
     {
       "name": "expo-expo-skill-eval",
@@ -670,17 +680,17 @@
     {
       "name": "expo-expo-ui",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Build native UI with the @expo/ui package: real SwiftUI on iOS and Jetpack Compose on Android."
     },
     {
       "name": "expo-expo-upgrade",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Guidelines for upgrading Expo SDK versions and fixing dependency issues"
     },
     {
       "name": "expo-expo-web-to-native",
       "source": "expo",
-      "description": "Framework (OSS)."
+      "description": "Migrate an existing web React app to a native iOS/Android app with Expo."
     },
     {
       "name": "finance-verify",
@@ -1188,9 +1198,14 @@
       "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site."
     },
     {
+      "name": "scientific-13c-metabolic-flux",
+      "source": "scientific",
+      "description": "Estimates intracellular metabolic fluxes from steady-state carbon-13 isotope-tracing measurements using validated atom maps, mfapy isotope simulati..."
+    },
+    {
       "name": "scientific-adaptyv",
       "source": "scientific",
-      "description": "How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval."
+      "description": "Uses the Adaptyv Bio Foundry API and Python SDK to design protein characterization experiments, estimate costs, submit sequences, monitor laborator..."
     },
     {
       "name": "scientific-aeon",
@@ -1200,27 +1215,27 @@
     {
       "name": "scientific-alphagenome",
       "source": "scientific",
-      "description": "Look up precomputed AlphaGenome Atlas effects for any GRCh38 single-nucleotide variant (AVI score with Phred and 18 SHAP feature attributions, plus..."
+      "description": "Looks up precomputed AlphaGenome Atlas effects for any GRCh38 single-nucleotide variant (AVI score with Phred and 18 SHAP feature attributions, plu..."
     },
     {
       "name": "scientific-analytical-method-validation",
       "source": "scientific",
-      "description": "Plan, execute, and document validation, verification, and transfer of analytical procedures under the governing framework - ICH Q2(R2) and Q14, USP..."
+      "description": "Plans, executes, and documents validation, verification, and transfer of analytical procedures under the governing framework - ICH Q2(R2) and Q14, ..."
     },
     {
       "name": "scientific-anndata",
       "source": "scientific",
-      "description": "Data structure for annotated matrices in single-cell analysis."
+      "description": "Handles annotated matrices in single-cell analysis, .h5ad and Zarr files, and integration with the scverse ecosystem."
     },
     {
       "name": "scientific-arbor",
       "source": "scientific",
-      "description": "Autonomously improve a real artifact (code, training recipe, agent harness, data pipeline, prompt) against an objective and an evaluator, using Hyp..."
+      "description": "Applies Arbor Hypothesis Tree Refinement to research artifacts with repeatable evaluators, including model training, agent harnesses, data synthesi..."
     },
     {
       "name": "scientific-arboreto",
       "source": "scientific",
-      "description": "Infer gene regulatory networks (GRNs) from gene expression data using scalable algorithms (GRNBoost2, GENIE3)."
+      "description": "Infers candidate gene regulatory networks from bulk or single-cell expression data using AertsLab Arboreto GRNBoost2 and GENIE3."
     },
     {
       "name": "scientific-astropy",
@@ -1230,7 +1245,7 @@
     {
       "name": "scientific-autoskill",
       "source": "scientific",
-      "description": "Observe the user's screen via screenpipe, detect repeated research workflows, match them against existing scientific-agent-skills, and draft new sk..."
+      "description": "Analyzes user-requested Screenpipe history windows to detect repeated research workflows, match existing scientific skills, and stage new skill dra..."
     },
     {
       "name": "scientific-benchling-integration",
@@ -1240,32 +1255,42 @@
     {
       "name": "scientific-bgpt-paper-search",
       "source": "scientific",
-      "description": "Search scientific papers and retrieve structured experimental data extracted from full-text studies via the BGPT MCP server."
+      "description": "Searches BGPT scientific papers by topic or DOI and retrieves claim-level evidence extracted from full text, including experiments, reported statis..."
     },
     {
       "name": "scientific-bids",
       "source": "scientific",
-      "description": "Use this skill when working with Brain Imaging Data Structure (BIDS) datasets: organizing neuroscience and biomedical data (MRI, EEG, MEG, iEEG, PE..."
+      "description": "Organizes, queries, validates, and converts Brain Imaging Data Structure (BIDS) datasets."
     },
     {
       "name": "scientific-biopython",
       "source": "scientific",
-      "description": "Comprehensive molecular biology toolkit."
+      "description": "Provides Biopython workflows for sequence manipulation, file parsing (FASTA/GenBank/PDB), phylogenetics, and programmatic NCBI/PubMed access (Bio.E..."
     },
     {
       "name": "scientific-bioservices",
       "source": "scientific",
-      "description": "Unified Python interface to 40+ bioinformatics services."
+      "description": "Provides a Python interface to bioinformatics services including UniProt, KEGG, ChEMBL, Reactome, QuickGO, and UniChem."
     },
     {
       "name": "scientific-bulk-rnaseq",
       "source": "scientific",
-      "description": "End-to-end bulk RNA-seq orchestrator — takes raw FASTQ reads through QC and trimming (FastQC, fastp/Trim Galore), alignment and quantification (STA..."
+      "description": "Prepares bulk RNA-seq FASTQ, Salmon, STAR or featureCounts output for gene-level differential expression."
+    },
+    {
+      "name": "scientific-cantera",
+      "source": "scientific",
+      "description": "Runs Cantera homogeneous chemical reactors and evaluates ignition delay with mechanism provenance, conservation checks, and numerical refinement."
+    },
+    {
+      "name": "scientific-cellprofiler",
+      "source": "scientific",
+      "description": "Runs reproducible CellProfiler microscopy pipelines for nuclear segmentation, cell counts, and per-object fluorescence measurements."
     },
     {
       "name": "scientific-cellxgene-census",
       "source": "scientific",
-      "description": "Query the CZ CELLxGENE Census programmatically for versioned public single-cell and spatial transcriptomics data."
+      "description": "Queries the CZ CELLxGENE Census programmatically for versioned public single-cell and spatial transcriptomics data."
     },
     {
       "name": "scientific-cirq",
@@ -1280,37 +1305,37 @@
     {
       "name": "scientific-clinical-decision-support",
       "source": "scientific",
-      "description": "Prepare and validate research-only clinical decision-support evaluation, evidence-profile, cohort, survival, biomarker/model, privacy, and governan..."
+      "description": "Prepares and validates research-only clinical decision-support evaluation, evidence-profile, cohort, survival, biomarker/model, privacy, and govern..."
     },
     {
       "name": "scientific-clinical-reports",
       "source": "scientific",
-      "description": "Create safety-bounded draft structures and run local deterministic checks for clinical case, diagnostic, trial, safety, and aggregate research repo..."
+      "description": "Creates safety-bounded draft structures and runs local deterministic checks for clinical case, diagnostic, trial, safety, and aggregate research re..."
     },
     {
       "name": "scientific-cobrapy",
       "source": "scientific",
-      "description": "Constraint-based metabolic modeling (COBRA)."
+      "description": "Performs constraint-based metabolic modeling with COBRApy, including FBA, pFBA, FVA, gene knockouts, flux sampling, growth media, production envelo..."
     },
     {
       "name": "scientific-consciousness-council",
       "source": "scientific",
-      "description": "Run a multi-perspective Mind Council deliberation on any question, decision, or creative challenge."
+      "description": "Structures a multi-perspective council exercise for decisions, research trade-offs, and creative challenges."
     },
     {
       "name": "scientific-dask",
       "source": "scientific",
-      "description": "Distributed computing for larger-than-RAM pandas/NumPy workflows."
+      "description": "Scales pandas, NumPy, and custom Python research workflows beyond memory or across clusters with Dask."
     },
     {
       "name": "scientific-database-lookup",
       "source": "scientific",
-      "description": "Query documented public database APIs with explicit endpoints, filters, pagination, and provenance."
+      "description": "Queries documented public database APIs with explicit endpoints, filters, pagination, and provenance."
     },
     {
       "name": "scientific-datalad",
       "source": "scientific",
-      "description": "Retrieve, version, and publish scientific datasets with DataLad and git-annex, and capture computational provenance with datalad run, rerun, and co..."
+      "description": "Retrieves, versions, and publishes scientific datasets with DataLad and git-annex, and captures computational provenance with datalad run, rerun, a..."
     },
     {
       "name": "scientific-datamol",
@@ -1320,12 +1345,12 @@
     {
       "name": "scientific-deepchem",
       "source": "scientific",
-      "description": "Molecular ML with diverse featurizers and pre-built datasets."
+      "description": "Builds molecular property prediction and MoleculeNet workflows with DeepChem, including SMILES featurization, scaffold or grouped holdouts, masked ..."
     },
     {
       "name": "scientific-deepspot-m",
       "source": "scientific",
-      "description": "Generate transcriptome-wide virtual spatial transcriptomics from H&E histology with DeepSpot-M."
+      "description": "Generates transcriptome-wide virtual spatial transcriptomics from H&E histology with DeepSpot-M."
     },
     {
       "name": "scientific-deeptools",
@@ -1335,92 +1360,97 @@
     {
       "name": "scientific-depmap",
       "source": "scientific",
-      "description": "Query the Cancer Dependency Map (DepMap) for cancer cell line gene dependency scores (CRISPR Chronos), drug sensitivity data, and gene effect profi..."
+      "description": "Retrieves and analyzes Cancer Dependency Map (DepMap) release data, including CRISPR Chronos gene effects, cancer model annotations, omics biomarke..."
     },
     {
       "name": "scientific-dhdna-profiler",
       "source": "scientific",
-      "description": "Extract cognitive patterns and thinking fingerprints from any text."
+      "description": "Applies the DHDNA framework as an exploratory rubric for reasoning and writing patterns in supplied text."
     },
     {
       "name": "scientific-diffdock",
       "source": "scientific",
-      "description": "DiffDock and DiffDock-L molecular docking."
+      "description": "Predicts protein-small-molecule binding poses with DiffDock and DiffDock-L from PDB or sequence plus SMILES/SDF/MOL2."
     },
     {
       "name": "scientific-dnanexus-integration",
       "source": "scientific",
-      "description": "Build and operate reproducible genomics workloads on DNAnexus with the dx CLI, dxpy, apps/applets, native workflows, dxCompiler, and Nextflow."
-    },
-    {
-      "name": "scientific-docx",
-      "source": "scientific",
-      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files)."
+      "description": "Builds and operates reproducible genomics workloads on DNAnexus with the dx CLI, dxpy, apps/applets, native workflows, dxCompiler, and Nextflow."
     },
     {
       "name": "scientific-esm",
       "source": "scientific",
-      "description": "Use when working directly with the `esm` Python SDK, ESM3 or ESMC model IDs, Forge/Biohub inference clients, or ESMFold2 folding workflows."
+      "description": "Uses the Biohub esm Python SDK for ESM3 protein generation, ESMC embeddings, and ESMFold2 all-atom folding."
     },
     {
       "name": "scientific-etetoolkit",
       "source": "scientific",
-      "description": "Analyze, manipulate, compare, annotate, and visualize phylogenetic or other hierarchical trees with ETE 4."
+      "description": "Analyzes, manipulates, compares, annotates, and visualizes phylogenetic or other hierarchical trees with ETE 4."
     },
     {
       "name": "scientific-exa-search",
       "source": "scientific",
-      "description": "Web toolkit powered by Exa, tuned for scientific and technical content."
+      "description": "Searches scientific and technical web content with Exa and extracts page or PDF text from URLs in batches."
     },
     {
       "name": "scientific-experimental-design",
       "source": "scientific",
-      "description": "Design experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so result..."
+      "description": "Designs experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so resul..."
     },
     {
       "name": "scientific-exploratory-data-analysis",
       "source": "scientific",
-      "description": "Perform bounded, local exploratory analysis of explicitly supported scientific files."
+      "description": "Performs bounded, local exploratory analysis of explicitly supported scientific files."
+    },
+    {
+      "name": "scientific-fictiv",
+      "source": "scientific",
+      "description": "Operates Fictiv (app.fictiv.com), the on-demand manufacturing platform, end to end in the user's browser."
     },
     {
       "name": "scientific-flowio",
       "source": "scientific",
-      "description": "Read, inspect, and write Flow Cytometry Standard (FCS) 2.0, 3.0, and 3.1 files with FlowIO."
+      "description": "Reads, inspects, and writes Flow Cytometry Standard (FCS) 2.0, 3.0, and 3.1 files with FlowIO."
+    },
+    {
+      "name": "scientific-flowkit",
+      "source": "scientific",
+      "description": "Analyzes flow cytometry data with FlowKit, including spillover compensation, logicle and biexponential transforms, hierarchical gating, GatingML st..."
     },
     {
       "name": "scientific-fluidsim",
       "source": "scientific",
-      "description": "Plan, configure, inspect, restart, and analyze bounded FluidSim computational-fluid-dynamics simulations with explicit numerical-validity and HPC s..."
+      "description": "Plans, configures, inspects, restarts, and analyzes bounded FluidSim computational-fluid-dynamics simulations with explicit numerical-validity and ..."
     },
     {
       "name": "scientific-folklore-variant-evidence",
       "source": "scientific",
-      "description": "Retrieve ClinGen gene-disease validity assertions for a public gene or disease, and review source-linked public evidence and literature for one sup..."
+      "description": "Retrieves ClinGen gene-disease validity assertions for a public gene or disease, and reviews source-linked public evidence and literature for one s..."
     },
     {
       "name": "scientific-generate-image",
       "source": "scientific",
-      "description": "Generate or edit images with AI models through the OpenRouter Image API (Gemini, Seedream, Recraft, GPT-Image, Riverflow)."
+      "description": "Generates or edits images with AI models through the OpenRouter Image API (Gemini, Seedream, Recraft, GPT-Image, Riverflow)."
     },
     {
       "name": "scientific-geniml",
       "source": "scientific",
-      "description": "Use Geniml for audited local genomic-interval workflows: validate BED and universe contracts, plan Region2Vec or scEmbed runs, inspect model/tokeni..."
+      "description": "Supports audited local Geniml genomic-interval workflows: validate BED and universe contracts, plan Region2Vec or scEmbed runs, inspect model/token..."
     },
     {
       "name": "scientific-genomic-coordinates",
       "source": "scientific",
-      "description": "Convert genomic intervals between coordinate conventions, normalise and compare variant representations, and detect assembly or contig-naming misma..."
+      "description": "Converts genomic intervals between coordinate conventions, normalises and compares variant representations, and detects assembly or contig-naming m..."
     },
     {
       "name": "scientific-genomic-intelligence",
       "source": "scientific",
-      "description": "Predict regulatory features, gene structure, and expression directly from DNA sequence using Genomic Intelligence's hosted transformer DNA language..."
+      "description": "Predicts regulatory features, gene structure, and expression directly from DNA sequence using Genomic Intelligence's hosted transformer DNA languag..."
     },
     {
       "name": "scientific-geomaster",
       "source": "scientific",
-      "description": "Comprehensive geospatial science skill covering remote sensing, GIS, spatial analysis, machine learning for earth observation, and 30+ scientific d..."
+      "description": "Supports geospatial research workflows for remote sensing, vector and raster GIS, spatial statistics, terrain and network analysis, and machine lea..."
     },
     {
       "name": "scientific-geopandas",
@@ -1430,37 +1460,37 @@
     {
       "name": "scientific-get-available-resources",
       "source": "scientific",
-      "description": "Detect host inventory and effective CPU, memory, disk, scheduler, container, and accelerator limits when a user asks for resource-aware planning or..."
+      "description": "Detects host inventory and effective CPU, memory, disk, scheduler, container, and accelerator limits when a user asks for resource-aware planning o..."
     },
     {
       "name": "scientific-gget",
       "source": "scientific",
-      "description": "Fast CLI/Python queries to 20+ bioinformatics databases."
+      "description": "Queries 20+ bioinformatics resources through CLI/Python."
     },
     {
       "name": "scientific-ginkgo-cloud-lab",
       "source": "scientific",
-      "description": "Submit and manage protocols on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio), a web-based interface for autonomous lab execution on Reconfigurable A..."
+      "description": "Guides protocol selection, input preparation, pricing checks, and browser ordering on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio)."
     },
     {
       "name": "scientific-glycoengineering",
       "source": "scientific",
-      "description": "Analyze and engineer protein glycosylation."
+      "description": "Analyzes and engineers protein glycosylation by scanning canonical N-glycosylation sequons, describing S/T-rich regions, checking curated glycan ev..."
     },
     {
       "name": "scientific-gtars",
       "source": "scientific",
-      "description": "Use Gtars for local genomic interval models and set algebra, overlaps and counts, consensus and coverage, tokenization, fragment processing, and re..."
+      "description": "Supports Gtars for local genomic interval models and set algebra, overlaps and counts, consensus and coverage, tokenization, fragment processing, a..."
     },
     {
       "name": "scientific-histolab",
       "source": "scientific",
-      "description": "Lightweight WSI tile extraction and preprocessing."
+      "description": "Extracts and preprocesses whole-slide histology image tiles with Histolab."
     },
     {
       "name": "scientific-hugging-science",
       "source": "scientific",
-      "description": "Use when the user is doing AI/ML work in a scientific domain such as biology, chemistry, physics, astronomy, climate, genomics, materials, medicine..."
+      "description": "Discovers and evaluates scientific datasets, models, methodology posts, and Spaces through the Hugging Science catalog."
     },
     {
       "name": "scientific-hypogenic",
@@ -1470,17 +1500,17 @@
     {
       "name": "scientific-hypothesis-generation",
       "source": "scientific",
-      "description": "Formulate evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predictio..."
+      "description": "Formulates evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predicti..."
     },
     {
       "name": "scientific-imaging-data-commons",
       "source": "scientific",
-      "description": "Query and download public cancer imaging data from NCI Imaging Data Commons."
+      "description": "Queries and downloads public cancer imaging data from NCI Imaging Data Commons."
     },
     {
       "name": "scientific-infographics",
       "source": "scientific",
-      "description": "Create professional infographics using Nano Banana Pro AI with smart iterative refinement."
+      "description": "Creates and reviews infographics with Nano Banana 2 via OpenRouter."
     },
     {
       "name": "scientific-iso-standards-readiness",
@@ -1490,27 +1520,27 @@
     {
       "name": "scientific-lab-hardware-cad",
       "source": "scientific",
-      "description": "Design custom laboratory hardware as parametric build123d models and export fabrication-ready STEP, STL, and DXF files - microfluidic chips and mol..."
+      "description": "Designs custom laboratory hardware as parametric build123d models and exports fabrication artifacts as STEP, STL, and DXF files - microfluidic chip..."
     },
     {
       "name": "scientific-labarchive-integration",
       "source": "scientific",
-      "description": "Securely integrate with the official LabArchives ELN REST-like API and Inventory API v1."
+      "description": "Integrates with the official LabArchives ELN REST-like API and Inventory API v1."
     },
     {
       "name": "scientific-lamindb",
       "source": "scientific",
-      "description": "Use when working with LaminDB, the open-source lineage-native lakehouse for biological datasets and models."
+      "description": "Manages biological datasets and models with LaminDB, including artifact registration, lineage tracking, schema validation, Bionty ontology annotati..."
     },
     {
       "name": "scientific-latchbio-integration",
       "source": "scientific",
-      "description": "Build, register, debug, and operate bioinformatics workflows on Latch using the Python SDK, CLI, Latch Data and Registry, Nextflow, Snakemake, prog..."
+      "description": "Builds, registers, debugs, and operates bioinformatics workflows on Latch using the Python SDK, CLI, Latch Data and Registry, Nextflow, Snakemake, ..."
     },
     {
       "name": "scientific-latex-posters",
       "source": "scientific",
-      "description": "Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter."
+      "description": "Creates research posters in LaTeX using beamerposter, tikzposter, or baposter."
     },
     {
       "name": "scientific-liteparse",
@@ -1520,42 +1550,52 @@
     {
       "name": "scientific-literature-review",
       "source": "scientific",
-      "description": "Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.)."
+      "description": "Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources."
+    },
+    {
+      "name": "scientific-mageck",
+      "source": "scientific",
+      "description": "Analyzes pooled CRISPR screen FASTQ reads and guide-count matrices with MAGeCK, validates guide libraries and contrasts, measures replicate and lib..."
+    },
+    {
+      "name": "scientific-marine-carbonate-chemistry",
+      "source": "scientific",
+      "description": "Solves seawater carbonate chemistry with PyCO2SYS for chemical oceanography, ocean acidification, and marine carbon-cycle research."
     },
     {
       "name": "scientific-markdown-mermaid-writing",
       "source": "scientific",
-      "description": "Comprehensive markdown and Mermaid diagram writing skill."
+      "description": "Writes scientific Markdown documentation and Mermaid diagrams for workflows, relationships, timelines, and schemas."
     },
     {
       "name": "scientific-market-research-reports",
       "source": "scientific",
-      "description": "Build evidence-traceable market research reports and assumption-driven market sizing or forecast scenarios."
+      "description": "Builds evidence-traceable market research reports and assumption-driven market sizing or forecast scenarios."
     },
     {
       "name": "scientific-markitdown",
       "source": "scientific",
-      "description": "Convert heterogeneous documents and selected URIs to Markdown with Microsoft MarkItDown for text analysis, search, and LLM/RAG ingestion."
+      "description": "Converts heterogeneous documents and selected URIs to Markdown with Microsoft MarkItDown for text analysis, search, and LLM/RAG ingestion."
     },
     {
       "name": "scientific-matchms",
       "source": "scientific",
-      "description": "Process, clean, compare, and search tandem mass spectra with matchms."
+      "description": "Processes, cleans, compares, and searches tandem mass spectra with matchms."
     },
     {
       "name": "scientific-matlab",
       "source": "scientific",
-      "description": "Build, review, migrate, and safely plan MATLAB or GNU Octave numerical workflows, including arrays, tabular/time data, tests, projects, graphics, M..."
+      "description": "Builds, reviews, migrates, and plans MATLAB or GNU Octave numerical workflows."
     },
     {
       "name": "scientific-matplotlib",
       "source": "scientific",
-      "description": "Low-level plotting library for full customization."
+      "description": "Creates and customizes scientific plots with Matplotlib."
     },
     {
       "name": "scientific-medchem",
       "source": "scientific",
-      "description": "Medicinal chemistry filters for compound triage."
+      "description": "Applies medicinal chemistry filters for compound triage, using drug-likeness rules (Lipinski, Veber, CNS), structural alert catalogs (PAINS, NIBR, ..."
     },
     {
       "name": "scientific-modal",
@@ -1565,12 +1605,12 @@
     {
       "name": "scientific-molecular-dynamics",
       "source": "scientific",
-      "description": "Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis."
+      "description": "Runs and analyzes molecular dynamics simulations with OpenMM and MDAnalysis."
     },
     {
       "name": "scientific-molfeat",
       "source": "scientific",
-      "description": "Molecular featurization for ML (100+ featurizers)."
+      "description": "Featurizes small molecules with Molfeat for QSAR/QSPR, chemical similarity, virtual screening, and molecular ML."
     },
     {
       "name": "scientific-ncats-arax",
@@ -1580,52 +1620,62 @@
     {
       "name": "scientific-networkx",
       "source": "scientific",
-      "description": "Create, analyze, and visualize complex networks and graphs in Python with NetworkX."
+      "description": "Creates, analyzes, and visualizes complex networks and graphs in Python with NetworkX."
     },
     {
       "name": "scientific-neurokit2",
       "source": "scientific",
-      "description": "Use NeuroKit2 to build or audit reproducible research workflows for physiological time-series preprocessing, event/interval analysis, multimodal al..."
+      "description": "Builds and audits reproducible NeuroKit2 research workflows for physiological time-series preprocessing, event/interval analysis, multimodal alignm..."
     },
     {
       "name": "scientific-neuropixels-analysis",
       "source": "scientific",
-      "description": "Analyze Neuropixels extracellular recordings end-to-end with SpikeInterface."
+      "description": "Analyzes Neuropixels extracellular recordings end-to-end with SpikeInterface."
     },
     {
       "name": "scientific-nextflow",
       "source": "scientific",
-      "description": "Build, run, and debug Nextflow data pipelines and nf-core workflows end to end."
+      "description": "Builds, runs, and debugs Nextflow DSL2 pipelines and nf-core workflows."
+    },
+    {
+      "name": "scientific-nmrglue",
+      "source": "scientific",
+      "description": "Processes calibrated one-dimensional complex NMR free-induction decays with nmrglue into phased spectra, peak candidates, and signed integration re..."
+    },
+    {
+      "name": "scientific-nwb-conversion",
+      "source": "scientific",
+      "description": "Converts neuroscience acquisition data to Neurodata Without Borders files with NeuroConv and PyNWB, preserves metadata and timebases, checks eviden..."
     },
     {
       "name": "scientific-omero-integration",
       "source": "scientific",
-      "description": "Securely inspect and automate microscopy data workflows against OMERO.server with omero-py, BlitzGateway, OMERO CLI, tables, annotations, ROIs, ren..."
+      "description": "Inspects and automates microscopy data workflows against OMERO.server with omero-py, BlitzGateway, OMERO CLI, tables, annotations, ROIs, rendering,..."
     },
     {
       "name": "scientific-onekgpd",
       "source": "scientific",
-      "description": "Query the 1000 Genomes Project dataset (3,202 whole-genome-sequenced individuals, GRCh38) at the level of individual participants."
+      "description": "Queries the 1000 Genomes Project dataset (3,202 whole-genome-sequenced individuals, GRCh38) at the level of individual participants."
     },
     {
       "name": "scientific-ontology-term-resolution",
       "source": "scientific",
-      "description": "Resolve free-text scientific labels to ontology term IDs and validate existing CURIEs against the EBI Ontology Lookup Service (OLS4)."
+      "description": "Resolves free-text scientific labels to ontology term IDs and validates existing CURIEs against the EBI Ontology Lookup Service (OLS4)."
     },
     {
       "name": "scientific-open-notebook",
       "source": "scientific",
-      "description": "Self-hosted, open-source alternative to Google NotebookLM for AI-powered research and document analysis."
+      "description": "Organizes research with the self-hosted Open Notebook alternative to NotebookLM."
     },
     {
       "name": "scientific-openpiv",
       "source": "scientific",
-      "description": "Particle Image Velocimetry (PIV) analysis with OpenPIV."
+      "description": "Performs Particle Image Velocimetry (PIV) analysis with OpenPIV."
     },
     {
       "name": "scientific-opentrons-integration",
       "source": "scientific",
-      "description": "Author, review, migrate, simulate, and troubleshoot official Opentrons Python Protocol API v2 protocols for Flex and OT-2 robots."
+      "description": "Authors, reviews, migrates, simulates, and troubleshoots official Opentrons Python Protocol API v2 protocols for Flex and OT-2 robots."
     },
     {
       "name": "scientific-optimize-for-gpu",
@@ -1635,67 +1685,62 @@
     {
       "name": "scientific-pacsomatic",
       "source": "scientific",
-      "description": "Operator toolkit for nf-core/pacsomatic matched tumor-normal workflows from BAM inputs."
+      "description": "Prepares and launches nf-core/pacsomatic matched tumor-normal PacBio HiFi genomics workflows from unaligned BAM inputs."
     },
     {
       "name": "scientific-paper-lookup",
       "source": "scientific",
-      "description": "Search 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and return results wit..."
+      "description": "Searches 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and returns results ..."
     },
     {
       "name": "scientific-paperclip",
       "source": "scientific",
-      "description": "Search and read full-text biomedical papers, FDA/PMDA/EMA regulatory documents, clinical trial registries, and UniProt/PDB/ChEMBL entries with the ..."
+      "description": "Searches and reads biomedical papers, FDA/PMDA/EMA documents, clinical trials, and protein records with the GXL Paperclip CLI and Python SDK."
     },
     {
       "name": "scientific-paperzilla",
       "source": "scientific",
-      "description": "Chat with your agent about projects, recommendations, and canonical papers in Paperzilla."
+      "description": "Reads projects, searches project feeds, and retrieves recommendations and canonical papers in Paperzilla through the pz CLI."
     },
     {
       "name": "scientific-parallel-web",
       "source": "scientific",
-      "description": "Use Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring."
+      "description": "Uses Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring."
     },
     {
       "name": "scientific-pathml",
       "source": "scientific",
-      "description": "Use PathML for local, research-only computational pathology workflows: load and tile slides, build preprocessing and QC pipelines, manage h5path da..."
+      "description": "Supports local computational pathology research with PathML: slide loading and tiling, preprocessing and QC, h5path storage, multiplex quantificati..."
     },
     {
       "name": "scientific-pathogen-variant-surveillance",
       "source": "scientific",
-      "description": "Query live pathogen genomic surveillance data through the GenSpectrum LAPIS API to find which viral lineages are circulating now, how fast they are..."
+      "description": "Queries public GenSpectrum LAPIS data for pathogen genomic surveillance, current lineage nomenclature, weekly sequence proportions, reporting delay..."
     },
     {
       "name": "scientific-pathway-enrichment",
       "source": "scientific",
-      "description": "Run pathway and gene-set enrichment analysis on gene lists or ranked gene data, then interpret the results."
-    },
-    {
-      "name": "scientific-pdf",
-      "source": "scientific",
-      "description": "Use this skill whenever the user wants to do anything with PDF files."
+      "description": "Performs pathway and gene-set enrichment analysis on gene lists or ranked gene data and interprets the results."
     },
     {
       "name": "scientific-peer-review",
       "source": "scientific",
-      "description": "Prepare evidence-bounded, constructive peer-review drafts and structured manuscript assessments."
+      "description": "Prepares evidence-bounded, constructive peer-review drafts and structured manuscript assessments."
     },
     {
       "name": "scientific-pennylane",
       "source": "scientific",
-      "description": "Hardware-agnostic quantum ML framework with automatic differentiation."
+      "description": "Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows."
     },
     {
       "name": "scientific-phylogenetics",
       "source": "scientific",
-      "description": "Build and analyze phylogenetic trees using MAFFT (multiple alignment), IQ-TREE 2 (maximum likelihood), and FastTree (fast NJ/ML)."
+      "description": "Builds and analyzes phylogenetic trees using MAFFT multiple sequence alignment, IQ-TREE maximum likelihood with ModelFinder and branch support, and..."
     },
     {
       "name": "scientific-pi-agent",
       "source": "scientific",
-      "description": "Build with and use Pi, the minimal terminal coding harness."
+      "description": "Builds with and operates Pi, the minimal terminal coding harness."
     },
     {
       "name": "scientific-pkpd-modeling",
@@ -1710,27 +1755,27 @@
     {
       "name": "scientific-polars-bio",
       "source": "scientific",
-      "description": "High-performance genomic interval operations and bioinformatics file I/O on Polars DataFrames."
-    },
-    {
-      "name": "scientific-pptx",
-      "source": "scientific",
-      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both."
+      "description": "Performs genomic interval overlap, nearest, merge, coverage, complement and subtraction on Polars DataFrames, and reads or writes BED, VCF, BCF, BA..."
     },
     {
       "name": "scientific-pptx-posters",
       "source": "scientific",
-      "description": "Create and audit editable scientific posters in macro-free PowerPoint (.pptx) from author-approved local content and assets."
+      "description": "Creates and audits editable scientific posters in macro-free PowerPoint (.pptx) from author-approved local content and assets."
     },
     {
       "name": "scientific-primekg",
       "source": "scientific",
-      "description": "Query the Precision Medicine Knowledge Graph (PrimeKG) for multiscale biological data including genes, drugs, diseases, phenotypes, and more."
+      "description": "Queries a pinned Precision Medicine Knowledge Graph (PrimeKG) CSV for typed gene, drug, disease, and phenotype nodes, direct associations, disease ..."
+    },
+    {
+      "name": "scientific-primer-design",
+      "source": "scientific",
+      "description": "Designs and audits PCR and RT-qPCR primers with Primer3, explicit thermodynamic conditions, reference-based off-target amplification searches, and ..."
     },
     {
       "name": "scientific-protocolsio-integration",
       "source": "scientific",
-      "description": "Read, validate, and safely export protocols.io data with current official REST/MCP contracts, or create non-executing mutation plans."
+      "description": "Reads, validates, and safely exports protocols.io data with current official REST/MCP contracts, or creates non-executing mutation plans."
     },
     {
       "name": "scientific-pufferlib",
@@ -1738,54 +1783,64 @@
       "description": "Version-aware guidance for PufferLib reinforcement-learning environments, vectorization, policies, PuffeRL training, evaluation, and safe checkpoin..."
     },
     {
+      "name": "scientific-pybamm",
+      "source": "scientific",
+      "description": "Simulates lithium-ion battery charge, discharge and rest experiments with PyBaMM, records parameter-set provenance, checks mesh and solver sensitiv..."
+    },
+    {
+      "name": "scientific-pycalphad",
+      "source": "scientific",
+      "description": "Computes finite-temperature CALPHAD equilibria, phase fractions, and phase compositions from thermodynamic TDB databases using pycalphad."
+    },
+    {
       "name": "scientific-pydeseq2",
       "source": "scientific",
-      "description": "Differential gene expression analysis for bulk RNA-seq with PyDESeq2, including formulaic designs, Wald tests, FDR correction, LFC shrinkage, and r..."
+      "description": "Performs bulk RNA-seq differential expression analysis with PyDESeq2, including count validation, formula designs, explicit contrasts, Wald tests, ..."
     },
     {
       "name": "scientific-pydicom",
       "source": "scientific",
-      "description": "Use pydicom to read, inspect, write, transform, and safely preflight local DICOM datasets and pixel data."
+      "description": "Reads, inspects, writes, transforms, and preflights local DICOM datasets and pixel data."
     },
     {
       "name": "scientific-pyhealth",
       "source": "scientific",
-      "description": "Build clinical/healthcare deep-learning pipelines with PyHealth — loading EHR/signal/imaging datasets (MIMIC-III/IV, eICU, OMOP, SleepEDF, ChestXra..."
+      "description": "Builds and validates PyHealth clinical machine-learning pipelines for EHR, signals, imaging, and medical codes."
     },
     {
       "name": "scientific-pylabrobot",
       "source": "scientific",
-      "description": "Develop and review PyLabRobot lab-automation resources, liquid-handling plans, offline simulations, and supported-device integrations."
+      "description": "Develops and reviews PyLabRobot lab-automation resources, liquid-handling plans, offline simulations, and supported-device integrations."
     },
     {
       "name": "scientific-pymatgen",
       "source": "scientific",
-      "description": "Analyze, validate, convert, and transform materials structures and computed materials data with current pymatgen APIs, including local phase diagra..."
+      "description": "Analyzes, validates, converts, and transforms materials structures and computed materials data with pymatgen."
     },
     {
       "name": "scientific-pymc",
       "source": "scientific",
-      "description": "Bayesian modeling with PyMC."
+      "description": "Builds and checks Bayesian models with PyMC, including hierarchical models, NUTS MCMC, variational inference, mutable-data predictions, posterior p..."
     },
     {
       "name": "scientific-pymoo",
       "source": "scientific",
-      "description": "Multi-objective optimization framework."
+      "description": "Solves and validates single-, multi-, and many-objective optimization with pymoo, including NSGA-II, NSGA-III, MOEA/D, constraints, Pareto approxim..."
     },
     {
       "name": "scientific-pyopenms",
       "source": "scientific",
-      "description": "Complete mass spectrometry analysis platform."
+      "description": "Processes mass spectrometry data with pyOpenMS."
     },
     {
       "name": "scientific-pysam",
       "source": "scientific",
-      "description": "Python/HTSlib workflows for genomic files."
+      "description": "Provides Python/HTSlib workflows for genomic files."
     },
     {
       "name": "scientific-pytdc",
       "source": "scientific",
-      "description": "Use Therapeutics Data Commons through the PyTDC Python package for registry discovery, approved dataset access, task-aware splits, evaluator metric..."
+      "description": "Provides Therapeutics Data Commons workflows through PyTDC for registry discovery, dataset access, task-aware splits, evaluator metrics, benchmark ..."
     },
     {
       "name": "scientific-pytorch-lightning",
@@ -1795,12 +1850,17 @@
     {
       "name": "scientific-pyzotero",
       "source": "scientific",
-      "description": "Interact with Zotero reference management libraries using the pyzotero Python client."
+      "description": "Manages Zotero reference libraries using the pyzotero Python client: retrieves, creates, updates, and deletes items, collections, tags, and attachm..."
+    },
+    {
+      "name": "scientific-qiime2-amplicon",
+      "source": "scientific",
+      "description": "Processes paired-end 16S amplicon reads into QIIME 2 ASVs and taxonomy with retained artifact provenance."
     },
     {
       "name": "scientific-qiskit",
       "source": "scientific",
-      "description": "Build, simulate, transpile, and execute quantum circuits with Qiskit and IBM Quantum Runtime."
+      "description": "Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime."
     },
     {
       "name": "scientific-qutip",
@@ -1813,19 +1873,24 @@
       "description": "Cheminformatics toolkit for fine-grained molecular control."
     },
     {
+      "name": "scientific-relion",
+      "source": "scientific",
+      "description": "Validates and executes RELION single-particle cryo-EM refinement and half-map postprocessing."
+    },
+    {
       "name": "scientific-relsa-severity-assessment",
       "source": "scientific",
-      "description": "Multivariate severity assessment and humane endpoint prediction for laboratory animal studies using the RELSA (RELative Severity Assessment) score ..."
+      "description": "Supports multivariate severity assessment and exploratory endpoint-time score forecasting for laboratory animal studies using the RELSA (RELative S..."
     },
     {
       "name": "scientific-research-grants",
       "source": "scientific",
-      "description": "Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC."
+      "description": "Supports research proposal preparation and review for NSF, NIH, DOE, DARPA, and Taiwan NSTC, including opportunity-specific requirements, aims, rev..."
     },
     {
       "name": "scientific-research-lookup",
       "source": "scientific",
-      "description": "Compile current scholarly evidence for a scientific manuscript or research brief."
+      "description": "Compiles current scholarly evidence for a scientific manuscript or research brief when the user explicitly asks to gather literature, references, b..."
     },
     {
       "name": "scientific-rowan",
@@ -1835,12 +1900,12 @@
     {
       "name": "scientific-scanpy",
       "source": "scientific",
-      "description": "Standard single-cell RNA-seq analysis pipeline."
+      "description": "Performs Scanpy single-cell RNA-seq QC, normalization, HVG selection, PCA/UMAP/t-SNE, clustering, exploratory marker ranking, pseudobulk preparatio..."
     },
     {
       "name": "scientific-scholar-evaluation",
       "source": "scientific",
-      "description": "Provide qualitative-first, evidence-traceable developmental review of scholarly works and audit low-stakes research-assessment rubrics with optiona..."
+      "description": "Provides qualitative-first, evidence-traceable developmental review of scholarly works and audit low-stakes research-assessment rubrics with option..."
     },
     {
       "name": "scientific-scientific-brainstorming",
@@ -1850,27 +1915,27 @@
     {
       "name": "scientific-scientific-critical-thinking",
       "source": "scientific",
-      "description": "Evaluate scientific claims and evidence quality."
+      "description": "Evaluates scientific claims and evidence quality."
     },
     {
       "name": "scientific-scientific-schematics",
       "source": "scientific",
-      "description": "Create publication-quality scientific diagrams using Nano Banana 2 AI with smart iterative refinement."
+      "description": "Generates scientific diagram drafts using Nano Banana 2 AI with smart iterative refinement."
     },
     {
       "name": "scientific-scientific-slides",
       "source": "scientific",
-      "description": "Build slide decks and presentations for research talks."
+      "description": "Builds slide decks and presentations for research talks."
     },
     {
       "name": "scientific-scientific-visualization",
       "source": "scientific",
-      "description": "Create and audit truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly."
+      "description": "Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly."
     },
     {
       "name": "scientific-scientific-writing",
       "source": "scientific",
-      "description": "Draft, revise, and audit scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountabili..."
+      "description": "Drafts, revises, and audits scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountab..."
     },
     {
       "name": "scientific-scikit-bio",
@@ -1880,27 +1945,27 @@
     {
       "name": "scientific-scikit-learn",
       "source": "scientific",
-      "description": "Machine learning in Python with scikit-learn."
+      "description": "Supports machine learning in Python with scikit-learn."
     },
     {
       "name": "scientific-scikit-survival",
       "source": "scientific",
-      "description": "Build, evaluate, and audit right-censored or competing-risk survival workflows with scikit-survival, including leakage-safe preprocessing, model se..."
+      "description": "Builds, evaluates, and audits right-censored or competing-risk survival workflows with scikit-survival, including leakage-safe preprocessing, model..."
     },
     {
       "name": "scientific-scvelo",
       "source": "scientific",
-      "description": "RNA velocity analysis with scVelo."
+      "description": "Performs RNA velocity analysis with scVelo from spliced and unspliced single-cell RNA counts."
     },
     {
       "name": "scientific-scvi-tools",
       "source": "scientific",
-      "description": "Deep generative models for single-cell omics."
+      "description": "Fits probabilistic models for single-cell omics, including scVI batch integration, scANVI annotation, totalVI CITE-seq, MultiVI RNA/ATAC integratio..."
     },
     {
       "name": "scientific-seaborn",
       "source": "scientific",
-      "description": "Statistical visualization with pandas integration."
+      "description": "Creates Seaborn statistical visualizations with pandas integration for distributions, relationships, categorical comparisons, regression displays, ..."
     },
     {
       "name": "scientific-shap",
@@ -1910,12 +1975,12 @@
     {
       "name": "scientific-simpy",
       "source": "scientific",
-      "description": "Build, inspect, test, and analyze bounded process-based discrete-event simulations with SimPy, including events, resources, interrupts, monitoring,..."
+      "description": "Builds, inspects, tests, and analyzes bounded process-based discrete-event simulations with SimPy."
     },
     {
       "name": "scientific-stable-baselines3",
       "source": "scientific",
-      "description": "Production-ready reinforcement learning algorithms (PPO, SAC, DQN, TD3, DDPG, A2C) with scikit-learn-like API."
+      "description": "Trains and evaluates single-agent reinforcement learning with Stable Baselines3 (PPO, SAC, DQN, TD3, DDPG, A2C), Gymnasium custom environments, vec..."
     },
     {
       "name": "scientific-statistical-analysis",
@@ -1925,42 +1990,47 @@
     {
       "name": "scientific-statistical-power",
       "source": "scientific",
-      "description": "Sample-size and statistical power calculations for planning studies."
+      "description": "Calculates sample sizes and statistical power for study planning."
     },
     {
       "name": "scientific-statsmodels",
       "source": "scientific",
-      "description": "Statistical models library for Python."
+      "description": "Fits and diagnoses Python statistical models including OLS, GLM, discrete and mixed models, ARIMA and SARIMAX."
     },
     {
       "name": "scientific-sympy",
       "source": "scientific",
-      "description": "Use when you need exact symbolic math in Python — algebra, calculus, equation solving, symbolic linear algebra, or code generation via lambdify/LaTeX."
+      "description": "Performs exact symbolic mathematics with SymPy for algebra, calculus, equation solving, symbolic linear algebra, physics, and lambdify or LaTeX cod..."
     },
     {
       "name": "scientific-tamarind",
       "source": "scientific",
-      "description": "Access a collection of open-source molecular design and structural biology tools on the Tamarind Bio platform, via its REST API or MCP server — no ..."
+      "description": "Provides access to a collection of open-source molecular design and structural biology tools on the Tamarind Bio platform, via its REST API or MCP ..."
+    },
+    {
+      "name": "scientific-tellurium",
+      "source": "scientific",
+      "description": "Simulates biochemical kinetic models from SBML or Antimony with Tellurium and libRoadRunner, checks model units, compares deterministic parameter p..."
     },
     {
       "name": "scientific-tiledbvcf",
       "source": "scientific",
-      "description": "Efficient storage and retrieval of genomic variant data using TileDB."
+      "description": "Stores and retrieves genomic variant calls with TileDB-VCF."
     },
     {
       "name": "scientific-timesfm-forecasting",
       "source": "scientific",
-      "description": "Zero-shot time series forecasting with Google's TimesFM foundation model."
+      "description": "Performs zero-shot time-series forecasting with Google's TimesFM, including regular-grid CSV preparation, quantile forecasts, XReg covariates, and ..."
     },
     {
       "name": "scientific-torch-geometric",
       "source": "scientific",
-      "description": "PyTorch Geometric (PyG) for graph neural networks — node/link/graph classification, message passing (GCN, GAT, GraphSAGE, GIN), heterogeneous graph..."
+      "description": "Supports PyTorch Geometric (PyG) graph neural networks — node/link/graph classification, message passing (GCN, GAT, GraphSAGE, GIN), heterogeneous ..."
     },
     {
       "name": "scientific-torchdrug",
       "source": "scientific",
-      "description": "Build and troubleshoot TorchDrug 0.2.1 workflows for molecular graphs, property prediction, self-supervised pretraining, molecule generation, retro..."
+      "description": "Builds and troubleshoots TorchDrug 0.2.1 workflows for molecular graphs, property prediction, self-supervised pretraining, molecule generation, ret..."
     },
     {
       "name": "scientific-transformers",
@@ -1970,52 +2040,47 @@
     {
       "name": "scientific-treatment-plans",
       "source": "scientific",
-      "description": "Format and structurally validate local treatment-plan documentation after clinical decisions have already been supplied and verified by authorized ..."
+      "description": "Formats and structurally validates local treatment-plan documentation after clinical decisions have already been supplied and verified by authorize..."
     },
     {
       "name": "scientific-umap-learn",
       "source": "scientific",
-      "description": "Use UMAP-learn for nonlinear dimensionality reduction, 2D/3D embeddings, clustering preprocessing, supervised or semi-supervised UMAP, DensMAP, Ali..."
+      "description": "Applies UMAP-learn to nonlinear dimensionality reduction, 2D/3D embeddings, clustering preprocessing, supervised or semi-supervised UMAP, DensMAP, ..."
     },
     {
       "name": "scientific-uncertainty-and-units",
       "source": "scientific",
-      "description": "Track physical units and propagate measurement uncertainty in scientific calculations using pint and uncertainties."
+      "description": "Tracks physical units and propagates measurement uncertainty in scientific calculations using pint and uncertainties."
     },
     {
       "name": "scientific-usfiscaldata",
       "source": "scientific",
-      "description": "Query the U.S."
+      "description": "Queries the U.S."
     },
     {
       "name": "scientific-vaex",
       "source": "scientific",
-      "description": "Use this skill for processing and analyzing large tabular datasets (billions of rows) that exceed available RAM."
+      "description": "Processes large tabular scientific datasets with Vaex expressions, filtered views, streamed statistics, binned visualizations, and file conversion."
     },
     {
       "name": "scientific-venue-templates",
       "source": "scientific",
-      "description": "Prepare journal manuscripts, conference papers, research posters, and grant documents using venue-specific formatting guidance and bundled LaTeX sc..."
+      "description": "Prepares journal manuscripts, conference papers, research posters, and grant documents using venue-specific formatting guidance and bundled LaTeX s..."
     },
     {
       "name": "scientific-waypoint-bio",
       "source": "scientific",
-      "description": "Use when working with Outpost Bio's open microbiome foundation models - the Waypoint checkpoints (Waypoint-6m, Waypoint-45m, Waypoint-170m), the At..."
+      "description": "Supports work with Outpost Bio's open microbiome foundation models - the Waypoint checkpoints (Waypoint-6m, Waypoint-45m, Waypoint-170m), the Atlas..."
     },
     {
       "name": "scientific-what-if-oracle",
       "source": "scientific",
-      "description": "Run structured What-If scenario analysis with 4–6 branch possibility exploration (best, likely, worst, wild card, contrarian, second-order)."
-    },
-    {
-      "name": "scientific-xlsx",
-      "source": "scientific",
-      "description": "Create, edit, analyze, or convert Excel spreadsheets (.xlsx, .xlsm, .xltx) where the workbook file is the primary deliverable."
+      "description": "Supports structured what-if scenario analysis for research planning, experimental contingencies, and scientific project decisions."
     },
     {
       "name": "scientific-zarr-python",
       "source": "scientific",
-      "description": "Chunked N-D arrays for cloud storage (Zarr-Python 3)."
+      "description": "Stores and queries chunked N-D scientific arrays with Zarr-Python 3, including codecs, sharding, S3/GCS storage, and NumPy/Dask/Xarray integration."
     },
     {
       "name": "sentry-agents-md",
@@ -2118,6 +2183,11 @@
       "description": "Creates, optimizes, and iteratively refines agent prompts, system prompts, developer prompts, and reusable prompt templates."
     },
     {
+      "name": "sentry-secret-serialization",
+      "source": "sentry",
+      "description": "'Finds secrets, tokens, passwords, and API keys that can leak through generated serialization: Python dataclass repr and asdict, attrs, pydantic mo..."
+    },
+    {
       "name": "sentry-security-review",
       "source": "sentry",
       "description": "Security code review for vulnerabilities."
@@ -2175,12 +2245,12 @@
     {
       "name": "sms",
       "source": "sms",
-      "description": "When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, prom..."
+      "description": "When the user wants to plan, build, or optimize SMS, MMS, or WhatsApp marketing — including welcome flows, abandoned cart texts, post-purchase, win..."
     },
     {
       "name": "social",
       "source": "social",
-      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other pl..."
+      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, or Facebook, or wants..."
     },
     {
       "name": "stripe-connect-recommend",
@@ -2200,7 +2270,7 @@
     {
       "name": "stripe-stripe-apps",
       "source": "stripe",
-      "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g."
+      "description": "Build, modify, or review Stripe Apps and extensions using the relevant documentation and reference guides."
     },
     {
       "name": "stripe-stripe-best-practices",
