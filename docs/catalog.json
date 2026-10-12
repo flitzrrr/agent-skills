@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-05T17:38:13.220Z",
-  "total": 556,
+  "generated": "2026-10-12T17:11:05.431Z",
+  "total": 558,
   "skills": [
     {
       "name": "ab-testing",
@@ -418,6 +418,11 @@
       "description": "Build and troubleshoot Cloudflare Basin analytics workflows with Basin Pipelines, Basin Catalog, and Basin SQL."
     },
     {
+      "name": "cloudflare-cf-cli",
+      "source": "cloudflare",
+      "description": "Cloudflare's official cf CLI (beta) for the public Cloudflare API and Workers projects."
+    },
+    {
       "name": "cloudflare-cloudflare",
       "source": "cloudflare",
       "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security."
@@ -483,9 +488,14 @@
       "description": "Cloudflare Workers best practices for production applications."
     },
     {
+      "name": "cloudflare-workers-profiling",
+      "source": "cloudflare",
+      "description": "Profile or debug CPU usage and memory allocation in deployed Cloudflare Workers and Durable Objects."
+    },
+    {
       "name": "cloudflare-wrangler",
       "source": "cloudflare",
-      "description": "Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, Previews, deployment, and Cloudflare resource manage..."
+      "description": "Run or troubleshoot Wrangler CLI commands in projects that have a wrangler.jsonc, wrangler.json, or wrangler.toml file, including local development..."
     },
     {
       "name": "co-marketing",
@@ -495,7 +505,7 @@
     {
       "name": "cold-email",
       "source": "cold",
-      "description": "Write B2B cold emails and follow-up sequences that get replies."
+      "description": "Write and run B2B cold outbound that gets replies, from cold emails and follow-ups to sending setup, LinkedIn, multichannel cadences, and reply han..."
     },
     {
       "name": "community-marketing",
@@ -1170,7 +1180,7 @@
     {
       "name": "prospecting",
       "source": "prospecting",
-      "description": "When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses."
+      "description": "When the user wants to find, qualify, and build a list of prospects to reach out to, across B2B SaaS, general B2B, or local small businesses."
     },
     {
       "name": "public-relations",
