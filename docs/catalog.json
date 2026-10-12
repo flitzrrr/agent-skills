@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-12T17:11:05.431Z",
-  "total": 558,
+  "generated": "2026-10-12T18:25:05.489Z",
+  "total": 637,
   "skills": [
     {
       "name": "ab-testing",
@@ -2256,6 +2256,401 @@
       "name": "sms",
       "source": "sms",
       "description": "When the user wants to plan, build, or optimize SMS, MMS, or WhatsApp marketing — including welcome flows, abandoned cart texts, post-purchase, win..."
+    },
+    {
+      "name": "SnailSploit-offensive-active-directory",
+      "source": "SnailSploit",
+      "description": "Active Directory attack methodology for internal network red team engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-advanced-redteam",
+      "source": "SnailSploit",
+      "description": "Comprehensive red team operations methodology covering full engagement lifecycle from planning through reporting."
+    },
+    {
+      "name": "SnailSploit-offensive-ai-security",
+      "source": "SnailSploit",
+      "description": "AI/LLM security offensive checklist: prompt injection, jailbreaking, model extraction, training data poisoning, adversarial inputs, LLM-assisted at..."
+    },
+    {
+      "name": "SnailSploit-offensive-anti-forensics",
+      "source": "SnailSploit",
+      "description": "Anti-forensics and evidence destruction techniques for red team operators conducting authorized engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-api-abuse",
+      "source": "SnailSploit",
+      "description": "Advanced API exploitation methodology focused on business logic abuse and sophisticated attack patterns that bypass traditional security controls."
+    },
+    {
+      "name": "SnailSploit-offensive-api-security",
+      "source": "SnailSploit",
+      "description": "Comprehensive API security testing methodology covering REST, gRPC, and WebSocket attack surfaces."
+    },
+    {
+      "name": "SnailSploit-offensive-basic-exploitation",
+      "source": "SnailSploit",
+      "description": "Week 5 exploit development curriculum."
+    },
+    {
+      "name": "SnailSploit-offensive-bluetooth-ble",
+      "source": "SnailSploit",
+      "description": "Bluetooth Low Energy (BLE) attack methodology — GATT enumeration, characteristic read/write without auth, pairing downgrade (Just Works forced), LE..."
+    },
+    {
+      "name": "SnailSploit-offensive-bluetooth-classic",
+      "source": "SnailSploit",
+      "description": "Bluetooth Classic (BR/EDR) attack methodology — device discovery, service enumeration via SDP, LMP/L2CAP layer attacks, legacy PIN cracking (BlueBo..."
+    },
+    {
+      "name": "SnailSploit-offensive-bug-identification",
+      "source": "SnailSploit",
+      "description": "Systematic bug identification methodology: source code review patterns, black-box testing strategies, taint analysis, dangerous function hunting, d..."
+    },
+    {
+      "name": "SnailSploit-offensive-business-logic",
+      "source": "SnailSploit",
+      "description": "Business logic vulnerability testing for web/mobile/API engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-c2-frameworks",
+      "source": "SnailSploit",
+      "description": "Command and Control framework deployment, configuration, and operational tradecraft for red team engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-cicd-pipeline",
+      "source": "SnailSploit",
+      "description": "Comprehensive CI/CD pipeline exploitation methodology covering GitHub Actions injection vectors (expression injection via PR titles and issue bodie..."
+    },
+    {
+      "name": "SnailSploit-offensive-cicd-secrets",
+      "source": "SnailSploit",
+      "description": "Comprehensive secrets extraction methodology targeting CI/CD environments across all major platforms."
+    },
+    {
+      "name": "SnailSploit-offensive-cloud",
+      "source": "SnailSploit",
+      "description": "Cloud security attack methodology covering AWS, Azure, and GCP."
+    },
+    {
+      "name": "SnailSploit-offensive-container-escape",
+      "source": "SnailSploit",
+      "description": "Container escape and breakout techniques targeting Docker, containerd, and Podman runtimes."
+    },
+    {
+      "name": "SnailSploit-offensive-crash-analysis",
+      "source": "SnailSploit",
+      "description": "Week 4 exploit development curriculum."
+    },
+    {
+      "name": "SnailSploit-offensive-crypto-attacks",
+      "source": "SnailSploit",
+      "description": "Systematic methodology for identifying and exploiting cryptographic implementation weaknesses in real-world applications."
+    },
+    {
+      "name": "SnailSploit-offensive-data-exfiltration",
+      "source": "SnailSploit",
+      "description": "Dense methodology covering DNS exfiltration (dnscat2, iodine, dns2tcp), HTTPS tunneling (domain fronting, CDN abuse, legitimate service channels), ..."
+    },
+    {
+      "name": "SnailSploit-offensive-deauth-disassoc",
+      "source": "SnailSploit",
+      "description": "Deauthentication and disassociation attacks against 802.11 networks — targeted single-client deauth for handshake capture, broadcast deauth for DoS..."
+    },
+    {
+      "name": "SnailSploit-offensive-dependency-confusion",
+      "source": "SnailSploit",
+      "description": "Deep-dive offensive methodology for dependency confusion and namespace attacks across all major package ecosystems."
+    },
+    {
+      "name": "SnailSploit-offensive-deserialization",
+      "source": "SnailSploit",
+      "description": "Insecure deserialization exploitation across Java, PHP, .NET, Python, Node.js, and Ruby."
+    },
+    {
+      "name": "SnailSploit-offensive-edr-evasion",
+      "source": "SnailSploit",
+      "description": "EDR evasion offensive checklist: hook unhooking (user/kernel), direct syscalls, PPID spoofing, process injection variants, AMSI bypass, ETW patchin..."
+    },
+    {
+      "name": "SnailSploit-offensive-evil-twin",
+      "source": "SnailSploit",
+      "description": "Evil Twin / KARMA / Mana access point methodology — rogue AP construction with hostapd-mana / wifiphisher / airgeddon, KARMA universal probe respon..."
+    },
+    {
+      "name": "SnailSploit-offensive-exploit-dev-course",
+      "source": "SnailSploit",
+      "description": "Full exploit development course roadmap and syllabus: weekly topics, recommended reading, lab setup, and learning path from vulnerability classes t..."
+    },
+    {
+      "name": "SnailSploit-offensive-exploit-development",
+      "source": "SnailSploit",
+      "description": "Exploit development operational guide: environment setup, debugging workflow, PoC development lifecycle, writing reliable exploits, using pwntools/..."
+    },
+    {
+      "name": "SnailSploit-offensive-fast-checking",
+      "source": "SnailSploit",
+      "description": "Speed-optimized offensive checklist for rapid assessment: quick-win vulnerability patterns, fast recon shortcuts, automated scanner configurations,..."
+    },
+    {
+      "name": "SnailSploit-offensive-file-upload",
+      "source": "SnailSploit",
+      "description": "File upload vulnerability checklist: MIME type bypass, extension bypass, magic byte manipulation, path traversal in filenames, stored XSS via SVG/H..."
+    },
+    {
+      "name": "SnailSploit-offensive-fuzzing",
+      "source": "SnailSploit",
+      "description": "Practical offensive fuzzing methodology covering target identification, fuzzer selection (AFL++, libFuzzer, Honggfuzz, Boofuzz, syzkaller), harness..."
+    },
+    {
+      "name": "SnailSploit-offensive-fuzzing-course",
+      "source": "SnailSploit",
+      "description": "Week 2 of the exploit development curriculum."
+    },
+    {
+      "name": "SnailSploit-offensive-graphql",
+      "source": "SnailSploit",
+      "description": "Offensive methodology for attacking GraphQL APIs during penetration tests and bug bounty engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-idor",
+      "source": "SnailSploit",
+      "description": "IDOR (Insecure Direct Object Reference) testing checklist: object ID enumeration, horizontal/vertical privilege escalation, GUID predictability, in..."
+    },
+    {
+      "name": "SnailSploit-offensive-initial-access",
+      "source": "SnailSploit",
+      "description": "Initial access techniques checklist: phishing (spear/smishing), credential stuffing, exposed service exploitation, supply chain attacks, watering h..."
+    },
+    {
+      "name": "SnailSploit-offensive-iot",
+      "source": "SnailSploit",
+      "description": "IoT and embedded device security testing methodology."
+    },
+    {
+      "name": "SnailSploit-offensive-jwt",
+      "source": "SnailSploit",
+      "description": "JWT attack methodology for penetration testers."
+    },
+    {
+      "name": "SnailSploit-offensive-k8s-attacks",
+      "source": "SnailSploit",
+      "description": "Kubernetes cluster attack techniques covering the full attack lifecycle from initial foothold in a pod to cluster-wide compromise."
+    },
+    {
+      "name": "SnailSploit-offensive-keylogger-arch",
+      "source": "SnailSploit",
+      "description": "Low-level keylogger architecture design: kernel driver hooks (WH_KEYBOARD_LL, SetWindowsHookEx), ETW-based input capture, user-mode vs kernel-mode ..."
+    },
+    {
+      "name": "SnailSploit-offensive-krack-fragattacks",
+      "source": "SnailSploit",
+      "description": "KRACK (CVE-2017-13077..082) and FragAttacks (CVE-2020-24586..588 + 26139-26147) — key reinstallation, fragmentation, and aggregation attacks agains..."
+    },
+    {
+      "name": "SnailSploit-offensive-lateral-movement",
+      "source": "SnailSploit",
+      "description": "Comprehensive lateral movement tradecraft for authorized red team engagements covering credential-based movement (pass-the-hash, pass-the-ticket, o..."
+    },
+    {
+      "name": "SnailSploit-offensive-linux-privesc",
+      "source": "SnailSploit",
+      "description": "Comprehensive Linux privilege escalation methodology for offensive security engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-lorawan-sub-ghz",
+      "source": "SnailSploit",
+      "description": "LoRaWAN and sub-GHz (433 / 868 / 915 MHz) attack methodology — LoRaWAN ABP/OTAA join attack, network/session key reuse, frame counter replay, downl..."
+    },
+    {
+      "name": "SnailSploit-offensive-mitigations",
+      "source": "SnailSploit",
+      "description": "Security mitigation reference and bypass catalog: ASLR, DEP/NX, RELRO, stack canaries, CFI, sandboxing, seccomp."
+    },
+    {
+      "name": "SnailSploit-offensive-mobile",
+      "source": "SnailSploit",
+      "description": "Mobile (Android + iOS) application penetration testing methodology."
+    },
+    {
+      "name": "SnailSploit-offensive-netexec",
+      "source": "SnailSploit",
+      "description": "Use this skill whenever the user asks about NetExec (nxc) — a network exploitation and post-exploitation tool for Active Directory environments."
+    },
+    {
+      "name": "SnailSploit-offensive-network-attacks",
+      "source": "SnailSploit",
+      "description": "Dense description covering ARP spoofing, LLMNR/NBT-NS/mDNS poisoning, DNS poisoning, MITM attacks, VLAN hopping, DHCP attacks, 802.1X/NAC bypass, I..."
+    },
+    {
+      "name": "SnailSploit-offensive-oauth",
+      "source": "SnailSploit",
+      "description": "OAuth 2.0 attack checklist: authorization code interception, redirect_uri bypass, CSRF on OAuth flow, state parameter abuse, open redirector chaini..."
+    },
+    {
+      "name": "SnailSploit-offensive-open-redirect",
+      "source": "SnailSploit",
+      "description": "Open redirect vulnerability checklist: parameter identification, bypass techniques (URL encoding, double slashes, CRLF injection, protocol handlers..."
+    },
+    {
+      "name": "SnailSploit-offensive-osint",
+      "source": "SnailSploit",
+      "description": "Comprehensive OSINT methodology skill for offensive security, red team intelligence gathering, and bug bounty reconnaissance."
+    },
+    {
+      "name": "SnailSploit-offensive-osint-methodology",
+      "source": "SnailSploit",
+      "description": "Structured OSINT methodology framework: target definition, source selection, collection workflows, data correlation, timeline reconstruction, and r..."
+    },
+    {
+      "name": "SnailSploit-offensive-parameter-pollution",
+      "source": "SnailSploit",
+      "description": "HTTP parameter pollution (HPP) checklist: duplicate parameter injection, backend vs frontend parsing differences, WAF bypass via HPP, server-side v..."
+    },
+    {
+      "name": "SnailSploit-offensive-persistence",
+      "source": "SnailSploit",
+      "description": "Comprehensive persistence tradecraft for authorized red team engagements covering Windows and Linux mechanisms."
+    },
+    {
+      "name": "SnailSploit-offensive-phishing",
+      "source": "SnailSploit",
+      "description": "Phishing campaign execution methodology for authorized red team engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-race-condition",
+      "source": "SnailSploit",
+      "description": "Race condition (TOCTOU) testing checklist: identifying timing windows, Burp Suite Turbo Intruder, Last-Byte sync technique, rate limit bypass, doub..."
+    },
+    {
+      "name": "SnailSploit-offensive-rce",
+      "source": "SnailSploit",
+      "description": "Remote Code Execution testing checklist: OS command injection, SSTI-to-RCE, deserialization RCE, file upload RCE, XXE with SSRF to RCE, RCE via dep..."
+    },
+    {
+      "name": "SnailSploit-offensive-reporting",
+      "source": "SnailSploit",
+      "description": "Penetration test and red team report writing methodology."
+    },
+    {
+      "name": "SnailSploit-offensive-request-smuggling",
+      "source": "SnailSploit",
+      "description": "HTTP request smuggling checklist: CL.TE, TE.CL, TE.TE variants, detection with timing and differential responses, WAF bypass, cache poisoning, cred..."
+    },
+    {
+      "name": "SnailSploit-offensive-shellcode",
+      "source": "SnailSploit",
+      "description": "Shellcode development reference for offensive security engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-social-engineering",
+      "source": "SnailSploit",
+      "description": "Social engineering attack techniques beyond email phishing for authorized red team and physical penetration testing engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-sqli",
+      "source": "SnailSploit",
+      "description": "SQL injection testing skill for offensive security assessments and bug bounty hunting."
+    },
+    {
+      "name": "SnailSploit-offensive-ssrf",
+      "source": "SnailSploit",
+      "description": "Server-Side Request Forgery testing checklist: SSRF discovery, blind SSRF with out-of-band, cloud metadata endpoints (AWS/GCP/Azure), SSRF filter b..."
+    },
+    {
+      "name": "SnailSploit-offensive-ssti",
+      "source": "SnailSploit",
+      "description": "Dense description covering Server-Side Template Injection across Jinja2, Twig, Freemarker, Velocity, Pebble, Smarty, Mako, Handlebars, ERB, Thymele..."
+    },
+    {
+      "name": "SnailSploit-offensive-supply-chain",
+      "source": "SnailSploit",
+      "description": "Comprehensive offensive methodology for software supply chain attacks covering the full kill chain from reconnaissance through exploitation."
+    },
+    {
+      "name": "SnailSploit-offensive-tls-attacks",
+      "source": "SnailSploit",
+      "description": "Comprehensive methodology for auditing and exploiting TLS/SSL implementations and misconfigurations across network services and mobile applications."
+    },
+    {
+      "name": "SnailSploit-offensive-toctou",
+      "source": "SnailSploit",
+      "description": "Time-of-Check / Time-of-Use (TOCTOU) race condition exploitation methodology across binary, kernel, filesystem, web, and container layers."
+    },
+    {
+      "name": "SnailSploit-offensive-vuln-classes",
+      "source": "SnailSploit",
+      "description": "Exploit development curriculum covering core vulnerability classes with real-world CVE case studies: stack/heap buffer overflows, use-after-free, i..."
+    },
+    {
+      "name": "SnailSploit-offensive-waf-bypass",
+      "source": "SnailSploit",
+      "description": "WAF bypass techniques checklist: encoding bypass (URL/HTML/Unicode/double encoding), case variation, comment injection, HTTP header manipulation, c..."
+    },
+    {
+      "name": "SnailSploit-offensive-wifi",
+      "source": "SnailSploit",
+      "description": "Wireless / 802.11 attack methodology for red team engagements and wireless security assessments."
+    },
+    {
+      "name": "SnailSploit-offensive-wifi-recon",
+      "source": "SnailSploit",
+      "description": "Wi-Fi reconnaissance methodology — adapter selection, monitor mode and packet injection setup, regulatory domain handling, multi-band airspace mapp..."
+    },
+    {
+      "name": "SnailSploit-offensive-windows-boundaries",
+      "source": "SnailSploit",
+      "description": "Windows security boundary taxonomy and attack surface enumeration: kernel/user boundary, sandbox boundaries (LPAC, AppContainer), COM/RPC boundarie..."
+    },
+    {
+      "name": "SnailSploit-offensive-windows-mitigations",
+      "source": "SnailSploit",
+      "description": "Deep-dive on Windows exploit mitigations: ASLR, DEP/NX, CFG, CET/Shadow Stack, SEHOP, Heap Guard, ACG, Arbitrary Code Guard."
+    },
+    {
+      "name": "SnailSploit-offensive-windows-privesc",
+      "source": "SnailSploit",
+      "description": "Comprehensive Windows privilege escalation methodology for offensive security engagements."
+    },
+    {
+      "name": "SnailSploit-offensive-wpa-enterprise",
+      "source": "SnailSploit",
+      "description": "WPA/WPA2/WPA3-Enterprise (802.1X / EAP) attack methodology — EAP method identification (PEAP-MSCHAPv2, EAP-TTLS, EAP-TLS, EAP-GTC, EAP-PWD, EAP-FAS..."
+    },
+    {
+      "name": "SnailSploit-offensive-wpa2-psk",
+      "source": "SnailSploit",
+      "description": "WPA/WPA2-PSK attack methodology — four-way handshake capture via targeted deauthentication, PMKID attacks (no client required), hcxdumptool / hcxpc..."
+    },
+    {
+      "name": "SnailSploit-offensive-wpa3-sae",
+      "source": "SnailSploit",
+      "description": "WPA3 / SAE (Simultaneous Authentication of Equals) attack methodology — transition-mode (mixed WPA2/WPA3) downgrade, Dragonblood side-channel attac..."
+    },
+    {
+      "name": "SnailSploit-offensive-wps",
+      "source": "SnailSploit",
+      "description": "WPS (Wi-Fi Protected Setup) PIN attack methodology — Pixie Dust offline attack against vulnerable chipsets (Ralink, Realtek, Broadcom, MediaTek), o..."
+    },
+    {
+      "name": "SnailSploit-offensive-xss",
+      "source": "SnailSploit",
+      "description": "Cross-Site Scripting testing checklist: stored/reflected/DOM/blind XSS discovery, polyglot payloads, CSP bypass, XSS filter bypass, event handler i..."
+    },
+    {
+      "name": "SnailSploit-offensive-xxe",
+      "source": "SnailSploit",
+      "description": "XML External Entity injection testing checklist: classic XXE, blind XXE (out-of-band), XXE via file upload (SVG/docx), XXE in SOAP/REST, error-base..."
+    },
+    {
+      "name": "SnailSploit-offensive-z-wave",
+      "source": "SnailSploit",
+      "description": "Z-Wave attack methodology — sniffing with Z-Force / EZ-Wave / RTL-SDR + ZniffMobile, S0 (legacy) network-key derivation flaw and key reuse, S2 (mod..."
+    },
+    {
+      "name": "SnailSploit-offensive-zigbee-thread-matter",
+      "source": "SnailSploit",
+      "description": "Zigbee, Thread, and Matter mesh-protocol attack methodology — IEEE 802.15.4 sniffing with TI CC2531 / CC2540 / Sonoff Zigbee Dongle E, KillerBee to..."
     },
     {
       "name": "social",
