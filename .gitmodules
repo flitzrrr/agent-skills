@@ -61,3 +61,6 @@
 [submodule "vendor/VoltAgent-awesome-agent-skills"]
 	path = vendor/VoltAgent-awesome-agent-skills
 	url = https://github.com/VoltAgent/awesome-agent-skills.git
+[submodule "vendor/SnailSploit-Claude-Red"]
+	path = vendor/SnailSploit-Claude-Red
+	url = https://github.com/SnailSploit/Claude-Red.git
