@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-12T18:25:05.489Z",
-  "total": 637,
+  "generated": "2026-10-19T15:09:41.581Z",
+  "total": 639,
   "skills": [
     {
       "name": "ab-testing",
@@ -446,6 +446,11 @@
       "name": "cloudflare-durable-objects",
       "source": "cloudflare",
       "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination."
+    },
+    {
+      "name": "cloudflare-gateway-workers",
+      "source": "cloudflare",
+      "description": "Build, debug, or review Cloudflare Workers invoked by the Forward action in Gateway HTTP policies, including the GatewayMiddleware entrypoint, Gate..."
     },
     {
       "name": "cloudflare-k2",
@@ -2178,6 +2183,11 @@
       "description": "Append a GitHub issue link and its Linear ticket to the current PR's description."
     },
     {
+      "name": "sentry-pr-screenshots",
+      "source": "sentry",
+      "description": "Capture screenshots of the Sentry UI in a web browser, lay them out in a pull request description as before/after tables, and upload them with `gh ..."
+    },
+    {
       "name": "sentry-pr-writer",
       "source": "sentry",
       "description": "Create or refresh reviewer-facing PR titles and descriptions."
@@ -2845,7 +2855,7 @@
     {
       "name": "tob-dimensional-analysis",
       "source": "tob",
-      "description": "Annotates codebases with dimensional analysis comments documenting units, dimensions, and decimal scaling."
+      "description": "Audits code for unit and decimal-scaling bugs and annotates it with dimensional comments recording the units of each value."
     },
     {
       "name": "tob-dwarf-expert",
