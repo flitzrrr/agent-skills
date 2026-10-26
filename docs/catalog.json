@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-19T16:03:25.959Z",
-  "total": 639,
+  "generated": "2026-10-26T14:42:58.417Z",
+  "total": 653,
   "skills": [
     {
       "name": "ab-testing",
@@ -533,6 +533,11 @@
       "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover."
     },
     {
+      "name": "conversion-tracking",
+      "source": "conversion",
+      "description": "Set up, audit, verify, or fix website conversion tracking."
+    },
+    {
       "name": "copy-editing",
       "source": "copy",
       "description": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content."
@@ -686,11 +691,6 @@
       "name": "expo-expo-skill-eval",
       "source": "expo",
       "description": "Evaluate Expo skills in this repo end-to-end - trigger accuracy, generated code quality, and runtime screenshots on iOS simulator and Android emula..."
-    },
-    {
-      "name": "expo-expo-skill-feedback",
-      "source": "expo",
-      "description": "'Submit feedback on an Expo skill—or Expo itself—and control bundled anonymous usage telemetry (off by default / opt-in)."
     },
     {
       "name": "expo-expo-ui",
@@ -941,6 +941,11 @@
       "name": "lead-magnets",
       "source": "lead",
       "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation."
+    },
+    {
+      "name": "link-building",
+      "source": "link",
+      "description": "When the user wants to earn backlinks or third-party mentions that lift rankings and AI citations."
     },
     {
       "name": "marketing-council",
@@ -2208,6 +2213,11 @@
       "description": "'Finds secrets, tokens, passwords, and API keys that can leak through generated serialization: Python dataclass repr and asdict, attrs, pydantic mo..."
     },
     {
+      "name": "sentry-security-model",
+      "source": "sentry",
+      "description": "Define, review, or update SECURITY_MODEL.md files that tell security review tools a repository's threat model, trust boundaries, invariants, report..."
+    },
+    {
       "name": "sentry-security-review",
       "source": "sentry",
       "description": "Security code review for vulnerabilities."
@@ -2738,6 +2748,11 @@
       "description": "Builds and runs code under AddressSanitizer to catch buffer overflows, use-after-free, and other memory errors during fuzzing or tests."
     },
     {
+      "name": "tob-adjudicate-regression",
+      "source": "tob",
+      "description": "Use when deciding whether source and live reproduction evidence establish a new regression or an exclusion."
+    },
+    {
       "name": "tob-aflpp",
       "source": "tob",
       "description": "Sets up and runs AFL++ for multi-core fuzzing of C/C++ projects built with afl-clang-fast or afl-gcc-fast."
@@ -2923,6 +2938,16 @@
       "description": "Designs and improves fuzzing harnesses for C/C++ and Rust."
     },
     {
+      "name": "tob-hunt-regressions",
+      "source": "tob",
+      "description": "Use when discovering possible regressions from a pinned change and its callers before reproduction."
+    },
+    {
+      "name": "tob-implement-patch",
+      "source": "tob",
+      "description": "Use when a confirmed local bug needs an invariant-level fix, variant search, tests, and one local commit."
+    },
+    {
       "name": "tob-interpreting-culture-index",
       "source": "tob",
       "description": "Interprets Culture Index (CI) surveys, behavioral profiles, and personality assessment data."
@@ -2973,6 +2998,11 @@
       "description": "Enrolls a project in OSS-Fuzz, Google's free continuous fuzzing service for open source, and drives it locally."
     },
     {
+      "name": "tob-patching-bugs",
+      "source": "tob",
+      "description": "Use when a known bug or falsifiable bug hypothesis in a local codebase needs a patch commit and reviewable proof report."
+    },
+    {
       "name": "tob-post-patch-validation",
       "source": "tob",
       "description": "Validates security patches with reproducible baseline-versus-patched evidence, including original exploits, root-cause variants, behavior preservat..."
@@ -2983,9 +3013,44 @@
       "description": "Runs an autonomous review-and-fix improvement loop over the current branch's changes until a PR review comes back clean, scoped mechanically to the..."
     },
     {
+      "name": "tob-prepare-regression",
+      "source": "tob",
+      "description": "Use when pinning before/after sources and collecting PR or commit context for a regression investigation."
+    },
+    {
       "name": "tob-property-based-testing",
       "source": "tob",
       "description": "Writes, reviews, and debugs property-based tests — Hypothesis, fast-check, proptest, jqwik, rapid, and Echidna or Medusa for Solidity invariants."
+    },
+    {
+      "name": "tob-prove-patch",
+      "source": "tob",
+      "description": "Use when a local security patch commit needs independent scoped and three-arm proof."
+    },
+    {
+      "name": "tob-regression-hunt",
+      "source": "tob",
+      "description": "Use when investigating regressions in PRs or commits, coordinating a regression campaign, or resuming saved progress."
+    },
+    {
+      "name": "tob-replay-regression",
+      "source": "tob",
+      "description": "Use when independently verifying a supplied PoC against fresh live before/after deployments."
+    },
+    {
+      "name": "tob-report-regressions",
+      "source": "tob",
+      "description": "Use when assembling or refreshing an evidence-linked regression report from saved campaign decisions."
+    },
+    {
+      "name": "tob-reproduce-bug",
+      "source": "tob",
+      "description": "Use when a named runtime or compiler bug in a local repository needs independent reproduction."
+    },
+    {
+      "name": "tob-reproduce-regression",
+      "source": "tob",
+      "description": "Use when deploying before/after systems and building a live-system PoC for a regression candidate."
     },
     {
       "name": "tob-review-walkthrough",
@@ -3111,6 +3176,11 @@
       "name": "tob-trailmark-variant-neighborhood",
       "source": "tob",
       "description": "Expands one confirmed or suspected vulnerability into a Trailmark graph neighborhood of variant candidates by finding sibling functions, shared cal..."
+    },
+    {
+      "name": "tob-validate-bug",
+      "source": "tob",
+      "description": "Use when a bug PoC package needs an independent rerun and judgment before patching."
     },
     {
       "name": "tob-variant-analysis",
