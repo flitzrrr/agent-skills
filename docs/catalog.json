@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-26T15:40:26.157Z",
-  "total": 653,
+  "generated": "2026-11-02T17:37:30.895Z",
+  "total": 654,
   "skills": [
     {
       "name": "ab-testing",
@@ -1201,6 +1201,11 @@
       "name": "referrals",
       "source": "referrals",
       "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
+    },
+    {
+      "name": "reverse-engineer-marketing",
+      "source": "reverse",
+      "description": "When the user wants to reverse engineer how another company grew and copy what worked."
     },
     {
       "name": "revops",

@@ -53,7 +53,7 @@
 
 ## Skills by Source
 
-### Sentry (getsentry/skills) — 653 skills
+### Sentry (getsentry/skills) — 654 skills
 
 Security, code quality, and Git workflow. Battle-tested at scale.
 
@@ -123,7 +123,7 @@ Comprehensive SEO auditing toolkit with Playwright integration.
 
 ---
 
-### OpenCode Processing (DasDigitaleMomentum) — 653 skills
+### OpenCode Processing (DasDigitaleMomentum) — 654 skills
 
 Multi-session project planning and documentation framework.
 
@@ -141,7 +141,7 @@ Multi-session project planning and documentation framework.
 
 ---
 
-### Anthropic (anthropics/skills) — 653 skills
+### Anthropic (anthropics/skills) — 654 skills
 
 Document creation, creative design, developer tools, and enterprise workflows.
 
@@ -184,7 +184,7 @@ Document creation, creative design, developer tools, and enterprise workflows.
 
 ---
 
-### Vercel (vercel-labs/agent-skills) — 653 skills
+### Vercel (vercel-labs/agent-skills) — 654 skills
 
 React/Next.js performance, web design, and deployment.
 
