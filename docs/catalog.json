@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-02T19:00:25.888Z",
-  "total": 654,
+  "generated": "2026-11-09T18:02:32.437Z",
+  "total": 659,
   "skills": [
     {
       "name": "ab-testing",
@@ -428,6 +428,11 @@
       "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security."
     },
     {
+      "name": "cloudflare-cloudflare-app-bootstrap",
+      "source": "cloudflare",
+      "description": "Get a Cloudflare Workers app to a working local request by connecting its bindings, secrets, and initial data, then verifying real application beha..."
+    },
+    {
       "name": "cloudflare-cloudflare-email-service",
       "source": "cloudflare",
       "description": "Implement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration."
@@ -446,6 +451,11 @@
       "name": "cloudflare-durable-objects",
       "source": "cloudflare",
       "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination."
+    },
+    {
+      "name": "cloudflare-frameworks-on-cloudflare",
+      "source": "cloudflare",
+      "description": "Build, migrate, and deploy web-framework applications on Cloudflare Workers."
     },
     {
       "name": "cloudflare-gateway-workers",
@@ -491,6 +501,11 @@
       "name": "cloudflare-workers-best-practices",
       "source": "cloudflare",
       "description": "Cloudflare Workers best practices for production applications."
+    },
+    {
+      "name": "cloudflare-workers-development",
+      "source": "cloudflare",
+      "description": "Run, inspect, and debug Cloudflare Workers during local development with cf dev, wrangler dev, or the Cloudflare Vite plugin, using Local Explorer ..."
     },
     {
       "name": "cloudflare-workers-profiling",
@@ -2123,6 +2138,11 @@
       "description": "Write copy following Sentry brand guidelines."
     },
     {
+      "name": "sentry-browse-local-sentry",
+      "source": "sentry",
+      "description": "Connects an agent's browser to a local Sentry dev server (dev-ui on *.dev.getsentry.net or the full devserver)."
+    },
+    {
       "name": "sentry-claude-settings-audit",
       "source": "sentry",
       "description": "Analyze a repository to generate recommended Claude Code settings.json permissions."
@@ -2856,6 +2876,11 @@
       "name": "tob-crypto-protocol-diagram",
       "source": "tob",
       "description": "Extracts protocol message flow from source code, RFCs, academic papers, pseudocode, informal prose, ProVerif (.pv), or Tamarin (.spthy) models and ..."
+    },
+    {
+      "name": "tob-cvss-scoring",
+      "source": "tob",
+      "description": "Produces CVSS v4.0 vector strings from plain-text vulnerability descriptions by systematically evaluating base metrics."
     },
     {
       "name": "tob-devcontainer-setup",
