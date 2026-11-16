@@ -1,16 +1,16 @@
 {
-  "generated": "2026-11-09T19:22:59.022Z",
-  "total": 659,
+  "generated": "2026-11-16T17:42:33.641Z",
+  "total": 661,
   "skills": [
     {
       "name": "ab-testing",
       "source": "ab",
-      "description": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program."
+      "description": "When the user wants to plan, run, or read A/B tests, or asks a judgement call on one: is the result real, can we stop, which version won, is this w..."
     },
     {
       "name": "ad-creative",
       "source": "ad",
-      "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advert..."
+      "description": "When the user wants to write or judge ad creative, or asks which ad, hook, or angle to run or kill: headlines, primary text, and variations for Goo..."
     },
     {
       "name": "addyosmani-api-and-interface-design",
@@ -60,7 +60,7 @@
     {
       "name": "addyosmani-documentation-and-adrs",
       "source": "addyosmani",
-      "description": "Records decisions and documentation."
+      "description": "Records decisions and documentation, and detects when documentation has drifted from the code it describes."
     },
     {
       "name": "addyosmani-doubt-driven-development",
@@ -140,17 +140,17 @@
     {
       "name": "ads",
       "source": "ads",
-      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms."
+      "description": "When the user wants to plan, run, or fix paid ads on Google, Meta, and LinkedIn, or asks a judgement call on them: are ads worth it, which channel ..."
     },
     {
       "name": "ai-seo",
       "source": "ai",
-      "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers."
+      "description": "When the user wants to get cited and recommended in AI answers (ChatGPT, Perplexity, AI Overviews), or asks why AI cites a competitor, which conten..."
     },
     {
       "name": "analytics",
       "source": "analytics",
-      "description": "When the user wants to set up, improve, or audit analytics tracking and measurement."
+      "description": "When the user wants to set up or audit analytics, or asks whether a metric or number is calculated right, what to track, or how to name events: tra..."
     },
     {
       "name": "anthropic-academy-guide",
@@ -255,12 +255,12 @@
     {
       "name": "aso",
       "source": "aso",
-      "description": "When the user wants to audit or optimize an App Store or Google Play listing."
+      "description": "When the user wants to audit or optimize an App Store or Google Play listing, or asks which title, keywords, or screenshots to pick or why download..."
     },
     {
       "name": "attribution",
       "source": "attribution",
-      "description": "When the user wants to figure out which marketing actually drives conversions and revenue, choose or interpret an attribution model, or reconcile c..."
+      "description": "When the user wants to work out which marketing drives revenue, or asks whether a channel is really working, which numbers to trust, or how to cred..."
     },
     {
       "name": "aws-api-gateway",
@@ -405,7 +405,7 @@
     {
       "name": "churn-prevention",
       "source": "churn",
-      "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies."
+      "description": "When the user wants to reduce churn, or asks why customers cancel, whether to offer a discount or pause: cancellation flows, exit surveys, save off..."
     },
     {
       "name": "cloudflare-agents-sdk",
@@ -520,62 +520,62 @@
     {
       "name": "co-marketing",
       "source": "co",
-      "description": "When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities."
+      "description": "When the user wants co-marketing partners or joint campaigns, or asks whether a partner fits, a size mismatch matters, or how to split work and lea..."
     },
     {
       "name": "cold-email",
       "source": "cold",
-      "description": "Write and run B2B cold outbound that gets replies, from cold emails and follow-ups to sending setup, LinkedIn, multichannel cadences, and reply han..."
+      "description": "When the user wants to write or run B2B cold outbound, or asks whether an opener, reason to reach out, or email works or why nobody replies: cold e..."
     },
     {
       "name": "community-marketing",
       "source": "community",
-      "description": "Build and leverage online communities to drive product growth and brand loyalty."
+      "description": "When the user wants to build or grow an online community, or asks whether a community is worth it, where to host it, or why members stay quiet: Dis..."
     },
     {
       "name": "competitor-profiling",
       "source": "competitor",
-      "description": "When the user wants to research, profile, or analyze competitors from their URLs."
+      "description": "When the user wants to research competitors into dated profiles, or asks what a rival charges, claims, or is doing, or whether a conclusion about t..."
     },
     {
       "name": "competitors",
       "source": "competitors",
-      "description": "When the user wants to create competitor comparison or alternative pages for SEO and buyer-facing use."
+      "description": "When the user wants to create or audit comparison and alternative pages ('X vs Y', 'X alternative', 'best X alternatives'), or asks what a public p..."
     },
     {
       "name": "content-strategy",
       "source": "content",
-      "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover."
+      "description": "When the user wants to plan content, or asks which topic or piece to prioritize, what to write about, or why posts bring no customers: topic cluste..."
     },
     {
       "name": "conversion-tracking",
       "source": "conversion",
-      "description": "Set up, audit, verify, or fix website conversion tracking."
+      "description": "When the user wants to set up, audit, or fix conversion tracking to Google Ads, Meta, GA4, LinkedIn, and TikTok, or asks why conversions are missin..."
     },
     {
       "name": "copy-editing",
       "source": "copy",
-      "description": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content."
+      "description": "When the user wants to edit, tighten, proofread, or refresh existing copy, or asks whether to keep, cut, or change a line in it, without rewriting ..."
     },
     {
       "name": "copywriting",
       "source": "copywriting",
-      "description": "When the user wants to write, rewrite, or improve marketing copy for any page, including homepage, landing pages, pricing pages, feature pages, abo..."
+      "description": "When the user wants to write or rewrite page copy (homepage, landing, pricing, feature), or asks which headline, promise, or message to lead with."
     },
     {
       "name": "cro",
       "source": "cro",
-      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages,..."
+      "description": "When the user wants more conversions from a page or form, or asks why a page isn't converting, what to change first, or whether to add or remove a ..."
     },
     {
       "name": "customer-research",
       "source": "customer",
-      "description": "When the user wants to conduct, analyze, or synthesize customer research."
+      "description": "When the user wants to run or synthesize customer research, or asks what customer quotes, reviews, or feedback really mean, what is safe to conclud..."
     },
     {
       "name": "directory-submissions",
       "source": "directory",
-      "description": "When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for backlinks, domain rating, and disc..."
+      "description": "When the user wants to list a product in startup, SaaS, AI, MCP, and review directories, or asks which directories are worth it or whether listings..."
     },
     {
       "name": "dispatch-parallel-agents",
@@ -585,12 +585,12 @@
     {
       "name": "emails",
       "source": "emails",
-      "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program."
+      "description": "When the user wants to create or improve automated email sequences, or asks what to send, when, or whether an email or flow is working: welcome, on..."
     },
     {
       "name": "events",
       "source": "events",
-      "description": "When the user wants to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows, meetups, dinners, workshops,..."
+      "description": "When the user wants to plan, run, sponsor, or speak at events, or asks whether an event or booth is worth the money: webinars, conferences, booths,..."
     },
     {
       "name": "execute-work-package",
@@ -615,7 +615,7 @@
     {
       "name": "expo-eas-simulator",
       "source": "expo",
-      "description": "Run and control a user's app on a remote iOS/Android simulator hosted on EAS cloud."
+      "description": "Run and control a user's app on a remote iOS/Android simulator with Expo Simulators (also called EAS Simulator)."
     },
     {
       "name": "expo-eas-update",
@@ -730,7 +730,7 @@
     {
       "name": "free-tools",
       "source": "free",
-      "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness."
+      "description": "When the user wants to plan or build a free tool as marketing, or asks whether a tool idea is worth building or which one to pick: calculators, gra..."
     },
     {
       "name": "google-code-to-design",
@@ -915,12 +915,12 @@
     {
       "name": "image",
       "source": "image",
-      "description": "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, l..."
+      "description": "When the user wants to create, generate, edit, or optimize marketing images, or asks which approach to take (generate, design, or photograph): blog..."
     },
     {
       "name": "influencer-marketing",
       "source": "influencer",
-      "description": "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring dea..."
+      "description": "When the user wants creator, influencer, or ambassador partnerships, or asks which creators fit, what to pay, which rights to buy, or whether a spo..."
     },
     {
       "name": "JackyST0-api-doc-generator",
@@ -950,42 +950,42 @@
     {
       "name": "launch",
       "source": "launch",
-      "description": "When the user wants to plan a product launch, feature announcement, or release strategy."
+      "description": "When the user wants to plan a product or feature launch, or asks whether it's ready, when to announce, or how to get noticed: Product Hunt, beta an..."
     },
     {
       "name": "lead-magnets",
       "source": "lead",
-      "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation."
+      "description": "When the user wants to plan or improve a lead magnet, or asks what to give away for emails or how much to ask in return (gating, form fields): chec..."
     },
     {
       "name": "link-building",
       "source": "link",
-      "description": "When the user wants to earn backlinks or third-party mentions that lift rankings and AI citations."
+      "description": "When the user wants backlinks and mentions that lift rankings and AI citations, or asks how to get sites to link or whether a link tactic is safe: ..."
     },
     {
       "name": "marketing-council",
       "source": "marketing",
-      "description": "When the user wants multiple expert perspectives on a marketing question — a simulated board of advisors staffed by legendary marketers (Seth Godin..."
+      "description": "When the user wants several expert takes on a marketing decision, or asks what a famous marketer would say about it: a simulated board (Seth Godin,..."
     },
     {
       "name": "marketing-ideas",
       "source": "marketing",
-      "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product."
+      "description": "When the user wants marketing ideas or growth tactics for a software product, or asks what to try to get attention or the next customers with littl..."
     },
     {
       "name": "marketing-loops",
       "source": "marketing",
-      "description": "When the user wants to set up a recurring, self-running marketing workflow — a repeatable loop an AI agent runs on a cadence (weekly, daily, on a t..."
+      "description": "When the user wants a recurring marketing job an AI agent runs on a cadence or trigger, or asks what a weekly or daily automated check should do, r..."
     },
     {
       "name": "marketing-plan",
       "source": "marketing",
-      "description": "When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product."
+      "description": "When the user wants a full marketing or go-to-market plan for a client, an advised company, or their own product, or asks how to sequence or priori..."
     },
     {
       "name": "marketing-psychology",
       "source": "marketing",
-      "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing."
+      "description": "When the user wants to apply psychology to marketing, or asks why buyers behave or value things as they do, or whether a persuasion tactic is hones..."
     },
     {
       "name": "MoizIbnYousaf-ask-questions-if-underspecified",
@@ -1080,12 +1080,12 @@
     {
       "name": "offers",
       "source": "offers",
-      "description": "When the user wants to design, construct, or improve an offer — the thing they actually sell — including value framing, bonus stacking, guarantee d..."
+      "description": "When the user wants to design or improve the offer itself, or asks why it isn't selling or how to add urgency honestly: value stacking, bonuses, gu..."
     },
     {
       "name": "onboarding",
       "source": "onboarding",
-      "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value."
+      "description": "When the user wants better onboarding and activation, or asks why new users don't stick or what the first session should do: first-run experience, ..."
     },
     {
       "name": "opencode-archive-legacy-docs",
@@ -1175,17 +1175,17 @@
     {
       "name": "paywalls",
       "source": "paywalls",
-      "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates."
+      "description": "When the user wants to create or improve in-app paywalls and upgrade moments, or asks when or how hard to ask free users to pay (after they've seen..."
     },
     {
       "name": "popups",
       "source": "popups",
-      "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes."
+      "description": "When the user wants to create or improve popups, modals, slide-ins, sticky bars, and banners, or asks whether one will help or annoy and when to sh..."
     },
     {
       "name": "pricing",
       "source": "pricing",
-      "description": "When the user wants help with pricing decisions, packaging, or monetization strategy."
+      "description": "When the user wants to set pricing and packaging, or asks what to charge, whether to raise prices, or how to move existing customers: tiers, value ..."
     },
     {
       "name": "product-description-seo",
@@ -1195,47 +1195,47 @@
     {
       "name": "product-marketing",
       "source": "product",
-      "description": "When the user wants to create or update their product marketing context document."
+      "description": "When the user wants to create or update the product marketing context doc (.agents/product-marketing.md), or asks what belongs in it or whether pos..."
     },
     {
       "name": "programmatic-seo",
       "source": "programmatic",
-      "description": "When the user wants to create SEO-driven pages at scale using templates and data."
+      "description": "When the user wants SEO pages at scale from templates and data, or asks whether a page set will rank or look thin: location, integration, compariso..."
     },
     {
       "name": "prospecting",
       "source": "prospecting",
-      "description": "When the user wants to find, qualify, and build a list of prospects to reach out to, across B2B SaaS, general B2B, or local small businesses."
+      "description": "When the user wants to find and qualify prospects for outbound, or asks who to target first, which signal to prioritize, or where to spot buyers wi..."
     },
     {
       "name": "public-relations",
       "source": "public",
-      "description": "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests)."
+      "description": "When the user wants press and media coverage, or asks what to say to a reporter, whether a story is newsworthy, or how to handle a crisis: pitches,..."
     },
     {
       "name": "referrals",
       "source": "referrals",
-      "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy."
+      "description": "When the user wants referral and affiliate programs or word of mouth, or asks what to reward, how much to pay, or which loop to start with: refer-a..."
     },
     {
       "name": "reverse-engineer-marketing",
       "source": "reverse",
-      "description": "When the user wants to reverse engineer how another company grew and copy what worked."
+      "description": "When the user wants to know how another company grew and what to copy, or asks what a competitor did and when: a dated log of their moves against t..."
     },
     {
       "name": "revops",
       "source": "revops",
-      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes."
+      "description": "When the user wants to design revenue operations, or asks when a lead is ready for sales or why sales and marketing disagree on lead quality: lifec..."
     },
     {
       "name": "sales-enablement",
       "source": "sales",
-      "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts."
+      "description": "When the user wants sales collateral, or asks what to give a champion or rep, or how to answer an objection or make the case: decks, one-pagers, ob..."
     },
     {
       "name": "schema",
       "source": "schema",
-      "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site."
+      "description": "When the user wants to add, fix, or validate schema markup (JSON-LD), or asks which type fits a page or whether some markup is allowed: product, re..."
     },
     {
       "name": "scientific-13c-metabolic-flux",
@@ -2285,22 +2285,22 @@
     {
       "name": "seo-audit",
       "source": "seo",
-      "description": "When the user wants to audit, review, or diagnose SEO issues on their site."
+      "description": "When the user wants to audit or diagnose SEO, or asks why traffic dropped, a page won't rank, or whether a setup like canonicals, hreflang, or redi..."
     },
     {
       "name": "signup",
       "source": "signup",
-      "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows."
+      "description": "When the user wants better signup, registration, and trial start flows, or asks which fields or steps to cut or whether to require a card: SSO and ..."
     },
     {
       "name": "site-architecture",
       "source": "site",
-      "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking."
+      "description": "When the user wants to plan or restructure a website, or asks which pages they need or where something belongs: hierarchy, navigation, URL structur..."
     },
     {
       "name": "sms",
       "source": "sms",
-      "description": "When the user wants to plan, build, or optimize SMS, MMS, or WhatsApp marketing — including welcome flows, abandoned cart texts, post-purchase, win..."
+      "description": "When the user wants SMS, MMS, or WhatsApp marketing, or asks whether texting is worth it or a message is allowed: abandoned cart, win-back, and pro..."
     },
     {
       "name": "SnailSploit-offensive-active-directory",
@@ -2700,7 +2700,7 @@
     {
       "name": "social",
       "source": "social",
-      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, or Facebook, or wants..."
+      "description": "When the user wants organic social content for LinkedIn, X, Instagram, TikTok, or Facebook, or asks what to post, which format to favor, or from wh..."
     },
     {
       "name": "stripe-connect-recommend",
@@ -2736,6 +2736,11 @@
       "name": "stripe-stripe-docs",
       "source": "stripe",
       "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference."
+    },
+    {
+      "name": "stripe-stripe-implementation-planner",
+      "source": "stripe",
+      "description": "Plans Stripe product selection and integration architecture for an initial Stripe setup or a material expansion of an existing setup."
     },
     {
       "name": "stripe-stripe-pay",
@@ -3163,6 +3168,11 @@
       "description": "Audits a project's dependencies for supply-chain risk: version-matched advisories for direct dependencies and the full lockfile tree, abandoned or ..."
     },
     {
+      "name": "tob-taint-trace",
+      "source": "tob",
+      "description": "Improves taint-analysis coverage and precision by using Trailmark graphs to repair native source, sink, sanitizer, propagation, and type models, th..."
+    },
+    {
       "name": "tob-testing-handbook-generator",
       "source": "tob",
       "description": "Generates Claude Code skills from the Trail of Bits Testing Handbook (appsec.guide), analyzing handbook pages and emitting SKILL.md files with the ..."
@@ -3295,7 +3305,7 @@
     {
       "name": "video",
       "source": "video",
-      "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks."
+      "description": "When the user wants to create video with AI tools or code, or asks which approach to use (screen recording, AI avatar, generated, or templated) or ..."
     }
   ]
 }
