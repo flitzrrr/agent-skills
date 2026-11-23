@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-16T19:06:14.098Z",
-  "total": 661,
+  "generated": "2026-11-23T19:41:40.786Z",
+  "total": 662,
   "skills": [
     {
       "name": "ab-testing",
@@ -11,6 +11,11 @@
       "name": "ad-creative",
       "source": "ad",
       "description": "When the user wants to write or judge ad creative, or asks which ad, hook, or angle to run or kill: headlines, primary text, and variations for Goo..."
+    },
+    {
+      "name": "addyosmani-accessibility-engineering",
+      "source": "addyosmani",
+      "description": "Audits existing interfaces for WCAG 2.2 AA conformance and remediates the violations found."
     },
     {
       "name": "addyosmani-api-and-interface-design",
@@ -605,7 +610,7 @@
     {
       "name": "expo-eas-hosting",
       "source": "expo",
-      "description": "Deploy Expo websites and Expo Router API routes to EAS Hosting - export the web bundle, run eas deploy for production and PR preview URLs, manage e..."
+      "description": "Deploy Expo websites and Expo Router API routes to EAS Hosting - export the web bundle, deploy to production or PR preview URLs, manage environment..."
     },
     {
       "name": "expo-eas-observe",
@@ -650,12 +655,12 @@
     {
       "name": "expo-expo-data-fetching",
       "source": "expo",
-      "description": "Use when implementing or debugging ANY network request, API call, or data fetching."
+      "description": "Implement or debug data fetching in Expo apps."
     },
     {
       "name": "expo-expo-design-system",
       "source": "expo",
-      "description": "Build and maintain a design system inside an Expo app - a reusable theme of design tokens (color, spacing, typography, radius, shadow, motion), reu..."
+      "description": "Create or extend an Expo app's theme, design tokens, and reusable component conventions."
     },
     {
       "name": "expo-expo-dev-client",
@@ -690,7 +695,7 @@
     {
       "name": "expo-expo-overview",
       "source": "expo",
-      "description": "Entry point and router for every Expo or EAS task."
+      "description": "Entry point for Expo and EAS tasks."
     },
     {
       "name": "expo-expo-project-structure",
@@ -960,7 +965,7 @@
     {
       "name": "link-building",
       "source": "link",
-      "description": "When the user wants backlinks and mentions that lift rankings and AI citations, or asks how to get sites to link or whether a link tactic is safe: ..."
+      "description": "When the user wants backlinks and mentions that lift rankings and AI citations, or asks how to get sites to link, whether a link tactic is safe, or..."
     },
     {
       "name": "marketing-council",
@@ -2728,6 +2733,11 @@
       "description": "Guides Stripe integration decisions across development and test environment planning (separate sandboxes vs the shared test mode sandbox), API sele..."
     },
     {
+      "name": "stripe-stripe-bfcm-dashboard",
+      "source": "stripe",
+      "description": "Builds a Black Friday and Cyber Monday (BFCM) season dashboard of payments, customers, and recurring revenue from the connected Stripe MCP account,..."
+    },
+    {
       "name": "stripe-stripe-directory",
       "source": "stripe",
       "description": "Identifies external providers, merchants, nonprofits, platforms, APIs, and software services, and resolves the documented way to engage them — to p..."
@@ -2751,11 +2761,6 @@
       "name": "stripe-stripe-projects",
       "source": "stripe",
       "description": "Use when the user wants to provision infrastructure or third-party services using Stripe Projects."
-    },
-    {
-      "name": "stripe-upgrade-stripe",
-      "source": "stripe",
-      "description": "Guide for upgrading Stripe API versions, webhook endpoints, server-side SDKs, Stripe.js, and mobile SDKs"
     },
     {
       "name": "supabase-supabase",
